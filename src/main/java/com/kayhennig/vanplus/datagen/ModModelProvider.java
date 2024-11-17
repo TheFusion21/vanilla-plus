@@ -1,5 +1,6 @@
 package com.kayhennig.vanplus.datagen;
 
+import com.kayhennig.vanplus.ModItems;
 import com.kayhennig.vanplus.Modblocks;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -42,6 +43,16 @@ public class ModModelProvider extends FabricModelProvider {
       generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.DARK_OAK_LOG, Modblocks.DARK_OAK_LOG_SLAB);
       generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.MANGROVE_LOG, Modblocks.MANGROVE_LOG_SLAB);
       generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.CHERRY_LOG, Modblocks.CHERRY_LOG_SLAB);
+
+      generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.STRIPPED_OAK_LOG, Modblocks.STRIPPED_OAK_LOG_SLAB);
+      generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.STRIPPED_SPRUCE_LOG, Modblocks.STRIPPED_SPRUCE_LOG_SLAB);
+      generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.STRIPPED_BIRCH_LOG, Modblocks.STRIPPED_BIRCH_LOG_SLAB);
+      generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.STRIPPED_JUNGLE_LOG, Modblocks.STRIPPED_JUNGLE_LOG_SLAB);
+      generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.STRIPPED_ACACIA_LOG, Modblocks.STRIPPED_ACACIA_LOG_SLAB);
+      generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.STRIPPED_DARK_OAK_LOG, Modblocks.STRIPPED_DARK_OAK_LOG_SLAB);
+      generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.STRIPPED_MANGROVE_LOG, Modblocks.STRIPPED_MANGROVE_LOG_SLAB);
+      generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.STRIPPED_CHERRY_LOG, Modblocks.STRIPPED_CHERRY_LOG_SLAB);
+
     }
 
     private void generateBlockStateSlabModel(BlockStateModelGenerator blockStateModelGenerator, Block mainBlock, Block slabBlock) {
@@ -68,7 +79,8 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-      
+      // Food
+      itemModelGenerator.register(ModItems.PEAR, Models.GENERATED);
     }
   
 }

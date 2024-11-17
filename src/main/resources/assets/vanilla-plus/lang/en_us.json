@@ -12,5 +12,16 @@
   "block.vanilla-plus.acacia_log_slab": "Acacia Log Slab",
   "block.vanilla-plus.dark_oak_log_slab": "Dark Oak Log Slab",
   "block.vanilla-plus.mangrove_log_slab": "Mangrove Log Slab",
-  "block.vanilla-plus.cherry_log_slab": "Cherry Log Slab"
+  "block.vanilla-plus.cherry_log_slab": "Cherry Log Slab",
+
+  "block.vanilla-plus.stripped_oak_log_slab": "Stripped Oak Log Slab",
+  "block.vanilla-plus.stripped_spruce_log_slab": "Stripped Spruce Log Slab",
+  "block.vanilla-plus.stripped_birch_log_slab": "Stripped Birch Log Slab",
+  "block.vanilla-plus.stripped_jungle_log_slab": "Stripped Jungle Log Slab",
+  "block.vanilla-plus.stripped_acacia_log_slab": "Stripped Acacia Log Slab",
+  "block.vanilla-plus.stripped_dark_oak_log_slab": "Stripped Dark Oak Log Slab",
+  "block.vanilla-plus.stripped_mangrove_log_slab": "Stripped Mangrove Log Slab",
+  "block.vanilla-plus.stripped_cherry_log_slab": "Stripped Cherry Log Slab",
+
+  "item.vanilla-plus.pear": "Pear"
 }

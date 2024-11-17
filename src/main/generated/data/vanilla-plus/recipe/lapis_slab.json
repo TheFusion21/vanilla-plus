@@ -3,14 +3,14 @@
   "category": "building",
   "key": {
     "#": {
-      "item": "minecraft:lapis_block"
+      "item": "minecraft:lapis_lazuli"
     }
   },
   "pattern": [
     "###"
   ],
   "result": {
-    "count": 6,
+    "count": 1,
     "id": "vanilla-plus:lapis_slab"
   }
 }

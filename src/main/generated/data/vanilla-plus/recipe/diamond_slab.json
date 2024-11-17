@@ -3,14 +3,14 @@
   "category": "building",
   "key": {
     "#": {
-      "item": "minecraft:diamond_block"
+      "item": "minecraft:diamond"
     }
   },
   "pattern": [
     "###"
   ],
   "result": {
-    "count": 6,
+    "count": 1,
     "id": "vanilla-plus:diamond_slab"
   }
 }

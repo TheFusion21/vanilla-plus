@@ -3,14 +3,14 @@
   "category": "building",
   "key": {
     "#": {
-      "item": "minecraft:iron_block"
+      "item": "minecraft:iron_ingot"
     }
   },
   "pattern": [
     "###"
   ],
   "result": {
-    "count": 6,
+    "count": 1,
     "id": "vanilla-plus:iron_slab"
   }
 }

@@ -27,6 +27,15 @@ public class Modblocks {
   public static final Block MANGROVE_LOG_SLAB = registerBlock("mangrove_log_slab", new SlabBlock(AbstractBlock.Settings.copy(Blocks.MANGROVE_PLANKS)));
   public static final Block CHERRY_LOG_SLAB = registerBlock("cherry_log_slab", new SlabBlock(AbstractBlock.Settings.copy(Blocks.CHERRY_PLANKS)));
 
+  public static final Block STRIPPED_OAK_LOG_SLAB = registerBlock("stripped_oak_log_slab", new SlabBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
+  public static final Block STRIPPED_SPRUCE_LOG_SLAB = registerBlock("stripped_spruce_log_slab", new SlabBlock(AbstractBlock.Settings.copy(Blocks.SPRUCE_PLANKS)));
+  public static final Block STRIPPED_BIRCH_LOG_SLAB = registerBlock("stripped_birch_log_slab", new SlabBlock(AbstractBlock.Settings.copy(Blocks.BIRCH_PLANKS)));
+  public static final Block STRIPPED_JUNGLE_LOG_SLAB = registerBlock("stripped_jungle_log_slab", new SlabBlock(AbstractBlock.Settings.copy(Blocks.JUNGLE_PLANKS)));
+  public static final Block STRIPPED_ACACIA_LOG_SLAB = registerBlock("stripped_acacia_log_slab", new SlabBlock(AbstractBlock.Settings.copy(Blocks.ACACIA_PLANKS)));
+  public static final Block STRIPPED_DARK_OAK_LOG_SLAB = registerBlock("stripped_dark_oak_log_slab", new SlabBlock(AbstractBlock.Settings.copy(Blocks.DARK_OAK_PLANKS)));
+  public static final Block STRIPPED_MANGROVE_LOG_SLAB = registerBlock("stripped_mangrove_log_slab", new SlabBlock(AbstractBlock.Settings.copy(Blocks.MANGROVE_PLANKS)));
+  public static final Block STRIPPED_CHERRY_LOG_SLAB = registerBlock("stripped_cherry_log_slab", new SlabBlock(AbstractBlock.Settings.copy(Blocks.CHERRY_PLANKS)));
+
   // Registry
   private static Block registerBlock(String name, Block block) {
     registerBlockItem(name, block);
@@ -53,6 +62,15 @@ public class Modblocks {
     entries.add(DARK_OAK_LOG_SLAB);
     entries.add(MANGROVE_LOG_SLAB);
     entries.add(CHERRY_LOG_SLAB);
+
+    entries.add(STRIPPED_OAK_LOG_SLAB);
+    entries.add(STRIPPED_SPRUCE_LOG_SLAB);
+    entries.add(STRIPPED_BIRCH_LOG_SLAB);
+    entries.add(STRIPPED_JUNGLE_LOG_SLAB);
+    entries.add(STRIPPED_ACACIA_LOG_SLAB);
+    entries.add(STRIPPED_DARK_OAK_LOG_SLAB);
+    entries.add(STRIPPED_MANGROVE_LOG_SLAB);
+    entries.add(STRIPPED_CHERRY_LOG_SLAB);
   }
 
   public static void registerModBlocks() {

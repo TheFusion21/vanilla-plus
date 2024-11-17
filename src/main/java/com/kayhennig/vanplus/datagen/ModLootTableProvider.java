@@ -15,6 +15,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
   @Override
   public void generate() {
+    // Slabs
     addDrop(Modblocks.IRON_SLAB, slabDrops(Modblocks.IRON_SLAB));
     addDrop(Modblocks.LAPIS_SLAB, slabDrops(Modblocks.LAPIS_SLAB));
     addDrop(Modblocks.GOLD_SLAB, slabDrops(Modblocks.GOLD_SLAB));
@@ -29,5 +30,15 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     addDrop(Modblocks.DARK_OAK_LOG_SLAB, slabDrops(Modblocks.DARK_OAK_LOG_SLAB));
     addDrop(Modblocks.MANGROVE_LOG_SLAB, slabDrops(Modblocks.MANGROVE_LOG_SLAB));
     addDrop(Modblocks.CHERRY_LOG_SLAB, slabDrops(Modblocks.CHERRY_LOG_SLAB));
+
+    addDrop(Modblocks.STRIPPED_OAK_LOG_SLAB, slabDrops(Modblocks.STRIPPED_OAK_LOG_SLAB));
+    addDrop(Modblocks.STRIPPED_SPRUCE_LOG_SLAB, slabDrops(Modblocks.STRIPPED_SPRUCE_LOG_SLAB));
+    addDrop(Modblocks.STRIPPED_BIRCH_LOG_SLAB, slabDrops(Modblocks.STRIPPED_BIRCH_LOG_SLAB));
+    addDrop(Modblocks.STRIPPED_JUNGLE_LOG_SLAB, slabDrops(Modblocks.STRIPPED_JUNGLE_LOG_SLAB));
+    addDrop(Modblocks.STRIPPED_ACACIA_LOG_SLAB, slabDrops(Modblocks.STRIPPED_ACACIA_LOG_SLAB));
+    addDrop(Modblocks.STRIPPED_DARK_OAK_LOG_SLAB, slabDrops(Modblocks.STRIPPED_DARK_OAK_LOG_SLAB));
+    addDrop(Modblocks.STRIPPED_MANGROVE_LOG_SLAB, slabDrops(Modblocks.STRIPPED_MANGROVE_LOG_SLAB));
+    addDrop(Modblocks.STRIPPED_CHERRY_LOG_SLAB, slabDrops(Modblocks.STRIPPED_CHERRY_LOG_SLAB));
+
   }
 }
