@@ -73,23 +73,46 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
       .add(Modblocks.STRIPPED_CHERRY_LOG_SLAB);
 
     getOrCreateTagBuilder(BlockTags.LAVA_POOL_STONE_CANNOT_REPLACE)
-    .add(Modblocks.OAK_LOG_SLAB)
-    .add(Modblocks.SPRUCE_LOG_SLAB)
-    .add(Modblocks.BIRCH_LOG_SLAB)
-    .add(Modblocks.JUNGLE_LOG_SLAB)
-    .add(Modblocks.ACACIA_LOG_SLAB)
-    .add(Modblocks.DARK_OAK_LOG_SLAB)
-    .add(Modblocks.MANGROVE_LOG_SLAB)
-    .add(Modblocks.CHERRY_LOG_SLAB)
+      .add(Modblocks.OAK_LOG_SLAB)
+      .add(Modblocks.SPRUCE_LOG_SLAB)
+      .add(Modblocks.BIRCH_LOG_SLAB)
+      .add(Modblocks.JUNGLE_LOG_SLAB)
+      .add(Modblocks.ACACIA_LOG_SLAB)
+      .add(Modblocks.DARK_OAK_LOG_SLAB)
+      .add(Modblocks.MANGROVE_LOG_SLAB)
+      .add(Modblocks.CHERRY_LOG_SLAB)
 
-    .add(Modblocks.STRIPPED_OAK_LOG_SLAB)
-    .add(Modblocks.STRIPPED_SPRUCE_LOG_SLAB)
-    .add(Modblocks.STRIPPED_BIRCH_LOG_SLAB)
-    .add(Modblocks.STRIPPED_JUNGLE_LOG_SLAB)
-    .add(Modblocks.STRIPPED_ACACIA_LOG_SLAB)
-    .add(Modblocks.STRIPPED_DARK_OAK_LOG_SLAB)
-    .add(Modblocks.STRIPPED_MANGROVE_LOG_SLAB)
-    .add(Modblocks.STRIPPED_CHERRY_LOG_SLAB);
+      .add(Modblocks.STRIPPED_OAK_LOG_SLAB)
+      .add(Modblocks.STRIPPED_SPRUCE_LOG_SLAB)
+      .add(Modblocks.STRIPPED_BIRCH_LOG_SLAB)
+      .add(Modblocks.STRIPPED_JUNGLE_LOG_SLAB)
+      .add(Modblocks.STRIPPED_ACACIA_LOG_SLAB)
+      .add(Modblocks.STRIPPED_DARK_OAK_LOG_SLAB)
+      .add(Modblocks.STRIPPED_MANGROVE_LOG_SLAB)
+      .add(Modblocks.STRIPPED_CHERRY_LOG_SLAB);
+
+    getOrCreateTagBuilder(BlockTags.WOODEN_SLABS)
+      .add(Modblocks.OAK_LOG_SLAB)
+      .add(Modblocks.SPRUCE_LOG_SLAB)
+      .add(Modblocks.BIRCH_LOG_SLAB)
+      .add(Modblocks.JUNGLE_LOG_SLAB)
+      .add(Modblocks.ACACIA_LOG_SLAB)
+      .add(Modblocks.DARK_OAK_LOG_SLAB)
+      .add(Modblocks.MANGROVE_LOG_SLAB)
+      .add(Modblocks.CHERRY_LOG_SLAB)
+
+      .add(Modblocks.STRIPPED_OAK_LOG_SLAB)
+      .add(Modblocks.STRIPPED_SPRUCE_LOG_SLAB)
+      .add(Modblocks.STRIPPED_BIRCH_LOG_SLAB)
+      .add(Modblocks.STRIPPED_JUNGLE_LOG_SLAB)
+      .add(Modblocks.STRIPPED_ACACIA_LOG_SLAB)
+      .add(Modblocks.STRIPPED_DARK_OAK_LOG_SLAB)
+      .add(Modblocks.STRIPPED_MANGROVE_LOG_SLAB)
+      .add(Modblocks.STRIPPED_CHERRY_LOG_SLAB);
+
+    getOrCreateTagBuilder(BlockTags.IMPERMEABLE)
+      .add(Modblocks.GLASS_SLAB);
+
   }
 
 }

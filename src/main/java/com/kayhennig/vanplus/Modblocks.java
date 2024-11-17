@@ -1,8 +1,10 @@
 package com.kayhennig.vanplus;
 
+import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
+import net.minecraft.client.render.RenderLayer;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -36,6 +38,8 @@ public class Modblocks {
   public static final Block STRIPPED_MANGROVE_LOG_SLAB = registerBlock("stripped_mangrove_log_slab", new SlabBlock(AbstractBlock.Settings.copy(Blocks.MANGROVE_PLANKS)));
   public static final Block STRIPPED_CHERRY_LOG_SLAB = registerBlock("stripped_cherry_log_slab", new SlabBlock(AbstractBlock.Settings.copy(Blocks.CHERRY_PLANKS)));
 
+  public static final Block GLASS_SLAB = registerBlock("glass_slab", new SlabBlock(AbstractBlock.Settings.copy(Blocks.GLASS).nonOpaque()));
+
   // Registry
   private static Block registerBlock(String name, Block block) {
     registerBlockItem(name, block);
@@ -47,7 +51,7 @@ public class Modblocks {
         new BlockItem(block, new Item.Settings()));
   }
 
-  private static void addBlockToGroup(FabricItemGroupEntries entries) {
+  private static void addBlockToBuildingBlockGroup(FabricItemGroupEntries entries) {
     entries.add(IRON_SLAB);
     entries.add(LAPIS_SLAB);
     entries.add(GOLD_SLAB);
@@ -73,7 +77,14 @@ public class Modblocks {
     entries.add(STRIPPED_CHERRY_LOG_SLAB);
   }
 
+  private static void addBlockToColoredBlockGroup(FabricItemGroupEntries entries) {
+    entries.add(GLASS_SLAB);
+  }
+
   public static void registerModBlocks() {
-    ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(Modblocks::addBlockToGroup);
+    ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(Modblocks::addBlockToBuildingBlockGroup);
+    ItemGroupEvents.modifyEntriesEvent(ItemGroups.COLORED_BLOCKS).register(Modblocks::addBlockToColoredBlockGroup);
+
+    BlockRenderLayerMap.INSTANCE.putBlock(Modblocks.GLASS_SLAB, RenderLayer.getCutout());
   }
 }

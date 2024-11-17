@@ -21,14 +21,6 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-      /*TextureMap textureMap = TextureMap.all(Blocks.IRON_BLOCK);
-      TextureMap textureMap2 = TextureMap.sideEnd(TextureMap.getSubId(Modblocks.IRON_SLAB, "_side"), textureMap.getTexture(TextureKey.TOP));
-      
-      Identifier identifier = Models.SLAB.upload(Modblocks.IRON_SLAB, textureMap2, blockStateModelGenerator.modelCollector);
-      Identifier identifier2 = Models.SLAB_TOP.upload(Modblocks.IRON_SLAB, textureMap2, blockStateModelGenerator.modelCollector);
-      Identifier identifier3 = Models.CUBE_COLUMN.uploadWithoutVariant(Modblocks.IRON_SLAB, "_double", textureMap2, blockStateModelGenerator.modelCollector);
-
-      blockStateModelGenerator.blockStateCollector.accept(BlockStateModelGenerator.createSlabBlockState(Modblocks.IRON_SLAB, identifier, identifier2, identifier3));*/
       generateBlockStateSlabModel(blockStateModelGenerator, Blocks.IRON_BLOCK, Modblocks.IRON_SLAB);
       generateBlockStateSlabModel(blockStateModelGenerator, Blocks.LAPIS_BLOCK, Modblocks.LAPIS_SLAB);
       generateBlockStateSlabModel(blockStateModelGenerator, Blocks.GOLD_BLOCK, Modblocks.GOLD_SLAB);
@@ -53,6 +45,7 @@ public class ModModelProvider extends FabricModelProvider {
       generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.STRIPPED_MANGROVE_LOG, Modblocks.STRIPPED_MANGROVE_LOG_SLAB);
       generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.STRIPPED_CHERRY_LOG, Modblocks.STRIPPED_CHERRY_LOG_SLAB);
 
+      generateBlockStateSlabModel(blockStateModelGenerator, Blocks.GLASS, Modblocks.GLASS_SLAB);
     }
 
     private void generateBlockStateSlabModel(BlockStateModelGenerator blockStateModelGenerator, Block mainBlock, Block slabBlock) {
