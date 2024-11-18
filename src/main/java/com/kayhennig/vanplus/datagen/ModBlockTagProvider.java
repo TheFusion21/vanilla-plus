@@ -34,6 +34,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
       .add(Modblocks.DARK_OAK_LOG_SLAB)
       .add(Modblocks.MANGROVE_LOG_SLAB)
       .add(Modblocks.CHERRY_LOG_SLAB)
+      .add(Modblocks.CRIMSON_STEM_SLAB)
+      .add(Modblocks.WARPED_STEM_SLAB)
 
       .add(Modblocks.STRIPPED_OAK_LOG_SLAB)
       .add(Modblocks.STRIPPED_SPRUCE_LOG_SLAB)
@@ -42,7 +44,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
       .add(Modblocks.STRIPPED_ACACIA_LOG_SLAB)
       .add(Modblocks.STRIPPED_DARK_OAK_LOG_SLAB)
       .add(Modblocks.STRIPPED_MANGROVE_LOG_SLAB)
-      .add(Modblocks.STRIPPED_CHERRY_LOG_SLAB);
+      .add(Modblocks.STRIPPED_CHERRY_LOG_SLAB)
+      .add(Modblocks.STRIPPED_CRIMSON_STEM_SLAB)
+      .add(Modblocks.STRIPPED_CRIMSON_STEM_SLAB);
 
     getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
       .add(Modblocks.IRON_SLAB)
@@ -62,6 +66,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
       .add(Modblocks.DARK_OAK_LOG_SLAB)
       .add(Modblocks.MANGROVE_LOG_SLAB)
       .add(Modblocks.CHERRY_LOG_SLAB)
+      .add(Modblocks.CRIMSON_STEM_SLAB)
+      .add(Modblocks.WARPED_STEM_SLAB)
 
       .add(Modblocks.STRIPPED_OAK_LOG_SLAB)
       .add(Modblocks.STRIPPED_SPRUCE_LOG_SLAB)
@@ -70,7 +76,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
       .add(Modblocks.STRIPPED_ACACIA_LOG_SLAB)
       .add(Modblocks.STRIPPED_DARK_OAK_LOG_SLAB)
       .add(Modblocks.STRIPPED_MANGROVE_LOG_SLAB)
-      .add(Modblocks.STRIPPED_CHERRY_LOG_SLAB);
+      .add(Modblocks.STRIPPED_CHERRY_LOG_SLAB)
+      .add(Modblocks.STRIPPED_CRIMSON_STEM_SLAB)
+      .add(Modblocks.STRIPPED_CRIMSON_STEM_SLAB);
 
     getOrCreateTagBuilder(BlockTags.LAVA_POOL_STONE_CANNOT_REPLACE)
       .add(Modblocks.OAK_LOG_SLAB)
@@ -81,6 +89,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
       .add(Modblocks.DARK_OAK_LOG_SLAB)
       .add(Modblocks.MANGROVE_LOG_SLAB)
       .add(Modblocks.CHERRY_LOG_SLAB)
+      .add(Modblocks.CRIMSON_STEM_SLAB)
+      .add(Modblocks.WARPED_STEM_SLAB)
 
       .add(Modblocks.STRIPPED_OAK_LOG_SLAB)
       .add(Modblocks.STRIPPED_SPRUCE_LOG_SLAB)
@@ -89,7 +99,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
       .add(Modblocks.STRIPPED_ACACIA_LOG_SLAB)
       .add(Modblocks.STRIPPED_DARK_OAK_LOG_SLAB)
       .add(Modblocks.STRIPPED_MANGROVE_LOG_SLAB)
-      .add(Modblocks.STRIPPED_CHERRY_LOG_SLAB);
+      .add(Modblocks.STRIPPED_CHERRY_LOG_SLAB)
+      .add(Modblocks.STRIPPED_CRIMSON_STEM_SLAB)
+      .add(Modblocks.STRIPPED_CRIMSON_STEM_SLAB);
 
     getOrCreateTagBuilder(BlockTags.WOODEN_SLABS)
       .add(Modblocks.OAK_LOG_SLAB)
@@ -100,6 +112,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
       .add(Modblocks.DARK_OAK_LOG_SLAB)
       .add(Modblocks.MANGROVE_LOG_SLAB)
       .add(Modblocks.CHERRY_LOG_SLAB)
+      .add(Modblocks.CRIMSON_STEM_SLAB)
+      .add(Modblocks.WARPED_STEM_SLAB)
 
       .add(Modblocks.STRIPPED_OAK_LOG_SLAB)
       .add(Modblocks.STRIPPED_SPRUCE_LOG_SLAB)
@@ -108,7 +122,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
       .add(Modblocks.STRIPPED_ACACIA_LOG_SLAB)
       .add(Modblocks.STRIPPED_DARK_OAK_LOG_SLAB)
       .add(Modblocks.STRIPPED_MANGROVE_LOG_SLAB)
-      .add(Modblocks.STRIPPED_CHERRY_LOG_SLAB);
+      .add(Modblocks.STRIPPED_CHERRY_LOG_SLAB)
+      .add(Modblocks.STRIPPED_CRIMSON_STEM_SLAB)
+      .add(Modblocks.STRIPPED_CRIMSON_STEM_SLAB);
 
     getOrCreateTagBuilder(BlockTags.IMPERMEABLE)
       .add(Modblocks.GLASS_SLAB);

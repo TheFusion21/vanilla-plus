@@ -43,6 +43,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
       offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.DARK_OAK_LOG_SLAB, Blocks.DARK_OAK_LOG, 2);
       offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.MANGROVE_LOG_SLAB, Blocks.MANGROVE_LOG, 2);
       offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.CHERRY_LOG_SLAB, Blocks.CHERRY_LOG, 2);
+      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.CRIMSON_STEM_SLAB, Blocks.CRIMSON_STEM, 2);
+      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.WARPED_STEM_SLAB, Blocks.WARPED_STEM, 2);
 
       offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.STRIPPED_OAK_LOG_SLAB, Blocks.STRIPPED_OAK_LOG, 2);
       offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.STRIPPED_SPRUCE_LOG_SLAB, Blocks.STRIPPED_SPRUCE_LOG, 2);
@@ -52,6 +54,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
       offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.STRIPPED_DARK_OAK_LOG_SLAB, Blocks.STRIPPED_DARK_OAK_LOG, 2);
       offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.STRIPPED_MANGROVE_LOG_SLAB, Blocks.STRIPPED_MANGROVE_LOG, 2);
       offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.STRIPPED_CHERRY_LOG_SLAB, Blocks.STRIPPED_CHERRY_LOG, 2);
+      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.STRIPPED_CRIMSON_STEM_SLAB, Blocks.STRIPPED_CRIMSON_STEM, 2);
+      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.STRIPPED_WARPED_STEM_SLAB, Blocks.STRIPPED_WARPED_STEM, 2);
 
       offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.GLASS_SLAB, Blocks.GLASS, 2);
 
@@ -70,6 +74,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
       offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.DARK_OAK_LOG_SLAB, Blocks.DARK_OAK_LOG, "log_slab");
       offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.MANGROVE_LOG_SLAB, Blocks.MANGROVE_LOG, "log_slab");
       offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.CHERRY_LOG_SLAB, Blocks.CHERRY_LOG, "log_slab");
+      offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.CRIMSON_STEM_SLAB, Blocks.CRIMSON_STEM, "log_slab");
 
       offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.STRIPPED_OAK_LOG_SLAB, Blocks.STRIPPED_OAK_LOG, "log_slab");
       offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.STRIPPED_SPRUCE_LOG_SLAB, Blocks.STRIPPED_SPRUCE_LOG, "log_slab");
@@ -79,6 +84,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
       offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.STRIPPED_DARK_OAK_LOG_SLAB, Blocks.STRIPPED_DARK_OAK_LOG, "log_slab");
       offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.STRIPPED_MANGROVE_LOG_SLAB, Blocks.STRIPPED_MANGROVE_LOG, "log_slab");
       offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.STRIPPED_CHERRY_LOG_SLAB, Blocks.STRIPPED_CHERRY_LOG, "log_slab");
+      offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.STRIPPED_CRIMSON_STEM_SLAB, Blocks.STRIPPED_CRIMSON_STEM, "log_slab");
 
       offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.GLASS_SLAB, Blocks.GLASS, null);
     }

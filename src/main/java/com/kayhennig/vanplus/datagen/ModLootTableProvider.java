@@ -30,6 +30,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     addDrop(Modblocks.DARK_OAK_LOG_SLAB, slabDrops(Modblocks.DARK_OAK_LOG_SLAB));
     addDrop(Modblocks.MANGROVE_LOG_SLAB, slabDrops(Modblocks.MANGROVE_LOG_SLAB));
     addDrop(Modblocks.CHERRY_LOG_SLAB, slabDrops(Modblocks.CHERRY_LOG_SLAB));
+    addDrop(Modblocks.CRIMSON_STEM_SLAB, slabDrops(Modblocks.CRIMSON_STEM_SLAB));
+    addDrop(Modblocks.WARPED_STEM_SLAB, slabDrops(Modblocks.WARPED_STEM_SLAB));
 
     addDrop(Modblocks.STRIPPED_OAK_LOG_SLAB, slabDrops(Modblocks.STRIPPED_OAK_LOG_SLAB));
     addDrop(Modblocks.STRIPPED_SPRUCE_LOG_SLAB, slabDrops(Modblocks.STRIPPED_SPRUCE_LOG_SLAB));
@@ -39,6 +41,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     addDrop(Modblocks.STRIPPED_DARK_OAK_LOG_SLAB, slabDrops(Modblocks.STRIPPED_DARK_OAK_LOG_SLAB));
     addDrop(Modblocks.STRIPPED_MANGROVE_LOG_SLAB, slabDrops(Modblocks.STRIPPED_MANGROVE_LOG_SLAB));
     addDrop(Modblocks.STRIPPED_CHERRY_LOG_SLAB, slabDrops(Modblocks.STRIPPED_CHERRY_LOG_SLAB));
+    addDrop(Modblocks.STRIPPED_CRIMSON_STEM_SLAB, slabDrops(Modblocks.STRIPPED_CRIMSON_STEM_SLAB));
+    addDrop(Modblocks.STRIPPED_CRIMSON_STEM_SLAB, slabDrops(Modblocks.STRIPPED_CRIMSON_STEM_SLAB));
 
   }
 }

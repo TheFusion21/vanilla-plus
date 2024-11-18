@@ -35,6 +35,8 @@ public class ModModelProvider extends FabricModelProvider {
       generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.DARK_OAK_LOG, Modblocks.DARK_OAK_LOG_SLAB);
       generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.MANGROVE_LOG, Modblocks.MANGROVE_LOG_SLAB);
       generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.CHERRY_LOG, Modblocks.CHERRY_LOG_SLAB);
+      generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.CRIMSON_STEM, Modblocks.CRIMSON_STEM_SLAB);
+      generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.WARPED_STEM, Modblocks.WARPED_STEM_SLAB);
 
       generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.STRIPPED_OAK_LOG, Modblocks.STRIPPED_OAK_LOG_SLAB);
       generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.STRIPPED_SPRUCE_LOG, Modblocks.STRIPPED_SPRUCE_LOG_SLAB);
@@ -44,6 +46,8 @@ public class ModModelProvider extends FabricModelProvider {
       generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.STRIPPED_DARK_OAK_LOG, Modblocks.STRIPPED_DARK_OAK_LOG_SLAB);
       generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.STRIPPED_MANGROVE_LOG, Modblocks.STRIPPED_MANGROVE_LOG_SLAB);
       generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.STRIPPED_CHERRY_LOG, Modblocks.STRIPPED_CHERRY_LOG_SLAB);
+      generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.STRIPPED_CRIMSON_STEM, Modblocks.STRIPPED_CRIMSON_STEM_SLAB);
+      generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.STRIPPED_WARPED_STEM, Modblocks.STRIPPED_WARPED_STEM_SLAB);
 
       generateBlockStateSlabModel(blockStateModelGenerator, Blocks.GLASS, Modblocks.GLASS_SLAB);
     }
