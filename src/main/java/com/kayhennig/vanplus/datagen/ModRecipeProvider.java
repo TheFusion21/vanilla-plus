@@ -10,8 +10,6 @@ import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
-import net.minecraft.item.Item;
-import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 
@@ -28,12 +26,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
       offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.GOLD_SLAB, Blocks.GOLD_BLOCK, 2);
       offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.DIAMOND_SLAB, Blocks.DIAMOND_BLOCK, 2);
       offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.EMERALD_SLAB, Blocks.EMERALD_BLOCK, 2);
-
-      //offerShapedSlabRecipeFromItem(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.IRON_SLAB, Items.IRON_INGOT);
-      //offerShapedSlabRecipeFromItem(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.LAPIS_SLAB, Items.LAPIS_LAZULI);
-      //offerShapedSlabRecipeFromItem(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.GOLD_SLAB, Items.GOLD_INGOT);
-      //offerShapedSlabRecipeFromItem(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.DIAMOND_SLAB, Items.DIAMOND);
-      //offerShapedSlabRecipeFromItem(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.EMERALD_SLAB, Items.EMERALD);
 
       offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.OAK_LOG_SLAB, Blocks.OAK_LOG, 2);
       offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.SPRUCE_LOG_SLAB, Blocks.SPRUCE_LOG, 2);
@@ -97,13 +89,4 @@ public class ModRecipeProvider extends FabricRecipeProvider {
           .criterion(FabricRecipeProvider.hasItem(block), FabricRecipeProvider.conditionsFromItem(block))
           .offerTo(exporter);
     }
-
-    private void offerShapedSlabRecipeFromItem(RecipeExporter exporter, RecipeCategory category, Block slab, Item item) {
-      ShapedRecipeJsonBuilder.create(category, slab)
-          .pattern("###")
-          .input('#', item)
-          .criterion(FabricRecipeProvider.hasItem(item), FabricRecipeProvider.conditionsFromItem(item))
-          .offerTo(exporter);
-    }
-
 }
