@@ -19,7 +19,4 @@ public class Vanillaplus implements ModInitializer {
 		ModItems.registerItems();
 	}
 
-	
-
-	
 }

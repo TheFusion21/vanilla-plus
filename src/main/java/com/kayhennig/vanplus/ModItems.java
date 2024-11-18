@@ -17,12 +17,13 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.util.Identifier;
 
-
 public class ModItems {
   // FoodComponents
   public class ModFoodComponents {
-    public static final FoodComponent PEAR = new FoodComponent.Builder().snack().nutrition(1).saturationModifier(0.3F).build();
+    public static final FoodComponent PEAR = new FoodComponent.Builder().snack().nutrition(1).saturationModifier(0.3F)
+        .build();
   }
+
   // Food
   public static final Item PEAR = registerItem("pear", new Item(new Item.Settings().food(ModFoodComponents.PEAR)));
 
@@ -38,21 +39,20 @@ public class ModItems {
     entries.add(PEAR);
   }
 
-  private static void addItemToLootTable(RegistryKey<LootTable> table, LootTable.Builder builder, LootTableSource source, RegistryWrapper.WrapperLookup lookup) {
-    if (source.isBuiltin() && (
-      Blocks.OAK_LEAVES.getLootTableKey().equals(table) ||
-      Blocks.SPRUCE_LEAVES.getLootTableKey().equals(table) ||
-      Blocks.BIRCH_LEAVES.getLootTableKey().equals(table) ||
-      Blocks.JUNGLE_LEAVES.getLootTableKey().equals(table) ||
-      Blocks.ACACIA_LEAVES.getLootTableKey().equals(table) ||
-      Blocks.DARK_OAK_LEAVES.getLootTableKey().equals(table) ||
-      Blocks.MANGROVE_LEAVES.getLootTableKey().equals(table) ||
-      Blocks.CHERRY_LEAVES.getLootTableKey().equals(table)
-    )) {
+  private static void addItemToLootTable(RegistryKey<LootTable> table, LootTable.Builder builder,
+      LootTableSource source, RegistryWrapper.WrapperLookup lookup) {
+    if (source.isBuiltin() && (Blocks.OAK_LEAVES.getLootTableKey().equals(table) ||
+        Blocks.SPRUCE_LEAVES.getLootTableKey().equals(table) ||
+        Blocks.BIRCH_LEAVES.getLootTableKey().equals(table) ||
+        Blocks.JUNGLE_LEAVES.getLootTableKey().equals(table) ||
+        Blocks.ACACIA_LEAVES.getLootTableKey().equals(table) ||
+        Blocks.DARK_OAK_LEAVES.getLootTableKey().equals(table) ||
+        Blocks.MANGROVE_LEAVES.getLootTableKey().equals(table) ||
+        Blocks.CHERRY_LEAVES.getLootTableKey().equals(table))) {
       LootPool.Builder poolBuilder = LootPool.builder()
           .with(ItemEntry.builder(ModItems.PEAR).weight(1));
- 
-        builder.pool(poolBuilder);
+
+      builder.pool(poolBuilder);
     }
   }
 
