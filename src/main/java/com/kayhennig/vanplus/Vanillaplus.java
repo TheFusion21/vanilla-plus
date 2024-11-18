@@ -15,7 +15,7 @@ public class Vanillaplus implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		Modblocks.registerModBlocks();
+		ModBlocks.registerModBlocks();
 		ModItems.registerItems();
 	}
 

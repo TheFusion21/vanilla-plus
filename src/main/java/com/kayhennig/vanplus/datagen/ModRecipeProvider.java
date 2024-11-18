@@ -2,7 +2,7 @@ package com.kayhennig.vanplus.datagen;
 
 import java.util.concurrent.CompletableFuture;
 
-import com.kayhennig.vanplus.Modblocks;
+import com.kayhennig.vanplus.ModBlocks;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
@@ -21,64 +21,64 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     @Override
     public void generate(RecipeExporter exporter) {
       // Stonecutting
-      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.IRON_SLAB, Blocks.IRON_BLOCK, 2);
-      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.LAPIS_SLAB, Blocks.LAPIS_BLOCK, 2);
-      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.GOLD_SLAB, Blocks.GOLD_BLOCK, 2);
-      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.DIAMOND_SLAB, Blocks.DIAMOND_BLOCK, 2);
-      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.EMERALD_SLAB, Blocks.EMERALD_BLOCK, 2);
+      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.IRON_SLAB, Blocks.IRON_BLOCK, 2);
+      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LAPIS_SLAB, Blocks.LAPIS_BLOCK, 2);
+      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.GOLD_SLAB, Blocks.GOLD_BLOCK, 2);
+      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DIAMOND_SLAB, Blocks.DIAMOND_BLOCK, 2);
+      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.EMERALD_SLAB, Blocks.EMERALD_BLOCK, 2);
 
-      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.OAK_LOG_SLAB, Blocks.OAK_LOG, 2);
-      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.SPRUCE_LOG_SLAB, Blocks.SPRUCE_LOG, 2);
-      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.BIRCH_LOG_SLAB, Blocks.BIRCH_LOG, 2);
-      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.JUNGLE_LOG_SLAB, Blocks.JUNGLE_LOG, 2);
-      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.ACACIA_LOG_SLAB, Blocks.ACACIA_LOG, 2);
-      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.DARK_OAK_LOG_SLAB, Blocks.DARK_OAK_LOG, 2);
-      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.MANGROVE_LOG_SLAB, Blocks.MANGROVE_LOG, 2);
-      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.CHERRY_LOG_SLAB, Blocks.CHERRY_LOG, 2);
-      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.CRIMSON_STEM_SLAB, Blocks.CRIMSON_STEM, 2);
-      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.WARPED_STEM_SLAB, Blocks.WARPED_STEM, 2);
+      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.OAK_LOG_SLAB, Blocks.OAK_LOG, 2);
+      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SPRUCE_LOG_SLAB, Blocks.SPRUCE_LOG, 2);
+      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BIRCH_LOG_SLAB, Blocks.BIRCH_LOG, 2);
+      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.JUNGLE_LOG_SLAB, Blocks.JUNGLE_LOG, 2);
+      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ACACIA_LOG_SLAB, Blocks.ACACIA_LOG, 2);
+      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARK_OAK_LOG_SLAB, Blocks.DARK_OAK_LOG, 2);
+      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MANGROVE_LOG_SLAB, Blocks.MANGROVE_LOG, 2);
+      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHERRY_LOG_SLAB, Blocks.CHERRY_LOG, 2);
+      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRIMSON_STEM_SLAB, Blocks.CRIMSON_STEM, 2);
+      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.WARPED_STEM_SLAB, Blocks.WARPED_STEM, 2);
 
-      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.STRIPPED_OAK_LOG_SLAB, Blocks.STRIPPED_OAK_LOG, 2);
-      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.STRIPPED_SPRUCE_LOG_SLAB, Blocks.STRIPPED_SPRUCE_LOG, 2);
-      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.STRIPPED_BIRCH_LOG_SLAB, Blocks.STRIPPED_BIRCH_LOG, 2);
-      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.STRIPPED_JUNGLE_LOG_SLAB, Blocks.STRIPPED_JUNGLE_LOG, 2);
-      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.STRIPPED_ACACIA_LOG_SLAB, Blocks.STRIPPED_ACACIA_LOG, 2);
-      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.STRIPPED_DARK_OAK_LOG_SLAB, Blocks.STRIPPED_DARK_OAK_LOG, 2);
-      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.STRIPPED_MANGROVE_LOG_SLAB, Blocks.STRIPPED_MANGROVE_LOG, 2);
-      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.STRIPPED_CHERRY_LOG_SLAB, Blocks.STRIPPED_CHERRY_LOG, 2);
-      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.STRIPPED_CRIMSON_STEM_SLAB, Blocks.STRIPPED_CRIMSON_STEM, 2);
-      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.STRIPPED_WARPED_STEM_SLAB, Blocks.STRIPPED_WARPED_STEM, 2);
+      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_OAK_LOG_SLAB, Blocks.STRIPPED_OAK_LOG, 2);
+      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_SPRUCE_LOG_SLAB, Blocks.STRIPPED_SPRUCE_LOG, 2);
+      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_BIRCH_LOG_SLAB, Blocks.STRIPPED_BIRCH_LOG, 2);
+      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_JUNGLE_LOG_SLAB, Blocks.STRIPPED_JUNGLE_LOG, 2);
+      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_ACACIA_LOG_SLAB, Blocks.STRIPPED_ACACIA_LOG, 2);
+      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_DARK_OAK_LOG_SLAB, Blocks.STRIPPED_DARK_OAK_LOG, 2);
+      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_MANGROVE_LOG_SLAB, Blocks.STRIPPED_MANGROVE_LOG, 2);
+      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_CHERRY_LOG_SLAB, Blocks.STRIPPED_CHERRY_LOG, 2);
+      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_CRIMSON_STEM_SLAB, Blocks.STRIPPED_CRIMSON_STEM, 2);
+      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_WARPED_STEM_SLAB, Blocks.STRIPPED_WARPED_STEM, 2);
 
-      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.GLASS_SLAB, Blocks.GLASS, 2);
+      offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.GLASS_SLAB, Blocks.GLASS, 2);
 
       // Shaped
-      offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.IRON_SLAB, Blocks.IRON_BLOCK, null);
-      offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.LAPIS_SLAB, Blocks.LAPIS_BLOCK, null);
-      offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.GOLD_SLAB, Blocks.GOLD_BLOCK, null);
-      offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.DIAMOND_SLAB, Blocks.DIAMOND_BLOCK, null);
-      offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.EMERALD_SLAB, Blocks.EMERALD_BLOCK, null);
+      offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.IRON_SLAB, Blocks.IRON_BLOCK, null);
+      offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LAPIS_SLAB, Blocks.LAPIS_BLOCK, null);
+      offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.GOLD_SLAB, Blocks.GOLD_BLOCK, null);
+      offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DIAMOND_SLAB, Blocks.DIAMOND_BLOCK, null);
+      offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.EMERALD_SLAB, Blocks.EMERALD_BLOCK, null);
 
-      offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.OAK_LOG_SLAB, Blocks.OAK_LOG, "log_slab");
-      offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.SPRUCE_LOG_SLAB, Blocks.SPRUCE_LOG, "log_slab");
-      offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.BIRCH_LOG_SLAB, Blocks.BIRCH_LOG, "log_slab");
-      offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.JUNGLE_LOG_SLAB, Blocks.JUNGLE_LOG, "log_slab");
-      offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.ACACIA_LOG_SLAB, Blocks.ACACIA_LOG, "log_slab");
-      offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.DARK_OAK_LOG_SLAB, Blocks.DARK_OAK_LOG, "log_slab");
-      offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.MANGROVE_LOG_SLAB, Blocks.MANGROVE_LOG, "log_slab");
-      offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.CHERRY_LOG_SLAB, Blocks.CHERRY_LOG, "log_slab");
-      offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.CRIMSON_STEM_SLAB, Blocks.CRIMSON_STEM, "log_slab");
+      offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.OAK_LOG_SLAB, Blocks.OAK_LOG, "log_slab");
+      offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SPRUCE_LOG_SLAB, Blocks.SPRUCE_LOG, "log_slab");
+      offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BIRCH_LOG_SLAB, Blocks.BIRCH_LOG, "log_slab");
+      offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.JUNGLE_LOG_SLAB, Blocks.JUNGLE_LOG, "log_slab");
+      offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ACACIA_LOG_SLAB, Blocks.ACACIA_LOG, "log_slab");
+      offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARK_OAK_LOG_SLAB, Blocks.DARK_OAK_LOG, "log_slab");
+      offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MANGROVE_LOG_SLAB, Blocks.MANGROVE_LOG, "log_slab");
+      offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHERRY_LOG_SLAB, Blocks.CHERRY_LOG, "log_slab");
+      offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRIMSON_STEM_SLAB, Blocks.CRIMSON_STEM, "log_slab");
 
-      offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.STRIPPED_OAK_LOG_SLAB, Blocks.STRIPPED_OAK_LOG, "log_slab");
-      offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.STRIPPED_SPRUCE_LOG_SLAB, Blocks.STRIPPED_SPRUCE_LOG, "log_slab");
-      offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.STRIPPED_BIRCH_LOG_SLAB, Blocks.STRIPPED_BIRCH_LOG, "log_slab");
-      offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.STRIPPED_JUNGLE_LOG_SLAB, Blocks.STRIPPED_JUNGLE_LOG, "log_slab");
-      offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.STRIPPED_ACACIA_LOG_SLAB, Blocks.STRIPPED_ACACIA_LOG, "log_slab");
-      offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.STRIPPED_DARK_OAK_LOG_SLAB, Blocks.STRIPPED_DARK_OAK_LOG, "log_slab");
-      offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.STRIPPED_MANGROVE_LOG_SLAB, Blocks.STRIPPED_MANGROVE_LOG, "log_slab");
-      offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.STRIPPED_CHERRY_LOG_SLAB, Blocks.STRIPPED_CHERRY_LOG, "log_slab");
-      offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.STRIPPED_CRIMSON_STEM_SLAB, Blocks.STRIPPED_CRIMSON_STEM, "log_slab");
+      offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_OAK_LOG_SLAB, Blocks.STRIPPED_OAK_LOG, "log_slab");
+      offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_SPRUCE_LOG_SLAB, Blocks.STRIPPED_SPRUCE_LOG, "log_slab");
+      offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_BIRCH_LOG_SLAB, Blocks.STRIPPED_BIRCH_LOG, "log_slab");
+      offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_JUNGLE_LOG_SLAB, Blocks.STRIPPED_JUNGLE_LOG, "log_slab");
+      offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_ACACIA_LOG_SLAB, Blocks.STRIPPED_ACACIA_LOG, "log_slab");
+      offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_DARK_OAK_LOG_SLAB, Blocks.STRIPPED_DARK_OAK_LOG, "log_slab");
+      offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_MANGROVE_LOG_SLAB, Blocks.STRIPPED_MANGROVE_LOG, "log_slab");
+      offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_CHERRY_LOG_SLAB, Blocks.STRIPPED_CHERRY_LOG, "log_slab");
+      offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_CRIMSON_STEM_SLAB, Blocks.STRIPPED_CRIMSON_STEM, "log_slab");
 
-      offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Modblocks.GLASS_SLAB, Blocks.GLASS, null);
+      offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.GLASS_SLAB, Blocks.GLASS, null);
     }
 
     private void offerShapedSlabRecipe(RecipeExporter exporter, RecipeCategory category, Block slab, Block block, String group) {

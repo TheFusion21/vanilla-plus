@@ -10,7 +10,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
-public class Modblocks {
+public class ModBlocks {
   // Slabs
   public static final Block IRON_SLAB = registerBlock("iron_slab", new SlabBlock(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK)));
   public static final Block LAPIS_SLAB = registerBlock("lapis_slab", new SlabBlock(AbstractBlock.Settings.copy(Blocks.LAPIS_BLOCK)));
@@ -89,7 +89,7 @@ public class Modblocks {
   }
 
   public static void registerModBlocks() {
-    ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(Modblocks::addBlockToBuildingBlockGroup);
-    ItemGroupEvents.modifyEntriesEvent(ItemGroups.COLORED_BLOCKS).register(Modblocks::addBlockToColoredBlockGroup);
+    ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(ModBlocks::addBlockToBuildingBlockGroup);
+    ItemGroupEvents.modifyEntriesEvent(ItemGroups.COLORED_BLOCKS).register(ModBlocks::addBlockToColoredBlockGroup);
   }
 }

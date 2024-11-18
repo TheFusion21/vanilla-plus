@@ -1,7 +1,7 @@
 package com.kayhennig.vanplus.datagen;
 
 import com.kayhennig.vanplus.ModItems;
-import com.kayhennig.vanplus.Modblocks;
+import com.kayhennig.vanplus.ModBlocks;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
@@ -21,35 +21,35 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-      generateBlockStateSlabModel(blockStateModelGenerator, Blocks.IRON_BLOCK, Modblocks.IRON_SLAB);
-      generateBlockStateSlabModel(blockStateModelGenerator, Blocks.LAPIS_BLOCK, Modblocks.LAPIS_SLAB);
-      generateBlockStateSlabModel(blockStateModelGenerator, Blocks.GOLD_BLOCK, Modblocks.GOLD_SLAB);
-      generateBlockStateSlabModel(blockStateModelGenerator, Blocks.DIAMOND_BLOCK, Modblocks.DIAMOND_SLAB);
-      generateBlockStateSlabModel(blockStateModelGenerator, Blocks.EMERALD_BLOCK, Modblocks.EMERALD_SLAB);
+      generateBlockStateSlabModel(blockStateModelGenerator, Blocks.IRON_BLOCK, ModBlocks.IRON_SLAB);
+      generateBlockStateSlabModel(blockStateModelGenerator, Blocks.LAPIS_BLOCK, ModBlocks.LAPIS_SLAB);
+      generateBlockStateSlabModel(blockStateModelGenerator, Blocks.GOLD_BLOCK, ModBlocks.GOLD_SLAB);
+      generateBlockStateSlabModel(blockStateModelGenerator, Blocks.DIAMOND_BLOCK, ModBlocks.DIAMOND_SLAB);
+      generateBlockStateSlabModel(blockStateModelGenerator, Blocks.EMERALD_BLOCK, ModBlocks.EMERALD_SLAB);
 
-      generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.OAK_LOG, Modblocks.OAK_LOG_SLAB);
-      generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.SPRUCE_LOG, Modblocks.SPRUCE_LOG_SLAB);
-      generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.BIRCH_LOG, Modblocks.BIRCH_LOG_SLAB);
-      generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.JUNGLE_LOG, Modblocks.JUNGLE_LOG_SLAB);
-      generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.ACACIA_LOG, Modblocks.ACACIA_LOG_SLAB);
-      generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.DARK_OAK_LOG, Modblocks.DARK_OAK_LOG_SLAB);
-      generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.MANGROVE_LOG, Modblocks.MANGROVE_LOG_SLAB);
-      generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.CHERRY_LOG, Modblocks.CHERRY_LOG_SLAB);
-      generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.CRIMSON_STEM, Modblocks.CRIMSON_STEM_SLAB);
-      generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.WARPED_STEM, Modblocks.WARPED_STEM_SLAB);
+      generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.OAK_LOG, ModBlocks.OAK_LOG_SLAB);
+      generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.SPRUCE_LOG, ModBlocks.SPRUCE_LOG_SLAB);
+      generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.BIRCH_LOG, ModBlocks.BIRCH_LOG_SLAB);
+      generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.JUNGLE_LOG, ModBlocks.JUNGLE_LOG_SLAB);
+      generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.ACACIA_LOG, ModBlocks.ACACIA_LOG_SLAB);
+      generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.DARK_OAK_LOG, ModBlocks.DARK_OAK_LOG_SLAB);
+      generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.MANGROVE_LOG, ModBlocks.MANGROVE_LOG_SLAB);
+      generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.CHERRY_LOG, ModBlocks.CHERRY_LOG_SLAB);
+      generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.CRIMSON_STEM, ModBlocks.CRIMSON_STEM_SLAB);
+      generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.WARPED_STEM, ModBlocks.WARPED_STEM_SLAB);
 
-      generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.STRIPPED_OAK_LOG, Modblocks.STRIPPED_OAK_LOG_SLAB);
-      generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.STRIPPED_SPRUCE_LOG, Modblocks.STRIPPED_SPRUCE_LOG_SLAB);
-      generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.STRIPPED_BIRCH_LOG, Modblocks.STRIPPED_BIRCH_LOG_SLAB);
-      generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.STRIPPED_JUNGLE_LOG, Modblocks.STRIPPED_JUNGLE_LOG_SLAB);
-      generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.STRIPPED_ACACIA_LOG, Modblocks.STRIPPED_ACACIA_LOG_SLAB);
-      generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.STRIPPED_DARK_OAK_LOG, Modblocks.STRIPPED_DARK_OAK_LOG_SLAB);
-      generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.STRIPPED_MANGROVE_LOG, Modblocks.STRIPPED_MANGROVE_LOG_SLAB);
-      generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.STRIPPED_CHERRY_LOG, Modblocks.STRIPPED_CHERRY_LOG_SLAB);
-      generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.STRIPPED_CRIMSON_STEM, Modblocks.STRIPPED_CRIMSON_STEM_SLAB);
-      generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.STRIPPED_WARPED_STEM, Modblocks.STRIPPED_WARPED_STEM_SLAB);
+      generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.STRIPPED_OAK_LOG, ModBlocks.STRIPPED_OAK_LOG_SLAB);
+      generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.STRIPPED_SPRUCE_LOG, ModBlocks.STRIPPED_SPRUCE_LOG_SLAB);
+      generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.STRIPPED_BIRCH_LOG, ModBlocks.STRIPPED_BIRCH_LOG_SLAB);
+      generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.STRIPPED_JUNGLE_LOG, ModBlocks.STRIPPED_JUNGLE_LOG_SLAB);
+      generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.STRIPPED_ACACIA_LOG, ModBlocks.STRIPPED_ACACIA_LOG_SLAB);
+      generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.STRIPPED_DARK_OAK_LOG, ModBlocks.STRIPPED_DARK_OAK_LOG_SLAB);
+      generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.STRIPPED_MANGROVE_LOG, ModBlocks.STRIPPED_MANGROVE_LOG_SLAB);
+      generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.STRIPPED_CHERRY_LOG, ModBlocks.STRIPPED_CHERRY_LOG_SLAB);
+      generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.STRIPPED_CRIMSON_STEM, ModBlocks.STRIPPED_CRIMSON_STEM_SLAB);
+      generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.STRIPPED_WARPED_STEM, ModBlocks.STRIPPED_WARPED_STEM_SLAB);
 
-      generateBlockStateSlabModel(blockStateModelGenerator, Blocks.GLASS, Modblocks.GLASS_SLAB);
+      generateBlockStateSlabModel(blockStateModelGenerator, Blocks.GLASS, ModBlocks.GLASS_SLAB);
     }
 
     private void generateBlockStateSlabModel(BlockStateModelGenerator blockStateModelGenerator, Block mainBlock, Block slabBlock) {

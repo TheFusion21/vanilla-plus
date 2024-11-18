@@ -2,7 +2,7 @@ package com.kayhennig.vanplus.datagen;
 
 import java.util.concurrent.CompletableFuture;
 
-import com.kayhennig.vanplus.Modblocks;
+import com.kayhennig.vanplus.ModBlocks;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
@@ -16,33 +16,33 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
   @Override
   public void generate() {
     // Slabs
-    addDrop(Modblocks.IRON_SLAB, slabDrops(Modblocks.IRON_SLAB));
-    addDrop(Modblocks.LAPIS_SLAB, slabDrops(Modblocks.LAPIS_SLAB));
-    addDrop(Modblocks.GOLD_SLAB, slabDrops(Modblocks.GOLD_SLAB));
-    addDrop(Modblocks.DIAMOND_SLAB, slabDrops(Modblocks.DIAMOND_SLAB));
-    addDrop(Modblocks.EMERALD_SLAB, slabDrops(Modblocks.EMERALD_SLAB));
+    addDrop(ModBlocks.IRON_SLAB, slabDrops(ModBlocks.IRON_SLAB));
+    addDrop(ModBlocks.LAPIS_SLAB, slabDrops(ModBlocks.LAPIS_SLAB));
+    addDrop(ModBlocks.GOLD_SLAB, slabDrops(ModBlocks.GOLD_SLAB));
+    addDrop(ModBlocks.DIAMOND_SLAB, slabDrops(ModBlocks.DIAMOND_SLAB));
+    addDrop(ModBlocks.EMERALD_SLAB, slabDrops(ModBlocks.EMERALD_SLAB));
 
-    addDrop(Modblocks.OAK_LOG_SLAB, slabDrops(Modblocks.OAK_LOG_SLAB));
-    addDrop(Modblocks.SPRUCE_LOG_SLAB, slabDrops(Modblocks.SPRUCE_LOG_SLAB));
-    addDrop(Modblocks.BIRCH_LOG_SLAB, slabDrops(Modblocks.BIRCH_LOG_SLAB));
-    addDrop(Modblocks.JUNGLE_LOG_SLAB, slabDrops(Modblocks.JUNGLE_LOG_SLAB));
-    addDrop(Modblocks.ACACIA_LOG_SLAB, slabDrops(Modblocks.ACACIA_LOG_SLAB));
-    addDrop(Modblocks.DARK_OAK_LOG_SLAB, slabDrops(Modblocks.DARK_OAK_LOG_SLAB));
-    addDrop(Modblocks.MANGROVE_LOG_SLAB, slabDrops(Modblocks.MANGROVE_LOG_SLAB));
-    addDrop(Modblocks.CHERRY_LOG_SLAB, slabDrops(Modblocks.CHERRY_LOG_SLAB));
-    addDrop(Modblocks.CRIMSON_STEM_SLAB, slabDrops(Modblocks.CRIMSON_STEM_SLAB));
-    addDrop(Modblocks.WARPED_STEM_SLAB, slabDrops(Modblocks.WARPED_STEM_SLAB));
+    addDrop(ModBlocks.OAK_LOG_SLAB, slabDrops(ModBlocks.OAK_LOG_SLAB));
+    addDrop(ModBlocks.SPRUCE_LOG_SLAB, slabDrops(ModBlocks.SPRUCE_LOG_SLAB));
+    addDrop(ModBlocks.BIRCH_LOG_SLAB, slabDrops(ModBlocks.BIRCH_LOG_SLAB));
+    addDrop(ModBlocks.JUNGLE_LOG_SLAB, slabDrops(ModBlocks.JUNGLE_LOG_SLAB));
+    addDrop(ModBlocks.ACACIA_LOG_SLAB, slabDrops(ModBlocks.ACACIA_LOG_SLAB));
+    addDrop(ModBlocks.DARK_OAK_LOG_SLAB, slabDrops(ModBlocks.DARK_OAK_LOG_SLAB));
+    addDrop(ModBlocks.MANGROVE_LOG_SLAB, slabDrops(ModBlocks.MANGROVE_LOG_SLAB));
+    addDrop(ModBlocks.CHERRY_LOG_SLAB, slabDrops(ModBlocks.CHERRY_LOG_SLAB));
+    addDrop(ModBlocks.CRIMSON_STEM_SLAB, slabDrops(ModBlocks.CRIMSON_STEM_SLAB));
+    addDrop(ModBlocks.WARPED_STEM_SLAB, slabDrops(ModBlocks.WARPED_STEM_SLAB));
 
-    addDrop(Modblocks.STRIPPED_OAK_LOG_SLAB, slabDrops(Modblocks.STRIPPED_OAK_LOG_SLAB));
-    addDrop(Modblocks.STRIPPED_SPRUCE_LOG_SLAB, slabDrops(Modblocks.STRIPPED_SPRUCE_LOG_SLAB));
-    addDrop(Modblocks.STRIPPED_BIRCH_LOG_SLAB, slabDrops(Modblocks.STRIPPED_BIRCH_LOG_SLAB));
-    addDrop(Modblocks.STRIPPED_JUNGLE_LOG_SLAB, slabDrops(Modblocks.STRIPPED_JUNGLE_LOG_SLAB));
-    addDrop(Modblocks.STRIPPED_ACACIA_LOG_SLAB, slabDrops(Modblocks.STRIPPED_ACACIA_LOG_SLAB));
-    addDrop(Modblocks.STRIPPED_DARK_OAK_LOG_SLAB, slabDrops(Modblocks.STRIPPED_DARK_OAK_LOG_SLAB));
-    addDrop(Modblocks.STRIPPED_MANGROVE_LOG_SLAB, slabDrops(Modblocks.STRIPPED_MANGROVE_LOG_SLAB));
-    addDrop(Modblocks.STRIPPED_CHERRY_LOG_SLAB, slabDrops(Modblocks.STRIPPED_CHERRY_LOG_SLAB));
-    addDrop(Modblocks.STRIPPED_CRIMSON_STEM_SLAB, slabDrops(Modblocks.STRIPPED_CRIMSON_STEM_SLAB));
-    addDrop(Modblocks.STRIPPED_CRIMSON_STEM_SLAB, slabDrops(Modblocks.STRIPPED_CRIMSON_STEM_SLAB));
+    addDrop(ModBlocks.STRIPPED_OAK_LOG_SLAB, slabDrops(ModBlocks.STRIPPED_OAK_LOG_SLAB));
+    addDrop(ModBlocks.STRIPPED_SPRUCE_LOG_SLAB, slabDrops(ModBlocks.STRIPPED_SPRUCE_LOG_SLAB));
+    addDrop(ModBlocks.STRIPPED_BIRCH_LOG_SLAB, slabDrops(ModBlocks.STRIPPED_BIRCH_LOG_SLAB));
+    addDrop(ModBlocks.STRIPPED_JUNGLE_LOG_SLAB, slabDrops(ModBlocks.STRIPPED_JUNGLE_LOG_SLAB));
+    addDrop(ModBlocks.STRIPPED_ACACIA_LOG_SLAB, slabDrops(ModBlocks.STRIPPED_ACACIA_LOG_SLAB));
+    addDrop(ModBlocks.STRIPPED_DARK_OAK_LOG_SLAB, slabDrops(ModBlocks.STRIPPED_DARK_OAK_LOG_SLAB));
+    addDrop(ModBlocks.STRIPPED_MANGROVE_LOG_SLAB, slabDrops(ModBlocks.STRIPPED_MANGROVE_LOG_SLAB));
+    addDrop(ModBlocks.STRIPPED_CHERRY_LOG_SLAB, slabDrops(ModBlocks.STRIPPED_CHERRY_LOG_SLAB));
+    addDrop(ModBlocks.STRIPPED_CRIMSON_STEM_SLAB, slabDrops(ModBlocks.STRIPPED_CRIMSON_STEM_SLAB));
+    addDrop(ModBlocks.STRIPPED_CRIMSON_STEM_SLAB, slabDrops(ModBlocks.STRIPPED_CRIMSON_STEM_SLAB));
 
   }
 }
