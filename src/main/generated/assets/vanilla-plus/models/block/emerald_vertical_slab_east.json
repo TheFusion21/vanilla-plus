@@ -1,8 +1,0 @@
-{
-  "parent": "vanilla-plus:block/vertical_slab_east",
-  "textures": {
-    "bottom": "minecraft:block/emerald_block",
-    "side": "vanilla-plus:block/emerald_slab_side",
-    "top": "minecraft:block/emerald_block"
-  }
-}

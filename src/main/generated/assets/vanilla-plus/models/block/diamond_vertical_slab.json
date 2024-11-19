@@ -1,8 +1,0 @@
-{
-  "parent": "vanilla-plus:block/vertical_slab_north",
-  "textures": {
-    "bottom": "minecraft:block/diamond_block",
-    "side": "vanilla-plus:block/diamond_slab_side",
-    "top": "minecraft:block/diamond_block"
-  }
-}

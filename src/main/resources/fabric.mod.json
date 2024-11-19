@@ -1,8 +1,8 @@
 {
 	"schemaVersion": 1,
-	"id": "vanilla-plus",
+	"id": "vanilla-plus-plus",
 	"version": "${version}",
-	"name": "vanilla-plus",
+	"name": "vanilla-plus-plus",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
 		"TheFusion21"
@@ -12,23 +12,23 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/vanilla-plus/icon.png",
+	"icon": "assets/vanilla-plus-plus/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.kayhennig.vanplus.Vanillaplus"
+			"com.kayhennig.vanplusplus.Vanillaplusplus"
 		],
 		"client": [
-			"com.kayhennig.vanplus.VanillaplusClient"
+			"com.kayhennig.vanplusplus.VanillaplusplusClient"
 		],
 		"fabric-datagen": [
-			"com.kayhennig.vanplus.VanillaplusDataGenerator"
+			"com.kayhennig.vanplusplus.VanillaplusplusDataGenerator"
 		]
 	},
 	"mixins": [
-		"vanilla-plus.mixins.json",
+		"vanilla-plus-plus.mixins.json",
 		{
-			"config": "vanilla-plus.client.mixins.json",
+			"config": "vanilla-plus-plus.client.mixins.json",
 			"environment": "client"
 		}
 	],

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "vanilla-plus-plus:block/emerald_slab"
+    },
+    "type=double": {
+      "model": "vanilla-plus-plus:block/emerald_slab_double"
+    },
+    "type=top": {
+      "model": "vanilla-plus-plus:block/emerald_slab_top"
+    }
+  }
+}
