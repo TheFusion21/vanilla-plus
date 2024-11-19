@@ -80,24 +80,15 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.WARPED_PLANKS_VERTICAL_SLAB, verticalSlabDrops(ModBlocks.WARPED_PLANKS_VERTICAL_SLAB));
 
         addDrop(ModBlocks.STRIPPED_OAK_LOG_VERTICAL_SLAB, verticalSlabDrops(ModBlocks.STRIPPED_OAK_LOG_VERTICAL_SLAB));
-        addDrop(ModBlocks.STRIPPED_SPRUCE_LOG_VERTICAL_SLAB,
-                verticalSlabDrops(ModBlocks.STRIPPED_SPRUCE_LOG_VERTICAL_SLAB));
-        addDrop(ModBlocks.STRIPPED_BIRCH_LOG_VERTICAL_SLAB,
-                verticalSlabDrops(ModBlocks.STRIPPED_BIRCH_LOG_VERTICAL_SLAB));
-        addDrop(ModBlocks.STRIPPED_JUNGLE_LOG_VERTICAL_SLAB,
-                verticalSlabDrops(ModBlocks.STRIPPED_JUNGLE_LOG_VERTICAL_SLAB));
-        addDrop(ModBlocks.STRIPPED_ACACIA_LOG_VERTICAL_SLAB,
-                verticalSlabDrops(ModBlocks.STRIPPED_ACACIA_LOG_VERTICAL_SLAB));
-        addDrop(ModBlocks.STRIPPED_DARK_OAK_LOG_VERTICAL_SLAB,
-                verticalSlabDrops(ModBlocks.STRIPPED_DARK_OAK_LOG_VERTICAL_SLAB));
-        addDrop(ModBlocks.STRIPPED_MANGROVE_LOG_VERTICAL_SLAB,
-                verticalSlabDrops(ModBlocks.STRIPPED_MANGROVE_LOG_VERTICAL_SLAB));
-        addDrop(ModBlocks.STRIPPED_CHERRY_LOG_VERTICAL_SLAB,
-                verticalSlabDrops(ModBlocks.STRIPPED_CHERRY_LOG_VERTICAL_SLAB));
-        addDrop(ModBlocks.STRIPPED_CRIMSON_STEM_VERTICAL_SLAB,
-                verticalSlabDrops(ModBlocks.STRIPPED_CRIMSON_STEM_VERTICAL_SLAB));
-        addDrop(ModBlocks.STRIPPED_WARPED_STEM_VERTICAL_SLAB,
-                verticalSlabDrops(ModBlocks.STRIPPED_WARPED_STEM_VERTICAL_SLAB));
+        addDrop(ModBlocks.STRIPPED_SPRUCE_LOG_VERTICAL_SLAB, verticalSlabDrops(ModBlocks.STRIPPED_SPRUCE_LOG_VERTICAL_SLAB));
+        addDrop(ModBlocks.STRIPPED_BIRCH_LOG_VERTICAL_SLAB, verticalSlabDrops(ModBlocks.STRIPPED_BIRCH_LOG_VERTICAL_SLAB));
+        addDrop(ModBlocks.STRIPPED_JUNGLE_LOG_VERTICAL_SLAB, verticalSlabDrops(ModBlocks.STRIPPED_JUNGLE_LOG_VERTICAL_SLAB));
+        addDrop(ModBlocks.STRIPPED_ACACIA_LOG_VERTICAL_SLAB, verticalSlabDrops(ModBlocks.STRIPPED_ACACIA_LOG_VERTICAL_SLAB));
+        addDrop(ModBlocks.STRIPPED_DARK_OAK_LOG_VERTICAL_SLAB, verticalSlabDrops(ModBlocks.STRIPPED_DARK_OAK_LOG_VERTICAL_SLAB));
+        addDrop(ModBlocks.STRIPPED_MANGROVE_LOG_VERTICAL_SLAB, verticalSlabDrops(ModBlocks.STRIPPED_MANGROVE_LOG_VERTICAL_SLAB));
+        addDrop(ModBlocks.STRIPPED_CHERRY_LOG_VERTICAL_SLAB, verticalSlabDrops(ModBlocks.STRIPPED_CHERRY_LOG_VERTICAL_SLAB));
+        addDrop(ModBlocks.STRIPPED_CRIMSON_STEM_VERTICAL_SLAB, verticalSlabDrops(ModBlocks.STRIPPED_CRIMSON_STEM_VERTICAL_SLAB));
+        addDrop(ModBlocks.STRIPPED_WARPED_STEM_VERTICAL_SLAB, verticalSlabDrops(ModBlocks.STRIPPED_WARPED_STEM_VERTICAL_SLAB));
 
         addDrop(ModBlocks.OAK_LOG_VERTICAL_SLAB, verticalSlabDrops(ModBlocks.OAK_LOG_VERTICAL_SLAB));
         addDrop(ModBlocks.SPRUCE_LOG_VERTICAL_SLAB, verticalSlabDrops(ModBlocks.SPRUCE_LOG_VERTICAL_SLAB));
