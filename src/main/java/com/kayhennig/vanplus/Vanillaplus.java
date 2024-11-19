@@ -5,6 +5,8 @@ import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.kayhennig.vanplus.item.ModItemGroups;
+
 public class Vanillaplus implements ModInitializer {
 	public static final String MOD_ID = "vanilla-plus";
 
@@ -17,6 +19,7 @@ public class Vanillaplus implements ModInitializer {
 	public void onInitialize() {
 		ModBlocks.registerModBlocks();
 		ModItems.registerItems();
+		ModItemGroups.init();
 	}
 
 }

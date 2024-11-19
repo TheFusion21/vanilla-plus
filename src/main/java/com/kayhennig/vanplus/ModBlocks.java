@@ -1,6 +1,7 @@
 package com.kayhennig.vanplus;
 
 import com.kayhennig.vanplus.block.VerticalSlabBlock;
+import com.kayhennig.vanplus.item.ModItemGroups;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -241,9 +242,106 @@ public class ModBlocks {
         entries.add(GLASS_SLAB);
     }
 
+    private static void addBlockToModBlockGroup(FabricItemGroupEntries entries) {
+        entries.add(IRON_SLAB);
+        entries.add(LAPIS_SLAB);
+        entries.add(GOLD_SLAB);
+        entries.add(DIAMOND_SLAB);
+        entries.add(EMERALD_SLAB);
+
+        entries.add(OAK_LOG_SLAB);
+        entries.add(SPRUCE_LOG_SLAB);
+        entries.add(BIRCH_LOG_SLAB);
+        entries.add(JUNGLE_LOG_SLAB);
+        entries.add(ACACIA_LOG_SLAB);
+        entries.add(DARK_OAK_LOG_SLAB);
+        entries.add(MANGROVE_LOG_SLAB);
+        entries.add(CHERRY_LOG_SLAB);
+        entries.add(CRIMSON_STEM_SLAB);
+        entries.add(WARPED_STEM_SLAB);
+
+        entries.add(STRIPPED_OAK_LOG_SLAB);
+        entries.add(STRIPPED_SPRUCE_LOG_SLAB);
+        entries.add(STRIPPED_BIRCH_LOG_SLAB);
+        entries.add(STRIPPED_JUNGLE_LOG_SLAB);
+        entries.add(STRIPPED_ACACIA_LOG_SLAB);
+        entries.add(STRIPPED_DARK_OAK_LOG_SLAB);
+        entries.add(STRIPPED_MANGROVE_LOG_SLAB);
+        entries.add(STRIPPED_CHERRY_LOG_SLAB);
+        entries.add(STRIPPED_CRIMSON_STEM_SLAB);
+        entries.add(STRIPPED_WARPED_STEM_SLAB);
+
+        entries.add(IRON_VERTICAL_SLAB);
+        entries.add(LAPIS_VERTICAL_SLAB);
+        entries.add(GOLD_VERTICAL_SLAB);
+        entries.add(DIAMOND_VERTICAL_SLAB);
+        entries.add(EMERALD_VERTICAL_SLAB);
+
+        entries.add(OAK_PLANKS_VERTICAL_SLAB);
+        entries.add(SPRUCE_PLANKS_VERTICAL_SLAB);
+        entries.add(BIRCH_PLANKS_VERTICAL_SLAB);
+        entries.add(JUNGLE_PLANKS_VERTICAL_SLAB);
+        entries.add(ACACIA_PLANKS_VERTICAL_SLAB);
+        entries.add(DARK_OAK_PLANKS_VERTICAL_SLAB);
+        entries.add(MANGROVE_PLANKS_VERTICAL_SLAB);
+        entries.add(CHERRY_PLANKS_VERTICAL_SLAB);
+        entries.add(CRIMSON_PLANKS_VERTICAL_SLAB);
+        entries.add(WARPED_PLANKS_VERTICAL_SLAB);
+
+        entries.add(STRIPPED_OAK_LOG_VERTICAL_SLAB);
+        entries.add(STRIPPED_SPRUCE_LOG_VERTICAL_SLAB);
+        entries.add(STRIPPED_BIRCH_LOG_VERTICAL_SLAB);
+        entries.add(STRIPPED_JUNGLE_LOG_VERTICAL_SLAB);
+        entries.add(STRIPPED_ACACIA_LOG_VERTICAL_SLAB);
+        entries.add(STRIPPED_DARK_OAK_LOG_VERTICAL_SLAB);
+        entries.add(STRIPPED_MANGROVE_LOG_VERTICAL_SLAB);
+        entries.add(STRIPPED_CHERRY_LOG_VERTICAL_SLAB);
+        entries.add(STRIPPED_CRIMSON_STEM_VERTICAL_SLAB);
+        entries.add(STRIPPED_WARPED_STEM_VERTICAL_SLAB);
+
+        entries.add(OAK_LOG_VERTICAL_SLAB);
+        entries.add(SPRUCE_LOG_VERTICAL_SLAB);
+        entries.add(BIRCH_LOG_VERTICAL_SLAB);
+        entries.add(JUNGLE_LOG_VERTICAL_SLAB);
+        entries.add(ACACIA_LOG_VERTICAL_SLAB);
+        entries.add(DARK_OAK_LOG_VERTICAL_SLAB);
+        entries.add(MANGROVE_LOG_VERTICAL_SLAB);
+        entries.add(CHERRY_LOG_VERTICAL_SLAB);
+        entries.add(CRIMSON_STEM_VERTICAL_SLAB);
+        entries.add(WARPED_STEM_VERTICAL_SLAB);
+
+        entries.add(GLASS_SLAB);
+    }
+
+    private static void addBlockToNaturalBlockGroup(FabricItemGroupEntries entries) { 
+        entries.add(OAK_LOG_SLAB);
+        entries.add(SPRUCE_LOG_SLAB);
+        entries.add(BIRCH_LOG_SLAB);
+        entries.add(JUNGLE_LOG_SLAB);
+        entries.add(ACACIA_LOG_SLAB);
+        entries.add(DARK_OAK_LOG_SLAB);
+        entries.add(MANGROVE_LOG_SLAB);
+        entries.add(CHERRY_LOG_SLAB);
+        entries.add(CRIMSON_STEM_SLAB);
+        entries.add(WARPED_STEM_SLAB);
+
+        entries.add(OAK_LOG_VERTICAL_SLAB);
+        entries.add(SPRUCE_LOG_VERTICAL_SLAB);
+        entries.add(BIRCH_LOG_VERTICAL_SLAB);
+        entries.add(JUNGLE_LOG_VERTICAL_SLAB);
+        entries.add(ACACIA_LOG_VERTICAL_SLAB);
+        entries.add(DARK_OAK_LOG_VERTICAL_SLAB);
+        entries.add(MANGROVE_LOG_VERTICAL_SLAB);
+        entries.add(CHERRY_LOG_VERTICAL_SLAB);
+        entries.add(CRIMSON_STEM_VERTICAL_SLAB);
+        entries.add(WARPED_STEM_VERTICAL_SLAB);
+    }
+
     public static void registerModBlocks() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
                 .register(ModBlocks::addBlockToBuildingBlockGroup);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COLORED_BLOCKS).register(ModBlocks::addBlockToColoredBlockGroup);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(ModBlocks::addBlockToNaturalBlockGroup);
+        ItemGroupEvents.modifyEntriesEvent(ModItemGroups.VANPLUS).register(ModBlocks::addBlockToModBlockGroup);
     }
 }
