@@ -2,6 +2,9 @@
   "values": [
     "vanilla-plus:iron_slab",
     "vanilla-plus:lapis_slab",
-    "vanilla-plus:gold_slab"
+    "vanilla-plus:gold_slab",
+    "vanilla-plus:iron_vertical_slab",
+    "vanilla-plus:lapis_vertical_slab",
+    "vanilla-plus:gold_vertical_slab"
   ]
 }

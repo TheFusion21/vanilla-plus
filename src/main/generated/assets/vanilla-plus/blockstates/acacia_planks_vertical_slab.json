@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "type=double_east": {
+      "model": "vanilla-plus:block/acacia_planks_vertical_slab_double_east"
+    },
+    "type=double_north": {
+      "model": "vanilla-plus:block/acacia_planks_vertical_slab_double_north"
+    },
+    "type=east": {
+      "model": "vanilla-plus:block/acacia_planks_vertical_slab_east"
+    },
+    "type=north": {
+      "model": "vanilla-plus:block/acacia_planks_vertical_slab"
+    },
+    "type=south": {
+      "model": "vanilla-plus:block/acacia_planks_vertical_slab_south"
+    },
+    "type=west": {
+      "model": "vanilla-plus:block/acacia_planks_vertical_slab_west"
+    }
+  }
+}

@@ -4,6 +4,11 @@
     "vanilla-plus:lapis_slab",
     "vanilla-plus:gold_slab",
     "vanilla-plus:diamond_slab",
-    "vanilla-plus:emerald_slab"
+    "vanilla-plus:emerald_slab",
+    "vanilla-plus:iron_vertical_slab",
+    "vanilla-plus:lapis_vertical_slab",
+    "vanilla-plus:gold_vertical_slab",
+    "vanilla-plus:diamond_vertical_slab",
+    "vanilla-plus:emerald_vertical_slab"
   ]
 }
