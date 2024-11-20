@@ -15,6 +15,7 @@ import net.minecraft.data.client.BlockStateSupplier;
 import net.minecraft.data.client.BlockStateVariant;
 import net.minecraft.data.client.BlockStateVariantMap;
 import net.minecraft.data.client.ItemModelGenerator;
+import net.minecraft.data.client.ModelIds;
 import net.minecraft.data.client.Models;
 import net.minecraft.data.client.TextureKey;
 import net.minecraft.data.client.TextureMap;
@@ -31,6 +32,7 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         generateBlockStateSlabModels(blockStateModelGenerator);
         generateBlockStateVerticalSlabModels(blockStateModelGenerator);
+        generateHorizontalGlassPanes(blockStateModelGenerator);
     }
 
     private void generateBlockStateSlabModels(BlockStateModelGenerator blockStateModelGenerator) {
@@ -106,6 +108,16 @@ public class ModModelProvider extends FabricModelProvider {
         generateBlockStateVerticalSlabFromPlankModel(blockStateModelGenerator, Blocks.WARPED_PLANKS, Blocks.WARPED_SLAB, ModBlocks.WARPED_PLANKS_VERTICAL_SLAB);
 
         generateBlockStateVerticalSlabModel(blockStateModelGenerator, Blocks.GLASS, ModBlocks.GLASS_SLAB, ModBlocks.GLASS_VERTICAL_SLAB);
+    }
+
+    private void generateHorizontalGlassPanes(BlockStateModelGenerator blockStateModelGenerator) {
+        TextureMap textureMap = TextureMap.paneAndTopForEdge(Blocks.GLASS, Blocks.GLASS_PANE);
+
+        Identifier identifier = ModModels.HORIZONTAL_PANE.upload(ModBlocks.GLASS_HORIZONTAL_PANE, textureMap,
+                blockStateModelGenerator.modelCollector);
+
+        // no states needed, only one model
+        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.GLASS_HORIZONTAL_PANE, BlockStateVariant.create().put(VariantSettings.MODEL, identifier)));
     }
 
     private void generateBlockStateSlabModel(BlockStateModelGenerator blockStateModelGenerator, Block mainBlock,
@@ -234,6 +246,8 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         // Food
         itemModelGenerator.register(ModItems.PEAR, Models.GENERATED);
+
+        Models.GENERATED.upload(ModelIds.getItemModelId(ModBlocks.GLASS_HORIZONTAL_PANE.asItem()), TextureMap.layer0(Blocks.GLASS), itemModelGenerator.writer);
     }
 
 }

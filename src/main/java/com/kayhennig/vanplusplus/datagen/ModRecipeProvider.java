@@ -94,6 +94,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.GLASS_VERTICAL_SLAB, Blocks.GLASS, null);
 
+        offerShapedHorizontalPaneRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.GLASS_HORIZONTAL_PANE, Blocks.GLASS, null);
     }
 
     private void offerShapedSlabRecipe(RecipeExporter exporter, RecipeCategory category, Block slab, Block block,
@@ -119,5 +120,17 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(FabricRecipeProvider.hasItem(block),
                         FabricRecipeProvider.conditionsFromItem(block))
                 .offerTo(exporter);
+    }
+
+    private void offerShapedHorizontalPaneRecipe(RecipeExporter exporter, RecipeCategory category, Block pane, Block block, String group) {
+        ShapedRecipeJsonBuilder.create(category, pane, 16)
+            .pattern("##")
+            .pattern("##")
+            .pattern("##")
+            .group(group)
+            .input('#', block)
+            .criterion(FabricRecipeProvider.hasItem(block),
+                    FabricRecipeProvider.conditionsFromItem(block))
+            .offerTo(exporter);
     }
 }

@@ -20,9 +20,7 @@ import net.minecraft.util.Identifier;
 public class ModItems {
     // FoodComponents
     public class ModFoodComponents {
-        public static final FoodComponent PEAR = new FoodComponent.Builder().snack().nutrition(1)
-                .saturationModifier(0.3F)
-                .build();
+        public static final FoodComponent PEAR = new FoodComponent.Builder().snack().nutrition(1).saturationModifier(0.3F).build();
     }
 
     // Food

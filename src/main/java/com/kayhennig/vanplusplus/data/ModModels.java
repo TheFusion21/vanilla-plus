@@ -16,6 +16,8 @@ public class ModModels {
     public static final Model DOUBLE_NORTH_SLAB = block("vertical_slab_double_north", "_double_north", TextureKey.BOTTOM, TextureKey.TOP, TextureKey.SIDE);
     public static final Model DOUBLE_EAST_SLAB = block("vertical_slab_double_east", "_double_east", TextureKey.BOTTOM, TextureKey.TOP, TextureKey.SIDE);
 
+    public static final Model HORIZONTAL_PANE = block("horizontal_pane", TextureKey.PANE, TextureKey.EDGE);
+
     private static Model block(String parent, TextureKey... requiredTextureKeys) {
 		return new Model(Optional.of(Identifier.of(Vanillaplusplus.MOD_ID, "block/" + parent)), Optional.empty(), requiredTextureKeys);
 	}
