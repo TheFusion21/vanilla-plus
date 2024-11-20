@@ -111,13 +111,33 @@ public class ModModelProvider extends FabricModelProvider {
     }
 
     private void generateHorizontalGlassPanes(BlockStateModelGenerator blockStateModelGenerator) {
-        TextureMap textureMap = TextureMap.paneAndTopForEdge(Blocks.GLASS, Blocks.GLASS_PANE);
+        generateBlockStateHorizontalGlassPaneModel(blockStateModelGenerator, Blocks.GLASS, Blocks.GLASS_PANE, ModBlocks.GLASS_HORIZONTAL_PANE);
+        generateBlockStateHorizontalGlassPaneModel(blockStateModelGenerator, Blocks.WHITE_STAINED_GLASS, Blocks.WHITE_STAINED_GLASS_PANE, ModBlocks.WHITE_STAINED_GLASS_HORIZONTAL_PANE);
+        generateBlockStateHorizontalGlassPaneModel(blockStateModelGenerator, Blocks.ORANGE_STAINED_GLASS, Blocks.ORANGE_STAINED_GLASS_PANE, ModBlocks.ORANGE_STAINED_GLASS_HORIZONTAL_PANE);
+        generateBlockStateHorizontalGlassPaneModel(blockStateModelGenerator, Blocks.MAGENTA_STAINED_GLASS, Blocks.MAGENTA_STAINED_GLASS_PANE, ModBlocks.MAGENTA_STAINED_GLASS_HORIZONTAL_PANE);
+        generateBlockStateHorizontalGlassPaneModel(blockStateModelGenerator, Blocks.LIGHT_BLUE_STAINED_GLASS, Blocks.LIGHT_BLUE_STAINED_GLASS_PANE, ModBlocks.LIGHT_BLUE_STAINED_GLASS_HORIZONTAL_PANE);
+        generateBlockStateHorizontalGlassPaneModel(blockStateModelGenerator, Blocks.YELLOW_STAINED_GLASS, Blocks.YELLOW_STAINED_GLASS_PANE, ModBlocks.YELLOW_STAINED_GLASS_HORIZONTAL_PANE);
+        generateBlockStateHorizontalGlassPaneModel(blockStateModelGenerator, Blocks.LIME_STAINED_GLASS, Blocks.LIME_STAINED_GLASS_PANE, ModBlocks.LIME_STAINED_GLASS_HORIZONTAL_PANE);
+        generateBlockStateHorizontalGlassPaneModel(blockStateModelGenerator, Blocks.PINK_STAINED_GLASS, Blocks.PINK_STAINED_GLASS_PANE, ModBlocks.PINK_STAINED_GLASS_HORIZONTAL_PANE);
+        generateBlockStateHorizontalGlassPaneModel(blockStateModelGenerator, Blocks.GRAY_STAINED_GLASS, Blocks.GRAY_STAINED_GLASS_PANE, ModBlocks.GRAY_STAINED_GLASS_HORIZONTAL_PANE);
+        generateBlockStateHorizontalGlassPaneModel(blockStateModelGenerator, Blocks.LIGHT_GRAY_STAINED_GLASS, Blocks.LIGHT_GRAY_STAINED_GLASS_PANE, ModBlocks.LIGHT_GRAY_STAINED_GLASS_HORIZONTAL_PANE);
+        generateBlockStateHorizontalGlassPaneModel(blockStateModelGenerator, Blocks.CYAN_STAINED_GLASS, Blocks.CYAN_STAINED_GLASS_PANE, ModBlocks.CYAN_STAINED_GLASS_HORIZONTAL_PANE);
+        generateBlockStateHorizontalGlassPaneModel(blockStateModelGenerator, Blocks.PURPLE_STAINED_GLASS, Blocks.PURPLE_STAINED_GLASS_PANE, ModBlocks.PURPLE_STAINED_GLASS_HORIZONTAL_PANE);
+        generateBlockStateHorizontalGlassPaneModel(blockStateModelGenerator, Blocks.BLUE_STAINED_GLASS, Blocks.BLUE_STAINED_GLASS_PANE, ModBlocks.BLUE_STAINED_GLASS_HORIZONTAL_PANE);
+        generateBlockStateHorizontalGlassPaneModel(blockStateModelGenerator, Blocks.BROWN_STAINED_GLASS, Blocks.BROWN_STAINED_GLASS_PANE, ModBlocks.BROWN_STAINED_GLASS_HORIZONTAL_PANE);
+        generateBlockStateHorizontalGlassPaneModel(blockStateModelGenerator, Blocks.GREEN_STAINED_GLASS, Blocks.GREEN_STAINED_GLASS_PANE, ModBlocks.GREEN_STAINED_GLASS_HORIZONTAL_PANE);
+        generateBlockStateHorizontalGlassPaneModel(blockStateModelGenerator, Blocks.RED_STAINED_GLASS, Blocks.RED_STAINED_GLASS_PANE, ModBlocks.RED_STAINED_GLASS_HORIZONTAL_PANE);
+        generateBlockStateHorizontalGlassPaneModel(blockStateModelGenerator, Blocks.BLACK_STAINED_GLASS, Blocks.BLACK_STAINED_GLASS_PANE, ModBlocks.BLACK_STAINED_GLASS_HORIZONTAL_PANE);
+    }
 
-        Identifier identifier = ModModels.HORIZONTAL_PANE.upload(ModBlocks.GLASS_HORIZONTAL_PANE, textureMap,
+    private void generateBlockStateHorizontalGlassPaneModel(BlockStateModelGenerator blockStateModelGenerator, Block block, Block paneBlock, Block horizontalPaneBlock) {
+        TextureMap textureMap = TextureMap.paneAndTopForEdge(block, paneBlock);
+
+        Identifier identifier = ModModels.HORIZONTAL_PANE.upload(horizontalPaneBlock, textureMap,
                 blockStateModelGenerator.modelCollector);
 
         // no states needed, only one model
-        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.GLASS_HORIZONTAL_PANE, BlockStateVariant.create().put(VariantSettings.MODEL, identifier)));
+        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(horizontalPaneBlock, BlockStateVariant.create().put(VariantSettings.MODEL, identifier)));
     }
 
     private void generateBlockStateSlabModel(BlockStateModelGenerator blockStateModelGenerator, Block mainBlock,
@@ -248,6 +268,22 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.PEAR, Models.GENERATED);
 
         Models.GENERATED.upload(ModelIds.getItemModelId(ModBlocks.GLASS_HORIZONTAL_PANE.asItem()), TextureMap.layer0(Blocks.GLASS), itemModelGenerator.writer);
+        Models.GENERATED.upload(ModelIds.getItemModelId(ModBlocks.WHITE_STAINED_GLASS_HORIZONTAL_PANE.asItem()), TextureMap.layer0(Blocks.WHITE_STAINED_GLASS), itemModelGenerator.writer);
+        Models.GENERATED.upload(ModelIds.getItemModelId(ModBlocks.ORANGE_STAINED_GLASS_HORIZONTAL_PANE.asItem()), TextureMap.layer0(Blocks.ORANGE_STAINED_GLASS), itemModelGenerator.writer);
+        Models.GENERATED.upload(ModelIds.getItemModelId(ModBlocks.MAGENTA_STAINED_GLASS_HORIZONTAL_PANE.asItem()), TextureMap.layer0(Blocks.MAGENTA_STAINED_GLASS), itemModelGenerator.writer);
+        Models.GENERATED.upload(ModelIds.getItemModelId(ModBlocks.LIGHT_BLUE_STAINED_GLASS_HORIZONTAL_PANE.asItem()), TextureMap.layer0(Blocks.LIGHT_BLUE_STAINED_GLASS), itemModelGenerator.writer);
+        Models.GENERATED.upload(ModelIds.getItemModelId(ModBlocks.YELLOW_STAINED_GLASS_HORIZONTAL_PANE.asItem()), TextureMap.layer0(Blocks.YELLOW_STAINED_GLASS), itemModelGenerator.writer);
+        Models.GENERATED.upload(ModelIds.getItemModelId(ModBlocks.LIME_STAINED_GLASS_HORIZONTAL_PANE.asItem()), TextureMap.layer0(Blocks.LIME_STAINED_GLASS), itemModelGenerator.writer);
+        Models.GENERATED.upload(ModelIds.getItemModelId(ModBlocks.PINK_STAINED_GLASS_HORIZONTAL_PANE.asItem()), TextureMap.layer0(Blocks.PINK_STAINED_GLASS), itemModelGenerator.writer);
+        Models.GENERATED.upload(ModelIds.getItemModelId(ModBlocks.GRAY_STAINED_GLASS_HORIZONTAL_PANE.asItem()), TextureMap.layer0(Blocks.GRAY_STAINED_GLASS), itemModelGenerator.writer);
+        Models.GENERATED.upload(ModelIds.getItemModelId(ModBlocks.LIGHT_GRAY_STAINED_GLASS_HORIZONTAL_PANE.asItem()), TextureMap.layer0(Blocks.LIGHT_GRAY_STAINED_GLASS), itemModelGenerator.writer);
+        Models.GENERATED.upload(ModelIds.getItemModelId(ModBlocks.CYAN_STAINED_GLASS_HORIZONTAL_PANE.asItem()), TextureMap.layer0(Blocks.CYAN_STAINED_GLASS), itemModelGenerator.writer);
+        Models.GENERATED.upload(ModelIds.getItemModelId(ModBlocks.PURPLE_STAINED_GLASS_HORIZONTAL_PANE.asItem()), TextureMap.layer0(Blocks.PURPLE_STAINED_GLASS), itemModelGenerator.writer);
+        Models.GENERATED.upload(ModelIds.getItemModelId(ModBlocks.BLUE_STAINED_GLASS_HORIZONTAL_PANE.asItem()), TextureMap.layer0(Blocks.BLUE_STAINED_GLASS), itemModelGenerator.writer);
+        Models.GENERATED.upload(ModelIds.getItemModelId(ModBlocks.BROWN_STAINED_GLASS_HORIZONTAL_PANE.asItem()), TextureMap.layer0(Blocks.BROWN_STAINED_GLASS), itemModelGenerator.writer);
+        Models.GENERATED.upload(ModelIds.getItemModelId(ModBlocks.GREEN_STAINED_GLASS_HORIZONTAL_PANE.asItem()), TextureMap.layer0(Blocks.GREEN_STAINED_GLASS), itemModelGenerator.writer);
+        Models.GENERATED.upload(ModelIds.getItemModelId(ModBlocks.RED_STAINED_GLASS_HORIZONTAL_PANE.asItem()), TextureMap.layer0(Blocks.RED_STAINED_GLASS), itemModelGenerator.writer);
+        Models.GENERATED.upload(ModelIds.getItemModelId(ModBlocks.BLACK_STAINED_GLASS_HORIZONTAL_PANE.asItem()), TextureMap.layer0(Blocks.BLACK_STAINED_GLASS), itemModelGenerator.writer);
     }
 
 }

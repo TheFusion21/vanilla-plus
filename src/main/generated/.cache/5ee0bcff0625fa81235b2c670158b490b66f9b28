@@ -1,7 +1,7 @@
-// 1.21.1	2024-11-20T09:00:24.2451411	vanilla-plus-plus/Tags for minecraft:block
+// 1.21.1	2024-11-20T13:39:49.3500651	vanilla-plus-plus/Tags for minecraft:block
 96e86f63cdac1a70539aff395c9cb1b62320f13e data\minecraft\tags\block\mineable\pickaxe.json
-c55a5e50dbf14137e77a2351b3aca677d305a85b data\minecraft\tags\block\slabs.json
 f495264194aac7257e23e208f04e54972c768a68 data\vanilla-plus-plus\tags\block\glass_slabs.json
+c55a5e50dbf14137e77a2351b3aca677d305a85b data\minecraft\tags\block\slabs.json
 6f54f755978d8d291381d0b30d9b6c598f375b52 data\minecraft\tags\block\needs_iron_tool.json
 0350df98a25f2b657dfcc04d0cb80a9bee478156 data\minecraft\tags\block\needs_stone_tool.json
 f495264194aac7257e23e208f04e54972c768a68 data\minecraft\tags\block\impermeable.json
