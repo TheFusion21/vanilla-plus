@@ -95,6 +95,22 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.GLASS_VERTICAL_SLAB, Blocks.GLASS, null);
 
         offerShapedHorizontalPaneRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.GLASS_HORIZONTAL_PANE, Blocks.GLASS, null);
+        offerShapedHorizontalPaneRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.WHITE_STAINED_GLASS_HORIZONTAL_PANE, Blocks.WHITE_STAINED_GLASS, null);
+        offerShapedHorizontalPaneRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ORANGE_STAINED_GLASS_HORIZONTAL_PANE, Blocks.ORANGE_STAINED_GLASS, null);
+        offerShapedHorizontalPaneRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAGENTA_STAINED_GLASS_HORIZONTAL_PANE, Blocks.MAGENTA_STAINED_GLASS, null);
+        offerShapedHorizontalPaneRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_BLUE_STAINED_GLASS_HORIZONTAL_PANE, Blocks.LIGHT_BLUE_STAINED_GLASS, null);
+        offerShapedHorizontalPaneRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.YELLOW_STAINED_GLASS_HORIZONTAL_PANE, Blocks.YELLOW_STAINED_GLASS, null);
+        offerShapedHorizontalPaneRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIME_STAINED_GLASS_HORIZONTAL_PANE, Blocks.LIME_STAINED_GLASS, null);
+        offerShapedHorizontalPaneRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_STAINED_GLASS_HORIZONTAL_PANE, Blocks.PINK_STAINED_GLASS, null);
+        offerShapedHorizontalPaneRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.GRAY_STAINED_GLASS_HORIZONTAL_PANE, Blocks.GRAY_STAINED_GLASS, null);
+        offerShapedHorizontalPaneRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_GRAY_STAINED_GLASS_HORIZONTAL_PANE, Blocks.LIGHT_GRAY_STAINED_GLASS, null);
+        offerShapedHorizontalPaneRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CYAN_STAINED_GLASS_HORIZONTAL_PANE, Blocks.CYAN_STAINED_GLASS, null);
+        offerShapedHorizontalPaneRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.PURPLE_STAINED_GLASS_HORIZONTAL_PANE, Blocks.PURPLE_STAINED_GLASS, null);   
+        offerShapedHorizontalPaneRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_STAINED_GLASS_HORIZONTAL_PANE, Blocks.BLUE_STAINED_GLASS, null);
+        offerShapedHorizontalPaneRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BROWN_STAINED_GLASS_HORIZONTAL_PANE, Blocks.BROWN_STAINED_GLASS, null);
+        offerShapedHorizontalPaneRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.GREEN_STAINED_GLASS_HORIZONTAL_PANE, Blocks.GREEN_STAINED_GLASS, null);
+        offerShapedHorizontalPaneRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_STAINED_GLASS_HORIZONTAL_PANE, Blocks.RED_STAINED_GLASS, null);
+        offerShapedHorizontalPaneRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLACK_STAINED_GLASS_HORIZONTAL_PANE, Blocks.BLACK_STAINED_GLASS, null);
     }
 
     private void offerShapedSlabRecipe(RecipeExporter exporter, RecipeCategory category, Block slab, Block block,
