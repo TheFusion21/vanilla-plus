@@ -100,6 +100,17 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.CHERRY_LOG_VERTICAL_SLAB, verticalSlabDrops(ModBlocks.CHERRY_LOG_VERTICAL_SLAB));
         addDrop(ModBlocks.CRIMSON_STEM_VERTICAL_SLAB, verticalSlabDrops(ModBlocks.CRIMSON_STEM_VERTICAL_SLAB));
         addDrop(ModBlocks.WARPED_STEM_VERTICAL_SLAB, verticalSlabDrops(ModBlocks.WARPED_STEM_VERTICAL_SLAB));
+
+        addDrop(ModBlocks.OAK_SHELF, drops(ModBlocks.OAK_SHELF));
+        addDrop(ModBlocks.SPRUCE_SHELF, drops(ModBlocks.SPRUCE_SHELF));
+        addDrop(ModBlocks.BIRCH_SHELF, drops(ModBlocks.BIRCH_SHELF));
+        addDrop(ModBlocks.JUNGLE_SHELF, drops(ModBlocks.JUNGLE_SHELF));
+        addDrop(ModBlocks.ACACIA_SHELF, drops(ModBlocks.ACACIA_SHELF));
+        addDrop(ModBlocks.DARK_OAK_SHELF, drops(ModBlocks.DARK_OAK_SHELF));
+        addDrop(ModBlocks.MANGROVE_SHELF, drops(ModBlocks.MANGROVE_SHELF));
+        addDrop(ModBlocks.CHERRY_SHELF, drops(ModBlocks.CHERRY_SHELF));
+        addDrop(ModBlocks.CRIMSON_SHELF, drops(ModBlocks.CRIMSON_SHELF));
+        addDrop(ModBlocks.WARPED_SHELF, drops(ModBlocks.WARPED_SHELF));
     }
 
     public LootTable.Builder verticalSlabDrops(Block drop) {

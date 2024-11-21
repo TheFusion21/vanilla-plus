@@ -10,6 +10,8 @@ import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.item.Item;
+import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 
@@ -111,6 +113,17 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerShapedHorizontalPaneRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.GREEN_STAINED_GLASS_HORIZONTAL_PANE, Blocks.GREEN_STAINED_GLASS, null);
         offerShapedHorizontalPaneRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_STAINED_GLASS_HORIZONTAL_PANE, Blocks.RED_STAINED_GLASS, null);
         offerShapedHorizontalPaneRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLACK_STAINED_GLASS_HORIZONTAL_PANE, Blocks.BLACK_STAINED_GLASS, null);
+
+        addShapedShelfRecipe(exporter, ModBlocks.OAK_SHELF, Blocks.OAK_PLANKS, Items.STICK);
+        addShapedShelfRecipe(exporter, ModBlocks.SPRUCE_SHELF, Blocks.SPRUCE_PLANKS, Items.STICK);
+        addShapedShelfRecipe(exporter, ModBlocks.BIRCH_SHELF, Blocks.BIRCH_PLANKS, Items.STICK);
+        addShapedShelfRecipe(exporter, ModBlocks.JUNGLE_SHELF, Blocks.JUNGLE_PLANKS, Items.STICK);
+        addShapedShelfRecipe(exporter, ModBlocks.ACACIA_SHELF, Blocks.ACACIA_PLANKS, Items.STICK);
+        addShapedShelfRecipe(exporter, ModBlocks.DARK_OAK_SHELF, Blocks.DARK_OAK_PLANKS, Items.STICK);
+        addShapedShelfRecipe(exporter, ModBlocks.MANGROVE_SHELF, Blocks.MANGROVE_PLANKS, Items.STICK);
+        addShapedShelfRecipe(exporter, ModBlocks.CHERRY_SHELF, Blocks.CHERRY_PLANKS, Items.STICK);
+        addShapedShelfRecipe(exporter, ModBlocks.CRIMSON_SHELF, Blocks.CRIMSON_PLANKS, Items.STICK);
+        addShapedShelfRecipe(exporter, ModBlocks.WARPED_SHELF, Blocks.WARPED_PLANKS, Items.STICK);
     }
 
     private void offerShapedSlabRecipe(RecipeExporter exporter, RecipeCategory category, Block slab, Block block,
@@ -147,6 +160,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
             .input('#', block)
             .criterion(FabricRecipeProvider.hasItem(block),
                     FabricRecipeProvider.conditionsFromItem(block))
+            .offerTo(exporter);
+    }
+
+    private void addShapedShelfRecipe(RecipeExporter exporter, Block shelf, Block planks, Item stick) {
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, shelf, 1)
+            .pattern("###")
+            .pattern("S S")
+            .group("shelf")
+            .input('#', planks)
+            .input('S', stick)
+            .criterion(FabricRecipeProvider.hasItem(planks),
+                    FabricRecipeProvider.conditionsFromItem(planks))
             .offerTo(exporter);
     }
 }

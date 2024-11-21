@@ -137,6 +137,8 @@ public class ModBlocks {
     public static final Block CRIMSON_SHELF = registerBlock("crimson_shelf", new ShelfBlock(AbstractBlock.Settings.copy(Blocks.CRIMSON_PLANKS)));
     public static final Block WARPED_SHELF = registerBlock("warped_shelf", new ShelfBlock(AbstractBlock.Settings.copy(Blocks.WARPED_PLANKS)));
 
+    // 
+
     // Registry
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
