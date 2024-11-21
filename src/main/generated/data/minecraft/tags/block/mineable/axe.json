@@ -49,6 +49,16 @@
     "vanilla-plus-plus:mangrove_log_vertical_slab",
     "vanilla-plus-plus:cherry_log_vertical_slab",
     "vanilla-plus-plus:crimson_stem_vertical_slab",
-    "vanilla-plus-plus:warped_stem_vertical_slab"
+    "vanilla-plus-plus:warped_stem_vertical_slab",
+    "vanilla-plus-plus:oak_shelf",
+    "vanilla-plus-plus:spruce_shelf",
+    "vanilla-plus-plus:birch_shelf",
+    "vanilla-plus-plus:jungle_shelf",
+    "vanilla-plus-plus:acacia_shelf",
+    "vanilla-plus-plus:dark_oak_shelf",
+    "vanilla-plus-plus:mangrove_shelf",
+    "vanilla-plus-plus:cherry_shelf",
+    "vanilla-plus-plus:crimson_shelf",
+    "vanilla-plus-plus:warped_shelf"
   ]
 }

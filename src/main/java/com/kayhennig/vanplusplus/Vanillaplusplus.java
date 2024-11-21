@@ -5,6 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.kayhennig.vanplusplus.entity.ModBlockEntityType;
 import com.kayhennig.vanplusplus.item.ModItemGroups;
 
 public class Vanillaplusplus implements ModInitializer {
@@ -20,6 +21,7 @@ public class Vanillaplusplus implements ModInitializer {
 		ModBlocks.registerModBlocks();
 		ModItems.registerItems();
 		ModItemGroups.init();
+        ModBlockEntityType.initialize();
 	}
 
 }

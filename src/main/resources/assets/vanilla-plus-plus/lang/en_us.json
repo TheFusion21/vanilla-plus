@@ -78,6 +78,16 @@
     "block.vanilla-plus-plus.green_stained_glass_horizontal_pane": "Green Stained Glass Horizontal Pane",
     "block.vanilla-plus-plus.red_stained_glass_horizontal_pane": "Red Stained Glass Horizontal Pane",
     "block.vanilla-plus-plus.black_stained_glass_horizontal_pane": "Black Stained Glass Horizontal Pane",
+    "block.vanilla-plus-plus.oak_shelf": "Oak Shelf",
+    "block.vanilla-plus-plus.spruce_shelf": "Spruce Shelf",
+    "block.vanilla-plus-plus.birch_shelf": "Birch Shelf",
+    "block.vanilla-plus-plus.jungle_shelf": "Jungle Shelf",
+    "block.vanilla-plus-plus.acacia_shelf": "Acacia Shelf",
+    "block.vanilla-plus-plus.dark_oak_shelf": "Dark Oak Shelf",
+    "block.vanilla-plus-plus.mangrove_shelf": "Mangrove Shelf",
+    "block.vanilla-plus-plus.cherry_shelf": "Cherry Shelf",
+    "block.vanilla-plus-plus.crimson_shelf": "Crimson Shelf",
+    "block.vanilla-plus-plus.warped_shelf": "Warped Shelf",
     "itemGroup.vanilla-plus-plus.vanplus": "Vanilla++",
     "item.vanilla-plus-plus.pear": "Pear"
 }

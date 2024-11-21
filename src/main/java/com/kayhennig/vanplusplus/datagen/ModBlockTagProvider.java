@@ -86,7 +86,18 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
             .add(ModBlocks.MANGROVE_LOG_VERTICAL_SLAB)
             .add(ModBlocks.CHERRY_LOG_VERTICAL_SLAB)
             .add(ModBlocks.CRIMSON_STEM_VERTICAL_SLAB)
-            .add(ModBlocks.WARPED_STEM_VERTICAL_SLAB);
+            .add(ModBlocks.WARPED_STEM_VERTICAL_SLAB)
+
+            .add(ModBlocks.OAK_SHELF)
+            .add(ModBlocks.SPRUCE_SHELF)
+            .add(ModBlocks.BIRCH_SHELF)
+            .add(ModBlocks.JUNGLE_SHELF)
+            .add(ModBlocks.ACACIA_SHELF)
+            .add(ModBlocks.DARK_OAK_SHELF)
+            .add(ModBlocks.MANGROVE_SHELF)
+            .add(ModBlocks.CHERRY_SHELF)
+            .add(ModBlocks.CRIMSON_SHELF)
+            .add(ModBlocks.WARPED_SHELF);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
             .add(ModBlocks.IRON_SLAB)

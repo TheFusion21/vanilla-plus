@@ -122,15 +122,15 @@ public class VerticalSlabBlock extends HorizontalFacingBlock implements Waterlog
 			
 			if (lookingDirection == Direction.NORTH || lookingDirection == Direction.SOUTH) {
 				if (slabType == VerticalSlabType.NORTH) {
-					return zDiff <= 0.5;
-				} else {
 					return zDiff >= 0.5;
+				} else {
+					return zDiff <= 0.5;
 				}
 			} else {
 				if (slabType == VerticalSlabType.WEST) {
-					return xDiff <= 0.5;
-				} else {
 					return xDiff >= 0.5;
+				} else {
+					return xDiff <= 0.5;
 				}
 			}
 		} else {

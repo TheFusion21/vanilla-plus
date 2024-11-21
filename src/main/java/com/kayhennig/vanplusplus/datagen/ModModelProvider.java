@@ -21,7 +21,9 @@ import net.minecraft.data.client.TextureKey;
 import net.minecraft.data.client.TextureMap;
 import net.minecraft.data.client.VariantSettings;
 import net.minecraft.data.client.VariantsBlockStateSupplier;
+import net.minecraft.state.property.Properties;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.Direction;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -33,6 +35,7 @@ public class ModModelProvider extends FabricModelProvider {
         generateBlockStateSlabModels(blockStateModelGenerator);
         generateBlockStateVerticalSlabModels(blockStateModelGenerator);
         generateHorizontalGlassPanes(blockStateModelGenerator);
+        generateBlockStateShelfModels(blockStateModelGenerator);
     }
 
     private void generateBlockStateSlabModels(BlockStateModelGenerator blockStateModelGenerator) {
@@ -128,6 +131,39 @@ public class ModModelProvider extends FabricModelProvider {
         generateBlockStateHorizontalGlassPaneModel(blockStateModelGenerator, Blocks.GREEN_STAINED_GLASS, Blocks.GREEN_STAINED_GLASS_PANE, ModBlocks.GREEN_STAINED_GLASS_HORIZONTAL_PANE);
         generateBlockStateHorizontalGlassPaneModel(blockStateModelGenerator, Blocks.RED_STAINED_GLASS, Blocks.RED_STAINED_GLASS_PANE, ModBlocks.RED_STAINED_GLASS_HORIZONTAL_PANE);
         generateBlockStateHorizontalGlassPaneModel(blockStateModelGenerator, Blocks.BLACK_STAINED_GLASS, Blocks.BLACK_STAINED_GLASS_PANE, ModBlocks.BLACK_STAINED_GLASS_HORIZONTAL_PANE);
+    }
+
+    private void generateBlockStateShelfModels(BlockStateModelGenerator blockStateModelGenerator) {
+        generateShelfModel(blockStateModelGenerator, ModBlocks.OAK_SHELF, Blocks.OAK_PLANKS);
+        generateShelfModel(blockStateModelGenerator, ModBlocks.SPRUCE_SHELF, Blocks.SPRUCE_PLANKS);
+        generateShelfModel(blockStateModelGenerator, ModBlocks.BIRCH_SHELF, Blocks.BIRCH_PLANKS);
+        generateShelfModel(blockStateModelGenerator, ModBlocks.JUNGLE_SHELF, Blocks.JUNGLE_PLANKS);
+        generateShelfModel(blockStateModelGenerator, ModBlocks.ACACIA_SHELF, Blocks.ACACIA_PLANKS);
+        generateShelfModel(blockStateModelGenerator, ModBlocks.DARK_OAK_SHELF, Blocks.DARK_OAK_PLANKS);
+        generateShelfModel(blockStateModelGenerator, ModBlocks.MANGROVE_SHELF, Blocks.MANGROVE_PLANKS);
+        generateShelfModel(blockStateModelGenerator, ModBlocks.CHERRY_SHELF, Blocks.CHERRY_PLANKS);
+        generateShelfModel(blockStateModelGenerator, ModBlocks.CRIMSON_SHELF, Blocks.CRIMSON_PLANKS);
+        generateShelfModel(blockStateModelGenerator, ModBlocks.WARPED_SHELF, Blocks.WARPED_PLANKS);
+    }
+
+    private void generateShelfModel(BlockStateModelGenerator blockStateModelGenerator, Block block, Block plank) {
+        TextureMap textureMap = TextureMap.all(plank);
+
+        Identifier identifier = ModModels.SHELF_NORTH.upload(block, textureMap, blockStateModelGenerator.modelCollector);
+        Identifier identifier2 = ModModels.SHELF_EAST.upload(block, textureMap, blockStateModelGenerator.modelCollector);
+        Identifier identifier3 = ModModels.SHELF_SOUTH.upload(block, textureMap, blockStateModelGenerator.modelCollector);
+        Identifier identifier4 = ModModels.SHELF_WEST.upload(block, textureMap, blockStateModelGenerator.modelCollector);
+
+        blockStateModelGenerator.blockStateCollector.accept(
+            VariantsBlockStateSupplier.create(block)
+                .coordinate(
+                    BlockStateVariantMap.create(Properties.HORIZONTAL_FACING)
+                        .register(Direction.WEST, BlockStateVariant.create().put(VariantSettings.MODEL, identifier4))
+                        .register(Direction.EAST, BlockStateVariant.create().put(VariantSettings.MODEL, identifier2))
+                        .register(Direction.SOUTH, BlockStateVariant.create().put(VariantSettings.MODEL, identifier3))
+                        .register(Direction.NORTH, BlockStateVariant.create().put(VariantSettings.MODEL, identifier))
+                )
+        );
     }
 
     private void generateBlockStateHorizontalGlassPaneModel(BlockStateModelGenerator blockStateModelGenerator, Block block, Block paneBlock, Block horizontalPaneBlock) {

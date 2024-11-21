@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "vanilla-plus-plus:block/birch_shelf_east"
+    },
+    "facing=north": {
+      "model": "vanilla-plus-plus:block/birch_shelf"
+    },
+    "facing=south": {
+      "model": "vanilla-plus-plus:block/birch_shelf_south"
+    },
+    "facing=west": {
+      "model": "vanilla-plus-plus:block/birch_shelf_west"
+    }
+  }
+}

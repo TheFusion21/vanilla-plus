@@ -1,0 +1,6 @@
+{
+  "parent": "vanilla-plus-plus:block/shelf_north",
+  "textures": {
+    "all": "minecraft:block/acacia_planks"
+  }
+}

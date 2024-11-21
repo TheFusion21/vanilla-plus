@@ -18,6 +18,11 @@ public class ModModels {
 
     public static final Model HORIZONTAL_PANE = block("horizontal_pane", TextureKey.PANE, TextureKey.EDGE);
 
+    public static final Model SHELF_NORTH = block("shelf_north", TextureKey.ALL);
+    public static final Model SHELF_SOUTH = block("shelf_south", "_south", TextureKey.ALL);
+    public static final Model SHELF_EAST = block("shelf_east", "_east", TextureKey.ALL);
+    public static final Model SHELF_WEST = block("shelf_west", "_west", TextureKey.ALL);
+
     private static Model block(String parent, TextureKey... requiredTextureKeys) {
 		return new Model(Optional.of(Identifier.of(Vanillaplusplus.MOD_ID, "block/" + parent)), Optional.empty(), requiredTextureKeys);
 	}

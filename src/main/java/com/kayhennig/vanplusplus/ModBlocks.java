@@ -1,17 +1,18 @@
 package com.kayhennig.vanplusplus;
 
-import com.kayhennig.vanplusplus.block.HorizontalPaneBlock;
-import com.kayhennig.vanplusplus.block.VerticalSlabBlock;
+import com.kayhennig.vanplusplus.block.*;
 import com.kayhennig.vanplusplus.item.ModItemGroups;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
@@ -122,6 +123,19 @@ public class ModBlocks {
     public static final Block GREEN_STAINED_GLASS_HORIZONTAL_PANE = registerBlock("green_stained_glass_horizontal_pane", new HorizontalPaneBlock(AbstractBlock.Settings.copy(Blocks.GREEN_STAINED_GLASS_PANE).nonOpaque()));
     public static final Block RED_STAINED_GLASS_HORIZONTAL_PANE = registerBlock("red_stained_glass_horizontal_pane", new HorizontalPaneBlock(AbstractBlock.Settings.copy(Blocks.RED_STAINED_GLASS_PANE).nonOpaque()));
     public static final Block BLACK_STAINED_GLASS_HORIZONTAL_PANE = registerBlock("black_stained_glass_horizontal_pane", new HorizontalPaneBlock(AbstractBlock.Settings.copy(Blocks.BLACK_STAINED_GLASS_PANE).nonOpaque()));
+
+    // Shelfs
+
+    public static final Block OAK_SHELF = registerBlock("oak_shelf", new ShelfBlock(AbstractBlock.Settings.create().mapColor(MapColor.OAK_TAN).solid().strength(2.0F, 2.0F).sounds(BlockSoundGroup.WOOD).pistonBehavior(PistonBehavior.DESTROY)));
+    public static final Block SPRUCE_SHELF = registerBlock("spruce_shelf", new ShelfBlock(AbstractBlock.Settings.copy(Blocks.SPRUCE_PLANKS)));
+    public static final Block BIRCH_SHELF = registerBlock("birch_shelf", new ShelfBlock(AbstractBlock.Settings.copy(Blocks.BIRCH_PLANKS)));
+    public static final Block JUNGLE_SHELF = registerBlock("jungle_shelf", new ShelfBlock(AbstractBlock.Settings.copy(Blocks.JUNGLE_PLANKS)));
+    public static final Block ACACIA_SHELF = registerBlock("acacia_shelf", new ShelfBlock(AbstractBlock.Settings.copy(Blocks.ACACIA_PLANKS)));
+    public static final Block DARK_OAK_SHELF = registerBlock("dark_oak_shelf", new ShelfBlock(AbstractBlock.Settings.copy(Blocks.DARK_OAK_PLANKS)));
+    public static final Block MANGROVE_SHELF = registerBlock("mangrove_shelf", new ShelfBlock(AbstractBlock.Settings.copy(Blocks.MANGROVE_PLANKS)));
+    public static final Block CHERRY_SHELF = registerBlock("cherry_shelf", new ShelfBlock(AbstractBlock.Settings.copy(Blocks.CHERRY_PLANKS)));
+    public static final Block CRIMSON_SHELF = registerBlock("crimson_shelf", new ShelfBlock(AbstractBlock.Settings.copy(Blocks.CRIMSON_PLANKS)));
+    public static final Block WARPED_SHELF = registerBlock("warped_shelf", new ShelfBlock(AbstractBlock.Settings.copy(Blocks.WARPED_PLANKS)));
 
     // Registry
     private static Block registerBlock(String name, Block block) {
@@ -310,6 +324,17 @@ public class ModBlocks {
         entries.add(GREEN_STAINED_GLASS_HORIZONTAL_PANE);
         entries.add(RED_STAINED_GLASS_HORIZONTAL_PANE);
         entries.add(BLACK_STAINED_GLASS_HORIZONTAL_PANE);
+        
+        entries.addAfter(Blocks.OAK_PLANKS, OAK_SHELF);
+        entries.addAfter(Blocks.SPRUCE_PLANKS, SPRUCE_SHELF);
+        entries.addAfter(Blocks.BIRCH_PLANKS, BIRCH_SHELF);
+        entries.addAfter(Blocks.JUNGLE_PLANKS, JUNGLE_SHELF);
+        entries.addAfter(Blocks.ACACIA_PLANKS, ACACIA_SHELF);
+        entries.addAfter(Blocks.DARK_OAK_PLANKS, DARK_OAK_SHELF);
+        entries.addAfter(Blocks.MANGROVE_PLANKS, MANGROVE_SHELF);
+        entries.addAfter(Blocks.CHERRY_PLANKS, CHERRY_SHELF);
+        entries.addAfter(Blocks.CRIMSON_PLANKS, CRIMSON_SHELF);
+        entries.addAfter(Blocks.WARPED_PLANKS, WARPED_SHELF);
     }
 
     private static void addBlockToNaturalBlockGroup(FabricItemGroupEntries entries) { 
@@ -336,11 +361,25 @@ public class ModBlocks {
         entries.addAfter(WARPED_STEM_SLAB, WARPED_STEM_VERTICAL_SLAB);
     }
 
+    private static void addBlockToFunctionalBlockGroup(FabricItemGroupEntries entries) {
+        entries.addAfter(Blocks.OAK_PLANKS, OAK_SHELF);
+        entries.addAfter(Blocks.SPRUCE_PLANKS, SPRUCE_SHELF);
+        entries.addAfter(Blocks.BIRCH_PLANKS, BIRCH_SHELF);
+        entries.addAfter(Blocks.JUNGLE_PLANKS, JUNGLE_SHELF);
+        entries.addAfter(Blocks.ACACIA_PLANKS, ACACIA_SHELF);
+        entries.addAfter(Blocks.DARK_OAK_PLANKS, DARK_OAK_SHELF);
+        entries.addAfter(Blocks.MANGROVE_PLANKS, MANGROVE_SHELF);
+        entries.addAfter(Blocks.CHERRY_PLANKS, CHERRY_SHELF);
+        entries.addAfter(Blocks.CRIMSON_PLANKS, CRIMSON_SHELF);
+        entries.addAfter(Blocks.WARPED_PLANKS, WARPED_SHELF);
+    }
+    
     public static void registerModBlocks() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
                 .register(ModBlocks::addBlockToBuildingBlockGroup);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COLORED_BLOCKS).register(ModBlocks::addBlockToColoredBlockGroup);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(ModBlocks::addBlockToNaturalBlockGroup);
         ItemGroupEvents.modifyEntriesEvent(ModItemGroups.VANPLUS).register(ModBlocks::addBlockToModBlockGroup);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(ModBlocks::addBlockToFunctionalBlockGroup);
     }
 }
