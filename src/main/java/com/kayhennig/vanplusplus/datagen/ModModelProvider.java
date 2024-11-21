@@ -300,8 +300,6 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-        // Food
-        itemModelGenerator.register(ModItems.PEAR, Models.GENERATED);
 
         Models.GENERATED.upload(ModelIds.getItemModelId(ModBlocks.GLASS_HORIZONTAL_PANE.asItem()), TextureMap.layer0(Blocks.GLASS), itemModelGenerator.writer);
         Models.GENERATED.upload(ModelIds.getItemModelId(ModBlocks.WHITE_STAINED_GLASS_HORIZONTAL_PANE.asItem()), TextureMap.layer0(Blocks.WHITE_STAINED_GLASS), itemModelGenerator.writer);
