@@ -88,6 +88,8 @@
     "block.vanilla-plus-plus.cherry_shelf": "Cherry Shelf",
     "block.vanilla-plus-plus.crimson_shelf": "Crimson Shelf",
     "block.vanilla-plus-plus.warped_shelf": "Warped Shelf",
-    "itemGroup.vanilla-plus-plus.vanplus": "Vanilla++",
+    "item.vanilla-plus-plus.grapes": "Grapes",
+    "item.vanilla-plus-plus.cherries": "Cherries",
+    "itemGroup.vanilla-plus-plus.vanplusplus": "Vanilla++",
     "item.vanilla-plus-plus.pear": "Pear"
 }

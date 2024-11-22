@@ -1,4 +1,4 @@
-// 1.21.1	2024-11-21T22:49:24.4805776	vanilla-plus-plus/Block Loot Tables
+// 1.21.1	2024-11-22T09:44:08.8749571	vanilla-plus-plus/Block Loot Tables
 1d31caebd7e2b3c522b3c3f12b2f835b0da48d03 data\vanilla-plus-plus\loot_table\blocks\crimson_shelf.json
 5d0c4ef44ae6ba10d2f9d767c541b6e6a5c2e697 data\vanilla-plus-plus\loot_table\blocks\oak_shelf.json
 579a65b40ddb6291e293e7891f14a47a47beee75 data\vanilla-plus-plus\loot_table\blocks\stripped_spruce_log_slab.json
@@ -13,8 +13,8 @@ f7e1e3f71f39db32384aabbe4b5207f2568fb65b data\vanilla-plus-plus\loot_table\block
 56137c4c5f3bf8dbb281dd14473237d6de1b6390 data\vanilla-plus-plus\loot_table\blocks\spruce_planks_vertical_slab.json
 7fc403b95a34e8c004e2f831e679f7ceda5c0a03 data\vanilla-plus-plus\loot_table\blocks\stripped_dark_oak_log_vertical_slab.json
 aa685e4aee2c2509313c5f2dfb7734deeccd81db data\vanilla-plus-plus\loot_table\blocks\iron_slab.json
-11e4609b9434eecb1d6a93919428e3de8c3fb96f data\vanilla-plus-plus\loot_table\blocks\stripped_jungle_log_vertical_slab.json
 ef40be1a89cb63092bc2d177a22dc375b109e092 data\vanilla-plus-plus\loot_table\blocks\diamond_vertical_slab.json
+11e4609b9434eecb1d6a93919428e3de8c3fb96f data\vanilla-plus-plus\loot_table\blocks\stripped_jungle_log_vertical_slab.json
 82e6ca415a58de879f04e6ebcf7af0685397a3bb data\vanilla-plus-plus\loot_table\blocks\cherry_shelf.json
 ea0690133eeeb55855a5e056dac85be903aa6ea7 data\vanilla-plus-plus\loot_table\blocks\birch_planks_vertical_slab.json
 3beae917f5bfb100e60d9dd99e1b986400ec6b2f data\vanilla-plus-plus\loot_table\blocks\stripped_mangrove_log_vertical_slab.json
@@ -55,8 +55,8 @@ a9a31b6c46ea2a6e2a2e55ea383a73e9099db4f1 data\vanilla-plus-plus\loot_table\block
 6c2e156a95fb288dc32db5d30b9946d75a08fe09 data\vanilla-plus-plus\loot_table\blocks\iron_vertical_slab.json
 860edf03ac1a97e76a6a659cc6549dae2e3a4bde data\vanilla-plus-plus\loot_table\blocks\dark_oak_log_vertical_slab.json
 d2bc7bb621a3fdff33d3fd93272a4c97e077cc08 data\vanilla-plus-plus\loot_table\blocks\crimson_stem_vertical_slab.json
-29367960bb301c4eeb550977cee2c5bd78b3de95 data\vanilla-plus-plus\loot_table\blocks\cherry_log_slab.json
 4e26c5d70b7839c68eb6d712096744c1f1628144 data\vanilla-plus-plus\loot_table\blocks\mangrove_shelf.json
+29367960bb301c4eeb550977cee2c5bd78b3de95 data\vanilla-plus-plus\loot_table\blocks\cherry_log_slab.json
 1da63c1b647a26c6fd748a4ecab33604d6f81f05 data\vanilla-plus-plus\loot_table\blocks\warped_stem_vertical_slab.json
 973372f6c22b29bdbf1367f18566d82fa7a911e4 data\vanilla-plus-plus\loot_table\blocks\jungle_log_vertical_slab.json
 c4f5a44fe3b059605c877f805d28a93963061222 data\vanilla-plus-plus\loot_table\blocks\lapis_vertical_slab.json

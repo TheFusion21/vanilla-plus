@@ -13,13 +13,13 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
-    public static final RegistryKey<ItemGroup> VANPLUS = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(Vanillaplusplus.MOD_ID, "vanplus"));
+    public static final RegistryKey<ItemGroup> VANPLUSPLUS = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(Vanillaplusplus.MOD_ID, "vanplusplus"));
     public static final ItemGroup CUSTOM_ITEM_GROUP = FabricItemGroup.builder()
 		.icon(() -> new ItemStack(ModBlocks.DIAMOND_SLAB))
-		.displayName(Text.translatable("itemGroup." + Vanillaplusplus.MOD_ID + ".vanplus"))
+		.displayName(Text.translatable("itemGroup." + Vanillaplusplus.MOD_ID + ".vanplusplus"))
 		.build();
 
     public static void init() {
-        Registry.register(Registries.ITEM_GROUP, VANPLUS, CUSTOM_ITEM_GROUP);
+        Registry.register(Registries.ITEM_GROUP, VANPLUSPLUS, CUSTOM_ITEM_GROUP);
     }
 }

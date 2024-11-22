@@ -1,4 +1,4 @@
-// 1.21.1	2024-11-21T22:49:24.4684808	vanilla-plus-plus/Model Definitions
+// 1.21.1	2024-11-22T09:44:08.8638767	vanilla-plus-plus/Model Definitions
 8aea00caad09a5750af8ae20d8d9ce84719b6650 assets\vanilla-plus-plus\models\block\acacia_log_vertical_slab.json
 b50349827b171a3b1db42a7ce158f8680d8e50da assets\vanilla-plus-plus\models\block\birch_log_vertical_slab_east.json
 396c427ad5b2c9dfd84eedd945e61c2ce0ca9ec8 assets\vanilla-plus-plus\models\item\oak_shelf.json
@@ -15,8 +15,8 @@ dd1be4f313e446a27a4badcb0585678a412fd026 assets\vanilla-plus-plus\models\item\em
 82069cb7dfa2a2163bc921cec84946aae9dae3ef assets\vanilla-plus-plus\models\block\emerald_vertical_slab_east.json
 02486a7ba34476fc4e7d63a01abea0372057c9b1 assets\vanilla-plus-plus\models\block\gold_vertical_slab_east.json
 77c1f659056a190bb6bba5198e5b3fce51a87c5e assets\vanilla-plus-plus\models\block\stripped_dark_oak_log_slab.json
-c7686c7d6fbfc06b4cedfab4a6d79b053bf4c9bc assets\vanilla-plus-plus\blockstates\warped_stem_slab.json
 bec629d28cd4d114b9932eddea09012c38b2d347 assets\vanilla-plus-plus\blockstates\dark_oak_log_slab.json
+c7686c7d6fbfc06b4cedfab4a6d79b053bf4c9bc assets\vanilla-plus-plus\blockstates\warped_stem_slab.json
 e2ac010f235f39c4b69692d988a603b5f4a3fc28 assets\vanilla-plus-plus\blockstates\brown_stained_glass_horizontal_pane.json
 62426d336e97cf1a39d820843a85383f0314e33f assets\vanilla-plus-plus\models\block\blue_stained_glass_horizontal_pane.json
 e54296c074d56730a3f0f04199b0deb3d16219e5 assets\vanilla-plus-plus\models\block\glass_horizontal_pane.json
@@ -24,6 +24,7 @@ c42c005240c41fedfc6d194dc4678501bf503fa8 assets\vanilla-plus-plus\models\block\c
 d071a2b358be96a73f1f82c09680bce11eacfbf0 assets\vanilla-plus-plus\models\block\lapis_vertical_slab_double_north.json
 ac2fd23407b52e285ab9065d8fd5eba360d887b3 assets\vanilla-plus-plus\blockstates\lapis_vertical_slab.json
 39c6bcbaa4e16240e9dab479abd260a5a4ed6ce5 assets\vanilla-plus-plus\models\item\gray_stained_glass_horizontal_pane.json
+2f8b0197346cea7f3f00b1c0808d901da6741019 assets\vanilla-plus-plus\models\item\grapes.json
 7e06ad5c7fedaa07875c9c4bc4dfd4ca506a4062 assets\vanilla-plus-plus\models\item\stripped_acacia_log_vertical_slab.json
 faafdb2f5dfd80edaf17f385b8d5352789ed5cb4 assets\vanilla-plus-plus\models\block\iron_slab.json
 677b9e703096a7c6b4630d81fd899b3526f1cd12 assets\vanilla-plus-plus\models\block\glass_slab.json
@@ -52,6 +53,7 @@ b1699c42987f2eaa9a2cdaf3b03c919c0241bbf0 assets\vanilla-plus-plus\models\block\m
 433ce94443834a41c2aa65e2cbd4b85fe4686442 assets\vanilla-plus-plus\blockstates\spruce_shelf.json
 ce040f8259bd18aaf05e1c100e202f6ab45bf0b9 assets\vanilla-plus-plus\models\block\dark_oak_log_vertical_slab_double_north.json
 bf4f9642cce6f7f8d5310595d55bfe224cf972eb assets\vanilla-plus-plus\models\block\glass_slab_double.json
+4a30a7e3e59f4f4b69d1241589d7c39c13b8fdb6 assets\vanilla-plus-plus\models\item\cherries.json
 d8bf1bab6684bfd00347c7c3d86769b7d513fe0b assets\vanilla-plus-plus\models\block\stripped_crimson_stem_slab_double.json
 001c780b67f6f32ad7d3c8aaa60ddd432d47c04f assets\vanilla-plus-plus\models\block\crimson_stem_vertical_slab_double_north.json
 90b65f537bdc82ae0ad7c2c645957091504b9432 assets\vanilla-plus-plus\blockstates\jungle_log_slab.json
@@ -179,14 +181,14 @@ bd37fc4739dfd7080ae053cd5bd7c6250390cad4 assets\vanilla-plus-plus\models\block\s
 ef964a5eb7e40bce968202a7e1f09edf663119b3 assets\vanilla-plus-plus\models\block\stripped_dark_oak_log_vertical_slab_west.json
 300ffbe1da7edbab23842ba40917c23ce9883de2 assets\vanilla-plus-plus\models\item\pink_stained_glass_horizontal_pane.json
 f69a40fce28a5b6679ce858c36e29f5665525334 assets\vanilla-plus-plus\models\block\jungle_log_vertical_slab_double_east.json
-50dd4272555622d246d8b35c230c4c8dac013868 assets\vanilla-plus-plus\models\block\dark_oak_log_slab.json
 155f6b412d14eeda702b447b65720ff3dcbf2d01 assets\vanilla-plus-plus\models\block\spruce_planks_vertical_slab_west.json
+50dd4272555622d246d8b35c230c4c8dac013868 assets\vanilla-plus-plus\models\block\dark_oak_log_slab.json
 35ed48b3cbd9e3dba5cf484d6b93e80c04fa91a5 assets\vanilla-plus-plus\models\block\acacia_shelf.json
 a81e939a5c1f8c778c25bf40bf52c7b2b3b80f9e assets\vanilla-plus-plus\models\item\crimson_stem_slab.json
 eb04c456e121a9483cddcce89a3c0f91ae6cdd80 assets\vanilla-plus-plus\models\block\stripped_oak_log_vertical_slab_double_east.json
 03056a82207725e1d1488f0fb2c2f67a83ebf82b assets\vanilla-plus-plus\models\item\black_stained_glass_horizontal_pane.json
-18d9f3bc630226e4eff76200fa351ab4677e9b7c assets\vanilla-plus-plus\models\block\warped_planks_vertical_slab_south.json
 847ecdb7f80ac0bec6cef185645cc87f2751212e assets\vanilla-plus-plus\blockstates\lapis_slab.json
+18d9f3bc630226e4eff76200fa351ab4677e9b7c assets\vanilla-plus-plus\models\block\warped_planks_vertical_slab_south.json
 a440a8371477d726b6cecc37d3f537714f03a468 assets\vanilla-plus-plus\models\item\jungle_log_vertical_slab.json
 b0367c83571f55b5e91a1364e99781225e59936f assets\vanilla-plus-plus\models\item\jungle_planks_vertical_slab.json
 93512896a1df4146ac16d79ecc266c8e2267e428 assets\vanilla-plus-plus\blockstates\crimson_shelf.json
@@ -203,9 +205,9 @@ cf12c97969212e5c6711fb650f9f30b98361f26b assets\vanilla-plus-plus\models\block\d
 469cc8bb7bef5b3126a69dd6c668c49e6db71dfb assets\vanilla-plus-plus\models\block\crimson_stem_slab_top.json
 24cdc9c39edc9128273bb44661dc2aa42c60809b assets\vanilla-plus-plus\blockstates\jungle_shelf.json
 df5dc383454ddc3ffe219622f8b437c05bb1c498 assets\vanilla-plus-plus\models\block\stripped_spruce_log_slab.json
-7de93a804a7f17b9cf3a711b625b7256af8bfe03 assets\vanilla-plus-plus\blockstates\jungle_log_vertical_slab.json
-207661a5a09ec03e432dd3e2b4118b316dd35737 assets\vanilla-plus-plus\models\block\cherry_log_slab_top.json
 bf3dfc666bbd81acf9e6a8634036d5ec68819379 assets\vanilla-plus-plus\models\item\lime_stained_glass_horizontal_pane.json
+207661a5a09ec03e432dd3e2b4118b316dd35737 assets\vanilla-plus-plus\models\block\cherry_log_slab_top.json
+7de93a804a7f17b9cf3a711b625b7256af8bfe03 assets\vanilla-plus-plus\blockstates\jungle_log_vertical_slab.json
 d25d5adaedbb18e772fe7a7d1ba0f85b5d31b1ed assets\vanilla-plus-plus\models\block\diamond_vertical_slab_double_east.json
 09ecad042517856b91ecee6d6aae2cac84dee594 assets\vanilla-plus-plus\models\block\birch_log_vertical_slab_double_east.json
 e66b2437dc760c0d2128fb5716831efb00dd8cc1 assets\vanilla-plus-plus\models\block\iron_slab_double.json
@@ -232,7 +234,6 @@ dd9a03090df89e50893e639a5cd418ed9e3adbb4 assets\vanilla-plus-plus\models\block\s
 7704a7023b612c23a6f45ffedfdb024fcb7aaf33 assets\vanilla-plus-plus\models\item\birch_log_vertical_slab.json
 8cb9cd66e122673890da2bae22f32545296cf148 assets\vanilla-plus-plus\blockstates\gold_vertical_slab.json
 f6d5626613835f106922886950dd91dea5ad9c54 assets\vanilla-plus-plus\models\block\oak_planks_vertical_slab_double_east.json
-ea50fcc0b0a4facf654e9c92fca6a64d6feae2b3 assets\vanilla-plus-plus\models\item\pear.json
 2d486b8ec9ac444d3b0eb7c44afde34dddda99da assets\vanilla-plus-plus\models\block\diamond_slab_double.json
 98f34c4c064a277053454f7f85f92fff9f147192 assets\vanilla-plus-plus\models\block\crimson_stem_vertical_slab_east.json
 1f517e4a23565f267fd991ed8fa020264793c3e3 assets\vanilla-plus-plus\models\item\dark_oak_log_slab.json
@@ -240,8 +241,8 @@ ea50fcc0b0a4facf654e9c92fca6a64d6feae2b3 assets\vanilla-plus-plus\models\item\pe
 55cb29140673a83d5929a4191e2874715ebed6b4 assets\vanilla-plus-plus\models\block\diamond_slab.json
 2305c91bed0613cf377d126c648d3baf64fe150b assets\vanilla-plus-plus\models\block\dark_oak_log_slab_top.json
 bd99d41e04191b6d346557dc5a04bfdaa1098abf assets\vanilla-plus-plus\models\block\stripped_spruce_log_vertical_slab_double_north.json
-99afedf4e0e2c8f8af1e85b8caddfd90c64c7c31 assets\vanilla-plus-plus\blockstates\stripped_mangrove_log_slab.json
 f6a083f16c0cc3e123af74a506001e6177f6ce78 assets\vanilla-plus-plus\blockstates\stripped_mangrove_log_vertical_slab.json
+99afedf4e0e2c8f8af1e85b8caddfd90c64c7c31 assets\vanilla-plus-plus\blockstates\stripped_mangrove_log_slab.json
 4a490f691005b1536346b1b73b5f21f38d13eb88 assets\vanilla-plus-plus\models\block\stripped_mangrove_log_vertical_slab_south.json
 f2d4bd3f2e2dee53578eb7cc7788985356692632 assets\vanilla-plus-plus\models\block\jungle_shelf.json
 39561987fc599cfc791b9a267967e7f85523d89a assets\vanilla-plus-plus\models\block\mangrove_shelf_south.json
@@ -377,8 +378,8 @@ c61b64ff24e30fe11c732185f5a0ff2414d7eaa0 assets\vanilla-plus-plus\models\item\st
 b4925ec390ff389263928e7ed310078d8d9d6d50 assets\vanilla-plus-plus\models\block\acacia_log_vertical_slab_double_east.json
 09222d7fa62fe618043b2a4e1ee387c7013a1aff assets\vanilla-plus-plus\blockstates\spruce_planks_vertical_slab.json
 9d059dd7a9b8db9bf42089fc264e87593b0d0791 assets\vanilla-plus-plus\models\block\lapis_slab_double.json
-476aa2632764352190731c3fbb10374e02576726 assets\vanilla-plus-plus\models\block\jungle_log_vertical_slab.json
 bf9c674c9de24168f6f8279876b92233c78d9f57 assets\vanilla-plus-plus\models\block\stripped_mangrove_log_vertical_slab_double_east.json
+476aa2632764352190731c3fbb10374e02576726 assets\vanilla-plus-plus\models\block\jungle_log_vertical_slab.json
 d9def5e40f12ae7ca354ca72da98a9aff0e290d0 assets\vanilla-plus-plus\models\block\stripped_acacia_log_vertical_slab_south.json
 243fe6f40cb988d58f31ab580e9c86896c655e4b assets\vanilla-plus-plus\models\block\spruce_shelf_east.json
 960cc925548598dca55a63d80b59c1cde6860464 assets\vanilla-plus-plus\blockstates\pink_stained_glass_horizontal_pane.json
@@ -397,8 +398,8 @@ db2929229bd06b43d6dcf6bffc2ffbe2f96b412b assets\vanilla-plus-plus\models\item\st
 f82cb35b966381c1b58a6cbd76bd52a9d97494e3 assets\vanilla-plus-plus\blockstates\green_stained_glass_horizontal_pane.json
 24a23f846b67f8a0ab2d93075a41660ba200ba66 assets\vanilla-plus-plus\blockstates\stripped_jungle_log_slab.json
 b45efcbf6e037280f497eaa88daacd0f3e95ec56 assets\vanilla-plus-plus\models\block\stripped_dark_oak_log_vertical_slab_double_north.json
-c8ad09b0fda99772619d24dcabeeb476a6847a86 assets\vanilla-plus-plus\blockstates\stripped_cherry_log_slab.json
 015fb1532e876b3be69de8d51252b67d44403d3d assets\vanilla-plus-plus\blockstates\stripped_warped_stem_slab.json
+c8ad09b0fda99772619d24dcabeeb476a6847a86 assets\vanilla-plus-plus\blockstates\stripped_cherry_log_slab.json
 63034557ca526260d8bc709c53a7a802e67bbf5d assets\vanilla-plus-plus\models\block\stripped_warped_stem_slab_double.json
 08c6eae081554edafefbd6cd4351827b215bda19 assets\vanilla-plus-plus\models\block\birch_shelf_west.json
 8bb5624b3a8c2a755dee8de7fae731060451dced assets\vanilla-plus-plus\models\block\jungle_log_vertical_slab_double_north.json

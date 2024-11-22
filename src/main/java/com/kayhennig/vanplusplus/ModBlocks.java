@@ -381,7 +381,7 @@ public class ModBlocks {
                 .register(ModBlocks::addBlockToBuildingBlockGroup);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COLORED_BLOCKS).register(ModBlocks::addBlockToColoredBlockGroup);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(ModBlocks::addBlockToNaturalBlockGroup);
-        ItemGroupEvents.modifyEntriesEvent(ModItemGroups.VANPLUS).register(ModBlocks::addBlockToModBlockGroup);
+        ItemGroupEvents.modifyEntriesEvent(ModItemGroups.VANPLUSPLUS).register(ModBlocks::addBlockToModBlockGroup);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(ModBlocks::addBlockToFunctionalBlockGroup);
     }
 }
