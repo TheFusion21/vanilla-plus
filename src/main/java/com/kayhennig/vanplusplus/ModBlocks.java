@@ -100,6 +100,11 @@ public class ModBlocks {
     public static final Block CRIMSON_STEM_VERTICAL_SLAB = registerBlock("crimson_stem_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.CRIMSON_PLANKS)));
     public static final Block WARPED_STEM_VERTICAL_SLAB = registerBlock("warped_stem_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.WARPED_PLANKS)));
 
+    // Bamboo Vertical Slabs
+
+    public static final Block BAMBOO_VERTICAL_SLAB = registerBlock("bamboo_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.BAMBOO_SLAB)));
+    public static final Block BAMBOO_MOSAIC_VERTICAL_SLAB = registerBlock("bamboo_mosaic_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.BAMBOO_MOSAIC_SLAB)));
+
     // Glass Vertical Slabs
 
     public static final Block GLASS_VERTICAL_SLAB = registerBlock("glass_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.GLASS).nonOpaque()));
@@ -136,8 +141,6 @@ public class ModBlocks {
     public static final Block CHERRY_SHELF = registerBlock("cherry_shelf", new ShelfBlock(AbstractBlock.Settings.copy(Blocks.CHERRY_PLANKS)));
     public static final Block CRIMSON_SHELF = registerBlock("crimson_shelf", new ShelfBlock(AbstractBlock.Settings.copy(Blocks.CRIMSON_PLANKS)));
     public static final Block WARPED_SHELF = registerBlock("warped_shelf", new ShelfBlock(AbstractBlock.Settings.copy(Blocks.WARPED_PLANKS)));
-
-    // 
 
     // Registry
     private static Block registerBlock(String name, Block block) {
@@ -217,6 +220,9 @@ public class ModBlocks {
         entries.addAfter(CHERRY_LOG_SLAB, CHERRY_LOG_VERTICAL_SLAB);
         entries.addAfter(CRIMSON_STEM_SLAB, CRIMSON_STEM_VERTICAL_SLAB);
         entries.addAfter(WARPED_STEM_SLAB, WARPED_STEM_VERTICAL_SLAB);
+
+        entries.addAfter(Blocks.BAMBOO_SLAB, BAMBOO_VERTICAL_SLAB); 
+        entries.addAfter(Blocks.BAMBOO_MOSAIC_SLAB, BAMBOO_MOSAIC_VERTICAL_SLAB);
 
     }
 
@@ -306,6 +312,9 @@ public class ModBlocks {
         entries.add(STRIPPED_CHERRY_LOG_VERTICAL_SLAB);
         entries.add(STRIPPED_CRIMSON_STEM_VERTICAL_SLAB);
         entries.add(STRIPPED_WARPED_STEM_VERTICAL_SLAB);
+
+        entries.add(BAMBOO_VERTICAL_SLAB);
+        entries.add(BAMBOO_MOSAIC_VERTICAL_SLAB);
         
         entries.add(GLASS_SLAB);
         entries.add(GLASS_VERTICAL_SLAB);

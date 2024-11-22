@@ -101,6 +101,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.CRIMSON_STEM_VERTICAL_SLAB, verticalSlabDrops(ModBlocks.CRIMSON_STEM_VERTICAL_SLAB));
         addDrop(ModBlocks.WARPED_STEM_VERTICAL_SLAB, verticalSlabDrops(ModBlocks.WARPED_STEM_VERTICAL_SLAB));
 
+        addDrop(ModBlocks.BAMBOO_VERTICAL_SLAB, verticalSlabDrops(ModBlocks.BAMBOO_VERTICAL_SLAB));
+        addDrop(ModBlocks.BAMBOO_MOSAIC_VERTICAL_SLAB, verticalSlabDrops(ModBlocks.BAMBOO_MOSAIC_VERTICAL_SLAB));
+
         addDrop(ModBlocks.OAK_SHELF, drops(ModBlocks.OAK_SHELF));
         addDrop(ModBlocks.SPRUCE_SHELF, drops(ModBlocks.SPRUCE_SHELF));
         addDrop(ModBlocks.BIRCH_SHELF, drops(ModBlocks.BIRCH_SHELF));

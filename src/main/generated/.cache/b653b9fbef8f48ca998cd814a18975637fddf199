@@ -1,4 +1,4 @@
-// 1.21.1	2024-11-22T09:44:08.8759582	vanilla-plus-plus/Recipes
+// 1.21.1	2024-11-22T16:19:24.4410149	vanilla-plus-plus/Recipes
 62b92549bcfaf63be0b6aca1204af5a94ec32b14 data\vanilla-plus-plus\recipe\stripped_dark_oak_log_vertical_slab.json
 b9424786c061259ecf2ffedf34f74f3a85c8500a data\vanilla-plus-plus\recipe\oak_log_slab.json
 4ca9ec788cff4acee5b69bce964f00b7a70bf5ab data\vanilla-plus-plus\recipe\white_stained_glass_horizontal_pane.json
@@ -117,7 +117,9 @@ a4a6b1414c949c12e2a331b33cf51d80eb67c133 data\vanilla-plus-plus\advancement\reci
 873e2c8dc3f00584fc6b0c2c554b5ff521843d47 data\vanilla-plus-plus\advancement\recipes\building_blocks\oak_shelf.json
 86576802d433b02098e127431008bdf7469ad472 data\vanilla-plus-plus\recipe\crimson_stem_slab.json
 31798d064bedb9c94136d6dd93fbc7664b9c9fcf data\vanilla-plus-plus\recipe\glass_horizontal_pane.json
+fab830831a33d9313d6a6ef5f697c57164d4f695 data\vanilla-plus-plus\recipe\bamboo_mosaic_vertical_slab.json
 534c9064db10f9a632971ac2094c3bae78c40ed8 data\vanilla-plus-plus\recipe\stripped_acacia_log_vertical_slab.json
+26d1c0f55ad3428ee157a23961a2524584887650 data\vanilla-plus-plus\advancement\recipes\building_blocks\bamboo_mosaic_vertical_slab.json
 ad0c050c0548fb220bd9dda7f5fe4a0757768a2d data\vanilla-plus-plus\recipe\dark_oak_log_slab.json
 830fb3c6e84d3cbcedaaa2f9ea8aa5a026d95fbb data\vanilla-plus-plus\advancement\recipes\building_blocks\dark_oak_planks_vertical_slab.json
 651dbdb33ecb64f0a0295f59009466094fc1938e data\vanilla-plus-plus\recipe\cherry_shelf.json
@@ -166,4 +168,6 @@ ac879c7bbef93088289aace19221fdbe20c5e0ef data\vanilla-plus-plus\advancement\reci
 fa22480cb977ff25ad1b627a4d6c21e8a3834e1a data\vanilla-plus-plus\recipe\light_gray_stained_glass_horizontal_pane.json
 18ab7320987bd7f55016882870d8b85b26d4f0bf data\vanilla-plus-plus\advancement\recipes\building_blocks\acacia_shelf.json
 32eb921dacc50108722e97610cffa7d061782c66 data\vanilla-plus-plus\advancement\recipes\building_blocks\crimson_planks_vertical_slab.json
+766b2fc23f2fa86825c25fd1377c4de3f83ed0ce data\vanilla-plus-plus\advancement\recipes\building_blocks\bamboo_vertical_slab.json
 69ba381d7cba1f4635867afeaba45de1f27c13e4 data\vanilla-plus-plus\advancement\recipes\building_blocks\iron_slab.json
+6dc98f6209ce07e1c7cac98b5bfe2c0a4764895a data\vanilla-plus-plus\recipe\bamboo_vertical_slab.json

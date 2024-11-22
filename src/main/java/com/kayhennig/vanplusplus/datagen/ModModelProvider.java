@@ -111,6 +111,9 @@ public class ModModelProvider extends FabricModelProvider {
         generateBlockStateVerticalSlabFromPlankModel(blockStateModelGenerator, Blocks.WARPED_PLANKS, Blocks.WARPED_SLAB, ModBlocks.WARPED_PLANKS_VERTICAL_SLAB);
 
         generateBlockStateVerticalSlabModel(blockStateModelGenerator, Blocks.GLASS, ModBlocks.GLASS_SLAB, ModBlocks.GLASS_VERTICAL_SLAB);
+
+        generateBlockStateVerticalSlabFromPlankModel(blockStateModelGenerator, Blocks.BAMBOO_PLANKS, Blocks.BAMBOO_SLAB, ModBlocks.BAMBOO_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabFromPlankModel(blockStateModelGenerator, Blocks.BAMBOO_MOSAIC, Blocks.BAMBOO_MOSAIC_SLAB, ModBlocks.BAMBOO_MOSAIC_VERTICAL_SLAB);
     }
 
     private void generateHorizontalGlassPanes(BlockStateModelGenerator blockStateModelGenerator) {
