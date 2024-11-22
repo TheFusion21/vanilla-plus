@@ -30,7 +30,16 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
             .add(ModBlocks.LAPIS_VERTICAL_SLAB)
             .add(ModBlocks.GOLD_VERTICAL_SLAB)
             .add(ModBlocks.DIAMOND_VERTICAL_SLAB)
-            .add(ModBlocks.EMERALD_VERTICAL_SLAB);
+            .add(ModBlocks.EMERALD_VERTICAL_SLAB)
+
+            .add(ModBlocks.CUT_COPPER_VERTICAL_SLAB)
+            .add(ModBlocks.EXPOSED_CUT_COPPER_VERTICAL_SLAB)
+            .add(ModBlocks.WEATHERED_CUT_COPPER_VERTICAL_SLAB)
+            .add(ModBlocks.OXIDIZED_CUT_COPPER_VERTICAL_SLAB)
+            .add(ModBlocks.WAXED_CUT_COPPER_VERTICAL_SLAB)
+            .add(ModBlocks.WAXED_EXPOSED_CUT_COPPER_VERTICAL_SLAB)
+            .add(ModBlocks.WAXED_WEATHERED_CUT_COPPER_VERTICAL_SLAB)
+            .add(ModBlocks.WAXED_OXIDIZED_CUT_COPPER_VERTICAL_SLAB);
 
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
             .add(ModBlocks.OAK_LOG_SLAB)
@@ -109,7 +118,16 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
             .add(ModBlocks.IRON_VERTICAL_SLAB)
             .add(ModBlocks.LAPIS_VERTICAL_SLAB)
-            .add(ModBlocks.GOLD_VERTICAL_SLAB);
+            .add(ModBlocks.GOLD_VERTICAL_SLAB)
+
+            .add(ModBlocks.CUT_COPPER_VERTICAL_SLAB)
+            .add(ModBlocks.EXPOSED_CUT_COPPER_VERTICAL_SLAB)
+            .add(ModBlocks.WEATHERED_CUT_COPPER_VERTICAL_SLAB)
+            .add(ModBlocks.OXIDIZED_CUT_COPPER_VERTICAL_SLAB)
+            .add(ModBlocks.WAXED_CUT_COPPER_VERTICAL_SLAB)
+            .add(ModBlocks.WAXED_EXPOSED_CUT_COPPER_VERTICAL_SLAB)
+            .add(ModBlocks.WAXED_WEATHERED_CUT_COPPER_VERTICAL_SLAB)
+            .add(ModBlocks.WAXED_OXIDIZED_CUT_COPPER_VERTICAL_SLAB);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
             .add(ModBlocks.DIAMOND_SLAB)
@@ -225,7 +243,16 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
             .add(ModBlocks.WARPED_PLANKS_VERTICAL_SLAB)
 
             .add(ModBlocks.BAMBOO_VERTICAL_SLAB)
-            .add(ModBlocks.BAMBOO_MOSAIC_VERTICAL_SLAB);
+            .add(ModBlocks.BAMBOO_MOSAIC_VERTICAL_SLAB)
+
+            .add(ModBlocks.CUT_COPPER_VERTICAL_SLAB)
+            .add(ModBlocks.EXPOSED_CUT_COPPER_VERTICAL_SLAB)
+            .add(ModBlocks.WEATHERED_CUT_COPPER_VERTICAL_SLAB)
+            .add(ModBlocks.OXIDIZED_CUT_COPPER_VERTICAL_SLAB)
+            .add(ModBlocks.WAXED_CUT_COPPER_VERTICAL_SLAB)
+            .add(ModBlocks.WAXED_EXPOSED_CUT_COPPER_VERTICAL_SLAB)
+            .add(ModBlocks.WAXED_WEATHERED_CUT_COPPER_VERTICAL_SLAB)
+            .add(ModBlocks.WAXED_OXIDIZED_CUT_COPPER_VERTICAL_SLAB);
     }
 
 }

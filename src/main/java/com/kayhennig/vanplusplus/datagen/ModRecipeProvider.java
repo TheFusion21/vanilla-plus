@@ -99,6 +99,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BAMBOO_VERTICAL_SLAB, Blocks.BAMBOO, null);
         offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BAMBOO_MOSAIC_VERTICAL_SLAB, Blocks.BAMBOO_MOSAIC, null);
 
+        offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CUT_COPPER_VERTICAL_SLAB, Blocks.CUT_COPPER, null);
+        offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.EXPOSED_CUT_COPPER_VERTICAL_SLAB, Blocks.EXPOSED_CUT_COPPER, null);
+        offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.WEATHERED_CUT_COPPER_VERTICAL_SLAB, Blocks.WEATHERED_CUT_COPPER, null);
+        offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.OXIDIZED_CUT_COPPER_VERTICAL_SLAB, Blocks.OXIDIZED_CUT_COPPER, null);
+        offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.WAXED_CUT_COPPER_VERTICAL_SLAB, Blocks.WAXED_CUT_COPPER, null);
+        offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.WAXED_EXPOSED_CUT_COPPER_VERTICAL_SLAB, Blocks.WAXED_EXPOSED_CUT_COPPER, null);
+        offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.WAXED_WEATHERED_CUT_COPPER_VERTICAL_SLAB, Blocks.WAXED_WEATHERED_CUT_COPPER, null);
+        offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.WAXED_OXIDIZED_CUT_COPPER_VERTICAL_SLAB, Blocks.WAXED_OXIDIZED_CUT_COPPER, null);
+
         offerShapedHorizontalPaneRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.GLASS_HORIZONTAL_PANE, Blocks.GLASS, null);
         offerShapedHorizontalPaneRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.WHITE_STAINED_GLASS_HORIZONTAL_PANE, Blocks.WHITE_STAINED_GLASS, null);
         offerShapedHorizontalPaneRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ORANGE_STAINED_GLASS_HORIZONTAL_PANE, Blocks.ORANGE_STAINED_GLASS, null);

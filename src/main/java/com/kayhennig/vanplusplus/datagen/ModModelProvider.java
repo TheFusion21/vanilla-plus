@@ -114,6 +114,16 @@ public class ModModelProvider extends FabricModelProvider {
 
         generateBlockStateVerticalSlabFromPlankModel(blockStateModelGenerator, Blocks.BAMBOO_PLANKS, Blocks.BAMBOO_SLAB, ModBlocks.BAMBOO_VERTICAL_SLAB);
         generateBlockStateVerticalSlabFromPlankModel(blockStateModelGenerator, Blocks.BAMBOO_MOSAIC, Blocks.BAMBOO_MOSAIC_SLAB, ModBlocks.BAMBOO_MOSAIC_VERTICAL_SLAB);
+
+        generateBlockStateVerticalSlabFromPlankModel(blockStateModelGenerator, Blocks.CUT_COPPER, Blocks.CUT_COPPER_SLAB, ModBlocks.CUT_COPPER_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabFromPlankModel(blockStateModelGenerator, Blocks.EXPOSED_CUT_COPPER, Blocks.EXPOSED_CUT_COPPER_SLAB, ModBlocks.EXPOSED_CUT_COPPER_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabFromPlankModel(blockStateModelGenerator, Blocks.WEATHERED_CUT_COPPER, Blocks.WEATHERED_CUT_COPPER_SLAB, ModBlocks.WEATHERED_CUT_COPPER_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabFromPlankModel(blockStateModelGenerator, Blocks.OXIDIZED_CUT_COPPER, Blocks.OXIDIZED_CUT_COPPER_SLAB, ModBlocks.OXIDIZED_CUT_COPPER_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabFromPlankModel(blockStateModelGenerator, Blocks.CUT_COPPER, Blocks.CUT_COPPER_SLAB, ModBlocks.WAXED_CUT_COPPER_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabFromPlankModel(blockStateModelGenerator, Blocks.EXPOSED_CUT_COPPER, Blocks.EXPOSED_CUT_COPPER_SLAB, ModBlocks.WAXED_EXPOSED_CUT_COPPER_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabFromPlankModel(blockStateModelGenerator, Blocks.WEATHERED_CUT_COPPER, Blocks.WEATHERED_CUT_COPPER_SLAB, ModBlocks.WAXED_WEATHERED_CUT_COPPER_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabFromPlankModel(blockStateModelGenerator, Blocks.OXIDIZED_CUT_COPPER, Blocks.OXIDIZED_CUT_COPPER_SLAB, ModBlocks.WAXED_OXIDIZED_CUT_COPPER_VERTICAL_SLAB);
+
     }
 
     private void generateHorizontalGlassPanes(BlockStateModelGenerator blockStateModelGenerator) {

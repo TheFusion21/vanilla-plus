@@ -104,6 +104,15 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.BAMBOO_VERTICAL_SLAB, verticalSlabDrops(ModBlocks.BAMBOO_VERTICAL_SLAB));
         addDrop(ModBlocks.BAMBOO_MOSAIC_VERTICAL_SLAB, verticalSlabDrops(ModBlocks.BAMBOO_MOSAIC_VERTICAL_SLAB));
 
+        addDrop(ModBlocks.CUT_COPPER_VERTICAL_SLAB, verticalSlabDrops(ModBlocks.CUT_COPPER_VERTICAL_SLAB));
+        addDrop(ModBlocks.EXPOSED_CUT_COPPER_VERTICAL_SLAB, verticalSlabDrops(ModBlocks.EXPOSED_CUT_COPPER_VERTICAL_SLAB));
+        addDrop(ModBlocks.WEATHERED_CUT_COPPER_VERTICAL_SLAB, verticalSlabDrops(ModBlocks.WEATHERED_CUT_COPPER_VERTICAL_SLAB));
+        addDrop(ModBlocks.OXIDIZED_CUT_COPPER_VERTICAL_SLAB, verticalSlabDrops(ModBlocks.OXIDIZED_CUT_COPPER_VERTICAL_SLAB));
+        addDrop(ModBlocks.WAXED_CUT_COPPER_VERTICAL_SLAB, verticalSlabDrops(ModBlocks.WAXED_CUT_COPPER_VERTICAL_SLAB));
+        addDrop(ModBlocks.WAXED_EXPOSED_CUT_COPPER_VERTICAL_SLAB, verticalSlabDrops(ModBlocks.WAXED_EXPOSED_CUT_COPPER_VERTICAL_SLAB));
+        addDrop(ModBlocks.WAXED_WEATHERED_CUT_COPPER_VERTICAL_SLAB, verticalSlabDrops(ModBlocks.WAXED_WEATHERED_CUT_COPPER_VERTICAL_SLAB));
+        addDrop(ModBlocks.WAXED_OXIDIZED_CUT_COPPER_VERTICAL_SLAB, verticalSlabDrops(ModBlocks.WAXED_OXIDIZED_CUT_COPPER_VERTICAL_SLAB));
+
         addDrop(ModBlocks.OAK_SHELF, drops(ModBlocks.OAK_SHELF));
         addDrop(ModBlocks.SPRUCE_SHELF, drops(ModBlocks.SPRUCE_SHELF));
         addDrop(ModBlocks.BIRCH_SHELF, drops(ModBlocks.BIRCH_SHELF));

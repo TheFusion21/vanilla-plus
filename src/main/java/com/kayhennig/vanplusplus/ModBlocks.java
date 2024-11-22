@@ -105,6 +105,17 @@ public class ModBlocks {
     public static final Block BAMBOO_VERTICAL_SLAB = registerBlock("bamboo_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.BAMBOO_SLAB)));
     public static final Block BAMBOO_MOSAIC_VERTICAL_SLAB = registerBlock("bamboo_mosaic_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.BAMBOO_MOSAIC_SLAB)));
 
+    // Copper Vertical Slabs
+
+    public static final Block CUT_COPPER_VERTICAL_SLAB = registerBlock("cut_copper_vertical_slab", new OxidizableVerticalSlabBlock(Oxidizable.OxidationLevel.UNAFFECTED, AbstractBlock.Settings.copy(Blocks.CUT_COPPER_SLAB)));
+    public static final Block EXPOSED_CUT_COPPER_VERTICAL_SLAB = registerBlock("exposed_cut_copper_vertical_slab", new OxidizableVerticalSlabBlock(Oxidizable.OxidationLevel.EXPOSED, AbstractBlock.Settings.copy(Blocks.EXPOSED_CUT_COPPER_SLAB)));
+    public static final Block WEATHERED_CUT_COPPER_VERTICAL_SLAB = registerBlock("weathered_cut_copper_vertical_slab", new OxidizableVerticalSlabBlock(Oxidizable.OxidationLevel.WEATHERED, AbstractBlock.Settings.copy(Blocks.WEATHERED_CUT_COPPER_SLAB)));
+    public static final Block OXIDIZED_CUT_COPPER_VERTICAL_SLAB = registerBlock("oxidized_cut_copper_vertical_slab", new OxidizableVerticalSlabBlock(Oxidizable.OxidationLevel.OXIDIZED, AbstractBlock.Settings.copy(Blocks.OXIDIZED_CUT_COPPER_SLAB)));
+    public static final Block WAXED_CUT_COPPER_VERTICAL_SLAB = registerBlock("waxed_cut_copper_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.WAXED_CUT_COPPER_SLAB)));
+    public static final Block WAXED_EXPOSED_CUT_COPPER_VERTICAL_SLAB = registerBlock("waxed_exposed_cut_copper_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.WAXED_EXPOSED_CUT_COPPER_SLAB)));
+    public static final Block WAXED_WEATHERED_CUT_COPPER_VERTICAL_SLAB = registerBlock("waxed_weathered_cut_copper_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.WAXED_WEATHERED_CUT_COPPER_SLAB)));
+    public static final Block WAXED_OXIDIZED_CUT_COPPER_VERTICAL_SLAB = registerBlock("waxed_oxidized_cut_copper_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.WAXED_OXIDIZED_CUT_COPPER_SLAB)));
+
     // Glass Vertical Slabs
 
     public static final Block GLASS_VERTICAL_SLAB = registerBlock("glass_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.GLASS).nonOpaque()));
@@ -224,6 +235,15 @@ public class ModBlocks {
         entries.addAfter(Blocks.BAMBOO_SLAB, BAMBOO_VERTICAL_SLAB); 
         entries.addAfter(Blocks.BAMBOO_MOSAIC_SLAB, BAMBOO_MOSAIC_VERTICAL_SLAB);
 
+        entries.addAfter(Blocks.CUT_COPPER_SLAB, CUT_COPPER_VERTICAL_SLAB);
+        entries.addAfter(Blocks.EXPOSED_CUT_COPPER_SLAB, EXPOSED_CUT_COPPER_VERTICAL_SLAB);
+        entries.addAfter(Blocks.WEATHERED_CUT_COPPER_SLAB, WEATHERED_CUT_COPPER_VERTICAL_SLAB);
+        entries.addAfter(Blocks.OXIDIZED_CUT_COPPER_SLAB, OXIDIZED_CUT_COPPER_VERTICAL_SLAB);
+        entries.addAfter(Blocks.WAXED_CUT_COPPER_SLAB, WAXED_CUT_COPPER_VERTICAL_SLAB);
+        entries.addAfter(Blocks.WAXED_EXPOSED_CUT_COPPER_SLAB, WAXED_EXPOSED_CUT_COPPER_VERTICAL_SLAB);
+        entries.addAfter(Blocks.WAXED_WEATHERED_CUT_COPPER_SLAB, WAXED_WEATHERED_CUT_COPPER_VERTICAL_SLAB);
+        entries.addAfter(Blocks.WAXED_OXIDIZED_CUT_COPPER_SLAB, WAXED_OXIDIZED_CUT_COPPER_VERTICAL_SLAB);
+
     }
 
     private static void addBlockToColoredBlockGroup(FabricItemGroupEntries entries) {
@@ -315,6 +335,15 @@ public class ModBlocks {
 
         entries.add(BAMBOO_VERTICAL_SLAB);
         entries.add(BAMBOO_MOSAIC_VERTICAL_SLAB);
+
+        entries.add(CUT_COPPER_VERTICAL_SLAB);
+        entries.add(EXPOSED_CUT_COPPER_VERTICAL_SLAB);
+        entries.add(WEATHERED_CUT_COPPER_VERTICAL_SLAB);
+        entries.add(OXIDIZED_CUT_COPPER_VERTICAL_SLAB);
+        entries.add(WAXED_CUT_COPPER_VERTICAL_SLAB);
+        entries.add(WAXED_EXPOSED_CUT_COPPER_VERTICAL_SLAB);
+        entries.add(WAXED_WEATHERED_CUT_COPPER_VERTICAL_SLAB);
+        entries.add(WAXED_OXIDIZED_CUT_COPPER_VERTICAL_SLAB);
         
         entries.add(GLASS_SLAB);
         entries.add(GLASS_VERTICAL_SLAB);

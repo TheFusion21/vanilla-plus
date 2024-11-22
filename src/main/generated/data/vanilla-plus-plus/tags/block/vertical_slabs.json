@@ -31,6 +31,14 @@
     "vanilla-plus-plus:crimson_planks_vertical_slab",
     "vanilla-plus-plus:warped_planks_vertical_slab",
     "vanilla-plus-plus:bamboo_vertical_slab",
-    "vanilla-plus-plus:bamboo_mosaic_vertical_slab"
+    "vanilla-plus-plus:bamboo_mosaic_vertical_slab",
+    "vanilla-plus-plus:cut_copper_vertical_slab",
+    "vanilla-plus-plus:exposed_cut_copper_vertical_slab",
+    "vanilla-plus-plus:weathered_cut_copper_vertical_slab",
+    "vanilla-plus-plus:oxidized_cut_copper_vertical_slab",
+    "vanilla-plus-plus:waxed_cut_copper_vertical_slab",
+    "vanilla-plus-plus:waxed_exposed_cut_copper_vertical_slab",
+    "vanilla-plus-plus:waxed_weathered_cut_copper_vertical_slab",
+    "vanilla-plus-plus:waxed_oxidized_cut_copper_vertical_slab"
   ]
 }
