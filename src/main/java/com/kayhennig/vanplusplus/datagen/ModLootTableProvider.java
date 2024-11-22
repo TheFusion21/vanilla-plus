@@ -113,6 +113,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.WAXED_WEATHERED_CUT_COPPER_VERTICAL_SLAB, verticalSlabDrops(ModBlocks.WAXED_WEATHERED_CUT_COPPER_VERTICAL_SLAB));
         addDrop(ModBlocks.WAXED_OXIDIZED_CUT_COPPER_VERTICAL_SLAB, verticalSlabDrops(ModBlocks.WAXED_OXIDIZED_CUT_COPPER_VERTICAL_SLAB));
 
+        addDrop(ModBlocks.QUARTZ_VERTICAL_SLAB, verticalSlabDrops(ModBlocks.QUARTZ_VERTICAL_SLAB));
+        addDrop(ModBlocks.SMOOTH_QUARTZ_VERTICAL_SLAB, verticalSlabDrops(ModBlocks.SMOOTH_QUARTZ_VERTICAL_SLAB));
+
         addDrop(ModBlocks.OAK_SHELF, drops(ModBlocks.OAK_SHELF));
         addDrop(ModBlocks.SPRUCE_SHELF, drops(ModBlocks.SPRUCE_SHELF));
         addDrop(ModBlocks.BIRCH_SHELF, drops(ModBlocks.BIRCH_SHELF));

@@ -1,9 +1,9 @@
-// 1.21.1	2024-11-22T16:53:24.485681	vanilla-plus-plus/Tags for minecraft:block
-86921294968bd6c5db2f007fb0b9eb0d168b4148 data\minecraft\tags\block\mineable\pickaxe.json
-c55a5e50dbf14137e77a2351b3aca677d305a85b data\minecraft\tags\block\slabs.json
+// 1.21.1	2024-11-23T00:50:21.832897	vanilla-plus-plus/Tags for minecraft:block
+895e401ba085a6dedc6da8eb95308b56e057d9a3 data\minecraft\tags\block\mineable\pickaxe.json
 f495264194aac7257e23e208f04e54972c768a68 data\vanilla-plus-plus\tags\block\glass_slabs.json
+c55a5e50dbf14137e77a2351b3aca677d305a85b data\minecraft\tags\block\slabs.json
 6f54f755978d8d291381d0b30d9b6c598f375b52 data\minecraft\tags\block\needs_iron_tool.json
-d4231070c385298cfc4106449086313ec0905dbf data\vanilla-plus-plus\tags\block\vertical_slabs.json
+fb76cf870740be3ade1068cb87494462a360c208 data\vanilla-plus-plus\tags\block\vertical_slabs.json
 1f8ec6e315c7e7ee4ee78a560578a9c66bd2aa2e data\minecraft\tags\block\needs_stone_tool.json
 f495264194aac7257e23e208f04e54972c768a68 data\minecraft\tags\block\impermeable.json
 fafe74e14753934a3d27f94a9fb0c7b69cad4089 data\minecraft\tags\block\wooden_slabs.json

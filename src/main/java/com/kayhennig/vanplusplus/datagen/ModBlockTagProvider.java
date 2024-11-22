@@ -39,7 +39,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
             .add(ModBlocks.WAXED_CUT_COPPER_VERTICAL_SLAB)
             .add(ModBlocks.WAXED_EXPOSED_CUT_COPPER_VERTICAL_SLAB)
             .add(ModBlocks.WAXED_WEATHERED_CUT_COPPER_VERTICAL_SLAB)
-            .add(ModBlocks.WAXED_OXIDIZED_CUT_COPPER_VERTICAL_SLAB);
+            .add(ModBlocks.WAXED_OXIDIZED_CUT_COPPER_VERTICAL_SLAB)
+
+            .add(ModBlocks.QUARTZ_VERTICAL_SLAB)
+            .add(ModBlocks.SMOOTH_QUARTZ_VERTICAL_SLAB);
 
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
             .add(ModBlocks.OAK_LOG_SLAB)
@@ -252,7 +255,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
             .add(ModBlocks.WAXED_CUT_COPPER_VERTICAL_SLAB)
             .add(ModBlocks.WAXED_EXPOSED_CUT_COPPER_VERTICAL_SLAB)
             .add(ModBlocks.WAXED_WEATHERED_CUT_COPPER_VERTICAL_SLAB)
-            .add(ModBlocks.WAXED_OXIDIZED_CUT_COPPER_VERTICAL_SLAB);
+            .add(ModBlocks.WAXED_OXIDIZED_CUT_COPPER_VERTICAL_SLAB)
+
+            .add(ModBlocks.QUARTZ_VERTICAL_SLAB)
+            .add(ModBlocks.SMOOTH_QUARTZ_VERTICAL_SLAB);
     }
 
 }

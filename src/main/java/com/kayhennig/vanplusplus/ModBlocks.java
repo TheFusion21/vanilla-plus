@@ -115,6 +115,11 @@ public class ModBlocks {
     public static final Block WAXED_EXPOSED_CUT_COPPER_VERTICAL_SLAB = registerBlock("waxed_exposed_cut_copper_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.WAXED_EXPOSED_CUT_COPPER_SLAB)));
     public static final Block WAXED_WEATHERED_CUT_COPPER_VERTICAL_SLAB = registerBlock("waxed_weathered_cut_copper_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.WAXED_WEATHERED_CUT_COPPER_SLAB)));
     public static final Block WAXED_OXIDIZED_CUT_COPPER_VERTICAL_SLAB = registerBlock("waxed_oxidized_cut_copper_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.WAXED_OXIDIZED_CUT_COPPER_SLAB)));
+    
+    // Quartz Vertical Slabs
+
+    public static final Block QUARTZ_VERTICAL_SLAB = registerBlock("quartz_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.QUARTZ_SLAB)));
+    public static final Block SMOOTH_QUARTZ_VERTICAL_SLAB = registerBlock("smooth_quartz_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.SMOOTH_QUARTZ_SLAB)));
 
     // Glass Vertical Slabs
 
@@ -244,6 +249,9 @@ public class ModBlocks {
         entries.addAfter(Blocks.WAXED_WEATHERED_CUT_COPPER_SLAB, WAXED_WEATHERED_CUT_COPPER_VERTICAL_SLAB);
         entries.addAfter(Blocks.WAXED_OXIDIZED_CUT_COPPER_SLAB, WAXED_OXIDIZED_CUT_COPPER_VERTICAL_SLAB);
 
+        entries.addAfter(Blocks.QUARTZ_SLAB, QUARTZ_VERTICAL_SLAB);
+        entries.addAfter(Blocks.SMOOTH_QUARTZ_SLAB, SMOOTH_QUARTZ_VERTICAL_SLAB);
+
     }
 
     private static void addBlockToColoredBlockGroup(FabricItemGroupEntries entries) {
@@ -344,6 +352,9 @@ public class ModBlocks {
         entries.add(WAXED_EXPOSED_CUT_COPPER_VERTICAL_SLAB);
         entries.add(WAXED_WEATHERED_CUT_COPPER_VERTICAL_SLAB);
         entries.add(WAXED_OXIDIZED_CUT_COPPER_VERTICAL_SLAB);
+
+        entries.add(QUARTZ_VERTICAL_SLAB);
+        entries.add(SMOOTH_QUARTZ_VERTICAL_SLAB);
         
         entries.add(GLASS_SLAB);
         entries.add(GLASS_VERTICAL_SLAB);
@@ -365,16 +376,16 @@ public class ModBlocks {
         entries.add(RED_STAINED_GLASS_HORIZONTAL_PANE);
         entries.add(BLACK_STAINED_GLASS_HORIZONTAL_PANE);
         
-        entries.addAfter(Blocks.OAK_PLANKS, OAK_SHELF);
-        entries.addAfter(Blocks.SPRUCE_PLANKS, SPRUCE_SHELF);
-        entries.addAfter(Blocks.BIRCH_PLANKS, BIRCH_SHELF);
-        entries.addAfter(Blocks.JUNGLE_PLANKS, JUNGLE_SHELF);
-        entries.addAfter(Blocks.ACACIA_PLANKS, ACACIA_SHELF);
-        entries.addAfter(Blocks.DARK_OAK_PLANKS, DARK_OAK_SHELF);
-        entries.addAfter(Blocks.MANGROVE_PLANKS, MANGROVE_SHELF);
-        entries.addAfter(Blocks.CHERRY_PLANKS, CHERRY_SHELF);
-        entries.addAfter(Blocks.CRIMSON_PLANKS, CRIMSON_SHELF);
-        entries.addAfter(Blocks.WARPED_PLANKS, WARPED_SHELF);
+        entries.add(OAK_SHELF);
+        entries.add(SPRUCE_SHELF);
+        entries.add(BIRCH_SHELF);
+        entries.add(JUNGLE_SHELF);
+        entries.add(ACACIA_SHELF);
+        entries.add(DARK_OAK_SHELF);
+        entries.add(MANGROVE_SHELF);
+        entries.add(CHERRY_SHELF);
+        entries.add(CRIMSON_SHELF);
+        entries.add(WARPED_SHELF);
     }
 
     private static void addBlockToNaturalBlockGroup(FabricItemGroupEntries entries) { 

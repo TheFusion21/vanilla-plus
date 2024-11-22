@@ -124,6 +124,8 @@ public class ModModelProvider extends FabricModelProvider {
         generateBlockStateVerticalSlabFromPlankModel(blockStateModelGenerator, Blocks.WEATHERED_CUT_COPPER, Blocks.WEATHERED_CUT_COPPER_SLAB, ModBlocks.WAXED_WEATHERED_CUT_COPPER_VERTICAL_SLAB);
         generateBlockStateVerticalSlabFromPlankModel(blockStateModelGenerator, Blocks.OXIDIZED_CUT_COPPER, Blocks.OXIDIZED_CUT_COPPER_SLAB, ModBlocks.WAXED_OXIDIZED_CUT_COPPER_VERTICAL_SLAB);
 
+        generateBlockStateVerticalSlabFromQuartzModel(blockStateModelGenerator);
+        generateBlockStateVerticalSlabFromSmoothQuartzModel(blockStateModelGenerator);
     }
 
     private void generateHorizontalGlassPanes(BlockStateModelGenerator blockStateModelGenerator) {
@@ -296,6 +298,54 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.blockStateCollector.accept(createVerticalSlabBlockState(verticalSlabBlock, identifier,
                 identifier2, identifier3, identifier4, identifier5, identifier6));
+    }
+
+    private void generateBlockStateVerticalSlabFromQuartzModel(BlockStateModelGenerator blockStateModelGenerator) {
+        TextureMap textureMap = new TextureMap().put(TextureKey.SIDE, TextureMap.getSubId(Blocks.QUARTZ_BLOCK, "_side")).put(TextureKey.END,
+                TextureMap.getSubId(Blocks.QUARTZ_BLOCK, "_top"));
+            
+        TextureMap textureMap2 = TextureMap.sideEnd(textureMap.getTexture(TextureKey.SIDE),
+                textureMap.getTexture(TextureKey.TOP));
+
+        Identifier identifier = ModModels.NORTH_SLAB.upload(ModBlocks.QUARTZ_VERTICAL_SLAB, textureMap2,
+                blockStateModelGenerator.modelCollector);
+        Identifier identifier2 = ModModels.EAST_SLAB.upload(ModBlocks.QUARTZ_VERTICAL_SLAB, textureMap2,
+                blockStateModelGenerator.modelCollector);
+        Identifier identifier3 = ModModels.SOUTH_SLAB.upload(ModBlocks.QUARTZ_VERTICAL_SLAB, textureMap2,
+                blockStateModelGenerator.modelCollector);
+        Identifier identifier4 = ModModels.WEST_SLAB.upload(ModBlocks.QUARTZ_VERTICAL_SLAB, textureMap2,
+                blockStateModelGenerator.modelCollector);
+        Identifier identifier5 = ModModels.DOUBLE_EAST_SLAB.uploadWithoutVariant(ModBlocks.QUARTZ_VERTICAL_SLAB,
+                "_double_east", textureMap, blockStateModelGenerator.modelCollector);
+        Identifier identifier6 = ModModels.DOUBLE_NORTH_SLAB.uploadWithoutVariant(ModBlocks.QUARTZ_VERTICAL_SLAB,
+                "_double_north", textureMap, blockStateModelGenerator.modelCollector);
+
+        blockStateModelGenerator.blockStateCollector.accept(createVerticalSlabBlockState(ModBlocks.QUARTZ_VERTICAL_SLAB,
+                identifier, identifier2, identifier3, identifier4, identifier5, identifier6));
+    }
+
+    private void generateBlockStateVerticalSlabFromSmoothQuartzModel(BlockStateModelGenerator blockStateModelGenerator) {
+        TextureMap textureMap = new TextureMap().put(TextureKey.SIDE, TextureMap.getSubId(Blocks.QUARTZ_BLOCK, "_bottom")).put(TextureKey.END,
+        TextureMap.getSubId(Blocks.QUARTZ_BLOCK, "_bottom"));
+
+        TextureMap textureMap2 = TextureMap.sideEnd(textureMap.getTexture(TextureKey.TOP),
+                textureMap.getTexture(TextureKey.TOP));
+
+        Identifier identifier = ModModels.NORTH_SLAB.upload(ModBlocks.SMOOTH_QUARTZ_VERTICAL_SLAB, textureMap2,
+                blockStateModelGenerator.modelCollector);
+        Identifier identifier2 = ModModels.EAST_SLAB.upload(ModBlocks.SMOOTH_QUARTZ_VERTICAL_SLAB, textureMap2,
+                blockStateModelGenerator.modelCollector);
+        Identifier identifier3 = ModModels.SOUTH_SLAB.upload(ModBlocks.SMOOTH_QUARTZ_VERTICAL_SLAB, textureMap2,
+                blockStateModelGenerator.modelCollector);
+        Identifier identifier4 = ModModels.WEST_SLAB.upload(ModBlocks.SMOOTH_QUARTZ_VERTICAL_SLAB, textureMap2,
+                blockStateModelGenerator.modelCollector);
+        Identifier identifier5 = ModModels.DOUBLE_EAST_SLAB.uploadWithoutVariant(ModBlocks.SMOOTH_QUARTZ_VERTICAL_SLAB,
+                "_double_east", textureMap2, blockStateModelGenerator.modelCollector);
+        Identifier identifier6 = ModModels.DOUBLE_NORTH_SLAB.uploadWithoutVariant(ModBlocks.SMOOTH_QUARTZ_VERTICAL_SLAB,
+                "_double_north", textureMap2, blockStateModelGenerator.modelCollector);
+
+        blockStateModelGenerator.blockStateCollector.accept(createVerticalSlabBlockState(ModBlocks.SMOOTH_QUARTZ_VERTICAL_SLAB,
+                identifier, identifier2, identifier3, identifier4, identifier5, identifier6));
     }
 
     private BlockStateSupplier createVerticalSlabBlockState(Block slabBlock, Identifier north, Identifier east,
