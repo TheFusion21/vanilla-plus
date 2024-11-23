@@ -36,6 +36,7 @@ public class ModModelProvider extends FabricModelProvider {
         generateBlockStateVerticalSlabModels(blockStateModelGenerator);
         generateHorizontalGlassPanes(blockStateModelGenerator);
         generateBlockStateShelfModels(blockStateModelGenerator);
+        generateBlockStatePressurePlateModels(blockStateModelGenerator);
     }
 
     private void generateBlockStateSlabModels(BlockStateModelGenerator blockStateModelGenerator) {
@@ -197,6 +198,24 @@ public class ModModelProvider extends FabricModelProvider {
         generateShelfModel(blockStateModelGenerator, ModBlocks.CHERRY_SHELF, Blocks.CHERRY_PLANKS);
         generateShelfModel(blockStateModelGenerator, ModBlocks.CRIMSON_SHELF, Blocks.CRIMSON_PLANKS);
         generateShelfModel(blockStateModelGenerator, ModBlocks.WARPED_SHELF, Blocks.WARPED_PLANKS);
+    }
+
+    private void generateBlockStatePressurePlateModels(BlockStateModelGenerator blockStateModelGenerator) {
+        generateBlockStatePressurePlateModel(blockStateModelGenerator, Blocks.COBBLESTONE, ModBlocks.COBBLESTONE_PRESSURE_PLATE);
+        generateBlockStatePressurePlateModel(blockStateModelGenerator, Blocks.MOSSY_COBBLESTONE, ModBlocks.MOSSY_COBBLESTONE_PRESSURE_PLATE);
+        generateBlockStatePressurePlateModel(blockStateModelGenerator, Blocks.SMOOTH_STONE, ModBlocks.SMOOTH_STONE_PRESSURE_PLATE);
+        generateBlockStatePressurePlateModel(blockStateModelGenerator, Blocks.STONE_BRICKS, ModBlocks.STONE_BRICK_PRESSURE_PLATE);
+        generateBlockStatePressurePlateModel(blockStateModelGenerator, Blocks.MOSSY_STONE_BRICKS, ModBlocks.MOSSY_STONE_BRICK_PRESSURE_PLATE);
+        generateBlockStatePressurePlateModel(blockStateModelGenerator, Blocks.POLISHED_DEEPSLATE, ModBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE);
+        generateBlockStatePressurePlateModel(blockStateModelGenerator, Blocks.DEEPSLATE_BRICKS, ModBlocks.DEEPSLATE_BRICK_PRESSURE_PLATE);
+        generateBlockStatePressurePlateModel(blockStateModelGenerator, Blocks.BRICKS, ModBlocks.BRICK_PRESSURE_PLATE);
+        generateBlockStatePressurePlateModel(blockStateModelGenerator, Blocks.MUD_BRICKS, ModBlocks.MUD_BRICK_PRESSURE_PLATE);
+        generateBlockStatePressurePlateSandStoneModel(blockStateModelGenerator, Blocks.SANDSTONE, ModBlocks.SANDSTONE_PRESSURE_PLATE);
+        generateBlockStatePressurePlateSandStoneModel(blockStateModelGenerator, Blocks.RED_SANDSTONE, ModBlocks.RED_SANDSTONE_PRESSURE_PLATE);
+        generateBlockStatePressurePlateModel(blockStateModelGenerator, Blocks.NETHER_BRICKS, ModBlocks.NETHER_BRICK_PRESSURE_PLATE);
+        generateBlockStatePressurePlateModel(blockStateModelGenerator, Blocks.RED_NETHER_BRICKS, ModBlocks.RED_NETHER_BRICK_PRESSURE_PLATE);
+        generateBlockStatePressurePlateModel(blockStateModelGenerator, Blocks.END_STONE_BRICKS, ModBlocks.END_STONE_BRICK_PRESSURE_PLATE);
+        generateBlockStatePressurePlateQuartzModel(blockStateModelGenerator, Blocks.QUARTZ_BLOCK, ModBlocks.QUARTZ_PRESSURE_PLATE);
     }
 
     private void generateShelfModel(BlockStateModelGenerator blockStateModelGenerator, Block block, Block plank) {
@@ -464,6 +483,34 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.blockStateCollector.accept(createVerticalSlabBlockState(verticalSlabBlock, identifier,
                 identifier2, identifier3, identifier4, identifier5, identifier6));
     }
+    
+    private void generateBlockStatePressurePlateModel(BlockStateModelGenerator blockStateModelGenerator, Block mainBlock, Block pressurePlateBlock) {
+        TextureMap textureMap = new TextureMap().put(TextureKey.TEXTURE, TextureMap.getId(mainBlock));
+
+        Identifier identifier = Models.PRESSURE_PLATE_UP.upload(pressurePlateBlock, textureMap, blockStateModelGenerator.modelCollector);
+        Identifier identifier2 = Models.PRESSURE_PLATE_DOWN.upload(pressurePlateBlock, textureMap, blockStateModelGenerator.modelCollector);
+
+        blockStateModelGenerator.blockStateCollector.accept(BlockStateModelGenerator.createPressurePlateBlockState(pressurePlateBlock, identifier, identifier2));
+    }
+
+    private void generateBlockStatePressurePlateSandStoneModel(BlockStateModelGenerator blockStateModelGenerator, Block mainBlock, Block pressurePlateBlock) {
+        TextureMap textureMap = new TextureMap().put(TextureKey.TEXTURE, TextureMap.getSubId(mainBlock, "_top"));
+
+        Identifier identifier = Models.PRESSURE_PLATE_UP.upload(pressurePlateBlock, textureMap, blockStateModelGenerator.modelCollector);
+        Identifier identifier2 = Models.PRESSURE_PLATE_DOWN.upload(pressurePlateBlock, textureMap, blockStateModelGenerator.modelCollector);
+
+        blockStateModelGenerator.blockStateCollector.accept(BlockStateModelGenerator.createPressurePlateBlockState(pressurePlateBlock, identifier, identifier2));
+    }
+
+    private void generateBlockStatePressurePlateQuartzModel(BlockStateModelGenerator blockStateModelGenerator, Block mainBlock, Block pressurePlateBlock) {
+        TextureMap textureMap = new TextureMap().put(TextureKey.TEXTURE, TextureMap.getSubId(mainBlock, "_top"));
+
+        Identifier identifier = Models.PRESSURE_PLATE_UP.upload(pressurePlateBlock, textureMap, blockStateModelGenerator.modelCollector);
+        Identifier identifier2 = Models.PRESSURE_PLATE_DOWN.upload(pressurePlateBlock, textureMap, blockStateModelGenerator.modelCollector);
+
+        blockStateModelGenerator.blockStateCollector.accept(BlockStateModelGenerator.createPressurePlateBlockState(pressurePlateBlock, identifier, identifier2));
+    }
+
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
 

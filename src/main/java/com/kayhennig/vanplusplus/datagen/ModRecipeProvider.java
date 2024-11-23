@@ -174,6 +174,22 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         addShapedShelfRecipe(exporter, ModBlocks.CHERRY_SHELF, Blocks.CHERRY_PLANKS, Items.STICK);
         addShapedShelfRecipe(exporter, ModBlocks.CRIMSON_SHELF, Blocks.CRIMSON_PLANKS, Items.STICK);
         addShapedShelfRecipe(exporter, ModBlocks.WARPED_SHELF, Blocks.WARPED_PLANKS, Items.STICK);
+
+        addShapedPressurePlateRecipe(exporter, ModBlocks.COBBLESTONE_PRESSURE_PLATE, Blocks.COBBLESTONE);
+        addShapedPressurePlateRecipe(exporter, ModBlocks.MOSSY_COBBLESTONE_PRESSURE_PLATE, Blocks.MOSSY_COBBLESTONE);
+        addShapedPressurePlateRecipe(exporter, ModBlocks.SMOOTH_STONE_PRESSURE_PLATE, Blocks.SMOOTH_STONE);
+        addShapedPressurePlateRecipe(exporter, ModBlocks.STONE_BRICK_PRESSURE_PLATE, Blocks.STONE_BRICKS);
+        addShapedPressurePlateRecipe(exporter, ModBlocks.MOSSY_STONE_BRICK_PRESSURE_PLATE, Blocks.MOSSY_STONE_BRICKS);
+        addShapedPressurePlateRecipe(exporter, ModBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE, Blocks.POLISHED_DEEPSLATE);
+        addShapedPressurePlateRecipe(exporter, ModBlocks.DEEPSLATE_BRICK_PRESSURE_PLATE, Blocks.DEEPSLATE_BRICKS);
+        addShapedPressurePlateRecipe(exporter, ModBlocks.BRICK_PRESSURE_PLATE, Blocks.BRICKS);
+        addShapedPressurePlateRecipe(exporter, ModBlocks.MUD_BRICK_PRESSURE_PLATE, Blocks.MUD_BRICKS);
+        addShapedPressurePlateRecipe(exporter, ModBlocks.SANDSTONE_PRESSURE_PLATE, Blocks.SANDSTONE);
+        addShapedPressurePlateRecipe(exporter, ModBlocks.RED_SANDSTONE_PRESSURE_PLATE, Blocks.RED_SANDSTONE);
+        addShapedPressurePlateRecipe(exporter, ModBlocks.NETHER_BRICK_PRESSURE_PLATE, Blocks.NETHER_BRICKS);
+        addShapedPressurePlateRecipe(exporter, ModBlocks.RED_NETHER_BRICK_PRESSURE_PLATE, Blocks.RED_NETHER_BRICKS);
+        addShapedPressurePlateRecipe(exporter, ModBlocks.END_STONE_BRICK_PRESSURE_PLATE, Blocks.END_STONE_BRICKS);
+        addShapedPressurePlateRecipe(exporter, ModBlocks.QUARTZ_PRESSURE_PLATE, Blocks.QUARTZ_BLOCK);
     }
 
     private void offerShapedSlabRecipe(RecipeExporter exporter, RecipeCategory category, Block slab, Block block,
@@ -222,6 +238,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
             .input('S', stick)
             .criterion(FabricRecipeProvider.hasItem(planks),
                     FabricRecipeProvider.conditionsFromItem(planks))
+            .offerTo(exporter);
+    }
+
+    private void addShapedPressurePlateRecipe(RecipeExporter exporter, Block pressurePlate, Block block) {
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, pressurePlate, 1)
+            .pattern("##")
+            .group("pressure_plate")
+            .input('#', block)
+            .criterion(FabricRecipeProvider.hasItem(block),
+                    FabricRecipeProvider.conditionsFromItem(block))
             .offerTo(exporter);
     }
 }

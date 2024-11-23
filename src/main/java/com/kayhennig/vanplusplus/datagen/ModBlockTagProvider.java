@@ -80,9 +80,23 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
             .add(ModBlocks.POLISHED_BLACKSTONE_VERTICAL_SLAB)
             .add(ModBlocks.POLISHED_BLACKSTONE_BRICK_VERTICAL_SLAB)
             .add(ModBlocks.END_STONE_BRICK_VERTICAL_SLAB)
-            .add(ModBlocks.PURPUR_VERTICAL_SLAB);
+            .add(ModBlocks.PURPUR_VERTICAL_SLAB)
 
-
+            .add(ModBlocks.COBBLESTONE_PRESSURE_PLATE)
+            .add(ModBlocks.MOSSY_COBBLESTONE_PRESSURE_PLATE)
+            .add(ModBlocks.SMOOTH_STONE_PRESSURE_PLATE)
+            .add(ModBlocks.STONE_BRICK_PRESSURE_PLATE)
+            .add(ModBlocks.MOSSY_STONE_BRICK_PRESSURE_PLATE)
+            .add(ModBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE)
+            .add(ModBlocks.DEEPSLATE_BRICK_PRESSURE_PLATE)
+            .add(ModBlocks.BRICK_PRESSURE_PLATE)
+            .add(ModBlocks.MUD_BRICK_PRESSURE_PLATE)
+            .add(ModBlocks.SANDSTONE_PRESSURE_PLATE)
+            .add(ModBlocks.RED_SANDSTONE_PRESSURE_PLATE)
+            .add(ModBlocks.NETHER_BRICK_PRESSURE_PLATE)
+            .add(ModBlocks.RED_NETHER_BRICK_PRESSURE_PLATE)
+            .add(ModBlocks.END_STONE_BRICK_PRESSURE_PLATE)
+            .add(ModBlocks.QUARTZ_PRESSURE_PLATE);
 
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
             .add(ModBlocks.OAK_LOG_SLAB)
@@ -337,6 +351,57 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
             .add(ModBlocks.POLISHED_BLACKSTONE_BRICK_VERTICAL_SLAB)
             .add(ModBlocks.END_STONE_BRICK_VERTICAL_SLAB)
             .add(ModBlocks.PURPUR_VERTICAL_SLAB);
+
+        getOrCreateTagBuilder(BlockTags.PRESSURE_PLATES)
+            .add(ModBlocks.COBBLESTONE_PRESSURE_PLATE)
+            .add(ModBlocks.MOSSY_COBBLESTONE_PRESSURE_PLATE)
+            .add(ModBlocks.SMOOTH_STONE_PRESSURE_PLATE)
+            .add(ModBlocks.STONE_BRICK_PRESSURE_PLATE)
+            .add(ModBlocks.MOSSY_STONE_BRICK_PRESSURE_PLATE)
+            .add(ModBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE)
+            .add(ModBlocks.DEEPSLATE_BRICK_PRESSURE_PLATE)
+            .add(ModBlocks.BRICK_PRESSURE_PLATE)
+            .add(ModBlocks.MUD_BRICK_PRESSURE_PLATE)
+            .add(ModBlocks.SANDSTONE_PRESSURE_PLATE)
+            .add(ModBlocks.RED_SANDSTONE_PRESSURE_PLATE)
+            .add(ModBlocks.NETHER_BRICK_PRESSURE_PLATE)
+            .add(ModBlocks.RED_NETHER_BRICK_PRESSURE_PLATE)
+            .add(ModBlocks.END_STONE_BRICK_PRESSURE_PLATE)
+            .add(ModBlocks.QUARTZ_PRESSURE_PLATE);
+
+        getOrCreateTagBuilder(BlockTags.STONE_PRESSURE_PLATES)
+            .add(ModBlocks.COBBLESTONE_PRESSURE_PLATE)
+            .add(ModBlocks.MOSSY_COBBLESTONE_PRESSURE_PLATE)
+            .add(ModBlocks.SMOOTH_STONE_PRESSURE_PLATE)
+            .add(ModBlocks.STONE_BRICK_PRESSURE_PLATE)
+            .add(ModBlocks.MOSSY_STONE_BRICK_PRESSURE_PLATE)
+            .add(ModBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE)
+            .add(ModBlocks.DEEPSLATE_BRICK_PRESSURE_PLATE)
+            .add(ModBlocks.BRICK_PRESSURE_PLATE)
+            .add(ModBlocks.MUD_BRICK_PRESSURE_PLATE)
+            .add(ModBlocks.SANDSTONE_PRESSURE_PLATE)
+            .add(ModBlocks.RED_SANDSTONE_PRESSURE_PLATE)
+            .add(ModBlocks.NETHER_BRICK_PRESSURE_PLATE)
+            .add(ModBlocks.RED_NETHER_BRICK_PRESSURE_PLATE)
+            .add(ModBlocks.END_STONE_BRICK_PRESSURE_PLATE)
+            .add(ModBlocks.QUARTZ_PRESSURE_PLATE);
+
+        getOrCreateTagBuilder(BlockTags.WALL_POST_OVERRIDE)
+            .add(ModBlocks.COBBLESTONE_PRESSURE_PLATE)
+            .add(ModBlocks.MOSSY_COBBLESTONE_PRESSURE_PLATE)
+            .add(ModBlocks.SMOOTH_STONE_PRESSURE_PLATE)
+            .add(ModBlocks.STONE_BRICK_PRESSURE_PLATE)
+            .add(ModBlocks.MOSSY_STONE_BRICK_PRESSURE_PLATE)
+            .add(ModBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE)
+            .add(ModBlocks.DEEPSLATE_BRICK_PRESSURE_PLATE)
+            .add(ModBlocks.BRICK_PRESSURE_PLATE)
+            .add(ModBlocks.MUD_BRICK_PRESSURE_PLATE)
+            .add(ModBlocks.SANDSTONE_PRESSURE_PLATE)
+            .add(ModBlocks.RED_SANDSTONE_PRESSURE_PLATE)
+            .add(ModBlocks.NETHER_BRICK_PRESSURE_PLATE)
+            .add(ModBlocks.RED_NETHER_BRICK_PRESSURE_PLATE)
+            .add(ModBlocks.END_STONE_BRICK_PRESSURE_PLATE)
+            .add(ModBlocks.QUARTZ_PRESSURE_PLATE);
     }
 
 }

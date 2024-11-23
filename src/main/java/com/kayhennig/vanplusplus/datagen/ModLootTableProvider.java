@@ -164,6 +164,22 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.CHERRY_SHELF, drops(ModBlocks.CHERRY_SHELF));
         addDrop(ModBlocks.CRIMSON_SHELF, drops(ModBlocks.CRIMSON_SHELF));
         addDrop(ModBlocks.WARPED_SHELF, drops(ModBlocks.WARPED_SHELF));
+
+        addDrop(ModBlocks.COBBLESTONE_PRESSURE_PLATE, drops(ModBlocks.COBBLESTONE_PRESSURE_PLATE));
+        addDrop(ModBlocks.MOSSY_COBBLESTONE_PRESSURE_PLATE, drops(ModBlocks.MOSSY_COBBLESTONE_PRESSURE_PLATE));
+        addDrop(ModBlocks.SMOOTH_STONE_PRESSURE_PLATE, drops(ModBlocks.SMOOTH_STONE_PRESSURE_PLATE));
+        addDrop(ModBlocks.STONE_BRICK_PRESSURE_PLATE, drops(ModBlocks.STONE_BRICK_PRESSURE_PLATE));
+        addDrop(ModBlocks.MOSSY_STONE_BRICK_PRESSURE_PLATE, drops(ModBlocks.MOSSY_STONE_BRICK_PRESSURE_PLATE));
+        addDrop(ModBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE, drops(ModBlocks.POLISHED_DEEPSLATE_PRESSURE_PLATE));
+        addDrop(ModBlocks.DEEPSLATE_BRICK_PRESSURE_PLATE, drops(ModBlocks.DEEPSLATE_BRICK_PRESSURE_PLATE));
+        addDrop(ModBlocks.BRICK_PRESSURE_PLATE, drops(ModBlocks.BRICK_PRESSURE_PLATE));
+        addDrop(ModBlocks.MUD_BRICK_PRESSURE_PLATE, drops(ModBlocks.MUD_BRICK_PRESSURE_PLATE));
+        addDrop(ModBlocks.SANDSTONE_PRESSURE_PLATE, drops(ModBlocks.SANDSTONE_PRESSURE_PLATE));
+        addDrop(ModBlocks.RED_SANDSTONE_PRESSURE_PLATE, drops(ModBlocks.RED_SANDSTONE_PRESSURE_PLATE));
+        addDrop(ModBlocks.NETHER_BRICK_PRESSURE_PLATE, drops(ModBlocks.NETHER_BRICK_PRESSURE_PLATE));
+        addDrop(ModBlocks.RED_NETHER_BRICK_PRESSURE_PLATE, drops(ModBlocks.RED_NETHER_BRICK_PRESSURE_PLATE));
+        addDrop(ModBlocks.END_STONE_BRICK_PRESSURE_PLATE, drops(ModBlocks.END_STONE_BRICK_PRESSURE_PLATE));
+        addDrop(ModBlocks.QUARTZ_PRESSURE_PLATE, drops(ModBlocks.QUARTZ_PRESSURE_PLATE));
     }
 
     public LootTable.Builder verticalSlabDrops(Block drop) {

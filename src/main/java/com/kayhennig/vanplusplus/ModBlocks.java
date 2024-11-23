@@ -116,7 +116,7 @@ public class ModBlocks {
     public static final Block WAXED_WEATHERED_CUT_COPPER_VERTICAL_SLAB = registerBlock("waxed_weathered_cut_copper_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.WAXED_WEATHERED_CUT_COPPER_SLAB)));
     public static final Block WAXED_OXIDIZED_CUT_COPPER_VERTICAL_SLAB = registerBlock("waxed_oxidized_cut_copper_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.WAXED_OXIDIZED_CUT_COPPER_SLAB)));
     
-    // Quartz Vertical Slabs
+    // Other Vertical Slabs
 
     public static final Block QUARTZ_VERTICAL_SLAB = registerBlock("quartz_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.QUARTZ_SLAB)));
     public static final Block SMOOTH_QUARTZ_VERTICAL_SLAB = registerBlock("smooth_quartz_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.SMOOTH_QUARTZ_SLAB)));
@@ -195,6 +195,24 @@ public class ModBlocks {
     public static final Block CHERRY_SHELF = registerBlock("cherry_shelf", new ShelfBlock(AbstractBlock.Settings.copy(Blocks.CHERRY_PLANKS)));
     public static final Block CRIMSON_SHELF = registerBlock("crimson_shelf", new ShelfBlock(AbstractBlock.Settings.copy(Blocks.CRIMSON_PLANKS)));
     public static final Block WARPED_SHELF = registerBlock("warped_shelf", new ShelfBlock(AbstractBlock.Settings.copy(Blocks.WARPED_PLANKS)));
+
+    // Pressure Plates
+
+    public static final Block COBBLESTONE_PRESSURE_PLATE = registerBlock("cobblestone_pressure_plate", new PressurePlateBlock(BlockSetType.STONE, AbstractBlock.Settings.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final Block MOSSY_COBBLESTONE_PRESSURE_PLATE = registerBlock("mossy_cobblestone_pressure_plate", new PressurePlateBlock(BlockSetType.STONE, AbstractBlock.Settings.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final Block SMOOTH_STONE_PRESSURE_PLATE = registerBlock("smooth_stone_pressure_plate", new PressurePlateBlock(BlockSetType.STONE, AbstractBlock.Settings.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final Block STONE_BRICK_PRESSURE_PLATE = registerBlock("stone_brick_pressure_plate", new PressurePlateBlock(BlockSetType.STONE, AbstractBlock.Settings.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final Block MOSSY_STONE_BRICK_PRESSURE_PLATE = registerBlock("mossy_stone_brick_pressure_plate", new PressurePlateBlock(BlockSetType.STONE, AbstractBlock.Settings.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final Block POLISHED_DEEPSLATE_PRESSURE_PLATE = registerBlock("polished_deepslate_pressure_plate", new PressurePlateBlock(BlockSetType.STONE, AbstractBlock.Settings.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final Block DEEPSLATE_BRICK_PRESSURE_PLATE = registerBlock("deepslate_brick_pressure_plate", new PressurePlateBlock(BlockSetType.STONE, AbstractBlock.Settings.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final Block BRICK_PRESSURE_PLATE = registerBlock("brick_pressure_plate", new PressurePlateBlock(BlockSetType.STONE, AbstractBlock.Settings.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final Block MUD_BRICK_PRESSURE_PLATE = registerBlock("mud_brick_pressure_plate", new PressurePlateBlock(BlockSetType.STONE, AbstractBlock.Settings.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final Block SANDSTONE_PRESSURE_PLATE = registerBlock("sandstone_pressure_plate", new PressurePlateBlock(BlockSetType.STONE, AbstractBlock.Settings.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final Block RED_SANDSTONE_PRESSURE_PLATE = registerBlock("red_sandstone_pressure_plate", new PressurePlateBlock(BlockSetType.STONE, AbstractBlock.Settings.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final Block NETHER_BRICK_PRESSURE_PLATE = registerBlock("nether_brick_pressure_plate", new PressurePlateBlock(BlockSetType.STONE, AbstractBlock.Settings.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final Block RED_NETHER_BRICK_PRESSURE_PLATE = registerBlock("red_nether_brick_pressure_plate", new PressurePlateBlock(BlockSetType.STONE, AbstractBlock.Settings.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final Block END_STONE_BRICK_PRESSURE_PLATE = registerBlock("end_stone_brick_pressure_plate", new PressurePlateBlock(BlockSetType.STONE, AbstractBlock.Settings.copy(Blocks.STONE_PRESSURE_PLATE)));
+    public static final Block QUARTZ_PRESSURE_PLATE = registerBlock("quartz_pressure_plate", new PressurePlateBlock(BlockSetType.STONE, AbstractBlock.Settings.copy(Blocks.STONE_PRESSURE_PLATE)));
 
     // Registry
     private static Block registerBlock(String name, Block block) {
@@ -329,6 +347,21 @@ public class ModBlocks {
         entries.addAfter(Blocks.QUARTZ_SLAB, QUARTZ_VERTICAL_SLAB);
         entries.addAfter(Blocks.SMOOTH_QUARTZ_SLAB, SMOOTH_QUARTZ_VERTICAL_SLAB);
 
+        entries.addAfter(ModBlocks.COBBLESTONE_VERTICAL_SLAB, COBBLESTONE_PRESSURE_PLATE);
+        entries.addAfter(ModBlocks.MOSSY_COBBLESTONE_VERTICAL_SLAB, MOSSY_COBBLESTONE_PRESSURE_PLATE);
+        entries.addAfter(ModBlocks.SMOOTH_STONE_VERTICAL_SLAB, SMOOTH_STONE_PRESSURE_PLATE);
+        entries.addAfter(ModBlocks.STONE_BRICK_VERTICAL_SLAB, STONE_BRICK_PRESSURE_PLATE);
+        entries.addAfter(ModBlocks.MOSSY_STONE_BRICK_VERTICAL_SLAB, MOSSY_STONE_BRICK_PRESSURE_PLATE);
+        entries.addAfter(ModBlocks.POLISHED_DEEPSLATE_VERTICAL_SLAB, POLISHED_DEEPSLATE_PRESSURE_PLATE);
+        entries.addAfter(ModBlocks.DEEPSLATE_BRICK_VERTICAL_SLAB, DEEPSLATE_BRICK_PRESSURE_PLATE);
+        entries.addAfter(ModBlocks.BRICK_VERTICAL_SLAB, BRICK_PRESSURE_PLATE);
+        entries.addAfter(ModBlocks.MUD_BRICK_VERTICAL_SLAB, MUD_BRICK_PRESSURE_PLATE);
+        entries.addAfter(ModBlocks.SANDSTONE_VERTICAL_SLAB, SANDSTONE_PRESSURE_PLATE);
+        entries.addAfter(ModBlocks.RED_SANDSTONE_VERTICAL_SLAB, RED_SANDSTONE_PRESSURE_PLATE);
+        entries.addAfter(ModBlocks.NETHER_BRICK_VERTICAL_SLAB, NETHER_BRICK_PRESSURE_PLATE);
+        entries.addAfter(ModBlocks.RED_NETHER_BRICK_VERTICAL_SLAB, RED_NETHER_BRICK_PRESSURE_PLATE);
+        entries.addAfter(ModBlocks.END_STONE_BRICK_VERTICAL_SLAB, END_STONE_BRICK_PRESSURE_PLATE);
+        entries.addAfter(ModBlocks.QUARTZ_VERTICAL_SLAB, QUARTZ_PRESSURE_PLATE);
     }
 
     private static void addBlockToColoredBlockGroup(FabricItemGroupEntries entries) {
@@ -501,6 +534,22 @@ public class ModBlocks {
         entries.add(CHERRY_SHELF);
         entries.add(CRIMSON_SHELF);
         entries.add(WARPED_SHELF);
+
+        entries.add(COBBLESTONE_PRESSURE_PLATE);
+        entries.add(MOSSY_COBBLESTONE_PRESSURE_PLATE);
+        entries.add(SMOOTH_STONE_PRESSURE_PLATE);
+        entries.add(STONE_BRICK_PRESSURE_PLATE);
+        entries.add(MOSSY_STONE_BRICK_PRESSURE_PLATE);
+        entries.add(POLISHED_DEEPSLATE_PRESSURE_PLATE);
+        entries.add(DEEPSLATE_BRICK_PRESSURE_PLATE);
+        entries.add(BRICK_PRESSURE_PLATE);
+        entries.add(MUD_BRICK_PRESSURE_PLATE);
+        entries.add(SANDSTONE_PRESSURE_PLATE);
+        entries.add(RED_SANDSTONE_PRESSURE_PLATE);
+        entries.add(NETHER_BRICK_PRESSURE_PLATE);
+        entries.add(RED_NETHER_BRICK_PRESSURE_PLATE);
+        entries.add(END_STONE_BRICK_PRESSURE_PLATE);
+        entries.add(QUARTZ_PRESSURE_PLATE);
     }
 
     private static void addBlockToNaturalBlockGroup(FabricItemGroupEntries entries) { 
