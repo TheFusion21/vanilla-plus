@@ -1,7 +1,0 @@
-// 1.21.1	2024-11-17T13:38:13.8989873	vanilla-plus/Tags for minecraft:block
-4b9d5cdb755ca51b18cd40d08f9c8188e506cd5f data\minecraft\tags\block\mineable\pickaxe.json
-57e2956c8820821a3e18962628c8ae3882d7555e data\minecraft\tags\block\needs_iron_tool.json
-51ec77811256f8c05db2251298d3b5728497ded3 data\minecraft\tags\block\logs_that_burn.json
-fe9293b3c3273b2c703d8654cf6ede32742f5fc9 data\minecraft\tags\block\needs_stone_tool.json
-51ec77811256f8c05db2251298d3b5728497ded3 data\minecraft\tags\block\lava_pool_stone_cannot_replace.json
-51ec77811256f8c05db2251298d3b5728497ded3 data\minecraft\tags\block\mineable\axe.json

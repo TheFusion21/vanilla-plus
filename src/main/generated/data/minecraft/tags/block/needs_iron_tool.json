@@ -1,6 +1,8 @@
 {
   "values": [
-    "vanilla-plus:diamond_slab",
-    "vanilla-plus:emerald_slab"
+    "vanilla-plus-plus:diamond_slab",
+    "vanilla-plus-plus:emerald_slab",
+    "vanilla-plus-plus:diamond_vertical_slab",
+    "vanilla-plus-plus:emerald_vertical_slab"
   ]
 }

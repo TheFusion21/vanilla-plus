@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "planks_slab",
+  "key": {
+    "#": {
+      "item": "minecraft:cherry_planks"
+    }
+  },
+  "pattern": [
+    "#",
+    "#",
+    "#"
+  ],
+  "result": {
+    "count": 6,
+    "id": "vanilla-plus-plus:cherry_planks_vertical_slab"
+  }
+}

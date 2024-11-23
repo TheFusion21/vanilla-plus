@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "pressure_plate",
+  "key": {
+    "#": {
+      "item": "minecraft:polished_deepslate"
+    }
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "count": 1,
+    "id": "vanilla-plus-plus:polished_deepslate_pressure_plate"
+  }
+}

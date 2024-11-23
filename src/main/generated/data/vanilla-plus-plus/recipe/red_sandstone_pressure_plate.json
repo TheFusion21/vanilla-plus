@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "pressure_plate",
+  "key": {
+    "#": {
+      "item": "minecraft:red_sandstone"
+    }
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "count": 1,
+    "id": "vanilla-plus-plus:red_sandstone_pressure_plate"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "log_slab",
+  "key": {
+    "#": {
+      "item": "minecraft:stripped_acacia_log"
+    }
+  },
+  "pattern": [
+    "#",
+    "#",
+    "#"
+  ],
+  "result": {
+    "count": 6,
+    "id": "vanilla-plus-plus:stripped_acacia_log_vertical_slab"
+  }
+}

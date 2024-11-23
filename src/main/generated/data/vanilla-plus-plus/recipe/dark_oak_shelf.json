@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "shelf",
+  "key": {
+    "#": {
+      "item": "minecraft:dark_oak_planks"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "###",
+    "S S"
+  ],
+  "result": {
+    "count": 1,
+    "id": "vanilla-plus-plus:dark_oak_shelf"
+  }
+}

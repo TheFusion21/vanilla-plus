@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "pressure_plate",
+  "key": {
+    "#": {
+      "item": "minecraft:mossy_cobblestone"
+    }
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "count": 1,
+    "id": "vanilla-plus-plus:mossy_cobblestone_pressure_plate"
+  }
+}
