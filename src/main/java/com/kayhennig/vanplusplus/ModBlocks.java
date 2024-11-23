@@ -121,6 +121,44 @@ public class ModBlocks {
     public static final Block QUARTZ_VERTICAL_SLAB = registerBlock("quartz_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.QUARTZ_SLAB)));
     public static final Block SMOOTH_QUARTZ_VERTICAL_SLAB = registerBlock("smooth_quartz_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.SMOOTH_QUARTZ_SLAB)));
 
+    public static final Block STONE_VERTICAL_SLAB = registerBlock("stone_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.STONE_SLAB)));
+    public static final Block COBBLESTONE_VERTICAL_SLAB = registerBlock("cobblestone_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.COBBLESTONE_SLAB)));
+    public static final Block MOSSY_COBBLESTONE_VERTICAL_SLAB = registerBlock("mossy_cobblestone_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.MOSSY_COBBLESTONE_SLAB)));
+    public static final Block SMOOTH_STONE_VERTICAL_SLAB = registerBlock("smooth_stone_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.SMOOTH_STONE_SLAB)));
+    public static final Block STONE_BRICK_VERTICAL_SLAB = registerBlock("stone_brick_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.STONE_BRICK_SLAB)));
+    public static final Block MOSSY_STONE_BRICK_VERTICAL_SLAB = registerBlock("mossy_stone_brick_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.MOSSY_STONE_BRICK_SLAB)));
+    public static final Block GRANITE_VERTICAL_SLAB = registerBlock("granite_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.GRANITE_SLAB)));
+    public static final Block POLISHED_GRANITE_VERTICAL_SLAB = registerBlock("polished_granite_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.POLISHED_GRANITE_SLAB)));
+    public static final Block DIORITE_VERTICAL_SLAB = registerBlock("diorite_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.DIORITE_SLAB)));
+    public static final Block POLISHED_DIORITE_VERTICAL_SLAB = registerBlock("polished_diorite_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.POLISHED_DIORITE_SLAB)));
+    public static final Block ANDESITE_VERTICAL_SLAB = registerBlock("andesite_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.ANDESITE_SLAB)));
+    public static final Block POLISHED_ANDESITE_VERTICAL_SLAB = registerBlock("polished_andesite_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.POLISHED_ANDESITE_SLAB)));
+    public static final Block COBBLED_DEEPSLATE_VERTICAL_SLAB = registerBlock("cobbled_deepslate_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.COBBLED_DEEPSLATE_SLAB)));
+    public static final Block POLISHED_DEEPSLATE_VERTICAL_SLAB = registerBlock("polished_deepslate_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.POLISHED_DEEPSLATE_SLAB)));
+    public static final Block DEEPSLATE_BRICK_VERTICAL_SLAB = registerBlock("deepslate_brick_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.DEEPSLATE_BRICK_SLAB)));
+    public static final Block DEEPSLATE_TILE_VERTICAL_SLAB = registerBlock("deepslate_tile_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.DEEPSLATE_TILE_SLAB)));
+    public static final Block TUFF_VERTICAL_SLAB = registerBlock("tuff_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.TUFF_SLAB)));
+    public static final Block POLISHED_TUFF_VERTICAL_SLAB = registerBlock("polished_tuff_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.POLISHED_TUFF_SLAB)));
+    public static final Block TUFF_BRICK_VERTICAL_SLAB = registerBlock("tuff_brick_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.TUFF_BRICK_SLAB)));
+    public static final Block BRICK_VERTICAL_SLAB = registerBlock("brick_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.BRICK_SLAB)));
+    public static final Block MUD_BRICK_VERTICAL_SLAB = registerBlock("mud_brick_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.MUD_BRICK_SLAB)));
+    public static final Block SANDSTONE_VERTICAL_SLAB = registerBlock("sandstone_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.SANDSTONE_SLAB)));
+    public static final Block SMOOTH_SANDSTONE_VERTICAL_SLAB = registerBlock("smooth_sandstone_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.SMOOTH_SANDSTONE_SLAB)));
+    public static final Block CUT_SANDSTONE_VERTICAL_SLAB = registerBlock("cut_sandstone_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.CUT_SANDSTONE_SLAB)));
+    public static final Block RED_SANDSTONE_VERTICAL_SLAB = registerBlock("red_sandstone_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.RED_SANDSTONE_SLAB)));
+    public static final Block SMOOTH_RED_SANDSTONE_VERTICAL_SLAB = registerBlock("smooth_red_sandstone_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.SMOOTH_RED_SANDSTONE_SLAB)));
+    public static final Block CUT_RED_SANDSTONE_VERTICAL_SLAB = registerBlock("cut_red_sandstone_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.CUT_RED_SANDSTONE_SLAB)));
+    public static final Block PRISMARINE_VERTICAL_SLAB = registerBlock("prismarine_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.PRISMARINE_SLAB)));
+    public static final Block PRISMARINE_BRICK_VERTICAL_SLAB = registerBlock("prismarine_brick_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.PRISMARINE_BRICK_SLAB)));
+    public static final Block DARK_PRISMARINE_VERTICAL_SLAB = registerBlock("dark_prismarine_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.DARK_PRISMARINE_SLAB)));
+    public static final Block NETHER_BRICK_VERTICAL_SLAB = registerBlock("nether_brick_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.NETHER_BRICK_SLAB)));
+    public static final Block RED_NETHER_BRICK_VERTICAL_SLAB = registerBlock("red_nether_brick_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.RED_NETHER_BRICK_SLAB)));
+    public static final Block BLACKSTONE_VERTICAL_SLAB = registerBlock("blackstone_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.BLACKSTONE_SLAB)));
+    public static final Block POLISHED_BLACKSTONE_VERTICAL_SLAB = registerBlock("polished_blackstone_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.POLISHED_BLACKSTONE_SLAB)));
+    public static final Block POLISHED_BLACKSTONE_BRICK_VERTICAL_SLAB = registerBlock("polished_blackstone_brick_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.POLISHED_BLACKSTONE_BRICK_SLAB)));
+    public static final Block END_STONE_BRICK_VERTICAL_SLAB = registerBlock("end_stone_brick_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.END_STONE_BRICK_SLAB)));
+    public static final Block PURPUR_VERTICAL_SLAB = registerBlock("purpur_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.PURPUR_SLAB)));
+
     // Glass Vertical Slabs
 
     public static final Block GLASS_VERTICAL_SLAB = registerBlock("glass_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.GLASS).nonOpaque()));
@@ -170,7 +208,7 @@ public class ModBlocks {
     }
 
     private static void addBlockToBuildingBlockGroup(FabricItemGroupEntries entries) {
-        entries.addAfter(Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE, IRON_SLAB);
+        entries.addAfter(Blocks.IRON_BLOCK, IRON_SLAB);
         entries.addAfter(Blocks.LAPIS_BLOCK, LAPIS_SLAB);
         entries.addAfter(Blocks.LIGHT_WEIGHTED_PRESSURE_PLATE, GOLD_SLAB);
         entries.addAfter(Blocks.DIAMOND_BLOCK, DIAMOND_SLAB);
@@ -239,6 +277,45 @@ public class ModBlocks {
 
         entries.addAfter(Blocks.BAMBOO_SLAB, BAMBOO_VERTICAL_SLAB); 
         entries.addAfter(Blocks.BAMBOO_MOSAIC_SLAB, BAMBOO_MOSAIC_VERTICAL_SLAB);
+
+        entries.addAfter(Blocks.STONE_SLAB, STONE_VERTICAL_SLAB);
+        entries.addAfter(Blocks.COBBLESTONE_SLAB, COBBLESTONE_VERTICAL_SLAB);
+        entries.addAfter(Blocks.MOSSY_COBBLESTONE_SLAB, MOSSY_COBBLESTONE_VERTICAL_SLAB);
+        entries.addAfter(Blocks.SMOOTH_STONE_SLAB, SMOOTH_STONE_VERTICAL_SLAB);
+        entries.addAfter(Blocks.STONE_BRICK_SLAB, STONE_BRICK_VERTICAL_SLAB);
+        entries.addAfter(Blocks.MOSSY_STONE_BRICK_SLAB, MOSSY_STONE_BRICK_VERTICAL_SLAB);
+        entries.addAfter(Blocks.GRANITE_SLAB, GRANITE_VERTICAL_SLAB);
+        entries.addAfter(Blocks.POLISHED_GRANITE_SLAB, POLISHED_GRANITE_VERTICAL_SLAB);
+        entries.addAfter(Blocks.DIORITE_SLAB, DIORITE_VERTICAL_SLAB);
+        entries.addAfter(Blocks.POLISHED_DIORITE_SLAB, POLISHED_DIORITE_VERTICAL_SLAB);
+        entries.addAfter(Blocks.ANDESITE_SLAB, ANDESITE_VERTICAL_SLAB);
+        entries.addAfter(Blocks.POLISHED_ANDESITE_SLAB, POLISHED_ANDESITE_VERTICAL_SLAB);
+        entries.addAfter(Blocks.COBBLED_DEEPSLATE_SLAB, COBBLED_DEEPSLATE_VERTICAL_SLAB);
+        entries.addAfter(Blocks.POLISHED_DEEPSLATE_SLAB, POLISHED_DEEPSLATE_VERTICAL_SLAB);
+        entries.addAfter(Blocks.DEEPSLATE_BRICK_SLAB, DEEPSLATE_BRICK_VERTICAL_SLAB);
+        entries.addAfter(Blocks.DEEPSLATE_TILE_SLAB, DEEPSLATE_TILE_VERTICAL_SLAB);
+        entries.addAfter(Blocks.TUFF_SLAB, TUFF_VERTICAL_SLAB);
+        entries.addAfter(Blocks.POLISHED_TUFF_SLAB, POLISHED_TUFF_VERTICAL_SLAB);
+        entries.addAfter(Blocks.TUFF_BRICK_SLAB, TUFF_BRICK_VERTICAL_SLAB);
+        entries.addAfter(Blocks.BRICK_SLAB, BRICK_VERTICAL_SLAB);
+        entries.addAfter(Blocks.MUD_BRICK_SLAB, MUD_BRICK_VERTICAL_SLAB);
+        entries.addAfter(Blocks.SANDSTONE_SLAB, SANDSTONE_VERTICAL_SLAB);
+        entries.addAfter(Blocks.SMOOTH_SANDSTONE_SLAB, SMOOTH_SANDSTONE_VERTICAL_SLAB);
+        entries.addAfter(Blocks.CUT_SANDSTONE_SLAB, CUT_SANDSTONE_VERTICAL_SLAB);
+        entries.addAfter(Blocks.RED_SANDSTONE_SLAB, RED_SANDSTONE_VERTICAL_SLAB);
+        entries.addAfter(Blocks.SMOOTH_RED_SANDSTONE_SLAB, SMOOTH_RED_SANDSTONE_VERTICAL_SLAB);
+        entries.addAfter(Blocks.CUT_RED_SANDSTONE_SLAB, CUT_RED_SANDSTONE_VERTICAL_SLAB);
+        entries.addAfter(Blocks.PRISMARINE_SLAB, PRISMARINE_VERTICAL_SLAB);
+        entries.addAfter(Blocks.PRISMARINE_BRICK_SLAB, PRISMARINE_BRICK_VERTICAL_SLAB);
+        entries.addAfter(Blocks.DARK_PRISMARINE_SLAB, DARK_PRISMARINE_VERTICAL_SLAB);
+        entries.addAfter(Blocks.NETHER_BRICK_SLAB, NETHER_BRICK_VERTICAL_SLAB);
+        entries.addAfter(Blocks.RED_NETHER_BRICK_SLAB, RED_NETHER_BRICK_VERTICAL_SLAB);
+        entries.addAfter(Blocks.BLACKSTONE_SLAB, BLACKSTONE_VERTICAL_SLAB);
+        entries.addAfter(Blocks.POLISHED_BLACKSTONE_SLAB, POLISHED_BLACKSTONE_VERTICAL_SLAB);   
+        entries.addAfter(Blocks.POLISHED_BLACKSTONE_BRICK_SLAB, POLISHED_BLACKSTONE_BRICK_VERTICAL_SLAB);
+        entries.addAfter(Blocks.END_STONE_BRICK_SLAB, END_STONE_BRICK_VERTICAL_SLAB);
+        entries.addAfter(Blocks.PURPUR_SLAB, PURPUR_VERTICAL_SLAB);
+
 
         entries.addAfter(Blocks.CUT_COPPER_SLAB, CUT_COPPER_VERTICAL_SLAB);
         entries.addAfter(Blocks.EXPOSED_CUT_COPPER_SLAB, EXPOSED_CUT_COPPER_VERTICAL_SLAB);
@@ -355,6 +432,44 @@ public class ModBlocks {
 
         entries.add(QUARTZ_VERTICAL_SLAB);
         entries.add(SMOOTH_QUARTZ_VERTICAL_SLAB);
+
+        entries.add(STONE_VERTICAL_SLAB);
+        entries.add(COBBLESTONE_VERTICAL_SLAB);
+        entries.add(MOSSY_COBBLESTONE_VERTICAL_SLAB);
+        entries.add(SMOOTH_STONE_VERTICAL_SLAB);
+        entries.add(STONE_BRICK_VERTICAL_SLAB);
+        entries.add(MOSSY_STONE_BRICK_VERTICAL_SLAB);
+        entries.add(GRANITE_VERTICAL_SLAB);
+        entries.add(POLISHED_GRANITE_VERTICAL_SLAB);
+        entries.add(DIORITE_VERTICAL_SLAB);
+        entries.add(POLISHED_DIORITE_VERTICAL_SLAB);
+        entries.add(ANDESITE_VERTICAL_SLAB);
+        entries.add(POLISHED_ANDESITE_VERTICAL_SLAB);
+        entries.add(COBBLED_DEEPSLATE_VERTICAL_SLAB);
+        entries.add(POLISHED_DEEPSLATE_VERTICAL_SLAB);
+        entries.add(DEEPSLATE_BRICK_VERTICAL_SLAB);
+        entries.add(DEEPSLATE_TILE_VERTICAL_SLAB);
+        entries.add(TUFF_VERTICAL_SLAB);
+        entries.add(POLISHED_TUFF_VERTICAL_SLAB);
+        entries.add(TUFF_BRICK_VERTICAL_SLAB);
+        entries.add(BRICK_VERTICAL_SLAB);
+        entries.add(MUD_BRICK_VERTICAL_SLAB);
+        entries.add(SANDSTONE_VERTICAL_SLAB);
+        entries.add(SMOOTH_SANDSTONE_VERTICAL_SLAB);
+        entries.add(CUT_SANDSTONE_VERTICAL_SLAB);
+        entries.add(RED_SANDSTONE_VERTICAL_SLAB);
+        entries.add(SMOOTH_RED_SANDSTONE_VERTICAL_SLAB);
+        entries.add(CUT_RED_SANDSTONE_VERTICAL_SLAB);
+        entries.add(PRISMARINE_VERTICAL_SLAB);
+        entries.add(PRISMARINE_BRICK_VERTICAL_SLAB);
+        entries.add(DARK_PRISMARINE_VERTICAL_SLAB);
+        entries.add(NETHER_BRICK_VERTICAL_SLAB);
+        entries.add(RED_NETHER_BRICK_VERTICAL_SLAB);
+        entries.add(BLACKSTONE_VERTICAL_SLAB);
+        entries.add(POLISHED_BLACKSTONE_VERTICAL_SLAB);
+        entries.add(POLISHED_BLACKSTONE_BRICK_VERTICAL_SLAB);
+        entries.add(END_STONE_BRICK_VERTICAL_SLAB);
+        entries.add(PURPUR_VERTICAL_SLAB);
         
         entries.add(GLASS_SLAB);
         entries.add(GLASS_VERTICAL_SLAB);

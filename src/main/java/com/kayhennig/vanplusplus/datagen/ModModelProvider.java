@@ -126,6 +126,44 @@ public class ModModelProvider extends FabricModelProvider {
 
         generateBlockStateVerticalSlabFromQuartzModel(blockStateModelGenerator);
         generateBlockStateVerticalSlabFromSmoothQuartzModel(blockStateModelGenerator);
+
+        generateBlockStateVerticalSlabFromPlankModel(blockStateModelGenerator, Blocks.STONE, Blocks.STONE_SLAB, ModBlocks.STONE_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabFromPlankModel(blockStateModelGenerator, Blocks.COBBLESTONE, Blocks.COBBLESTONE_SLAB, ModBlocks.COBBLESTONE_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabFromPlankModel(blockStateModelGenerator, Blocks.MOSSY_COBBLESTONE, Blocks.MOSSY_COBBLESTONE_SLAB, ModBlocks.MOSSY_COBBLESTONE_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabModel(blockStateModelGenerator, Blocks.SMOOTH_STONE, Blocks.SMOOTH_STONE_SLAB, ModBlocks.SMOOTH_STONE_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabFromPlankModel(blockStateModelGenerator, Blocks.STONE_BRICKS, Blocks.STONE_BRICK_SLAB, ModBlocks.STONE_BRICK_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabFromPlankModel(blockStateModelGenerator, Blocks.MOSSY_STONE_BRICKS, Blocks.MOSSY_STONE_BRICK_SLAB, ModBlocks.MOSSY_STONE_BRICK_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabFromPlankModel(blockStateModelGenerator, Blocks.GRANITE, Blocks.GRANITE_SLAB, ModBlocks.GRANITE_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabFromPlankModel(blockStateModelGenerator, Blocks.POLISHED_GRANITE, Blocks.POLISHED_GRANITE_SLAB, ModBlocks.POLISHED_GRANITE_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabFromPlankModel(blockStateModelGenerator, Blocks.DIORITE, Blocks.DIORITE_SLAB, ModBlocks.DIORITE_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabFromPlankModel(blockStateModelGenerator, Blocks.POLISHED_DIORITE, Blocks.POLISHED_DIORITE_SLAB, ModBlocks.POLISHED_DIORITE_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabFromPlankModel(blockStateModelGenerator, Blocks.ANDESITE, Blocks.ANDESITE_SLAB, ModBlocks.ANDESITE_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabFromPlankModel(blockStateModelGenerator, Blocks.POLISHED_ANDESITE, Blocks.POLISHED_ANDESITE_SLAB, ModBlocks.POLISHED_ANDESITE_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabFromPlankModel(blockStateModelGenerator, Blocks.COBBLED_DEEPSLATE, Blocks.COBBLED_DEEPSLATE_SLAB, ModBlocks.COBBLED_DEEPSLATE_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabFromPlankModel(blockStateModelGenerator, Blocks.POLISHED_DEEPSLATE, Blocks.POLISHED_DEEPSLATE_SLAB, ModBlocks.POLISHED_DEEPSLATE_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabFromPlankModel(blockStateModelGenerator, Blocks.DEEPSLATE_BRICKS, Blocks.DEEPSLATE_BRICK_SLAB, ModBlocks.DEEPSLATE_BRICK_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabFromPlankModel(blockStateModelGenerator, Blocks.DEEPSLATE_TILES, Blocks.DEEPSLATE_TILE_SLAB, ModBlocks.DEEPSLATE_TILE_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabFromPlankModel(blockStateModelGenerator, Blocks.TUFF, Blocks.TUFF_SLAB, ModBlocks.TUFF_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabFromPlankModel(blockStateModelGenerator, Blocks.POLISHED_TUFF, Blocks.POLISHED_TUFF_SLAB, ModBlocks.POLISHED_TUFF_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabFromPlankModel(blockStateModelGenerator, Blocks.TUFF_BRICKS, Blocks.TUFF_BRICK_SLAB, ModBlocks.TUFF_BRICK_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabFromPlankModel(blockStateModelGenerator, Blocks.BRICKS, Blocks.BRICK_SLAB, ModBlocks.BRICK_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabFromPlankModel(blockStateModelGenerator, Blocks.MUD_BRICKS, Blocks.MUD_BRICK_SLAB, ModBlocks.MUD_BRICK_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabFromSandstoneModel(blockStateModelGenerator, Blocks.SANDSTONE, Blocks.SANDSTONE_SLAB, ModBlocks.SANDSTONE_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabFromSmoothSandstoneModel(blockStateModelGenerator, Blocks.SANDSTONE, Blocks.SMOOTH_SANDSTONE_SLAB, ModBlocks.SMOOTH_SANDSTONE_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabFromCutSandstoneModel(blockStateModelGenerator, Blocks.SANDSTONE, Blocks.CUT_SANDSTONE, ModBlocks.CUT_SANDSTONE_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabFromSandstoneModel(blockStateModelGenerator, Blocks.RED_SANDSTONE, Blocks.RED_SANDSTONE_SLAB, ModBlocks.RED_SANDSTONE_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabFromSmoothSandstoneModel(blockStateModelGenerator, Blocks.RED_SANDSTONE, Blocks.SMOOTH_RED_SANDSTONE_SLAB, ModBlocks.SMOOTH_RED_SANDSTONE_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabFromCutSandstoneModel(blockStateModelGenerator, Blocks.RED_SANDSTONE, Blocks.CUT_RED_SANDSTONE, ModBlocks.CUT_RED_SANDSTONE_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabFromPlankModel(blockStateModelGenerator, Blocks.PRISMARINE, Blocks.PRISMARINE_SLAB, ModBlocks.PRISMARINE_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabFromPlankModel(blockStateModelGenerator, Blocks.PRISMARINE_BRICKS, Blocks.PRISMARINE_BRICK_SLAB, ModBlocks.PRISMARINE_BRICK_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabFromPlankModel(blockStateModelGenerator, Blocks.DARK_PRISMARINE, Blocks.DARK_PRISMARINE_SLAB, ModBlocks.DARK_PRISMARINE_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabFromPlankModel(blockStateModelGenerator, Blocks.NETHER_BRICKS, Blocks.NETHER_BRICK_SLAB, ModBlocks.NETHER_BRICK_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabFromPlankModel(blockStateModelGenerator, Blocks.RED_NETHER_BRICKS, Blocks.RED_NETHER_BRICK_SLAB, ModBlocks.RED_NETHER_BRICK_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabFromLogModel(blockStateModelGenerator, Blocks.BLACKSTONE, Blocks.BLACKSTONE_SLAB, ModBlocks.BLACKSTONE_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabFromPlankModel(blockStateModelGenerator, Blocks.POLISHED_BLACKSTONE, Blocks.POLISHED_BLACKSTONE_SLAB, ModBlocks.POLISHED_BLACKSTONE_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabFromPlankModel(blockStateModelGenerator, Blocks.POLISHED_BLACKSTONE_BRICKS, Blocks.POLISHED_BLACKSTONE_BRICK_SLAB, ModBlocks.POLISHED_BLACKSTONE_BRICK_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabFromPlankModel(blockStateModelGenerator, Blocks.END_STONE_BRICKS, Blocks.END_STONE_BRICK_SLAB, ModBlocks.END_STONE_BRICK_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabFromPlankModel(blockStateModelGenerator, Blocks.PURPUR_BLOCK, Blocks.PURPUR_SLAB, ModBlocks.PURPUR_VERTICAL_SLAB);
     }
 
     private void generateHorizontalGlassPanes(BlockStateModelGenerator blockStateModelGenerator) {
@@ -361,6 +399,71 @@ public class ModModelProvider extends FabricModelProvider {
                                 .register(VerticalSlabType.DOUBLE_NORTH, BlockStateVariant.create().put(VariantSettings.MODEL, fullNorth)));
     }
 
+    private void generateBlockStateVerticalSlabFromSandstoneModel(BlockStateModelGenerator blockStateModelGenerator,
+            Block mainBlock, Block slabBlock, Block verticalSlabBlock) {
+        TextureMap textureMap2 = new TextureMap().put(TextureKey.SIDE, TextureMap.getId(mainBlock)).put(TextureKey.TOP,
+                TextureMap.getSubId(mainBlock, "_top")).put(TextureKey.BOTTOM, TextureMap.getSubId(mainBlock, "_bottom"));
+
+        Identifier identifier = ModModels.NORTH_SLAB.upload(verticalSlabBlock, textureMap2,
+                blockStateModelGenerator.modelCollector);
+        Identifier identifier2 = ModModels.EAST_SLAB.upload(verticalSlabBlock, textureMap2, 
+                blockStateModelGenerator.modelCollector);
+        Identifier identifier3 = ModModels.SOUTH_SLAB.upload(verticalSlabBlock, textureMap2,
+                blockStateModelGenerator.modelCollector);
+        Identifier identifier4 = ModModels.WEST_SLAB.upload(verticalSlabBlock, textureMap2,
+                blockStateModelGenerator.modelCollector);
+        Identifier identifier5 = ModModels.DOUBLE_EAST_SLAB.uploadWithoutVariant(verticalSlabBlock, "_double_east",
+                textureMap2, blockStateModelGenerator.modelCollector);
+        Identifier identifier6 = ModModels.DOUBLE_NORTH_SLAB.uploadWithoutVariant(verticalSlabBlock, "_double_north",
+                textureMap2, blockStateModelGenerator.modelCollector);
+
+        blockStateModelGenerator.blockStateCollector.accept(createVerticalSlabBlockState(verticalSlabBlock, identifier,
+                identifier2, identifier3, identifier4, identifier5, identifier6));
+    }
+
+    private void generateBlockStateVerticalSlabFromSmoothSandstoneModel(BlockStateModelGenerator blockStateModelGenerator,
+            Block mainBlock, Block slabBlock, Block verticalSlabBlock) {
+        TextureMap textureMap2 = new TextureMap().put(TextureKey.SIDE, TextureMap.getSubId(mainBlock, "_top"))
+                .put(TextureKey.TOP, TextureMap.getSubId(mainBlock, "_top")).put(TextureKey.BOTTOM, TextureMap.getSubId(mainBlock, "_top"));
+        
+        Identifier identifier = ModModels.NORTH_SLAB.upload(verticalSlabBlock, textureMap2,
+                blockStateModelGenerator.modelCollector);
+        Identifier identifier2 = ModModels.EAST_SLAB.upload(verticalSlabBlock, textureMap2, 
+                blockStateModelGenerator.modelCollector);
+        Identifier identifier3 = ModModels.SOUTH_SLAB.upload(verticalSlabBlock, textureMap2,
+                blockStateModelGenerator.modelCollector);
+        Identifier identifier4 = ModModels.WEST_SLAB.upload(verticalSlabBlock, textureMap2,
+                blockStateModelGenerator.modelCollector);
+        Identifier identifier5 = ModModels.DOUBLE_EAST_SLAB.uploadWithoutVariant(verticalSlabBlock, "_double_east",
+                textureMap2, blockStateModelGenerator.modelCollector);
+        Identifier identifier6 = ModModels.DOUBLE_NORTH_SLAB.uploadWithoutVariant(verticalSlabBlock, "_double_north",
+                textureMap2, blockStateModelGenerator.modelCollector);
+
+        blockStateModelGenerator.blockStateCollector.accept(createVerticalSlabBlockState(verticalSlabBlock, identifier,
+                identifier2, identifier3, identifier4, identifier5, identifier6));
+    }
+
+    private void generateBlockStateVerticalSlabFromCutSandstoneModel(BlockStateModelGenerator blockStateModelGenerator,
+            Block mainBlock, Block cutBlock, Block verticalSlabBlock) {
+        TextureMap textureMap2 = new TextureMap().put(TextureKey.SIDE, TextureMap.getId(cutBlock))
+                .put(TextureKey.TOP, TextureMap.getSubId(mainBlock, "_top")).put(TextureKey.BOTTOM, TextureMap.getSubId(mainBlock, "_top"));
+
+                Identifier identifier = ModModels.NORTH_SLAB.upload(verticalSlabBlock, textureMap2,
+                blockStateModelGenerator.modelCollector);
+        Identifier identifier2 = ModModels.EAST_SLAB.upload(verticalSlabBlock, textureMap2, 
+                blockStateModelGenerator.modelCollector);
+        Identifier identifier3 = ModModels.SOUTH_SLAB.upload(verticalSlabBlock, textureMap2,
+                blockStateModelGenerator.modelCollector);
+        Identifier identifier4 = ModModels.WEST_SLAB.upload(verticalSlabBlock, textureMap2,
+                blockStateModelGenerator.modelCollector);
+        Identifier identifier5 = ModModels.DOUBLE_EAST_SLAB.uploadWithoutVariant(verticalSlabBlock, "_double_east",
+                textureMap2, blockStateModelGenerator.modelCollector);
+        Identifier identifier6 = ModModels.DOUBLE_NORTH_SLAB.uploadWithoutVariant(verticalSlabBlock, "_double_north",
+                textureMap2, blockStateModelGenerator.modelCollector);
+
+        blockStateModelGenerator.blockStateCollector.accept(createVerticalSlabBlockState(verticalSlabBlock, identifier,
+                identifier2, identifier3, identifier4, identifier5, identifier6));
+    }
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
 
