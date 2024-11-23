@@ -3,13 +3,13 @@
 	"id": "vanilla-plus-plus",
 	"version": "${version}",
 	"name": "vanilla-plus-plus",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Vanilla++ is a mod that aims to add various blocks and items to the game, while still keeping the vanilla feel.",
 	"authors": [
 		"TheFusion21"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/TheFusion21/vanilla-plus-plus"
 	},
 	"license": "MIT",
 	"icon": "assets/vanilla-plus-plus/icon.png",
@@ -37,8 +37,5 @@
 		"minecraft": "~1.21.1",
 		"java": ">=21",
 		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
 	}
 }
