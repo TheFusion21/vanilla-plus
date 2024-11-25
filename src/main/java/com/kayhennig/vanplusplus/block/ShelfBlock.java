@@ -76,10 +76,7 @@ public class ShelfBlock extends BlockWithEntity {
             if (direction.getAxis().isHorizontal()) {
                 BlockState blockState = this.getDefaultState().with(HorizontalFacingBlock.FACING, direction.getOpposite());
                 if (blockState.canPlaceAt(ctx.getWorld(), ctx.getBlockPos())) {
-                    // check if the block we want to attach to is a solid block
-                    if (ctx.getWorld().getBlockState(ctx.getBlockPos().offset(direction)).isSolidBlock(ctx.getWorld(), ctx.getBlockPos().offset(direction))) {
-                        return blockState;
-                    }
+                    return blockState;
                 }
             }
         }
