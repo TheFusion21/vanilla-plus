@@ -29,6 +29,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     public void generate() {
         generateSlabs();
         generateVerticalSlabs();
+        generateShelfs();
+        generatePressurePlates();
     }
 
     private void generateSlabs() {
@@ -153,7 +155,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.POLISHED_BLACKSTONE_BRICK_VERTICAL_SLAB, verticalSlabDrops(ModBlocks.POLISHED_BLACKSTONE_BRICK_VERTICAL_SLAB));
         addDrop(ModBlocks.END_STONE_BRICK_VERTICAL_SLAB, verticalSlabDrops(ModBlocks.END_STONE_BRICK_VERTICAL_SLAB));
         addDrop(ModBlocks.PURPUR_VERTICAL_SLAB, verticalSlabDrops(ModBlocks.PURPUR_VERTICAL_SLAB));
+    }
 
+    private void generateShelfs() {
         addDrop(ModBlocks.OAK_SHELF, drops(ModBlocks.OAK_SHELF));
         addDrop(ModBlocks.SPRUCE_SHELF, drops(ModBlocks.SPRUCE_SHELF));
         addDrop(ModBlocks.BIRCH_SHELF, drops(ModBlocks.BIRCH_SHELF));
@@ -164,7 +168,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.CHERRY_SHELF, drops(ModBlocks.CHERRY_SHELF));
         addDrop(ModBlocks.CRIMSON_SHELF, drops(ModBlocks.CRIMSON_SHELF));
         addDrop(ModBlocks.WARPED_SHELF, drops(ModBlocks.WARPED_SHELF));
+    }
 
+    private void generatePressurePlates() {
         addDrop(ModBlocks.COBBLESTONE_PRESSURE_PLATE, drops(ModBlocks.COBBLESTONE_PRESSURE_PLATE));
         addDrop(ModBlocks.MOSSY_COBBLESTONE_PRESSURE_PLATE, drops(ModBlocks.MOSSY_COBBLESTONE_PRESSURE_PLATE));
         addDrop(ModBlocks.SMOOTH_STONE_PRESSURE_PLATE, drops(ModBlocks.SMOOTH_STONE_PRESSURE_PLATE));
@@ -181,6 +187,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.END_STONE_BRICK_PRESSURE_PLATE, drops(ModBlocks.END_STONE_BRICK_PRESSURE_PLATE));
         addDrop(ModBlocks.QUARTZ_PRESSURE_PLATE, drops(ModBlocks.QUARTZ_PRESSURE_PLATE));
     }
+
 
     public LootTable.Builder verticalSlabDrops(Block drop) {
         return LootTable.builder().pool(

@@ -1,6 +1,7 @@
 package com.kayhennig.vanplusplus;
 
 import com.kayhennig.vanplusplus.datagen.ModBlockTagProvider;
+import com.kayhennig.vanplusplus.datagen.ModItemTagProvider;
 import com.kayhennig.vanplusplus.datagen.ModLootTableProvider;
 import com.kayhennig.vanplusplus.datagen.ModModelProvider;
 import com.kayhennig.vanplusplus.datagen.ModRecipeProvider;
@@ -17,5 +18,6 @@ public class VanillaplusplusDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModLootTableProvider::new);
 		pack.addProvider(ModModelProvider::new);
 		pack.addProvider(ModRecipeProvider::new);
+        pack.addProvider(ModItemTagProvider::new);
 	}
 }

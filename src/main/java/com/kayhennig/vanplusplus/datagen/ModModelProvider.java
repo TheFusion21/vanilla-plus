@@ -530,6 +530,20 @@ public class ModModelProvider extends FabricModelProvider {
         Models.GENERATED.upload(ModelIds.getItemModelId(ModBlocks.GREEN_STAINED_GLASS_HORIZONTAL_PANE.asItem()), TextureMap.layer0(Blocks.GREEN_STAINED_GLASS), itemModelGenerator.writer);
         Models.GENERATED.upload(ModelIds.getItemModelId(ModBlocks.RED_STAINED_GLASS_HORIZONTAL_PANE.asItem()), TextureMap.layer0(Blocks.RED_STAINED_GLASS), itemModelGenerator.writer);
         Models.GENERATED.upload(ModelIds.getItemModelId(ModBlocks.BLACK_STAINED_GLASS_HORIZONTAL_PANE.asItem()), TextureMap.layer0(Blocks.BLACK_STAINED_GLASS), itemModelGenerator.writer);
+
+        itemModelGenerator.register(ModItems.WOODEN_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.STONE_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.IRON_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.GOLDEN_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DIAMOND_DAGGER, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.NETHERITE_DAGGER, Models.HANDHELD);
+
+        itemModelGenerator.register(ModItems.WOODEN_HAMMER, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.STONE_HAMMER, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.IRON_HAMMER, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.GOLDEN_HAMMER, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DIAMOND_HAMMER, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.NETHERITE_HAMMER, Models.HANDHELD);
     }
 
 }

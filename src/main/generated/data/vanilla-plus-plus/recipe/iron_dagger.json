@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "dagger",
+  "key": {
+    "O": {
+      "item": "minecraft:iron_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "O",
+    "S"
+  ],
+  "result": {
+    "count": 1,
+    "id": "vanilla-plus-plus:iron_dagger"
+  }
+}
