@@ -19,7 +19,7 @@ public class ModItemGroups {
 		.displayName(Text.translatable("itemGroup." + Vanillaplusplus.MOD_ID + ".vanplusplus"))
 		.build();
 
-    public static void init() {
+    public static void initialize() {
         Registry.register(Registries.ITEM_GROUP, VANPLUSPLUS, CUSTOM_ITEM_GROUP);
     }
 }

@@ -29,7 +29,7 @@ public class ModEntityType {
 
     public static final EntityType<DynamiteEntity> DYNAMITE = register("dynamite", 
         EntityType.Builder.<DynamiteEntity>create(DynamiteEntity::new, SpawnGroup.MISC)
-            .dimensions(0.3f, 0.8f)
+            .dimensions(0.3f, 0.4f)
             .maxTrackingRange(4)
             .trackingTickInterval(10)
             .build());

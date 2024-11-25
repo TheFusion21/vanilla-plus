@@ -1,4 +1,7 @@
 {
+    
+    "itemGroup.vanilla-plus-plus.vanplusplus": "Vanilla++",
+    
     "block.vanilla-plus-plus.iron_slab": "Iron Slab",
     "block.vanilla-plus-plus.lapis_slab": "Lapis Slab",
     "block.vanilla-plus-plus.gold_slab": "Gold Slab",
@@ -152,7 +155,21 @@
     "block.vanilla-plus-plus.red_nether_brick_pressure_plate": "Red Nether Brick Pressure Plate",
     "block.vanilla-plus-plus.end_stone_brick_pressure_plate": "End Stone Brick Pressure Plate",
     "block.vanilla-plus-plus.quartz_pressure_plate": "Quartz Pressure Plate",
+
     "item.vanilla-plus-plus.dynamite": "Dynamite",
     "item.vanilla-plus-plus.fuse_time": "Fuse time: %1$s",
-    "itemGroup.vanilla-plus-plus.vanplusplus": "Vanilla++"
+    "item.vanilla-plus-plus.wooden_dagger": "Wooden Dagger",
+    "item.vanilla-plus-plus.stone_dagger": "Stone Dagger",
+    "item.vanilla-plus-plus.iron_dagger": "Iron Dagger",
+    "item.vanilla-plus-plus.golden_dagger": "Golden Dagger",
+    "item.vanilla-plus-plus.diamond_dagger": "Diamond Dagger",
+    "item.vanilla-plus-plus.netherite_dagger": "Netherite Dagger",
+    "item.vanilla-plus-plus.wooden_hammer": "Wooden Hammer",
+    "item.vanilla-plus-plus.stone_hammer": "Stone Hammer",
+    "item.vanilla-plus-plus.iron_hammer": "Iron Hammer",
+    "item.vanilla-plus-plus.golden_hammer": "Golden Hammer",
+    "item.vanilla-plus-plus.diamond_hammer": "Diamond Hammer",
+    "item.vanilla-plus-plus.netherite_hammer": "Netherite Hammer",
+
+    "tag.item.vanilla-plus-plus.hammers": "Hammers"
 }

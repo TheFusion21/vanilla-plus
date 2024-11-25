@@ -21,7 +21,7 @@ public class Vanillaplusplus implements ModInitializer {
 	public void onInitialize() {
 		ModBlocks.registerModBlocks();
 		ModItems.registerItems();
-		ModItemGroups.init();
+		ModItemGroups.initialize();
         ModBlockEntityType.initialize();
         DynamiteRecipeSerializer.initialize();
 	}

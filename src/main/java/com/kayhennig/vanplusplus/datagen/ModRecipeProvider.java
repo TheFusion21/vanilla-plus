@@ -3,6 +3,7 @@ package com.kayhennig.vanplusplus.datagen;
 import java.util.concurrent.CompletableFuture;
 
 import com.kayhennig.vanplusplus.ModBlocks;
+import com.kayhennig.vanplusplus.ModItems;
 import com.kayhennig.vanplusplus.Vanillaplusplus;
 import com.kayhennig.vanplusplus.recipe.DynamiteRecipe;
 
@@ -14,9 +15,11 @@ import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.CraftingRecipeCategory;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.util.Identifier;
 
 public class ModRecipeProvider extends FabricRecipeProvider {
@@ -196,6 +199,21 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         addShapedPressurePlateRecipe(exporter, ModBlocks.QUARTZ_PRESSURE_PLATE, Blocks.QUARTZ_BLOCK);
 
         exporter.accept(Identifier.of(Vanillaplusplus.MOD_ID, "dynamite"), new DynamiteRecipe(CraftingRecipeCategory.MISC), null);
+
+        addShapedDaggerWoodRecipe(exporter, ModItems.WOODEN_DAGGER);
+        addShapedDaggerStoneRecipe(exporter, ModItems.STONE_DAGGER);
+        addShapedDaggerRecipe(exporter, ModItems.IRON_DAGGER, Items.IRON_INGOT);
+        addShapedDaggerRecipe(exporter, ModItems.GOLDEN_DAGGER, Items.GOLD_INGOT);
+        addShapedDaggerRecipe(exporter, ModItems.DIAMOND_DAGGER, Items.DIAMOND);
+        offerNetheriteUpgradeRecipe(exporter, ModItems.DIAMOND_DAGGER, RecipeCategory.COMBAT, ModItems.NETHERITE_DAGGER);
+
+
+        addShapedHammerWoodRecipe(exporter, ModItems.WOODEN_HAMMER);
+        addShapedHammerStoneRecipe(exporter, ModItems.STONE_HAMMER);
+        addShapedHammerRecipe(exporter, ModItems.IRON_HAMMER, Items.IRON_INGOT);
+        addShapedHammerRecipe(exporter, ModItems.GOLDEN_HAMMER, Items.GOLD_INGOT);
+        addShapedHammerRecipe(exporter, ModItems.DIAMOND_HAMMER, Items.DIAMOND);
+        offerNetheriteUpgradeRecipe(exporter, ModItems.DIAMOND_HAMMER, RecipeCategory.TOOLS, ModItems.NETHERITE_HAMMER);
     }
 
     private void offerShapedSlabRecipe(RecipeExporter exporter, RecipeCategory category, Block slab, Block block,
@@ -254,6 +272,78 @@ public class ModRecipeProvider extends FabricRecipeProvider {
             .input('#', block)
             .criterion(FabricRecipeProvider.hasItem(block),
                     FabricRecipeProvider.conditionsFromItem(block))
+            .offerTo(exporter);
+    }
+
+    private void addShapedDaggerWoodRecipe(RecipeExporter exporter, Item dagger) {
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, dagger, 1)
+            .pattern("O")
+            .pattern("S")
+            .group("dagger")
+            .input('O', Ingredient.fromTag(ItemTags.PLANKS))
+            .input('S', Items.STICK)
+            .criterion(FabricRecipeProvider.hasItem(Items.STICK),
+                    FabricRecipeProvider.conditionsFromItem(Items.STICK))
+            .offerTo(exporter);
+    }
+
+    private void addShapedDaggerStoneRecipe(RecipeExporter exporter, Item dagger) {
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, dagger, 1)
+            .pattern("O")
+            .pattern("S")
+            .group("dagger")
+            .input('O', Ingredient.fromTag(ItemTags.STONE_TOOL_MATERIALS))
+            .input('S', Items.STICK)
+            .criterion(FabricRecipeProvider.hasItem(Items.STICK),
+                    FabricRecipeProvider.conditionsFromItem(Items.STICK))
+            .offerTo(exporter);
+    }   
+
+    private void addShapedDaggerRecipe(RecipeExporter exporter, Item dagger, Item material) {
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, dagger, 1)
+            .pattern("O")
+            .pattern("S")
+            .group("dagger")
+            .input('O', material)
+            .input('S', Items.STICK)
+            .criterion(FabricRecipeProvider.hasItem(Items.STICK),
+                    FabricRecipeProvider.conditionsFromItem(Items.STICK))
+            .offerTo(exporter);
+    }
+
+    private void addShapedHammerWoodRecipe(RecipeExporter exporter, Item hammer) {
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, hammer, 1)
+            .pattern("OOO")
+            .pattern(" S ")
+            .group("hammer")
+            .input('O', Ingredient.fromTag(ItemTags.PLANKS))
+            .input('S', Items.STICK)
+            .criterion(FabricRecipeProvider.hasItem(Items.STICK),
+                    FabricRecipeProvider.conditionsFromItem(Items.STICK))
+            .offerTo(exporter);
+    }
+
+    private void addShapedHammerStoneRecipe(RecipeExporter exporter, Item hammer) {
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, hammer, 1)
+            .pattern("OOO")
+            .pattern(" S ")
+            .group("hammer")
+            .input('O', Ingredient.fromTag(ItemTags.STONE_TOOL_MATERIALS))
+            .input('S', Items.STICK)
+            .criterion(FabricRecipeProvider.hasItem(Items.STICK),
+                    FabricRecipeProvider.conditionsFromItem(Items.STICK))
+            .offerTo(exporter);
+    }
+
+    private void addShapedHammerRecipe(RecipeExporter exporter, Item hammer, Item material) {
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, hammer, 1)
+            .pattern("OOO")
+            .pattern(" S ")
+            .group("hammer")
+            .input('O', material)
+            .input('S', Items.STICK)
+            .criterion(FabricRecipeProvider.hasItem(Items.STICK),
+                    FabricRecipeProvider.conditionsFromItem(Items.STICK))
             .offerTo(exporter);
     }
 }

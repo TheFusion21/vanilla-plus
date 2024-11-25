@@ -2,6 +2,8 @@ package com.kayhennig.vanplusplus;
 
 import com.kayhennig.vanplusplus.thrown.DynamiteEntity;
 
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.minecraft.client.render.OverlayTexture;
 import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.client.render.entity.EntityRenderer;
@@ -10,7 +12,10 @@ import net.minecraft.client.render.item.ItemRenderer;
 import net.minecraft.client.render.model.json.ModelTransformationMode;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.RotationAxis;
+
+@Environment(EnvType.CLIENT)
 public class DynamiteEntityRenderer extends EntityRenderer<DynamiteEntity>  {
     private final ItemRenderer itemRenderer;
 
@@ -21,9 +26,9 @@ public class DynamiteEntityRenderer extends EntityRenderer<DynamiteEntity>  {
 
     public void render(DynamiteEntity dynamiteEntity, float f, float g, MatrixStack matrixStack, VertexConsumerProvider vertexConsumerProvider, int i) {
         matrixStack.push();
-        matrixStack.translate(0.0D, 0.45D, 0.0D);
-        matrixStack.multiply(RotationAxis.NEGATIVE_Y.rotationDegrees((float)dynamiteEntity.getRotationClient().y));
-        matrixStack.multiply(RotationAxis.POSITIVE_X.rotationDegrees((float)dynamiteEntity.getRotationClient().x));
+        matrixStack.multiply(RotationAxis.POSITIVE_Y.rotationDegrees(MathHelper.lerp(g, dynamiteEntity.prevYaw, dynamiteEntity.getYaw()) + 90F));
+		matrixStack.multiply(RotationAxis.POSITIVE_Z.rotationDegrees(MathHelper.lerp(g, dynamiteEntity.prevPitch, dynamiteEntity.getPitch()) + 90F));
+        matrixStack.translate(0.0D, 0.2D, 0.0D);
         
         this.itemRenderer.renderItem(
             dynamiteEntity.getStack(),
