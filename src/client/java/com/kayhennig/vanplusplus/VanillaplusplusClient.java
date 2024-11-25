@@ -1,11 +1,13 @@
 package com.kayhennig.vanplusplus;
 
 import com.kayhennig.vanplusplus.entity.ModBlockEntityType;
+import com.kayhennig.vanplusplus.entity.ModEntityType;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.block.entity.BlockEntityRendererFactories;
 
@@ -34,5 +36,6 @@ public class VanillaplusplusClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.RED_STAINED_GLASS_HORIZONTAL_PANE, RenderLayer.getTranslucent());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BLACK_STAINED_GLASS_HORIZONTAL_PANE, RenderLayer.getTranslucent());
         BlockEntityRendererFactories.register(ModBlockEntityType.SHELF, ShelfBlockEntityRenderer::new);
+        EntityRendererRegistry.register(ModEntityType.DYNAMITE, DynamiteEntityRenderer::new);
 	}
 }

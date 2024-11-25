@@ -152,8 +152,7 @@
     "block.vanilla-plus-plus.red_nether_brick_pressure_plate": "Red Nether Brick Pressure Plate",
     "block.vanilla-plus-plus.end_stone_brick_pressure_plate": "End Stone Brick Pressure Plate",
     "block.vanilla-plus-plus.quartz_pressure_plate": "Quartz Pressure Plate",
-    "item.vanilla-plus-plus.grapes": "Grapes",
-    "item.vanilla-plus-plus.cherries": "Cherries",
-    "itemGroup.vanilla-plus-plus.vanplusplus": "Vanilla++",
-    "item.vanilla-plus-plus.pear": "Pear"
+    "item.vanilla-plus-plus.dynamite": "Dynamite",
+    "item.vanilla-plus-plus.fuse_time": "Fuse time: %1$s",
+    "itemGroup.vanilla-plus-plus.vanplusplus": "Vanilla++"
 }

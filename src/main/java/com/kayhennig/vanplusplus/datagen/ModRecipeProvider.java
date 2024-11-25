@@ -3,6 +3,8 @@ package com.kayhennig.vanplusplus.datagen;
 import java.util.concurrent.CompletableFuture;
 
 import com.kayhennig.vanplusplus.ModBlocks;
+import com.kayhennig.vanplusplus.Vanillaplusplus;
+import com.kayhennig.vanplusplus.recipe.DynamiteRecipe;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
@@ -12,8 +14,10 @@ import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.book.CraftingRecipeCategory;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.util.Identifier;
 
 public class ModRecipeProvider extends FabricRecipeProvider {
     public ModRecipeProvider(FabricDataOutput output,
@@ -190,6 +194,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         addShapedPressurePlateRecipe(exporter, ModBlocks.RED_NETHER_BRICK_PRESSURE_PLATE, Blocks.RED_NETHER_BRICKS);
         addShapedPressurePlateRecipe(exporter, ModBlocks.END_STONE_BRICK_PRESSURE_PLATE, Blocks.END_STONE_BRICKS);
         addShapedPressurePlateRecipe(exporter, ModBlocks.QUARTZ_PRESSURE_PLATE, Blocks.QUARTZ_BLOCK);
+
+        exporter.accept(Identifier.of(Vanillaplusplus.MOD_ID, "dynamite"), new DynamiteRecipe(CraftingRecipeCategory.MISC), null);
     }
 
     private void offerShapedSlabRecipe(RecipeExporter exporter, RecipeCategory category, Block slab, Block block,

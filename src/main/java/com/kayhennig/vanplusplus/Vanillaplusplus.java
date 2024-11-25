@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 
 import com.kayhennig.vanplusplus.entity.ModBlockEntityType;
 import com.kayhennig.vanplusplus.item.ModItemGroups;
+import com.kayhennig.vanplusplus.recipe.DynamiteRecipeSerializer;
 
 public class Vanillaplusplus implements ModInitializer {
 	public static final String MOD_ID = "vanilla-plus-plus";
@@ -22,6 +23,7 @@ public class Vanillaplusplus implements ModInitializer {
 		ModItems.registerItems();
 		ModItemGroups.init();
         ModBlockEntityType.initialize();
+        DynamiteRecipeSerializer.initialize();
 	}
 
 }

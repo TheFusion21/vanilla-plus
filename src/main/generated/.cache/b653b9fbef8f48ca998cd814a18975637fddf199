@@ -1,4 +1,4 @@
-// 1.21.1	2024-11-23T19:09:57.7789804	vanilla-plus-plus/Recipes
+// 1.21.1	2024-11-25T09:37:34.9704373	vanilla-plus-plus/Recipes
 62b92549bcfaf63be0b6aca1204af5a94ec32b14 data\vanilla-plus-plus\recipe\stripped_dark_oak_log_vertical_slab.json
 b9424786c061259ecf2ffedf34f74f3a85c8500a data\vanilla-plus-plus\recipe\oak_log_slab.json
 abfb165dbe7b6aee1a9994f7648c300c482fc4dd data\vanilla-plus-plus\recipe\polished_andesite_vertical_slab.json
@@ -225,6 +225,7 @@ c95b90d23872a49e746edd071654103408767c71 data\vanilla-plus-plus\recipe\polished_
 e3ef523506fa5ddf115ecd0dc796a3f4d83889ad data\vanilla-plus-plus\recipe\granite_vertical_slab.json
 88f7ffe510023998b18cef5c56c02b93e16b1f9f data\vanilla-plus-plus\recipe\dark_prismarine_vertical_slab.json
 954a85e6e273fdcf992e11a1e3fe8d4c85816b30 data\vanilla-plus-plus\recipe\oxidized_cut_copper_vertical_slab.json
+01e66fbbd962a8802a21ff3c416ba012c08102e6 data\vanilla-plus-plus\recipe\dynamite.json
 6e6d1c12323c76a67c3b880aa4e3f2837942007e data\vanilla-plus-plus\advancement\recipes\building_blocks\stone_brick_vertical_slab.json
 59ebd82640a935d048e3651a7f8e951830b2011b data\vanilla-plus-plus\recipe\dark_oak_shelf.json
 fc29a050a78c0d6239701e62fe9c69d7083a3545 data\vanilla-plus-plus\advancement\recipes\building_blocks\mangrove_log_vertical_slab.json
