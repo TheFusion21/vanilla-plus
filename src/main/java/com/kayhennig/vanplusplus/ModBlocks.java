@@ -588,6 +588,24 @@ public class ModBlocks {
         entries.addAfter(Blocks.CRIMSON_PLANKS, CRIMSON_SHELF);
         entries.addAfter(Blocks.WARPED_PLANKS, WARPED_SHELF);
     }
+
+    private static void addBlockToRedstoneBlockGroup(FabricItemGroupEntries entries) {
+        entries.addAfter(Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE, COBBLESTONE_PRESSURE_PLATE);
+        entries.addAfter(COBBLESTONE_PRESSURE_PLATE, MOSSY_COBBLESTONE_PRESSURE_PLATE);
+        entries.addAfter(MOSSY_COBBLESTONE_PRESSURE_PLATE, SMOOTH_STONE_PRESSURE_PLATE);
+        entries.addAfter(SMOOTH_STONE_PRESSURE_PLATE, STONE_BRICK_PRESSURE_PLATE);
+        entries.addAfter(STONE_BRICK_PRESSURE_PLATE, MOSSY_STONE_BRICK_PRESSURE_PLATE);
+        entries.addAfter(MOSSY_STONE_BRICK_PRESSURE_PLATE, POLISHED_DEEPSLATE_PRESSURE_PLATE);
+        entries.addAfter(POLISHED_DEEPSLATE_PRESSURE_PLATE, DEEPSLATE_BRICK_PRESSURE_PLATE);
+        entries.addAfter(DEEPSLATE_BRICK_PRESSURE_PLATE, BRICK_PRESSURE_PLATE);
+        entries.addAfter(BRICK_PRESSURE_PLATE, MUD_BRICK_PRESSURE_PLATE);
+        entries.addAfter(MUD_BRICK_PRESSURE_PLATE, SANDSTONE_PRESSURE_PLATE);
+        entries.addAfter(SANDSTONE_PRESSURE_PLATE, RED_SANDSTONE_PRESSURE_PLATE);
+        entries.addAfter(RED_SANDSTONE_PRESSURE_PLATE, NETHER_BRICK_PRESSURE_PLATE);
+        entries.addAfter(NETHER_BRICK_PRESSURE_PLATE, RED_NETHER_BRICK_PRESSURE_PLATE);
+        entries.addAfter(RED_NETHER_BRICK_PRESSURE_PLATE, END_STONE_BRICK_PRESSURE_PLATE);
+        entries.addAfter(END_STONE_BRICK_PRESSURE_PLATE, QUARTZ_PRESSURE_PLATE);
+    }
     
     public static void registerModBlocks() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS)
@@ -596,5 +614,6 @@ public class ModBlocks {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(ModBlocks::addBlockToNaturalBlockGroup);
         ItemGroupEvents.modifyEntriesEvent(ModItemGroups.VANPLUSPLUS).register(ModBlocks::addBlockToModBlockGroup);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(ModBlocks::addBlockToFunctionalBlockGroup);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.REDSTONE).register(ModBlocks::addBlockToRedstoneBlockGroup);
     }
 }
