@@ -19,3 +19,6 @@ Vanilla++ is a mod that aims to add various blocks and items to the game, while 
 
 ### Pressure plates
 ![Pressure plates](/screenshots/pressure_plates.png)
+
+### Items
+![Items](/screenshots/items.png)
