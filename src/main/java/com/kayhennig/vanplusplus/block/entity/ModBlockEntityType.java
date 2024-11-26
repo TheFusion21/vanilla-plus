@@ -1,8 +1,7 @@
-package com.kayhennig.vanplusplus.entity;
+package com.kayhennig.vanplusplus.block.entity;
 
 import com.kayhennig.vanplusplus.ModBlocks;
 import com.kayhennig.vanplusplus.Vanillaplusplus;
-import com.kayhennig.vanplusplus.block.ShelfBlockEntity;
 
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.registry.Registries;

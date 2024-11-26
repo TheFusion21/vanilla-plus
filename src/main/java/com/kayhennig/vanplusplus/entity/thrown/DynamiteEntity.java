@@ -1,4 +1,4 @@
-package com.kayhennig.vanplusplus.thrown;
+package com.kayhennig.vanplusplus.entity.thrown;
 
 import com.kayhennig.vanplusplus.ModItems;
 import com.kayhennig.vanplusplus.component.ModDataComponentTypes;

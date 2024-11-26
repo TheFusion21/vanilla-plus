@@ -2,8 +2,8 @@ package com.kayhennig.vanplusplus.entity;
 
 import com.kayhennig.vanplusplus.ModBlocks;
 import com.kayhennig.vanplusplus.Vanillaplusplus;
-import com.kayhennig.vanplusplus.block.ShelfBlockEntity;
-import com.kayhennig.vanplusplus.thrown.DynamiteEntity;
+import com.kayhennig.vanplusplus.block.entity.ShelfBlockEntity;
+import com.kayhennig.vanplusplus.entity.thrown.DynamiteEntity;
 
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.entity.EntityType;

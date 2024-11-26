@@ -1,6 +1,7 @@
-package com.kayhennig.vanplusplus;
+package com.kayhennig.vanplusplus.render.entity;
 
-import com.kayhennig.vanplusplus.thrown.DynamiteEntity;
+import com.kayhennig.vanplusplus.Vanillaplusplus;
+import com.kayhennig.vanplusplus.entity.thrown.DynamiteEntity;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;

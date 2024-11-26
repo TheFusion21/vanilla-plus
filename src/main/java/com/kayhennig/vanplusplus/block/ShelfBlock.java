@@ -5,6 +5,7 @@ import java.util.OptionalInt;
 
 import org.jetbrains.annotations.Nullable;
 
+import com.kayhennig.vanplusplus.block.entity.ShelfBlockEntity;
 import com.mojang.serialization.MapCodec;
 
 import net.minecraft.block.Block;

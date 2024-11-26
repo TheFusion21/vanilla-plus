@@ -1,11 +1,11 @@
-package com.kayhennig.vanplusplus.block;
+package com.kayhennig.vanplusplus.block.entity;
 
 import java.util.Objects;
 
 import org.jetbrains.annotations.Nullable;
 import org.slf4j.Logger;
 
-import com.kayhennig.vanplusplus.entity.ModBlockEntityType;
+import com.kayhennig.vanplusplus.block.ShelfBlock;
 import com.mojang.logging.LogUtils;
 
 import net.minecraft.block.Block;

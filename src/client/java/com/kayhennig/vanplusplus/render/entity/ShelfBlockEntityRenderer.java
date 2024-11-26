@@ -1,6 +1,6 @@
-package com.kayhennig.vanplusplus;
+package com.kayhennig.vanplusplus.render.entity;
 
-import com.kayhennig.vanplusplus.block.ShelfBlockEntity;
+import com.kayhennig.vanplusplus.block.entity.ShelfBlockEntity;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
