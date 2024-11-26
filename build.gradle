@@ -28,6 +28,7 @@ loom {
 		}
 	}
 
+    accessWidenerPath = file('src/main/resources/vanilla-plus-plus.accesswidener')
 }
 
 fabricApi {

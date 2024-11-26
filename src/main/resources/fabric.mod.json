@@ -37,5 +37,6 @@
 		"minecraft": "~1.21.1",
 		"java": ">=21",
 		"fabric-api": ">=0.107.0"
-	}
+	},
+    "accessWidener": "vanilla-plus-plus.accesswidener"
 }

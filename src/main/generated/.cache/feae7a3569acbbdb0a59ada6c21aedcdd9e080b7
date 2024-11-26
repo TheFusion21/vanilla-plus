@@ -1,4 +1,4 @@
-// 1.21.1	2024-11-25T18:13:00.3820385	vanilla-plus-plus/Model Definitions
+// 1.21.1	2024-11-26T17:32:01.1807429	vanilla-plus-plus/Model Definitions
 f566250bb87f9eecee0ca3c4a7b91ec30275fca9 assets\vanilla-plus-plus\models\block\mossy_cobblestone_pressure_plate_down.json
 b50349827b171a3b1db42a7ce158f8680d8e50da assets\vanilla-plus-plus\models\block\birch_log_vertical_slab_east.json
 31ff31b85a62bc715fe909383fa19092190778c8 assets\vanilla-plus-plus\models\item\brick_vertical_slab.json
@@ -16,8 +16,8 @@ df4ecbc5e2ab724a169f6fb020929f592d8ab0ea assets\vanilla-plus-plus\models\block\t
 f76f2aab7b4f53b22a8e16b994dd957a158d10c3 assets\vanilla-plus-plus\models\block\nether_brick_vertical_slab_double_east.json
 6a8e77e1fba4b5dfe69eedd4ddd658903e54c0f9 assets\vanilla-plus-plus\models\block\bamboo_vertical_slab_east.json
 bec629d28cd4d114b9932eddea09012c38b2d347 assets\vanilla-plus-plus\blockstates\dark_oak_log_slab.json
-9c2cbd7597d43e4878556f4ff19601dd5844e921 assets\vanilla-plus-plus\models\item\diorite_vertical_slab.json
 e2ac010f235f39c4b69692d988a603b5f4a3fc28 assets\vanilla-plus-plus\blockstates\brown_stained_glass_horizontal_pane.json
+9c2cbd7597d43e4878556f4ff19601dd5844e921 assets\vanilla-plus-plus\models\item\diorite_vertical_slab.json
 ad4b25e769821fc89fb9e5720b19ae8534ed3a35 assets\vanilla-plus-plus\models\item\mossy_cobblestone_pressure_plate.json
 06d2a50da34184a03ebb2d6af36d5374110e1a5a assets\vanilla-plus-plus\models\item\exposed_cut_copper_vertical_slab.json
 7e06ad5c7fedaa07875c9c4bc4dfd4ca506a4062 assets\vanilla-plus-plus\models\item\stripped_acacia_log_vertical_slab.json
@@ -127,8 +127,8 @@ f86af2ed4e5dec3fe1df4752d078d28ae7facf08 assets\vanilla-plus-plus\models\block\d
 e165e0739c6c00b1e68474a1cfc1c4bdb0c23ef5 assets\vanilla-plus-plus\models\block\waxed_weathered_cut_copper_vertical_slab_east.json
 9310f0b53ec3e49c878652a15ee208457c384430 assets\vanilla-plus-plus\models\block\red_nether_brick_vertical_slab_south.json
 1f214c749b6cb28e99c71e13874f1304ed1e1b38 assets\vanilla-plus-plus\models\item\stone_dagger.json
-2f0fc9ad780e4231ebbcf379ea9cb4c3162da9b8 assets\vanilla-plus-plus\blockstates\purple_stained_glass_horizontal_pane.json
 7986abf06d73b5ee9075eb26b9f087239bd77362 assets\vanilla-plus-plus\blockstates\polished_granite_vertical_slab.json
+2f0fc9ad780e4231ebbcf379ea9cb4c3162da9b8 assets\vanilla-plus-plus\blockstates\purple_stained_glass_horizontal_pane.json
 2fd48ebf26c50694e2a4ea98fe4dc58849ebca16 assets\vanilla-plus-plus\blockstates\bamboo_vertical_slab.json
 0778ababe26b2f2191f356511f886966b7ad7d58 assets\vanilla-plus-plus\models\block\mud_brick_vertical_slab_east.json
 6d7f4cceafbc2cd81d79a04b0484016fd03cc91d assets\vanilla-plus-plus\models\item\polished_andesite_vertical_slab.json
@@ -559,8 +559,8 @@ b5ad288bc2e7895604af0a7918383a90e8c3604f assets\vanilla-plus-plus\models\block\t
 3555c086701276b54d9627d78bf195870774b38d assets\vanilla-plus-plus\models\block\glass_slab_top.json
 d4936951d75fa82b404fc84c94c395d90beae45f assets\vanilla-plus-plus\models\block\oak_log_vertical_slab_double_east.json
 037bdf0035fd5c6fe0c09de43ce6c63c99c0a481 assets\vanilla-plus-plus\models\block\sandstone_vertical_slab_west.json
-29306f5fbc15593f6b4b0b15763d82dd8969c410 assets\vanilla-plus-plus\models\block\acacia_shelf_west.json
 51d88e592b1a003d95ad81c191f1fbd1673d0a68 assets\vanilla-plus-plus\blockstates\red_nether_brick_vertical_slab.json
+29306f5fbc15593f6b4b0b15763d82dd8969c410 assets\vanilla-plus-plus\models\block\acacia_shelf_west.json
 afbe9188f2f275aeff8a1737912d9c9db8d06c46 assets\vanilla-plus-plus\models\block\oak_log_vertical_slab_double_north.json
 d8c26e7341d2626a6bd0a2dd67eeef0a78a73c32 assets\vanilla-plus-plus\blockstates\stripped_crimson_stem_slab.json
 22d7fc51a9bacee11f964641c740c98e40277900 assets\vanilla-plus-plus\models\block\cut_copper_vertical_slab_west.json
@@ -707,8 +707,8 @@ f6d5626613835f106922886950dd91dea5ad9c54 assets\vanilla-plus-plus\models\block\o
 045ccf01c3375fa436d926e55471d5f2c881973e assets\vanilla-plus-plus\models\item\quartz_vertical_slab.json
 668eea5f052988753718a386f4b7993d6e298c1b assets\vanilla-plus-plus\models\block\oxidized_cut_copper_vertical_slab.json
 98f34c4c064a277053454f7f85f92fff9f147192 assets\vanilla-plus-plus\models\block\crimson_stem_vertical_slab_east.json
-4c49388fe54266efdc684781c0fb90879067e401 assets\vanilla-plus-plus\models\block\stone_brick_vertical_slab_south.json
 1f517e4a23565f267fd991ed8fa020264793c3e3 assets\vanilla-plus-plus\models\item\dark_oak_log_slab.json
+4c49388fe54266efdc684781c0fb90879067e401 assets\vanilla-plus-plus\models\block\stone_brick_vertical_slab_south.json
 f6a083f16c0cc3e123af74a506001e6177f6ce78 assets\vanilla-plus-plus\blockstates\stripped_mangrove_log_vertical_slab.json
 99afedf4e0e2c8f8af1e85b8caddfd90c64c7c31 assets\vanilla-plus-plus\blockstates\stripped_mangrove_log_slab.json
 4a490f691005b1536346b1b73b5f21f38d13eb88 assets\vanilla-plus-plus\models\block\stripped_mangrove_log_vertical_slab_south.json
@@ -858,8 +858,8 @@ bb3a7ad08d1df7d6a7031f4c6f9d70bad637e0f0 assets\vanilla-plus-plus\models\block\d
 967b1627ea892e01b902d6c40b2a0b5b9fea4dcc assets\vanilla-plus-plus\models\item\lapis_slab.json
 0a3a34c0a1d47ab548650921f7e1266aae4d1b87 assets\vanilla-plus-plus\models\block\acacia_planks_vertical_slab_west.json
 c5ab91c536d4628bb7d3289ca0106cf48a595167 assets\vanilla-plus-plus\models\block\polished_blackstone_brick_vertical_slab_double_east.json
-7be390ee1d69e18456a57828c7480885302bbf6d assets\vanilla-plus-plus\models\block\spruce_shelf_west.json
 ae302381fcdf4932299db1ee12ffdad5af083346 assets\vanilla-plus-plus\models\block\cobbled_deepslate_vertical_slab.json
+7be390ee1d69e18456a57828c7480885302bbf6d assets\vanilla-plus-plus\models\block\spruce_shelf_west.json
 5102729ed78eee2870d299d4a45e102e1dd4d60f assets\vanilla-plus-plus\models\block\glass_vertical_slab.json
 440ed8136855f2b70ef152f951673da5d16a342c assets\vanilla-plus-plus\models\block\mangrove_planks_vertical_slab.json
 63cc3e2af8a6f692110167b070562a98fe91937b assets\vanilla-plus-plus\models\block\nether_brick_pressure_plate.json

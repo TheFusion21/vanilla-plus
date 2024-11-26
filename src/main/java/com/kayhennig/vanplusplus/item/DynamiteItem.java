@@ -3,7 +3,7 @@ package com.kayhennig.vanplusplus.item;
 import java.util.List;
 
 import com.kayhennig.vanplusplus.component.ModDataComponentTypes;
-import com.kayhennig.vanplusplus.thrown.DynamiteEntity;
+import com.kayhennig.vanplusplus.entity.thrown.DynamiteEntity;
 
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.ProjectileEntity;
@@ -36,7 +36,7 @@ public class DynamiteItem extends Item implements ProjectileItem {
         if (!world.isClient) {
 			DynamiteEntity dynamiteEntity = new DynamiteEntity(world, user);
 			dynamiteEntity.setItem(itemStack);
-			dynamiteEntity.setVelocity(user, user.getPitch(), user.getYaw(), -20.0f, 1.5f, 1.0f);
+			dynamiteEntity.setVelocity(user, user.getPitch(), user.getYaw(), 0.0f, 1.5f, 1.0f);
 			world.spawnEntity(dynamiteEntity);
 		}
 

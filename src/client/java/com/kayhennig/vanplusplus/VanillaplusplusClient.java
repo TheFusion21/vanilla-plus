@@ -1,7 +1,9 @@
 package com.kayhennig.vanplusplus;
 
-import com.kayhennig.vanplusplus.entity.ModBlockEntityType;
+import com.kayhennig.vanplusplus.block.entity.ModBlockEntityType;
 import com.kayhennig.vanplusplus.entity.ModEntityType;
+import com.kayhennig.vanplusplus.render.entity.DynamiteEntityRenderer;
+import com.kayhennig.vanplusplus.render.entity.ShelfBlockEntityRenderer;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
