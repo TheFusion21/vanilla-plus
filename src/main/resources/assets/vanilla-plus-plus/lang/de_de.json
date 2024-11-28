@@ -168,6 +168,14 @@
     "item.vanilla-plus-plus.golden_hammer": "Goldhammer",
     "item.vanilla-plus-plus.diamond_hammer": "Diamanthammer",
     "item.vanilla-plus-plus.netherite_hammer": "Netherithammer",
+    "item.vanilla-plus-plus.wooden_spear": "Holzspeer",
+    "item.vanilla-plus-plus.stone_spear": "Steinspeer",
+    "item.vanilla-plus-plus.iron_spear": "Eisenspeer",
+    "item.vanilla-plus-plus.golden_spear": "Goldspeer",
+    "item.vanilla-plus-plus.diamond_spear": "Diamantspeer",
+    "item.vanilla-plus-plus.netherite_spear": "Netheritspeer",
+
+    "death.attack.spear": "%1$s wurde von %2$s erstochen",
 
     "tag.item.vanilla-plus-plus.hammers": "Hammer"
 }

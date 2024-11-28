@@ -3,6 +3,9 @@
 	"package": "com.kayhennig.vanplusplus.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [],
+    "client": [
+        "EntityModelsMixin"
+    ],
 	"injectors": {
 		"defaultRequire": 1
 	}

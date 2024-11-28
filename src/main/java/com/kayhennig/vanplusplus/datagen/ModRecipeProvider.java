@@ -209,6 +209,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         addShapedDaggerRecipe(exporter, ModItems.IRON_DAGGER, Items.IRON_INGOT);
         addShapedDaggerRecipe(exporter, ModItems.GOLDEN_DAGGER, Items.GOLD_INGOT);
         addShapedDaggerRecipe(exporter, ModItems.DIAMOND_DAGGER, Items.DIAMOND);
+        addShapedDaggerRecipe(exporter, ModItems.NETHERITE_DAGGER, Items.NETHERITE_INGOT);
         offerNetheriteUpgradeRecipe(exporter, ModItems.DIAMOND_DAGGER, RecipeCategory.COMBAT, ModItems.NETHERITE_DAGGER);
 
 
@@ -217,7 +218,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         addShapedHammerRecipe(exporter, ModItems.IRON_HAMMER, Items.IRON_INGOT);
         addShapedHammerRecipe(exporter, ModItems.GOLDEN_HAMMER, Items.GOLD_INGOT);
         addShapedHammerRecipe(exporter, ModItems.DIAMOND_HAMMER, Items.DIAMOND);
-        offerNetheriteUpgradeRecipe(exporter, ModItems.DIAMOND_HAMMER, RecipeCategory.TOOLS, ModItems.NETHERITE_HAMMER);
+        addShapedHammerRecipe(exporter, ModItems.NETHERITE_HAMMER, Items.NETHERITE_INGOT);
+        offerNetheriteUpgradeRecipe(exporter, ModItems.DIAMOND_HAMMER, RecipeCategory.COMBAT, ModItems.NETHERITE_HAMMER);
+
+        addShapedSpearWoodRecipe(exporter, ModItems.WOODEN_SPEAR);
+        addShapedSpearStoneRecipe(exporter, ModItems.STONE_SPEAR);
+        addShapedSpearRecipe(exporter, ModItems.IRON_SPEAR, Items.IRON_INGOT);
+        addShapedSpearRecipe(exporter, ModItems.GOLDEN_SPEAR, Items.GOLD_INGOT);
+        addShapedSpearRecipe(exporter, ModItems.DIAMOND_SPEAR, Items.DIAMOND);
+        addShapedSpearRecipe(exporter, ModItems.NETHERITE_SPEAR, Items.NETHERITE_INGOT);
+        offerNetheriteUpgradeRecipe(exporter, ModItems.DIAMOND_SPEAR, RecipeCategory.COMBAT, ModItems.NETHERITE_SPEAR);
     }
 
     private void generateStoneCutterSlabRecipes(RecipeExporter exporter) {
@@ -444,7 +454,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     }
 
     private void addShapedHammerWoodRecipe(RecipeExporter exporter, Item hammer) {
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, hammer, 1)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, hammer, 1)
             .pattern("OOO")
             .pattern(" S ")
             .group("hammer")
@@ -456,7 +466,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     }
 
     private void addShapedHammerStoneRecipe(RecipeExporter exporter, Item hammer) {
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, hammer, 1)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, hammer, 1)
             .pattern("OOO")
             .pattern(" S ")
             .group("hammer")
@@ -468,10 +478,49 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     }
 
     private void addShapedHammerRecipe(RecipeExporter exporter, Item hammer, Item material) {
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, hammer, 1)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, hammer, 1)
             .pattern("OOO")
             .pattern(" S ")
             .group("hammer")
+            .input('O', material)
+            .input('S', Items.STICK)
+            .criterion(FabricRecipeProvider.hasItem(Items.STICK),
+                    FabricRecipeProvider.conditionsFromItem(Items.STICK))
+            .offerTo(exporter);
+    }
+
+    private void addShapedSpearWoodRecipe(RecipeExporter exporter, Item spear) {
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, spear, 1)
+            .pattern("  O")
+            .pattern(" S ")
+            .pattern("S  ")
+            .group("spear")
+            .input('O', Ingredient.fromTag(ItemTags.PLANKS))
+            .input('S', Items.STICK)
+            .criterion(FabricRecipeProvider.hasItem(Items.STICK),
+                    FabricRecipeProvider.conditionsFromItem(Items.STICK))
+            .offerTo(exporter);
+    }
+
+    private void addShapedSpearStoneRecipe(RecipeExporter exporter, Item spear) {
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, spear, 1)
+            .pattern("  O")
+            .pattern(" S ")
+            .pattern("S  ")
+            .group("spear")
+            .input('O', Ingredient.fromTag(ItemTags.STONE_TOOL_MATERIALS))
+            .input('S', Items.STICK)
+            .criterion(FabricRecipeProvider.hasItem(Items.STICK),
+                    FabricRecipeProvider.conditionsFromItem(Items.STICK))
+            .offerTo(exporter);
+    }
+
+    private void addShapedSpearRecipe(RecipeExporter exporter, Item spear, Item material) {
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, spear, 1)
+            .pattern("  O")
+            .pattern(" S ")
+            .pattern("S  ")
+            .group("spear")
             .input('O', material)
             .input('S', Items.STICK)
             .criterion(FabricRecipeProvider.hasItem(Items.STICK),

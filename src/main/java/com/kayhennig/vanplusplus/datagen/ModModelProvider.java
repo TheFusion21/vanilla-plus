@@ -544,6 +544,14 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.GOLDEN_HAMMER, Models.HANDHELD);
         itemModelGenerator.register(ModItems.DIAMOND_HAMMER, Models.HANDHELD);
         itemModelGenerator.register(ModItems.NETHERITE_HAMMER, Models.HANDHELD);
+
+        itemModelGenerator.register(ModItems.WOODEN_SPEAR, ModModels.SPEAR);
+        itemModelGenerator.register(ModItems.STONE_SPEAR, ModModels.SPEAR);
+        itemModelGenerator.register(ModItems.IRON_SPEAR, ModModels.SPEAR);
+        itemModelGenerator.register(ModItems.GOLDEN_SPEAR, ModModels.SPEAR);
+        itemModelGenerator.register(ModItems.DIAMOND_SPEAR, ModModels.SPEAR);
+        itemModelGenerator.register(ModItems.NETHERITE_SPEAR, ModModels.SPEAR);
+        
     }
 
 }

@@ -170,6 +170,14 @@
     "item.vanilla-plus-plus.golden_hammer": "Golden Hammer",
     "item.vanilla-plus-plus.diamond_hammer": "Diamond Hammer",
     "item.vanilla-plus-plus.netherite_hammer": "Netherite Hammer",
+    "item.vanilla-plus-plus.wooden_spear": "Wooden Spear",
+    "item.vanilla-plus-plus.stone_spear": "Stone Spear",
+    "item.vanilla-plus-plus.iron_spear": "Iron Spear",
+    "item.vanilla-plus-plus.golden_spear": "Golden Spear",
+    "item.vanilla-plus-plus.diamond_spear": "Diamond Spear",
+    "item.vanilla-plus-plus.netherite_spear": "Netherite Spear",
+
+    "death.attack.spear": "%1$s was impaled by %2$s",
 
     "tag.item.vanilla-plus-plus.hammers": "Hammers"
 }

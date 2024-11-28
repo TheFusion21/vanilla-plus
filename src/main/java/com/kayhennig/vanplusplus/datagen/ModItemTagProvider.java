@@ -33,6 +33,14 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
             .add(ModItems.GOLDEN_HAMMER)
             .add(ModItems.DIAMOND_HAMMER)
             .add(ModItems.NETHERITE_HAMMER);
+
+        getOrCreateTagBuilder(ModItemTags.SPEARS)
+            .add(ModItems.WOODEN_SPEAR)
+            .add(ModItems.STONE_SPEAR)
+            .add(ModItems.IRON_SPEAR)
+            .add(ModItems.GOLDEN_SPEAR)
+            .add(ModItems.DIAMOND_SPEAR)
+            .add(ModItems.NETHERITE_SPEAR);
     }
     
 }

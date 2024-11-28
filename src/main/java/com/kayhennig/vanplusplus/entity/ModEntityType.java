@@ -3,6 +3,7 @@ package com.kayhennig.vanplusplus.entity;
 import com.kayhennig.vanplusplus.ModBlocks;
 import com.kayhennig.vanplusplus.Vanillaplusplus;
 import com.kayhennig.vanplusplus.block.entity.ShelfBlockEntity;
+import com.kayhennig.vanplusplus.entity.projectile.SpearEntity;
 import com.kayhennig.vanplusplus.entity.thrown.DynamiteEntity;
 
 import net.minecraft.block.entity.BlockEntityType;
@@ -33,6 +34,16 @@ public class ModEntityType {
             .maxTrackingRange(4)
             .trackingTickInterval(10)
             .build());
+
+    public static final EntityType<SpearEntity> SPEAR = register(
+		"spear",
+		EntityType.Builder.<SpearEntity>create(SpearEntity::new, SpawnGroup.MISC)
+			.dimensions(0.5F, 0.5F)
+			.eyeHeight(0.13F)
+			.maxTrackingRange(4)
+			.trackingTickInterval(20)
+            .build()
+	);
 
     public static <T extends BlockEntityType<?>> T register(String path, T blockEntityType) {
         return Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(Vanillaplusplus.MOD_ID, path), blockEntityType);
