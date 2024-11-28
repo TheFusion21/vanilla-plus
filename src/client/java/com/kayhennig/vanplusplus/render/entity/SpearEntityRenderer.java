@@ -2,13 +2,10 @@ package com.kayhennig.vanplusplus.render.entity;
 
 import com.kayhennig.vanplusplus.Vanillaplusplus;
 import com.kayhennig.vanplusplus.entity.projectile.SpearEntity;
-import com.kayhennig.vanplusplus.render.entity.model.ModEntityModelLayers;
-import com.kayhennig.vanplusplus.render.entity.model.SpearEntityModel;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.render.OverlayTexture;
-import net.minecraft.client.render.VertexConsumer;
 import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.client.render.entity.EntityRenderer;
 import net.minecraft.client.render.entity.EntityRendererFactory;

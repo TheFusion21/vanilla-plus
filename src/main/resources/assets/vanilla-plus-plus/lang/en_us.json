@@ -179,5 +179,6 @@
 
     "death.attack.spear": "%1$s was impaled by %2$s",
 
-    "tag.item.vanilla-plus-plus.hammers": "Hammers"
+    "tag.item.vanilla-plus-plus.hammers": "Hammers",
+    "tag.item.vanilla-plus-plus.spears": "Spears"
 }

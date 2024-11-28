@@ -3,15 +3,12 @@ package com.kayhennig.vanplusplus;
 import com.kayhennig.vanplusplus.block.entity.ModBlockEntityType;
 import com.kayhennig.vanplusplus.entity.ModEntityType;
 import com.kayhennig.vanplusplus.render.entity.*;
-import com.kayhennig.vanplusplus.render.entity.model.ModEntityModelLayers;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
-import net.fabricmc.fabric.impl.client.rendering.EntityModelLayerImpl;
-import net.fabricmc.fabric.mixin.client.rendering.EntityModelLayersAccessor;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.block.entity.BlockEntityRendererFactories;
 
@@ -42,6 +39,5 @@ public class VanillaplusplusClient implements ClientModInitializer {
         BlockEntityRendererFactories.register(ModBlockEntityType.SHELF, ShelfBlockEntityRenderer::new);
         EntityRendererRegistry.register(ModEntityType.DYNAMITE, DynamiteEntityRenderer::new);
         EntityRendererRegistry.register(ModEntityType.SPEAR, SpearEntityRenderer::new);
-        ModEntityModelLayers.initialize();
 	}
 }

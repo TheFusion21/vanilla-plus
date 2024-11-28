@@ -177,5 +177,6 @@
 
     "death.attack.spear": "%1$s wurde von %2$s erstochen",
 
-    "tag.item.vanilla-plus-plus.hammers": "Hammer"
+    "tag.item.vanilla-plus-plus.hammers": "Hammer",
+    "tag.item.vanilla-plus-plus.spears": "Speere"
 }
