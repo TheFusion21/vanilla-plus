@@ -36,8 +36,11 @@ import net.minecraft.util.math.Position;
 import net.minecraft.world.World;
 
 public class SpearItem extends Item implements ProjectileItem {
+    private final ToolMaterial material;
+
     public SpearItem(ToolMaterial material, Item.Settings settings) {
         super(settings.maxDamage(material.getDurability()).component(DataComponentTypes.TOOL, createToolComponent()));
+        this.material = material;
     }
 
     public static AttributeModifiersComponent createAttributeModifiers(ToolMaterial material, int baseAttackDamage, float attackSpeed) {
@@ -135,12 +138,21 @@ public class SpearItem extends Item implements ProjectileItem {
 
 	@Override
 	public int getEnchantability() {
-		return 1;
+		return this.material.getEnchantability();
+	}
+
+    public ToolMaterial getMaterial() {
+		return this.material;
 	}
 
     @Override
     public ProjectileEntity createEntity(World world, Position pos, ItemStack stack, Direction direction) {
         return null;
     }
+
+    @Override
+	public boolean canRepair(ItemStack stack, ItemStack ingredient) {
+		return this.material.getRepairIngredient().test(ingredient) || super.canRepair(stack, ingredient);
+	}
     
 }

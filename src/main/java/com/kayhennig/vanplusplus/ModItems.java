@@ -34,12 +34,12 @@ public class ModItems {
     public static final Item DIAMOND_HAMMER = registerItem("diamond_hammer", new HammerItem(ToolMaterials.DIAMOND, new Item.Settings().attributeModifiers(HammerItem.createAttributeModifiers(ToolMaterials.DIAMOND, 5, -3.0F))));
     public static final Item NETHERITE_HAMMER = registerItem("netherite_hammer", new HammerItem(ToolMaterials.NETHERITE, new Item.Settings().attributeModifiers(HammerItem.createAttributeModifiers(ToolMaterials.NETHERITE, 5, -3.0F))));
 
-    public static final Item WOODEN_SPEAR = registerItem("wooden_spear", new SpearItem(ToolMaterials.WOOD, new Item.Settings().attributeModifiers(SpearItem.createAttributeModifiers(ToolMaterials.WOOD, 3, -2.4F))));
-    public static final Item STONE_SPEAR = registerItem("stone_spear", new SpearItem(ToolMaterials.STONE, new Item.Settings().attributeModifiers(SpearItem.createAttributeModifiers(ToolMaterials.STONE, 3, -2.4F))));
-    public static final Item IRON_SPEAR = registerItem("iron_spear", new SpearItem(ToolMaterials.IRON, new Item.Settings().attributeModifiers(SpearItem.createAttributeModifiers(ToolMaterials.IRON, 3, -2.4F))));
-    public static final Item GOLDEN_SPEAR = registerItem("golden_spear", new SpearItem(ToolMaterials.GOLD, new Item.Settings().attributeModifiers(SpearItem.createAttributeModifiers(ToolMaterials.GOLD, 3, -2.4F))));
-    public static final Item DIAMOND_SPEAR = registerItem("diamond_spear", new SpearItem(ToolMaterials.DIAMOND, new Item.Settings().attributeModifiers(SpearItem.createAttributeModifiers(ToolMaterials.DIAMOND, 3, -2.4F))));
-    public static final Item NETHERITE_SPEAR = registerItem("netherite_spear", new SpearItem(ToolMaterials.NETHERITE, new Item.Settings().attributeModifiers(SpearItem.createAttributeModifiers(ToolMaterials.NETHERITE, 3, -2.4F))));
+    public static final Item WOODEN_SPEAR = registerItem("wooden_spear", new SpearItem(ToolMaterials.WOOD, new Item.Settings().attributeModifiers(SpearItem.createAttributeModifiers(ToolMaterials.WOOD, 6, -2.4F))));
+    public static final Item STONE_SPEAR = registerItem("stone_spear", new SpearItem(ToolMaterials.STONE, new Item.Settings().attributeModifiers(SpearItem.createAttributeModifiers(ToolMaterials.STONE, 6, -2.4F))));
+    public static final Item IRON_SPEAR = registerItem("iron_spear", new SpearItem(ToolMaterials.IRON, new Item.Settings().attributeModifiers(SpearItem.createAttributeModifiers(ToolMaterials.IRON, 6, -2.4F))));
+    public static final Item GOLDEN_SPEAR = registerItem("golden_spear", new SpearItem(ToolMaterials.GOLD, new Item.Settings().attributeModifiers(SpearItem.createAttributeModifiers(ToolMaterials.GOLD, 6, -2.4F))));
+    public static final Item DIAMOND_SPEAR = registerItem("diamond_spear", new SpearItem(ToolMaterials.DIAMOND, new Item.Settings().attributeModifiers(SpearItem.createAttributeModifiers(ToolMaterials.DIAMOND, 6, -2.4F))));
+    public static final Item NETHERITE_SPEAR = registerItem("netherite_spear", new SpearItem(ToolMaterials.NETHERITE, new Item.Settings().attributeModifiers(SpearItem.createAttributeModifiers(ToolMaterials.NETHERITE, 6, -2.4F))));
 
     private static Item registerItem(String name, Item item) {
         Identifier itemId = Identifier.of(Vanillaplusplus.MOD_ID, name);
