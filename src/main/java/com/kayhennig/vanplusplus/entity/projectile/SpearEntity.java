@@ -19,7 +19,6 @@ import net.minecraft.entity.projectile.PersistentProjectileEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.registry.RegistryKeys;
-import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
@@ -29,7 +28,6 @@ import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 
 public class SpearEntity extends PersistentProjectileEntity {
-	private static final TrackedData<Boolean> ENCHANTED = DataTracker.registerData(SpearEntity.class, TrackedDataHandlerRegistry.BOOLEAN);
 	private static final TrackedData<ItemStack> ITEM = DataTracker.registerData(SpearEntity.class, TrackedDataHandlerRegistry.ITEM_STACK);
 
     private boolean dealtDamage;
@@ -41,21 +39,18 @@ public class SpearEntity extends PersistentProjectileEntity {
 
     public SpearEntity(World world, LivingEntity owner, ItemStack stack) {
 		super(ModEntityType.SPEAR, owner, world, stack, null);
-		this.dataTracker.set(ENCHANTED, stack.hasGlint());
         this.dataTracker.set(ITEM, stack);
 
 	}
 
 	public SpearEntity(World world, double x, double y, double z, ItemStack stack) {
 		super(ModEntityType.SPEAR, x, y, z, world, stack, stack);
-		this.dataTracker.set(ENCHANTED, stack.hasGlint());
         this.dataTracker.set(ITEM, stack);
 	}
 
     @Override
 	protected void initDataTracker(DataTracker.Builder builder) {
 		super.initDataTracker(builder);
-		builder.add(ENCHANTED, false);
         builder.add(ITEM, new ItemStack(ModItems.WOODEN_SPEAR));
 	}
 
@@ -64,18 +59,8 @@ public class SpearEntity extends PersistentProjectileEntity {
         if (this.inGroundTime > 4) {
 			this.dealtDamage = true;
 		}
-        //TODO: Implement the SpearEntity tick method
         super.tick();
     }
-
-    private boolean isOwnerAlive() {
-		Entity entity = this.getOwner();
-		return entity == null || !entity.isAlive() ? false : !(entity instanceof ServerPlayerEntity) || !entity.isSpectator();
-	}
-
-    public boolean isEnchanted() {
-		return this.dataTracker.get(ENCHANTED);
-	}
 
     @Nullable
 	@Override
