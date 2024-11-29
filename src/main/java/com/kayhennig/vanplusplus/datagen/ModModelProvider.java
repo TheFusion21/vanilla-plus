@@ -69,6 +69,23 @@ public class ModModelProvider extends FabricModelProvider {
         generateBlockStateSlabFromLogModel(blockStateModelGenerator, Blocks.STRIPPED_WARPED_STEM, ModBlocks.STRIPPED_WARPED_STEM_SLAB);
 
         generateBlockStateSlabModel(blockStateModelGenerator, Blocks.GLASS, ModBlocks.GLASS_SLAB);
+        generateBlockStateSlabModel(blockStateModelGenerator, Blocks.TINTED_GLASS, ModBlocks.TINTED_GLASS_SLAB);
+        generateBlockStateSlabModel(blockStateModelGenerator, Blocks.WHITE_STAINED_GLASS, ModBlocks.WHITE_STAINED_GLASS_SLAB);
+        generateBlockStateSlabModel(blockStateModelGenerator, Blocks.ORANGE_STAINED_GLASS, ModBlocks.ORANGE_STAINED_GLASS_SLAB);
+        generateBlockStateSlabModel(blockStateModelGenerator, Blocks.MAGENTA_STAINED_GLASS, ModBlocks.MAGENTA_STAINED_GLASS_SLAB);
+        generateBlockStateSlabModel(blockStateModelGenerator, Blocks.LIGHT_BLUE_STAINED_GLASS, ModBlocks.LIGHT_BLUE_STAINED_GLASS_SLAB);
+        generateBlockStateSlabModel(blockStateModelGenerator, Blocks.YELLOW_STAINED_GLASS, ModBlocks.YELLOW_STAINED_GLASS_SLAB);
+        generateBlockStateSlabModel(blockStateModelGenerator, Blocks.LIME_STAINED_GLASS, ModBlocks.LIME_STAINED_GLASS_SLAB);
+        generateBlockStateSlabModel(blockStateModelGenerator, Blocks.PINK_STAINED_GLASS, ModBlocks.PINK_STAINED_GLASS_SLAB);
+        generateBlockStateSlabModel(blockStateModelGenerator, Blocks.GRAY_STAINED_GLASS, ModBlocks.GRAY_STAINED_GLASS_SLAB);
+        generateBlockStateSlabModel(blockStateModelGenerator, Blocks.LIGHT_GRAY_STAINED_GLASS, ModBlocks.LIGHT_GRAY_STAINED_GLASS_SLAB);
+        generateBlockStateSlabModel(blockStateModelGenerator, Blocks.CYAN_STAINED_GLASS, ModBlocks.CYAN_STAINED_GLASS_SLAB);
+        generateBlockStateSlabModel(blockStateModelGenerator, Blocks.PURPLE_STAINED_GLASS, ModBlocks.PURPLE_STAINED_GLASS_SLAB);
+        generateBlockStateSlabModel(blockStateModelGenerator, Blocks.BLUE_STAINED_GLASS, ModBlocks.BLUE_STAINED_GLASS_SLAB);
+        generateBlockStateSlabModel(blockStateModelGenerator, Blocks.BROWN_STAINED_GLASS, ModBlocks.BROWN_STAINED_GLASS_SLAB);
+        generateBlockStateSlabModel(blockStateModelGenerator, Blocks.GREEN_STAINED_GLASS, ModBlocks.GREEN_STAINED_GLASS_SLAB);
+        generateBlockStateSlabModel(blockStateModelGenerator, Blocks.RED_STAINED_GLASS, ModBlocks.RED_STAINED_GLASS_SLAB);
+        generateBlockStateSlabModel(blockStateModelGenerator, Blocks.BLACK_STAINED_GLASS, ModBlocks.BLACK_STAINED_GLASS_SLAB);
     }
 
     private void generateBlockStateVerticalSlabModels(BlockStateModelGenerator blockStateModelGenerator) {
@@ -112,6 +129,23 @@ public class ModModelProvider extends FabricModelProvider {
         generateBlockStateVerticalSlabFromPlankModel(blockStateModelGenerator, Blocks.WARPED_PLANKS, Blocks.WARPED_SLAB, ModBlocks.WARPED_PLANKS_VERTICAL_SLAB);
 
         generateBlockStateVerticalSlabModel(blockStateModelGenerator, Blocks.GLASS, ModBlocks.GLASS_SLAB, ModBlocks.GLASS_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabModel(blockStateModelGenerator, Blocks.TINTED_GLASS, ModBlocks.TINTED_GLASS_SLAB, ModBlocks.TINTED_GLASS_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabModel(blockStateModelGenerator, Blocks.WHITE_STAINED_GLASS, ModBlocks.WHITE_STAINED_GLASS_SLAB, ModBlocks.WHITE_STAINED_GLASS_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabModel(blockStateModelGenerator, Blocks.ORANGE_STAINED_GLASS, ModBlocks.ORANGE_STAINED_GLASS_SLAB, ModBlocks.ORANGE_STAINED_GLASS_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabModel(blockStateModelGenerator, Blocks.MAGENTA_STAINED_GLASS, ModBlocks.MAGENTA_STAINED_GLASS_SLAB, ModBlocks.MAGENTA_STAINED_GLASS_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabModel(blockStateModelGenerator, Blocks.LIGHT_BLUE_STAINED_GLASS, ModBlocks.LIGHT_BLUE_STAINED_GLASS_SLAB, ModBlocks.LIGHT_BLUE_STAINED_GLASS_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabModel(blockStateModelGenerator, Blocks.YELLOW_STAINED_GLASS, ModBlocks.YELLOW_STAINED_GLASS_SLAB, ModBlocks.YELLOW_STAINED_GLASS_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabModel(blockStateModelGenerator, Blocks.LIME_STAINED_GLASS, ModBlocks.LIME_STAINED_GLASS_SLAB, ModBlocks.LIME_STAINED_GLASS_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabModel(blockStateModelGenerator, Blocks.PINK_STAINED_GLASS, ModBlocks.PINK_STAINED_GLASS_SLAB, ModBlocks.PINK_STAINED_GLASS_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabModel(blockStateModelGenerator, Blocks.GRAY_STAINED_GLASS, ModBlocks.GRAY_STAINED_GLASS_SLAB, ModBlocks.GRAY_STAINED_GLASS_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabModel(blockStateModelGenerator, Blocks.LIGHT_GRAY_STAINED_GLASS, ModBlocks.LIGHT_GRAY_STAINED_GLASS_SLAB, ModBlocks.LIGHT_GRAY_STAINED_GLASS_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabModel(blockStateModelGenerator, Blocks.CYAN_STAINED_GLASS, ModBlocks.CYAN_STAINED_GLASS_SLAB, ModBlocks.CYAN_STAINED_GLASS_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabModel(blockStateModelGenerator, Blocks.PURPLE_STAINED_GLASS, ModBlocks.PURPLE_STAINED_GLASS_SLAB, ModBlocks.PURPLE_STAINED_GLASS_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabModel(blockStateModelGenerator, Blocks.BLUE_STAINED_GLASS, ModBlocks.BLUE_STAINED_GLASS_SLAB, ModBlocks.BLUE_STAINED_GLASS_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabModel(blockStateModelGenerator, Blocks.BROWN_STAINED_GLASS, ModBlocks.BROWN_STAINED_GLASS_SLAB, ModBlocks.BROWN_STAINED_GLASS_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabModel(blockStateModelGenerator, Blocks.GREEN_STAINED_GLASS, ModBlocks.GREEN_STAINED_GLASS_SLAB, ModBlocks.GREEN_STAINED_GLASS_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabModel(blockStateModelGenerator, Blocks.RED_STAINED_GLASS, ModBlocks.RED_STAINED_GLASS_SLAB, ModBlocks.RED_STAINED_GLASS_VERTICAL_SLAB);
+        generateBlockStateVerticalSlabModel(blockStateModelGenerator, Blocks.BLACK_STAINED_GLASS, ModBlocks.BLACK_STAINED_GLASS_SLAB, ModBlocks.BLACK_STAINED_GLASS_VERTICAL_SLAB);
 
         generateBlockStateVerticalSlabFromPlankModel(blockStateModelGenerator, Blocks.BAMBOO_PLANKS, Blocks.BAMBOO_SLAB, ModBlocks.BAMBOO_VERTICAL_SLAB);
         generateBlockStateVerticalSlabFromPlankModel(blockStateModelGenerator, Blocks.BAMBOO_MOSAIC, Blocks.BAMBOO_MOSAIC_SLAB, ModBlocks.BAMBOO_MOSAIC_VERTICAL_SLAB);

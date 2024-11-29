@@ -64,6 +64,23 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_CRIMSON_STEM_SLAB, Blocks.STRIPPED_CRIMSON_STEM, "log_slab");
 
         offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.GLASS_SLAB, Blocks.GLASS, null);
+        offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.TINTED_GLASS_SLAB, Blocks.TINTED_GLASS, null);
+        offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.WHITE_STAINED_GLASS_SLAB, Blocks.WHITE_STAINED_GLASS, null);
+        offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ORANGE_STAINED_GLASS_SLAB, Blocks.ORANGE_STAINED_GLASS, null);
+        offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAGENTA_STAINED_GLASS_SLAB, Blocks.MAGENTA_STAINED_GLASS, null);
+        offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_BLUE_STAINED_GLASS_SLAB, Blocks.LIGHT_BLUE_STAINED_GLASS, null);
+        offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.YELLOW_STAINED_GLASS_SLAB, Blocks.YELLOW_STAINED_GLASS, null);
+        offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIME_STAINED_GLASS_SLAB, Blocks.LIME_STAINED_GLASS, null);
+        offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_STAINED_GLASS_SLAB, Blocks.PINK_STAINED_GLASS, null);
+        offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.GRAY_STAINED_GLASS_SLAB, Blocks.GRAY_STAINED_GLASS, null);
+        offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_GRAY_STAINED_GLASS_SLAB, Blocks.LIGHT_GRAY_STAINED_GLASS, null);
+        offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CYAN_STAINED_GLASS_SLAB, Blocks.CYAN_STAINED_GLASS, null);
+        offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.PURPLE_STAINED_GLASS_SLAB, Blocks.PURPLE_STAINED_GLASS, null);
+        offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_STAINED_GLASS_SLAB, Blocks.BLUE_STAINED_GLASS, null);
+        offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BROWN_STAINED_GLASS_SLAB, Blocks.BROWN_STAINED_GLASS, null);
+        offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.GREEN_STAINED_GLASS_SLAB, Blocks.GREEN_STAINED_GLASS, null);
+        offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_STAINED_GLASS_SLAB, Blocks.RED_STAINED_GLASS, null);
+        offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLACK_STAINED_GLASS_SLAB, Blocks.BLACK_STAINED_GLASS, null);
     }
 
     private void generateVerticalSlab(RecipeExporter exporter) {
@@ -104,6 +121,23 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRIMSON_PLANKS_VERTICAL_SLAB, Blocks.CRIMSON_PLANKS, "planks_slab");
 
         offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.GLASS_VERTICAL_SLAB, Blocks.GLASS, null);
+        offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.TINTED_GLASS_VERTICAL_SLAB, Blocks.TINTED_GLASS, null);
+        offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.WHITE_STAINED_GLASS_VERTICAL_SLAB, Blocks.WHITE_STAINED_GLASS, null);
+        offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ORANGE_STAINED_GLASS_VERTICAL_SLAB, Blocks.ORANGE_STAINED_GLASS, null);
+        offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAGENTA_STAINED_GLASS_VERTICAL_SLAB, Blocks.MAGENTA_STAINED_GLASS, null);
+        offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_BLUE_STAINED_GLASS_VERTICAL_SLAB, Blocks.LIGHT_BLUE_STAINED_GLASS, null);
+        offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.YELLOW_STAINED_GLASS_VERTICAL_SLAB, Blocks.YELLOW_STAINED_GLASS, null);
+        offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIME_STAINED_GLASS_VERTICAL_SLAB, Blocks.LIME_STAINED_GLASS, null);
+        offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_STAINED_GLASS_VERTICAL_SLAB, Blocks.PINK_STAINED_GLASS, null);
+        offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.GRAY_STAINED_GLASS_VERTICAL_SLAB, Blocks.GRAY_STAINED_GLASS, null);
+        offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_GRAY_STAINED_GLASS_VERTICAL_SLAB, Blocks.LIGHT_GRAY_STAINED_GLASS, null);
+        offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CYAN_STAINED_GLASS_VERTICAL_SLAB, Blocks.CYAN_STAINED_GLASS, null);
+        offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.PURPLE_STAINED_GLASS_VERTICAL_SLAB, Blocks.PURPLE_STAINED_GLASS, null);
+        offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_STAINED_GLASS_VERTICAL_SLAB, Blocks.BLUE_STAINED_GLASS, null);
+        offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BROWN_STAINED_GLASS_VERTICAL_SLAB, Blocks.BROWN_STAINED_GLASS, null);
+        offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.GREEN_STAINED_GLASS_VERTICAL_SLAB, Blocks.GREEN_STAINED_GLASS, null);
+        offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_STAINED_GLASS_VERTICAL_SLAB, Blocks.RED_STAINED_GLASS, null);
+        offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLACK_STAINED_GLASS_VERTICAL_SLAB, Blocks.BLACK_STAINED_GLASS, null);
 
         offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BAMBOO_VERTICAL_SLAB, Blocks.BAMBOO, null);
         offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BAMBOO_MOSAIC_VERTICAL_SLAB, Blocks.BAMBOO_MOSAIC, null);
