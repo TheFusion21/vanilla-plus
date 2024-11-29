@@ -4,6 +4,7 @@ import com.kayhennig.vanplusplus.item.DaggerItem;
 import com.kayhennig.vanplusplus.item.DynamiteItem;
 import com.kayhennig.vanplusplus.item.HammerItem;
 import com.kayhennig.vanplusplus.item.ModItemGroups;
+import com.kayhennig.vanplusplus.item.SpearItem;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -32,6 +33,13 @@ public class ModItems {
     public static final Item GOLDEN_HAMMER = registerItem("golden_hammer", new HammerItem(ToolMaterials.GOLD, new Item.Settings().attributeModifiers(HammerItem.createAttributeModifiers(ToolMaterials.GOLD, 5, -3.0F))));
     public static final Item DIAMOND_HAMMER = registerItem("diamond_hammer", new HammerItem(ToolMaterials.DIAMOND, new Item.Settings().attributeModifiers(HammerItem.createAttributeModifiers(ToolMaterials.DIAMOND, 5, -3.0F))));
     public static final Item NETHERITE_HAMMER = registerItem("netherite_hammer", new HammerItem(ToolMaterials.NETHERITE, new Item.Settings().attributeModifiers(HammerItem.createAttributeModifiers(ToolMaterials.NETHERITE, 5, -3.0F))));
+
+    public static final Item WOODEN_SPEAR = registerItem("wooden_spear", new SpearItem(ToolMaterials.WOOD, new Item.Settings().attributeModifiers(SpearItem.createAttributeModifiers(ToolMaterials.WOOD, 6, -2.4F))));
+    public static final Item STONE_SPEAR = registerItem("stone_spear", new SpearItem(ToolMaterials.STONE, new Item.Settings().attributeModifiers(SpearItem.createAttributeModifiers(ToolMaterials.STONE, 6, -2.4F))));
+    public static final Item IRON_SPEAR = registerItem("iron_spear", new SpearItem(ToolMaterials.IRON, new Item.Settings().attributeModifiers(SpearItem.createAttributeModifiers(ToolMaterials.IRON, 6, -2.4F))));
+    public static final Item GOLDEN_SPEAR = registerItem("golden_spear", new SpearItem(ToolMaterials.GOLD, new Item.Settings().attributeModifiers(SpearItem.createAttributeModifiers(ToolMaterials.GOLD, 6, -2.4F))));
+    public static final Item DIAMOND_SPEAR = registerItem("diamond_spear", new SpearItem(ToolMaterials.DIAMOND, new Item.Settings().attributeModifiers(SpearItem.createAttributeModifiers(ToolMaterials.DIAMOND, 6, -2.4F))));
+    public static final Item NETHERITE_SPEAR = registerItem("netherite_spear", new SpearItem(ToolMaterials.NETHERITE, new Item.Settings().attributeModifiers(SpearItem.createAttributeModifiers(ToolMaterials.NETHERITE, 6, -2.4F))));
 
     private static Item registerItem(String name, Item item) {
         Identifier itemId = Identifier.of(Vanillaplusplus.MOD_ID, name);
@@ -75,6 +83,13 @@ public class ModItems {
         entries.addAfter(IRON_HAMMER, GOLDEN_HAMMER);
         entries.addAfter(GOLDEN_HAMMER, DIAMOND_HAMMER);
         entries.addAfter(DIAMOND_HAMMER, NETHERITE_HAMMER);
+
+        entries.addAfter(NETHERITE_HAMMER, WOODEN_SPEAR);
+        entries.addAfter(WOODEN_SPEAR, STONE_SPEAR);
+        entries.addAfter(STONE_SPEAR, IRON_SPEAR);
+        entries.addAfter(IRON_SPEAR, GOLDEN_SPEAR);
+        entries.addAfter(GOLDEN_SPEAR, DIAMOND_SPEAR);
+        entries.addAfter(DIAMOND_SPEAR, NETHERITE_SPEAR);
     }
 
     private static void addDynamites(FabricItemGroupEntries entries) {

@@ -64,6 +64,23 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_CRIMSON_STEM_SLAB, Blocks.STRIPPED_CRIMSON_STEM, "log_slab");
 
         offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.GLASS_SLAB, Blocks.GLASS, null);
+        offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.TINTED_GLASS_SLAB, Blocks.TINTED_GLASS, null);
+        offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.WHITE_STAINED_GLASS_SLAB, Blocks.WHITE_STAINED_GLASS, null);
+        offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ORANGE_STAINED_GLASS_SLAB, Blocks.ORANGE_STAINED_GLASS, null);
+        offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAGENTA_STAINED_GLASS_SLAB, Blocks.MAGENTA_STAINED_GLASS, null);
+        offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_BLUE_STAINED_GLASS_SLAB, Blocks.LIGHT_BLUE_STAINED_GLASS, null);
+        offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.YELLOW_STAINED_GLASS_SLAB, Blocks.YELLOW_STAINED_GLASS, null);
+        offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIME_STAINED_GLASS_SLAB, Blocks.LIME_STAINED_GLASS, null);
+        offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_STAINED_GLASS_SLAB, Blocks.PINK_STAINED_GLASS, null);
+        offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.GRAY_STAINED_GLASS_SLAB, Blocks.GRAY_STAINED_GLASS, null);
+        offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_GRAY_STAINED_GLASS_SLAB, Blocks.LIGHT_GRAY_STAINED_GLASS, null);
+        offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CYAN_STAINED_GLASS_SLAB, Blocks.CYAN_STAINED_GLASS, null);
+        offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.PURPLE_STAINED_GLASS_SLAB, Blocks.PURPLE_STAINED_GLASS, null);
+        offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_STAINED_GLASS_SLAB, Blocks.BLUE_STAINED_GLASS, null);
+        offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BROWN_STAINED_GLASS_SLAB, Blocks.BROWN_STAINED_GLASS, null);
+        offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.GREEN_STAINED_GLASS_SLAB, Blocks.GREEN_STAINED_GLASS, null);
+        offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_STAINED_GLASS_SLAB, Blocks.RED_STAINED_GLASS, null);
+        offerShapedSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLACK_STAINED_GLASS_SLAB, Blocks.BLACK_STAINED_GLASS, null);
     }
 
     private void generateVerticalSlab(RecipeExporter exporter) {
@@ -104,6 +121,23 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CRIMSON_PLANKS_VERTICAL_SLAB, Blocks.CRIMSON_PLANKS, "planks_slab");
 
         offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.GLASS_VERTICAL_SLAB, Blocks.GLASS, null);
+        offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.TINTED_GLASS_VERTICAL_SLAB, Blocks.TINTED_GLASS, null);
+        offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.WHITE_STAINED_GLASS_VERTICAL_SLAB, Blocks.WHITE_STAINED_GLASS, null);
+        offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ORANGE_STAINED_GLASS_VERTICAL_SLAB, Blocks.ORANGE_STAINED_GLASS, null);
+        offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAGENTA_STAINED_GLASS_VERTICAL_SLAB, Blocks.MAGENTA_STAINED_GLASS, null);
+        offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_BLUE_STAINED_GLASS_VERTICAL_SLAB, Blocks.LIGHT_BLUE_STAINED_GLASS, null);
+        offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.YELLOW_STAINED_GLASS_VERTICAL_SLAB, Blocks.YELLOW_STAINED_GLASS, null);
+        offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIME_STAINED_GLASS_VERTICAL_SLAB, Blocks.LIME_STAINED_GLASS, null);
+        offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_STAINED_GLASS_VERTICAL_SLAB, Blocks.PINK_STAINED_GLASS, null);
+        offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.GRAY_STAINED_GLASS_VERTICAL_SLAB, Blocks.GRAY_STAINED_GLASS, null);
+        offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_GRAY_STAINED_GLASS_VERTICAL_SLAB, Blocks.LIGHT_GRAY_STAINED_GLASS, null);
+        offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CYAN_STAINED_GLASS_VERTICAL_SLAB, Blocks.CYAN_STAINED_GLASS, null);
+        offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.PURPLE_STAINED_GLASS_VERTICAL_SLAB, Blocks.PURPLE_STAINED_GLASS, null);
+        offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_STAINED_GLASS_VERTICAL_SLAB, Blocks.BLUE_STAINED_GLASS, null);
+        offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BROWN_STAINED_GLASS_VERTICAL_SLAB, Blocks.BROWN_STAINED_GLASS, null);
+        offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.GREEN_STAINED_GLASS_VERTICAL_SLAB, Blocks.GREEN_STAINED_GLASS, null);
+        offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_STAINED_GLASS_VERTICAL_SLAB, Blocks.RED_STAINED_GLASS, null);
+        offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLACK_STAINED_GLASS_VERTICAL_SLAB, Blocks.BLACK_STAINED_GLASS, null);
 
         offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BAMBOO_VERTICAL_SLAB, Blocks.BAMBOO, null);
         offerShapedVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BAMBOO_MOSAIC_VERTICAL_SLAB, Blocks.BAMBOO_MOSAIC, null);
@@ -209,6 +243,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         addShapedDaggerRecipe(exporter, ModItems.IRON_DAGGER, Items.IRON_INGOT);
         addShapedDaggerRecipe(exporter, ModItems.GOLDEN_DAGGER, Items.GOLD_INGOT);
         addShapedDaggerRecipe(exporter, ModItems.DIAMOND_DAGGER, Items.DIAMOND);
+        addShapedDaggerRecipe(exporter, ModItems.NETHERITE_DAGGER, Items.NETHERITE_INGOT);
         offerNetheriteUpgradeRecipe(exporter, ModItems.DIAMOND_DAGGER, RecipeCategory.COMBAT, ModItems.NETHERITE_DAGGER);
 
 
@@ -217,7 +252,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         addShapedHammerRecipe(exporter, ModItems.IRON_HAMMER, Items.IRON_INGOT);
         addShapedHammerRecipe(exporter, ModItems.GOLDEN_HAMMER, Items.GOLD_INGOT);
         addShapedHammerRecipe(exporter, ModItems.DIAMOND_HAMMER, Items.DIAMOND);
-        offerNetheriteUpgradeRecipe(exporter, ModItems.DIAMOND_HAMMER, RecipeCategory.TOOLS, ModItems.NETHERITE_HAMMER);
+        addShapedHammerRecipe(exporter, ModItems.NETHERITE_HAMMER, Items.NETHERITE_INGOT);
+        offerNetheriteUpgradeRecipe(exporter, ModItems.DIAMOND_HAMMER, RecipeCategory.COMBAT, ModItems.NETHERITE_HAMMER);
+
+        addShapedSpearWoodRecipe(exporter, ModItems.WOODEN_SPEAR);
+        addShapedSpearStoneRecipe(exporter, ModItems.STONE_SPEAR);
+        addShapedSpearRecipe(exporter, ModItems.IRON_SPEAR, Items.IRON_INGOT);
+        addShapedSpearRecipe(exporter, ModItems.GOLDEN_SPEAR, Items.GOLD_INGOT);
+        addShapedSpearRecipe(exporter, ModItems.DIAMOND_SPEAR, Items.DIAMOND);
+        addShapedSpearRecipe(exporter, ModItems.NETHERITE_SPEAR, Items.NETHERITE_INGOT);
+        offerNetheriteUpgradeRecipe(exporter, ModItems.DIAMOND_SPEAR, RecipeCategory.COMBAT, ModItems.NETHERITE_SPEAR);
     }
 
     private void generateStoneCutterSlabRecipes(RecipeExporter exporter) {
@@ -444,7 +488,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     }
 
     private void addShapedHammerWoodRecipe(RecipeExporter exporter, Item hammer) {
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, hammer, 1)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, hammer, 1)
             .pattern("OOO")
             .pattern(" S ")
             .group("hammer")
@@ -456,7 +500,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     }
 
     private void addShapedHammerStoneRecipe(RecipeExporter exporter, Item hammer) {
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, hammer, 1)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, hammer, 1)
             .pattern("OOO")
             .pattern(" S ")
             .group("hammer")
@@ -468,10 +512,49 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     }
 
     private void addShapedHammerRecipe(RecipeExporter exporter, Item hammer, Item material) {
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, hammer, 1)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, hammer, 1)
             .pattern("OOO")
             .pattern(" S ")
             .group("hammer")
+            .input('O', material)
+            .input('S', Items.STICK)
+            .criterion(FabricRecipeProvider.hasItem(Items.STICK),
+                    FabricRecipeProvider.conditionsFromItem(Items.STICK))
+            .offerTo(exporter);
+    }
+
+    private void addShapedSpearWoodRecipe(RecipeExporter exporter, Item spear) {
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, spear, 1)
+            .pattern("  O")
+            .pattern(" S ")
+            .pattern("S  ")
+            .group("spear")
+            .input('O', Ingredient.fromTag(ItemTags.PLANKS))
+            .input('S', Items.STICK)
+            .criterion(FabricRecipeProvider.hasItem(Items.STICK),
+                    FabricRecipeProvider.conditionsFromItem(Items.STICK))
+            .offerTo(exporter);
+    }
+
+    private void addShapedSpearStoneRecipe(RecipeExporter exporter, Item spear) {
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, spear, 1)
+            .pattern("  O")
+            .pattern(" S ")
+            .pattern("S  ")
+            .group("spear")
+            .input('O', Ingredient.fromTag(ItemTags.STONE_TOOL_MATERIALS))
+            .input('S', Items.STICK)
+            .criterion(FabricRecipeProvider.hasItem(Items.STICK),
+                    FabricRecipeProvider.conditionsFromItem(Items.STICK))
+            .offerTo(exporter);
+    }
+
+    private void addShapedSpearRecipe(RecipeExporter exporter, Item spear, Item material) {
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, spear, 1)
+            .pattern("  O")
+            .pattern(" S ")
+            .pattern("S  ")
+            .group("spear")
             .input('O', material)
             .input('S', Items.STICK)
             .criterion(FabricRecipeProvider.hasItem(Items.STICK),

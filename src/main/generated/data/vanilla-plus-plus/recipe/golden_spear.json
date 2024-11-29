@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "spear",
+  "key": {
+    "O": {
+      "item": "minecraft:gold_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "  O",
+    " S ",
+    "S  "
+  ],
+  "result": {
+    "count": 1,
+    "id": "vanilla-plus-plus:golden_spear"
+  }
+}

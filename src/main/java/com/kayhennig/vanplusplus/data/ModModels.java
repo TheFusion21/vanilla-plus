@@ -23,6 +23,8 @@ public class ModModels {
     public static final Model SHELF_EAST = block("shelf_east", "_east", TextureKey.ALL);
     public static final Model SHELF_WEST = block("shelf_west", "_west", TextureKey.ALL);
 
+    public static final Model SPEAR = item("spear", TextureKey.LAYER0);
+
     private static Model block(String parent, TextureKey... requiredTextureKeys) {
 		return new Model(Optional.of(Identifier.of(Vanillaplusplus.MOD_ID, "block/" + parent)), Optional.empty(), requiredTextureKeys);
 	}
@@ -30,4 +32,12 @@ public class ModModels {
     private static Model block(String parent, String variant, TextureKey... requiredTextureKeys) {
 		return new Model(Optional.of(Identifier.of(Vanillaplusplus.MOD_ID, "block/" + parent)), Optional.of(variant), requiredTextureKeys);
 	}
+
+    private static Model item(String parent, TextureKey... requiredTextureKeys) {
+        return new Model(Optional.of(Identifier.of(Vanillaplusplus.MOD_ID, "item/" + parent)), Optional.empty(), requiredTextureKeys);
+    }
+
+    private static Model item(String parent, String variant, TextureKey... requiredTextureKeys) {
+        return new Model(Optional.of(Identifier.of(Vanillaplusplus.MOD_ID, "item/" + parent)), Optional.of(variant), requiredTextureKeys);
+    }
 }

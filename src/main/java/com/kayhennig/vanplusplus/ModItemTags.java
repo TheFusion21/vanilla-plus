@@ -7,6 +7,8 @@ import net.minecraft.util.Identifier;
 
 public final class ModItemTags {
     public static final TagKey<Item> HAMMERS = of("hammers");
+    public static final TagKey<Item> SPEARS = of("spears");
+    
     private ModItemTags() {
 	}
 

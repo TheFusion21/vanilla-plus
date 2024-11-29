@@ -52,6 +52,23 @@ public class ModBlocks {
     // Glass Slabs
 
     public static final Block GLASS_SLAB = registerBlock("glass_slab", new SlabBlock(AbstractBlock.Settings.copy(Blocks.GLASS).nonOpaque()));
+    public static final Block TINTED_GLASS_SLAB = registerBlock("tinted_glass_slab", new SlabBlock(AbstractBlock.Settings.copy(Blocks.TINTED_GLASS).nonOpaque()));
+    public static final Block WHITE_STAINED_GLASS_SLAB = registerBlock("white_stained_glass_slab", new SlabBlock(AbstractBlock.Settings.copy(Blocks.WHITE_STAINED_GLASS).nonOpaque()));
+    public static final Block ORANGE_STAINED_GLASS_SLAB = registerBlock("orange_stained_glass_slab", new SlabBlock(AbstractBlock.Settings.copy(Blocks.ORANGE_STAINED_GLASS).nonOpaque()));
+    public static final Block MAGENTA_STAINED_GLASS_SLAB = registerBlock("magenta_stained_glass_slab", new SlabBlock(AbstractBlock.Settings.copy(Blocks.MAGENTA_STAINED_GLASS).nonOpaque()));
+    public static final Block LIGHT_BLUE_STAINED_GLASS_SLAB = registerBlock("light_blue_stained_glass_slab", new SlabBlock(AbstractBlock.Settings.copy(Blocks.LIGHT_BLUE_STAINED_GLASS).nonOpaque()));
+    public static final Block YELLOW_STAINED_GLASS_SLAB = registerBlock("yellow_stained_glass_slab", new SlabBlock(AbstractBlock.Settings.copy(Blocks.YELLOW_STAINED_GLASS).nonOpaque()));
+    public static final Block LIME_STAINED_GLASS_SLAB = registerBlock("lime_stained_glass_slab", new SlabBlock(AbstractBlock.Settings.copy(Blocks.LIME_STAINED_GLASS).nonOpaque()));
+    public static final Block PINK_STAINED_GLASS_SLAB = registerBlock("pink_stained_glass_slab", new SlabBlock(AbstractBlock.Settings.copy(Blocks.PINK_STAINED_GLASS).nonOpaque()));
+    public static final Block GRAY_STAINED_GLASS_SLAB = registerBlock("gray_stained_glass_slab", new SlabBlock(AbstractBlock.Settings.copy(Blocks.GRAY_STAINED_GLASS).nonOpaque()));
+    public static final Block LIGHT_GRAY_STAINED_GLASS_SLAB = registerBlock("light_gray_stained_glass_slab", new SlabBlock(AbstractBlock.Settings.copy(Blocks.LIGHT_GRAY_STAINED_GLASS).nonOpaque()));
+    public static final Block CYAN_STAINED_GLASS_SLAB = registerBlock("cyan_stained_glass_slab", new SlabBlock(AbstractBlock.Settings.copy(Blocks.CYAN_STAINED_GLASS).nonOpaque()));
+    public static final Block PURPLE_STAINED_GLASS_SLAB = registerBlock("purple_stained_glass_slab", new SlabBlock(AbstractBlock.Settings.copy(Blocks.PURPLE_STAINED_GLASS).nonOpaque()));
+    public static final Block BLUE_STAINED_GLASS_SLAB = registerBlock("blue_stained_glass_slab", new SlabBlock(AbstractBlock.Settings.copy(Blocks.BLUE_STAINED_GLASS).nonOpaque()));
+    public static final Block BROWN_STAINED_GLASS_SLAB = registerBlock("brown_stained_glass_slab", new SlabBlock(AbstractBlock.Settings.copy(Blocks.BROWN_STAINED_GLASS).nonOpaque()));
+    public static final Block GREEN_STAINED_GLASS_SLAB = registerBlock("green_stained_glass_slab", new SlabBlock(AbstractBlock.Settings.copy(Blocks.GREEN_STAINED_GLASS).nonOpaque()));
+    public static final Block RED_STAINED_GLASS_SLAB = registerBlock("red_stained_glass_slab", new SlabBlock(AbstractBlock.Settings.copy(Blocks.RED_STAINED_GLASS).nonOpaque()));
+    public static final Block BLACK_STAINED_GLASS_SLAB = registerBlock("black_stained_glass_slab", new SlabBlock(AbstractBlock.Settings.copy(Blocks.BLACK_STAINED_GLASS).nonOpaque()));
 
     // Vertical Slabs
 
@@ -162,6 +179,23 @@ public class ModBlocks {
     // Glass Vertical Slabs
 
     public static final Block GLASS_VERTICAL_SLAB = registerBlock("glass_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.GLASS).nonOpaque()));
+    public static final Block TINTED_GLASS_VERTICAL_SLAB = registerBlock("tinted_glass_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.TINTED_GLASS).nonOpaque()));
+    public static final Block WHITE_STAINED_GLASS_VERTICAL_SLAB = registerBlock("white_stained_glass_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.WHITE_STAINED_GLASS).nonOpaque()));
+    public static final Block ORANGE_STAINED_GLASS_VERTICAL_SLAB = registerBlock("orange_stained_glass_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.ORANGE_STAINED_GLASS).nonOpaque()));
+    public static final Block MAGENTA_STAINED_GLASS_VERTICAL_SLAB = registerBlock("magenta_stained_glass_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.MAGENTA_STAINED_GLASS).nonOpaque()));
+    public static final Block LIGHT_BLUE_STAINED_GLASS_VERTICAL_SLAB = registerBlock("light_blue_stained_glass_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.LIGHT_BLUE_STAINED_GLASS).nonOpaque()));
+    public static final Block YELLOW_STAINED_GLASS_VERTICAL_SLAB = registerBlock("yellow_stained_glass_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.YELLOW_STAINED_GLASS).nonOpaque()));
+    public static final Block LIME_STAINED_GLASS_VERTICAL_SLAB = registerBlock("lime_stained_glass_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.LIME_STAINED_GLASS).nonOpaque()));
+    public static final Block PINK_STAINED_GLASS_VERTICAL_SLAB = registerBlock("pink_stained_glass_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.PINK_STAINED_GLASS).nonOpaque()));
+    public static final Block GRAY_STAINED_GLASS_VERTICAL_SLAB = registerBlock("gray_stained_glass_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.GRAY_STAINED_GLASS).nonOpaque()));
+    public static final Block LIGHT_GRAY_STAINED_GLASS_VERTICAL_SLAB = registerBlock("light_gray_stained_glass_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.LIGHT_GRAY_STAINED_GLASS).nonOpaque()));
+    public static final Block CYAN_STAINED_GLASS_VERTICAL_SLAB = registerBlock("cyan_stained_glass_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.CYAN_STAINED_GLASS).nonOpaque()));
+    public static final Block PURPLE_STAINED_GLASS_VERTICAL_SLAB = registerBlock("purple_stained_glass_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.PURPLE_STAINED_GLASS).nonOpaque()));
+    public static final Block BLUE_STAINED_GLASS_VERTICAL_SLAB = registerBlock("blue_stained_glass_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.BLUE_STAINED_GLASS).nonOpaque()));
+    public static final Block BROWN_STAINED_GLASS_VERTICAL_SLAB = registerBlock("brown_stained_glass_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.BROWN_STAINED_GLASS).nonOpaque()));
+    public static final Block GREEN_STAINED_GLASS_VERTICAL_SLAB = registerBlock("green_stained_glass_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.GREEN_STAINED_GLASS).nonOpaque()));
+    public static final Block RED_STAINED_GLASS_VERTICAL_SLAB = registerBlock("red_stained_glass_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.RED_STAINED_GLASS).nonOpaque()));
+    public static final Block BLACK_STAINED_GLASS_VERTICAL_SLAB = registerBlock("black_stained_glass_vertical_slab", new VerticalSlabBlock(AbstractBlock.Settings.copy(Blocks.BLACK_STAINED_GLASS).nonOpaque()));
 
     // Glass Horizontal Pane
 
@@ -367,23 +401,58 @@ public class ModBlocks {
     private static void addBlockToColoredBlockGroup(FabricItemGroupEntries entries) {
         entries.addAfter(Blocks.GLASS, GLASS_SLAB);
         entries.addAfter(GLASS_SLAB, GLASS_VERTICAL_SLAB);
+        entries.addAfter(Blocks.TINTED_GLASS, TINTED_GLASS_SLAB);
+        entries.addAfter(TINTED_GLASS_SLAB, TINTED_GLASS_VERTICAL_SLAB);
+        entries.addAfter(Blocks.WHITE_STAINED_GLASS, WHITE_STAINED_GLASS_SLAB);
+        entries.addAfter(WHITE_STAINED_GLASS_SLAB, WHITE_STAINED_GLASS_VERTICAL_SLAB);
+        entries.addAfter(Blocks.LIGHT_GRAY_STAINED_GLASS, LIGHT_GRAY_STAINED_GLASS_SLAB);
+        entries.addAfter(LIGHT_GRAY_STAINED_GLASS_SLAB, LIGHT_GRAY_STAINED_GLASS_VERTICAL_SLAB);
+        entries.addAfter(Blocks.GRAY_STAINED_GLASS, GRAY_STAINED_GLASS_SLAB);
+        entries.addAfter(GRAY_STAINED_GLASS_SLAB, GRAY_STAINED_GLASS_VERTICAL_SLAB);
+        entries.addAfter(Blocks.BLACK_STAINED_GLASS, BLACK_STAINED_GLASS_SLAB);
+        entries.addAfter(BLACK_STAINED_GLASS_SLAB, BLACK_STAINED_GLASS_VERTICAL_SLAB);
+        entries.addAfter(Blocks.BROWN_STAINED_GLASS, BROWN_STAINED_GLASS_SLAB);
+        entries.addAfter(BROWN_STAINED_GLASS_SLAB, BROWN_STAINED_GLASS_VERTICAL_SLAB);
+        entries.addAfter(Blocks.RED_STAINED_GLASS, RED_STAINED_GLASS_SLAB);
+        entries.addAfter(RED_STAINED_GLASS_SLAB, RED_STAINED_GLASS_VERTICAL_SLAB);
+        entries.addAfter(Blocks.ORANGE_STAINED_GLASS, ORANGE_STAINED_GLASS_SLAB);
+        entries.addAfter(ORANGE_STAINED_GLASS_SLAB, ORANGE_STAINED_GLASS_VERTICAL_SLAB);
+        entries.addAfter(Blocks.YELLOW_STAINED_GLASS, YELLOW_STAINED_GLASS_SLAB);
+        entries.addAfter(YELLOW_STAINED_GLASS_SLAB, YELLOW_STAINED_GLASS_VERTICAL_SLAB);
+        entries.addAfter(Blocks.LIME_STAINED_GLASS, LIME_STAINED_GLASS_SLAB);
+        entries.addAfter(LIME_STAINED_GLASS_SLAB, LIME_STAINED_GLASS_VERTICAL_SLAB);
+        entries.addAfter(Blocks.GREEN_STAINED_GLASS, GREEN_STAINED_GLASS_SLAB);
+        entries.addAfter(GREEN_STAINED_GLASS_SLAB, GREEN_STAINED_GLASS_VERTICAL_SLAB);
+        entries.addAfter(Blocks.CYAN_STAINED_GLASS, CYAN_STAINED_GLASS_SLAB);
+        entries.addAfter(CYAN_STAINED_GLASS_SLAB, CYAN_STAINED_GLASS_VERTICAL_SLAB);
+        entries.addAfter(Blocks.LIGHT_BLUE_STAINED_GLASS, LIGHT_BLUE_STAINED_GLASS_SLAB);
+        entries.addAfter(LIGHT_BLUE_STAINED_GLASS_SLAB, LIGHT_BLUE_STAINED_GLASS_VERTICAL_SLAB);
+        entries.addAfter(Blocks.BLUE_STAINED_GLASS, BLUE_STAINED_GLASS_SLAB);
+        entries.addAfter(BLUE_STAINED_GLASS_SLAB, BLUE_STAINED_GLASS_VERTICAL_SLAB);
+        entries.addAfter(Blocks.PURPLE_STAINED_GLASS, PURPLE_STAINED_GLASS_SLAB);
+        entries.addAfter(PURPLE_STAINED_GLASS_SLAB, PURPLE_STAINED_GLASS_VERTICAL_SLAB);
+        entries.addAfter(Blocks.MAGENTA_STAINED_GLASS, MAGENTA_STAINED_GLASS_SLAB);
+        entries.addAfter(MAGENTA_STAINED_GLASS_SLAB, MAGENTA_STAINED_GLASS_VERTICAL_SLAB);
+        entries.addAfter(Blocks.PINK_STAINED_GLASS, PINK_STAINED_GLASS_SLAB);
+        entries.addAfter(PINK_STAINED_GLASS_SLAB, PINK_STAINED_GLASS_VERTICAL_SLAB);
+
         entries.addAfter(Blocks.PINK_STAINED_GLASS_PANE, GLASS_HORIZONTAL_PANE);
         entries.addAfter(GLASS_HORIZONTAL_PANE, WHITE_STAINED_GLASS_HORIZONTAL_PANE);
-        entries.addAfter(WHITE_STAINED_GLASS_HORIZONTAL_PANE, ORANGE_STAINED_GLASS_HORIZONTAL_PANE);
-        entries.addAfter(ORANGE_STAINED_GLASS_HORIZONTAL_PANE, MAGENTA_STAINED_GLASS_HORIZONTAL_PANE);
-        entries.addAfter(MAGENTA_STAINED_GLASS_HORIZONTAL_PANE, LIGHT_BLUE_STAINED_GLASS_HORIZONTAL_PANE);
-        entries.addAfter(LIGHT_BLUE_STAINED_GLASS_HORIZONTAL_PANE, YELLOW_STAINED_GLASS_HORIZONTAL_PANE);
+        entries.addAfter(WHITE_STAINED_GLASS_HORIZONTAL_PANE, LIGHT_GRAY_STAINED_GLASS_HORIZONTAL_PANE);
+        entries.addAfter(LIGHT_GRAY_STAINED_GLASS_HORIZONTAL_PANE, GRAY_STAINED_GLASS_HORIZONTAL_PANE);
+        entries.addAfter(GRAY_STAINED_GLASS_HORIZONTAL_PANE, BLACK_STAINED_GLASS_HORIZONTAL_PANE);
+        entries.addAfter(BLACK_STAINED_GLASS_HORIZONTAL_PANE, BROWN_STAINED_GLASS_HORIZONTAL_PANE);
+        entries.addAfter(BROWN_STAINED_GLASS_HORIZONTAL_PANE, RED_STAINED_GLASS_HORIZONTAL_PANE);
+        entries.addAfter(RED_STAINED_GLASS_HORIZONTAL_PANE, ORANGE_STAINED_GLASS_HORIZONTAL_PANE);
+        entries.addAfter(ORANGE_STAINED_GLASS_HORIZONTAL_PANE, YELLOW_STAINED_GLASS_HORIZONTAL_PANE);
         entries.addAfter(YELLOW_STAINED_GLASS_HORIZONTAL_PANE, LIME_STAINED_GLASS_HORIZONTAL_PANE);
-        entries.addAfter(LIME_STAINED_GLASS_HORIZONTAL_PANE, PINK_STAINED_GLASS_HORIZONTAL_PANE);
-        entries.addAfter(PINK_STAINED_GLASS_HORIZONTAL_PANE, GRAY_STAINED_GLASS_HORIZONTAL_PANE);
-        entries.addAfter(GRAY_STAINED_GLASS_HORIZONTAL_PANE, LIGHT_GRAY_STAINED_GLASS_HORIZONTAL_PANE);
-        entries.addAfter(LIGHT_GRAY_STAINED_GLASS_HORIZONTAL_PANE, CYAN_STAINED_GLASS_HORIZONTAL_PANE);
-        entries.addAfter(CYAN_STAINED_GLASS_HORIZONTAL_PANE, PURPLE_STAINED_GLASS_HORIZONTAL_PANE);
-        entries.addAfter(PURPLE_STAINED_GLASS_HORIZONTAL_PANE, BLUE_STAINED_GLASS_HORIZONTAL_PANE);
-        entries.addAfter(BLUE_STAINED_GLASS_HORIZONTAL_PANE, BROWN_STAINED_GLASS_HORIZONTAL_PANE);
-        entries.addAfter(BROWN_STAINED_GLASS_HORIZONTAL_PANE, GREEN_STAINED_GLASS_HORIZONTAL_PANE);
-        entries.addAfter(GREEN_STAINED_GLASS_HORIZONTAL_PANE, RED_STAINED_GLASS_HORIZONTAL_PANE);
-        entries.addAfter(RED_STAINED_GLASS_HORIZONTAL_PANE, BLACK_STAINED_GLASS_HORIZONTAL_PANE);
+        entries.addAfter(LIME_STAINED_GLASS_HORIZONTAL_PANE, GREEN_STAINED_GLASS_HORIZONTAL_PANE);
+        entries.addAfter(GREEN_STAINED_GLASS_HORIZONTAL_PANE, CYAN_STAINED_GLASS_HORIZONTAL_PANE);
+        entries.addAfter(CYAN_STAINED_GLASS_HORIZONTAL_PANE, LIGHT_BLUE_STAINED_GLASS_HORIZONTAL_PANE);
+        entries.addAfter(LIGHT_BLUE_STAINED_GLASS_HORIZONTAL_PANE, BLUE_STAINED_GLASS_HORIZONTAL_PANE);
+        entries.addAfter(BLUE_STAINED_GLASS_HORIZONTAL_PANE, PURPLE_STAINED_GLASS_HORIZONTAL_PANE);
+        entries.addAfter(PURPLE_STAINED_GLASS_HORIZONTAL_PANE, MAGENTA_STAINED_GLASS_HORIZONTAL_PANE);
+        entries.addAfter(MAGENTA_STAINED_GLASS_HORIZONTAL_PANE, PINK_STAINED_GLASS_HORIZONTAL_PANE);
     }
 
     private static void addBlockToModBlockGroup(FabricItemGroupEntries entries) {
@@ -506,23 +575,40 @@ public class ModBlocks {
         
         entries.add(GLASS_SLAB);
         entries.add(GLASS_VERTICAL_SLAB);
-        entries.add(GLASS_HORIZONTAL_PANE);
-        entries.add(WHITE_STAINED_GLASS_HORIZONTAL_PANE);
-        entries.add(ORANGE_STAINED_GLASS_HORIZONTAL_PANE);
-        entries.add(MAGENTA_STAINED_GLASS_HORIZONTAL_PANE);
-        entries.add(LIGHT_BLUE_STAINED_GLASS_HORIZONTAL_PANE);
-        entries.add(YELLOW_STAINED_GLASS_HORIZONTAL_PANE);
-        entries.add(LIME_STAINED_GLASS_HORIZONTAL_PANE);
-        entries.add(PINK_STAINED_GLASS_HORIZONTAL_PANE);
-        entries.add(GRAY_STAINED_GLASS_HORIZONTAL_PANE);
-        entries.add(LIGHT_GRAY_STAINED_GLASS_HORIZONTAL_PANE);
-        entries.add(CYAN_STAINED_GLASS_HORIZONTAL_PANE);
-        entries.add(PURPLE_STAINED_GLASS_HORIZONTAL_PANE);
-        entries.add(BLUE_STAINED_GLASS_HORIZONTAL_PANE);
-        entries.add(BROWN_STAINED_GLASS_HORIZONTAL_PANE);
-        entries.add(GREEN_STAINED_GLASS_HORIZONTAL_PANE);
-        entries.add(RED_STAINED_GLASS_HORIZONTAL_PANE);
-        entries.add(BLACK_STAINED_GLASS_HORIZONTAL_PANE);
+        entries.add(TINTED_GLASS_SLAB);
+        entries.add(TINTED_GLASS_VERTICAL_SLAB);
+        entries.add(WHITE_STAINED_GLASS_SLAB);
+        entries.add(WHITE_STAINED_GLASS_VERTICAL_SLAB);
+        entries.add(LIGHT_GRAY_STAINED_GLASS_SLAB);
+        entries.add(LIGHT_GRAY_STAINED_GLASS_VERTICAL_SLAB);
+        entries.add(GRAY_STAINED_GLASS_SLAB);
+        entries.add(GRAY_STAINED_GLASS_VERTICAL_SLAB);
+        entries.add(BLACK_STAINED_GLASS_SLAB);
+        entries.add(BLACK_STAINED_GLASS_VERTICAL_SLAB);
+        entries.add(BROWN_STAINED_GLASS_SLAB);
+        entries.add(BROWN_STAINED_GLASS_VERTICAL_SLAB);
+        entries.add(RED_STAINED_GLASS_SLAB);
+        entries.add(RED_STAINED_GLASS_VERTICAL_SLAB);
+        entries.add(ORANGE_STAINED_GLASS_SLAB);
+        entries.add(ORANGE_STAINED_GLASS_VERTICAL_SLAB);
+        entries.add(YELLOW_STAINED_GLASS_SLAB);
+        entries.add(YELLOW_STAINED_GLASS_VERTICAL_SLAB);
+        entries.add(LIME_STAINED_GLASS_SLAB);
+        entries.add(LIME_STAINED_GLASS_VERTICAL_SLAB);
+        entries.add(GREEN_STAINED_GLASS_SLAB);
+        entries.add(GREEN_STAINED_GLASS_VERTICAL_SLAB);
+        entries.add(CYAN_STAINED_GLASS_SLAB);
+        entries.add(CYAN_STAINED_GLASS_VERTICAL_SLAB);
+        entries.add(LIGHT_BLUE_STAINED_GLASS_SLAB);
+        entries.add(LIGHT_BLUE_STAINED_GLASS_VERTICAL_SLAB);
+        entries.add(BLUE_STAINED_GLASS_SLAB);
+        entries.add(BLUE_STAINED_GLASS_VERTICAL_SLAB);
+        entries.add(PURPLE_STAINED_GLASS_SLAB);
+        entries.add(PURPLE_STAINED_GLASS_VERTICAL_SLAB);
+        entries.add(MAGENTA_STAINED_GLASS_SLAB);
+        entries.add(MAGENTA_STAINED_GLASS_VERTICAL_SLAB);
+        entries.add(PINK_STAINED_GLASS_SLAB);
+        entries.add(PINK_STAINED_GLASS_VERTICAL_SLAB);
         
         entries.add(OAK_SHELF);
         entries.add(SPRUCE_SHELF);

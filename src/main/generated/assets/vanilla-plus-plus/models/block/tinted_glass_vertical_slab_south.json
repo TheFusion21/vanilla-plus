@@ -1,0 +1,8 @@
+{
+  "parent": "vanilla-plus-plus:block/vertical_slab_south",
+  "textures": {
+    "bottom": "minecraft:block/tinted_glass",
+    "side": "vanilla-plus-plus:block/tinted_glass_slab_side",
+    "top": "minecraft:block/tinted_glass"
+  }
+}
