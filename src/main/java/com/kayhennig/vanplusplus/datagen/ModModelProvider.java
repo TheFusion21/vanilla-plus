@@ -585,6 +585,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.GOLDEN_SPEAR, ModModels.SPEAR);
         itemModelGenerator.register(ModItems.DIAMOND_SPEAR, ModModels.SPEAR);
         itemModelGenerator.register(ModItems.NETHERITE_SPEAR, ModModels.SPEAR);
+
+        itemModelGenerator.register(ModItems.FISH_SOUP, Models.GENERATED);
         
     }
 

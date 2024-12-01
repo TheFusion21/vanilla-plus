@@ -1,5 +1,6 @@
 package com.kayhennig.vanplusplus;
 import com.kayhennig.vanplusplus.component.ModDataComponentTypes;
+import com.kayhennig.vanplusplus.component.ModFoodComponents;
 import com.kayhennig.vanplusplus.item.DaggerItem;
 import com.kayhennig.vanplusplus.item.DynamiteItem;
 import com.kayhennig.vanplusplus.item.HammerItem;
@@ -40,6 +41,7 @@ public class ModItems {
     public static final Item GOLDEN_SPEAR = registerItem("golden_spear", new SpearItem(ToolMaterials.GOLD, new Item.Settings().attributeModifiers(SpearItem.createAttributeModifiers(ToolMaterials.GOLD, 6, -2.4F))));
     public static final Item DIAMOND_SPEAR = registerItem("diamond_spear", new SpearItem(ToolMaterials.DIAMOND, new Item.Settings().attributeModifiers(SpearItem.createAttributeModifiers(ToolMaterials.DIAMOND, 6, -2.4F))));
     public static final Item NETHERITE_SPEAR = registerItem("netherite_spear", new SpearItem(ToolMaterials.NETHERITE, new Item.Settings().attributeModifiers(SpearItem.createAttributeModifiers(ToolMaterials.NETHERITE, 6, -2.4F))));
+    public static final Item FISH_SOUP = registerItem("fish_soup", new Item(new Item.Settings().food(ModFoodComponents.FISH_SOUP).maxCount(1)));
 
     private static Item registerItem(String name, Item item) {
         Identifier itemId = Identifier.of(Vanillaplusplus.MOD_ID, name);
@@ -64,6 +66,15 @@ public class ModItems {
         entries.add(GOLDEN_HAMMER);
         entries.add(DIAMOND_HAMMER);
         entries.add(NETHERITE_HAMMER);
+
+        entries.add(WOODEN_SPEAR);
+        entries.add(STONE_SPEAR);
+        entries.add(IRON_SPEAR);
+        entries.add(GOLDEN_SPEAR);
+        entries.add(DIAMOND_SPEAR);
+        entries.add(NETHERITE_SPEAR);
+
+        entries.add(FISH_SOUP);
         
     }
 
@@ -92,6 +103,10 @@ public class ModItems {
         entries.addAfter(DIAMOND_SPEAR, NETHERITE_SPEAR);
     }
 
+    private static void addItemToFoodGroup(FabricItemGroupEntries entries) {
+        entries.addAfter(Items.SUSPICIOUS_STEW, FISH_SOUP);
+    }
+
     private static void addDynamites(FabricItemGroupEntries entries) {
         for (byte b : DynamiteItem.FUSE_TIMES) {
             ItemStack itemStack = new ItemStack(DYNAMITE);
@@ -103,5 +118,6 @@ public class ModItems {
     public static void registerItems() {
         ItemGroupEvents.modifyEntriesEvent(ModItemGroups.VANPLUSPLUS).register(ModItems::addItemsToModGroup);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(ModItems::addItemsToCombatGroup);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(ModItems::addItemToFoodGroup);
     }
 }

@@ -1,4 +1,4 @@
-// 1.21.1	2024-11-29T09:56:55.067513	vanilla-plus-plus/Recipes
+// 1.21.1	2024-11-30T20:14:42.217484	Vanilla++/Recipes
 8d785162c3c130962492167ab1f9ced474a41ad0 data\vanilla-plus-plus\advancement\recipes\building_blocks\white_stained_glass_slab.json
 62b92549bcfaf63be0b6aca1204af5a94ec32b14 data\vanilla-plus-plus\recipe\stripped_dark_oak_log_vertical_slab.json
 3db2d9428d83e8d70ab9baca9ed82410f4197fdc data\vanilla-plus-plus\advancement\recipes\building_blocks\blue_stained_glass_slab.json
@@ -53,6 +53,7 @@ ea6d9a05da98d5e5b8377d73e61c14c788b43839 data\vanilla-plus-plus\advancement\reci
 a5719a504e24034ad2e029799676a2cffb132110 data\vanilla-plus-plus\recipe\acacia_planks_vertical_slab.json
 8604fc0e6ecea61ee017b6f2dafc081317b686b7 data\vanilla-plus-plus\advancement\recipes\building_blocks\weathered_cut_copper_vertical_slab.json
 fdf9afba564aa46d17dc244ef01f999d88f7b5f6 data\vanilla-plus-plus\recipe\deepslate_tile_vertical_slab_from_polished_deepslate_stonecutting.json
+a9e39ee323445c9953d7622be720f43368951b7c data\vanilla-plus-plus\recipe\fish_soup.json
 c1946b65bc27feae4d769ed85f9ba9a2e5aacc82 data\vanilla-plus-plus\recipe\blue_stained_glass_slab.json
 18727c6f06230bb4071f550ed98147c397fe2270 data\vanilla-plus-plus\advancement\recipes\building_blocks\jungle_shelf.json
 e6edd70155536fdabbe18c89e2acb429fbaddc4a data\vanilla-plus-plus\advancement\recipes\building_blocks\stone_brick_vertical_slab_from_stone_bricks_stonecutting.json
@@ -299,6 +300,7 @@ e46e0b2556b932aa2fe0ba9b983bd0cefcdf3ebd data\vanilla-plus-plus\recipe\stripped_
 e43f143d20e763c0d1a71125e0f056a70569f5c2 data\vanilla-plus-plus\recipe\polished_diorite_vertical_slab.json
 e45fe497a192b2122f862204357ad15080fb35da data\vanilla-plus-plus\advancement\recipes\building_blocks\orange_stained_glass_horizontal_pane.json
 c429904b0b967e513dd0b7abd57893645bf082bd data\vanilla-plus-plus\advancement\recipes\building_blocks\mossy_stone_brick_vertical_slab_from_mossy_stone_bricks_stonecutting.json
+83dd6b7a9d5ce83914a9d0b2ce0dd82eb7a3f6a8 data\vanilla-plus-plus\advancement\recipes\food\fish_soup.json
 e3964fc8d9b9e5de27df0fbe12a8101309de0208 data\vanilla-plus-plus\recipe\dark_oak_log_vertical_slab.json
 b2130e32bf118e33fcc8db2a9324f7e4a0a272f6 data\vanilla-plus-plus\advancement\recipes\building_blocks\polished_andesite_vertical_slab_from_polished_andesite_stonecutting.json
 0f1b8e11c9a9ec1ffc1b1c23d754318b36a0382e data\vanilla-plus-plus\recipe\polished_diorite_vertical_slab_from_polished_diorite_stonecutting.json

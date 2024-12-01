@@ -13,6 +13,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
@@ -34,6 +35,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         generateVerticalSlab(exporter);
         generateItems(exporter);
         generateStoneCutterSlabRecipes(exporter);
+        generateFishSoupRecipe(exporter);
     }
 
     private void generateSlab(RecipeExporter exporter) {
@@ -390,6 +392,17 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.LAPIS_VERTICAL_SLAB, Blocks.LAPIS_BLOCK, 2);
 
         // Diamond, Emerald, Gold and Iron are too hard for a stonecutter!
+    }
+
+    private void generateFishSoupRecipe(RecipeExporter exporter) {
+        
+        // Allow any cooked fish
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.FISH_SOUP, 1)
+            .input(Items.BOWL)
+            .input(Ingredient.ofItems(Items.COOKED_COD, Items.COOKED_SALMON))
+            .criterion(FabricRecipeProvider.hasItem(Items.BOWL),
+                    FabricRecipeProvider.conditionsFromItem(Items.BOWL))
+            .offerTo(exporter);
     }
 
     private void offerShapedSlabRecipe(RecipeExporter exporter, RecipeCategory category, Block slab, Block block,
