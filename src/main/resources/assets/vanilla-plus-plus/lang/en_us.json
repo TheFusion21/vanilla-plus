@@ -156,6 +156,46 @@
     "block.vanilla-plus-plus.end_stone_brick_pressure_plate": "End Stone Brick Pressure Plate",
     "block.vanilla-plus-plus.quartz_pressure_plate": "Quartz Pressure Plate",
 
+    "block.vanilla-plus-plus.copper_rail": "Copper Rail",
+    "block.vanilla-plus-plus.copper_powered_rail": "Powered Copper Rail",
+    "block.vanilla-plus-plus.copper_activator_rail": "Activator Copper Rail",
+    "block.vanilla-plus-plus.copper_detector_rail": "Detector Copper Rail",
+
+    "block.vanilla-plus-plus.exposed_copper_rail": "Exposed Copper Rail",
+    "block.vanilla-plus-plus.exposed_copper_powered_rail": "Powered Exposed Copper Rail",
+    "block.vanilla-plus-plus.exposed_copper_activator_rail": "Activator Exposed Copper Rail",
+    "block.vanilla-plus-plus.exposed_copper_detector_rail": "Detector Exposed Copper Rail",
+
+    "block.vanilla-plus-plus.weathered_copper_rail": "Weathered Copper Rail",
+    "block.vanilla-plus-plus.weathered_copper_powered_rail": "Powered Weathered Copper Rail",
+    "block.vanilla-plus-plus.weathered_copper_activator_rail": "Activator Weathered Copper Rail",
+    "block.vanilla-plus-plus.weathered_copper_detector_rail": "Detector Weathered Copper Rail",
+
+    "block.vanilla-plus-plus.oxidized_copper_rail": "Oxidized Copper Rail",
+    "block.vanilla-plus-plus.oxidized_copper_powered_rail": "Powered Oxidized Copper Rail",
+    "block.vanilla-plus-plus.oxidized_copper_activator_rail": "Activator Oxidized Copper Rail",
+    "block.vanilla-plus-plus.oxidized_copper_detector_rail": "Detector Oxidized Copper Rail",
+
+    "block.vanilla-plus-plus.waxed_copper_rail": "Waxed Copper Rail",
+    "block.vanilla-plus-plus.waxed_copper_powered_rail": "Powered Waxed Copper Rail",
+    "block.vanilla-plus-plus.waxed_copper_activator_rail": "Activator Waxed Copper Rail",
+    "block.vanilla-plus-plus.waxed_copper_detector_rail": "Detector Waxed Copper Rail",
+
+    "block.vanilla-plus-plus.waxed_exposed_copper_rail": "Waxed Exposed Copper Rail",
+    "block.vanilla-plus-plus.waxed_exposed_copper_powered_rail": "Powered Waxed Exposed Copper Rail",
+    "block.vanilla-plus-plus.waxed_exposed_copper_activator_rail": "Activator Waxed Exposed Copper Rail",
+    "block.vanilla-plus-plus.waxed_exposed_copper_detector_rail": "Detector Waxed Exposed Copper Rail",
+
+    "block.vanilla-plus-plus.waxed_weathered_copper_rail": "Waxed Weathered Copper Rail",
+    "block.vanilla-plus-plus.waxed_weathered_copper_powered_rail": "Powered Waxed Weathered Copper Rail",
+    "block.vanilla-plus-plus.waxed_weathered_copper_activator_rail": "Activator Waxed Weathered Copper Rail",
+    "block.vanilla-plus-plus.waxed_weathered_copper_detector_rail": "Detector Waxed Weathered Copper Rail",
+
+    "block.vanilla-plus-plus.waxed_oxidized_copper_rail": "Waxed Oxidized Copper Rail",
+    "block.vanilla-plus-plus.waxed_oxidized_copper_powered_rail": "Powered Waxed Oxidized Copper Rail",
+    "block.vanilla-plus-plus.waxed_oxidized_copper_activator_rail": "Activator Waxed Oxidized Copper Rail",
+    "block.vanilla-plus-plus.waxed_oxidized_copper_detector_rail": "Detector Waxed Oxidized Copper Rail",
+
     "item.vanilla-plus-plus.dynamite": "Dynamite",
     "item.vanilla-plus-plus.fuse_time": "Fuse time: %1$s",
     "item.vanilla-plus-plus.wooden_dagger": "Wooden Dagger",
@@ -176,6 +216,7 @@
     "item.vanilla-plus-plus.golden_spear": "Golden Spear",
     "item.vanilla-plus-plus.diamond_spear": "Diamond Spear",
     "item.vanilla-plus-plus.netherite_spear": "Netherite Spear",
+    "item.vanilla-plus-plus.fish_soup": "Fish Soup",
 
     "death.attack.spear": "%1$s was impaled by %2$s",
 

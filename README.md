@@ -22,3 +22,6 @@ Vanilla++ is a mod that aims to add various blocks and items to the game, while 
 
 ### Items
 ![Items](/screenshots/items.png)
+
+### Rails
+![Rails](/screenshots/rails.png)

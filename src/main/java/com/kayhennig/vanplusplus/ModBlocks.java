@@ -6,6 +6,7 @@ import com.kayhennig.vanplusplus.item.ModItemGroups;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
+import net.minecraft.block.Oxidizable.OxidationLevel;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -247,6 +248,64 @@ public class ModBlocks {
     public static final Block RED_NETHER_BRICK_PRESSURE_PLATE = registerBlock("red_nether_brick_pressure_plate", new PressurePlateBlock(BlockSetType.STONE, AbstractBlock.Settings.copy(Blocks.STONE_PRESSURE_PLATE)));
     public static final Block END_STONE_BRICK_PRESSURE_PLATE = registerBlock("end_stone_brick_pressure_plate", new PressurePlateBlock(BlockSetType.STONE, AbstractBlock.Settings.copy(Blocks.STONE_PRESSURE_PLATE)));
     public static final Block QUARTZ_PRESSURE_PLATE = registerBlock("quartz_pressure_plate", new PressurePlateBlock(BlockSetType.STONE, AbstractBlock.Settings.copy(Blocks.STONE_PRESSURE_PLATE)));
+
+    // Copper Rails
+
+    public static final Block COPPER_RAIL = registerBlock("copper_rail", new OxidizableCopperRailBlock(OxidationLevel.UNAFFECTED, AbstractBlock.Settings.copy(Blocks.RAIL).sounds(BlockSoundGroup.COPPER)));
+    public static final Block EXPOSED_COPPER_RAIL = registerBlock("exposed_copper_rail", new OxidizableCopperRailBlock(OxidationLevel.EXPOSED, AbstractBlock.Settings.copy(Blocks.RAIL).sounds(BlockSoundGroup.COPPER)));
+    public static final Block WEATHERED_COPPER_RAIL = registerBlock("weathered_copper_rail", new OxidizableCopperRailBlock(OxidationLevel.WEATHERED, AbstractBlock.Settings.copy(Blocks.RAIL).sounds(BlockSoundGroup.COPPER)));
+    public static final Block OXIDIZED_COPPER_RAIL = registerBlock("oxidized_copper_rail", new OxidizableCopperRailBlock(OxidationLevel.OXIDIZED, AbstractBlock.Settings.copy(Blocks.RAIL).sounds(BlockSoundGroup.COPPER)));
+    
+    // Copper Powered Rails
+
+    public static final Block COPPER_POWERED_RAIL = registerBlock("copper_powered_rail", new OxidizableCopperPoweredRailBlock(OxidationLevel.UNAFFECTED, AbstractBlock.Settings.copy(Blocks.POWERED_RAIL).sounds(BlockSoundGroup.COPPER)));
+    public static final Block EXPOSED_COPPER_POWERED_RAIL = registerBlock("exposed_copper_powered_rail", new OxidizableCopperPoweredRailBlock(OxidationLevel.EXPOSED, AbstractBlock.Settings.copy(Blocks.POWERED_RAIL).sounds(BlockSoundGroup.COPPER)));
+    public static final Block WEATHERED_COPPER_POWERED_RAIL = registerBlock("weathered_copper_powered_rail", new OxidizableCopperPoweredRailBlock(OxidationLevel.WEATHERED, AbstractBlock.Settings.copy(Blocks.POWERED_RAIL).sounds(BlockSoundGroup.COPPER)));
+    public static final Block OXIDIZED_COPPER_POWERED_RAIL = registerBlock("oxidized_copper_powered_rail", new OxidizableCopperPoweredRailBlock(OxidationLevel.OXIDIZED, AbstractBlock.Settings.copy(Blocks.POWERED_RAIL).sounds(BlockSoundGroup.COPPER)));
+
+    // Copper Activator Rails
+
+    public static final Block COPPER_ACTIVATOR_RAIL = registerBlock("copper_activator_rail", new OxidizableCopperPoweredRailBlock(OxidationLevel.UNAFFECTED, AbstractBlock.Settings.copy(Blocks.ACTIVATOR_RAIL).sounds(BlockSoundGroup.COPPER)));
+    public static final Block EXPOSED_COPPER_ACTIVATOR_RAIL = registerBlock("exposed_copper_activator_rail", new OxidizableCopperPoweredRailBlock(OxidationLevel.EXPOSED, AbstractBlock.Settings.copy(Blocks.ACTIVATOR_RAIL).sounds(BlockSoundGroup.COPPER)));
+    public static final Block WEATHERED_COPPER_ACTIVATOR_RAIL = registerBlock("weathered_copper_activator_rail", new OxidizableCopperPoweredRailBlock(OxidationLevel.WEATHERED, AbstractBlock.Settings.copy(Blocks.ACTIVATOR_RAIL).sounds(BlockSoundGroup.COPPER)));
+    public static final Block OXIDIZED_COPPER_ACTIVATOR_RAIL = registerBlock("oxidized_copper_activator_rail", new OxidizableCopperPoweredRailBlock(OxidationLevel.OXIDIZED, AbstractBlock.Settings.copy(Blocks.ACTIVATOR_RAIL).sounds(BlockSoundGroup.COPPER)));
+    
+    // Copper Detector Rails
+
+    public static final Block COPPER_DETECTOR_RAIL = registerBlock("copper_detector_rail", new OxidizableCopperDetectorRailBlock(OxidationLevel.UNAFFECTED, AbstractBlock.Settings.copy(Blocks.DETECTOR_RAIL).sounds(BlockSoundGroup.COPPER)));
+    public static final Block EXPOSED_COPPER_DETECTOR_RAIL = registerBlock("exposed_copper_detector_rail", new OxidizableCopperDetectorRailBlock(OxidationLevel.EXPOSED, AbstractBlock.Settings.copy(Blocks.DETECTOR_RAIL).sounds(BlockSoundGroup.COPPER)));
+    public static final Block WEATHERED_COPPER_DETECTOR_RAIL = registerBlock("weathered_copper_detector_rail", new OxidizableCopperDetectorRailBlock(OxidationLevel.WEATHERED, AbstractBlock.Settings.copy(Blocks.DETECTOR_RAIL).sounds(BlockSoundGroup.COPPER)));
+    public static final Block OXIDIZED_COPPER_DETECTOR_RAIL = registerBlock("oxidized_copper_detector_rail", new OxidizableCopperDetectorRailBlock(OxidationLevel.OXIDIZED, AbstractBlock.Settings.copy(Blocks.DETECTOR_RAIL).sounds(BlockSoundGroup.COPPER)));
+
+    // Waxed Copper Rails
+
+    public static final Block WAXED_COPPER_RAIL = registerBlock("waxed_copper_rail", new RailBlock(AbstractBlock.Settings.copy(Blocks.RAIL).sounds(BlockSoundGroup.COPPER)));
+    public static final Block WAXED_EXPOSED_COPPER_RAIL = registerBlock("waxed_exposed_copper_rail", new RailBlock(AbstractBlock.Settings.copy(Blocks.RAIL).sounds(BlockSoundGroup.COPPER)));
+    public static final Block WAXED_WEATHERED_COPPER_RAIL = registerBlock("waxed_weathered_copper_rail", new RailBlock(AbstractBlock.Settings.copy(Blocks.RAIL).sounds(BlockSoundGroup.COPPER)));
+    public static final Block WAXED_OXIDIZED_COPPER_RAIL = registerBlock("waxed_oxidized_copper_rail", new RailBlock(AbstractBlock.Settings.copy(Blocks.RAIL).sounds(BlockSoundGroup.COPPER)));
+
+    // Waxed Copper Powered Rails
+
+    public static final Block WAXED_COPPER_POWERED_RAIL = registerBlock("waxed_copper_powered_rail", new PoweredRailBlock(AbstractBlock.Settings.copy(Blocks.POWERED_RAIL).sounds(BlockSoundGroup.COPPER)));
+    public static final Block WAXED_EXPOSED_COPPER_POWERED_RAIL = registerBlock("waxed_exposed_copper_powered_rail", new PoweredRailBlock(AbstractBlock.Settings.copy(Blocks.POWERED_RAIL).sounds(BlockSoundGroup.COPPER)));
+    public static final Block WAXED_WEATHERED_COPPER_POWERED_RAIL = registerBlock("waxed_weathered_copper_powered_rail", new PoweredRailBlock(AbstractBlock.Settings.copy(Blocks.POWERED_RAIL).sounds(BlockSoundGroup.COPPER)));
+    public static final Block WAXED_OXIDIZED_COPPER_POWERED_RAIL = registerBlock("waxed_oxidized_copper_powered_rail", new PoweredRailBlock(AbstractBlock.Settings.copy(Blocks.POWERED_RAIL).sounds(BlockSoundGroup.COPPER)));
+
+    // Waxed Copper Activator Rails
+
+    public static final Block WAXED_COPPER_ACTIVATOR_RAIL = registerBlock("waxed_copper_activator_rail", new PoweredRailBlock(AbstractBlock.Settings.copy(Blocks.ACTIVATOR_RAIL).sounds(BlockSoundGroup.COPPER)));
+    public static final Block WAXED_EXPOSED_COPPER_ACTIVATOR_RAIL = registerBlock("waxed_exposed_copper_activator_rail", new PoweredRailBlock(AbstractBlock.Settings.copy(Blocks.ACTIVATOR_RAIL).sounds(BlockSoundGroup.COPPER)));
+    public static final Block WAXED_WEATHERED_COPPER_ACTIVATOR_RAIL = registerBlock("waxed_weathered_copper_activator_rail", new PoweredRailBlock(AbstractBlock.Settings.copy(Blocks.ACTIVATOR_RAIL).sounds(BlockSoundGroup.COPPER)));
+    public static final Block WAXED_OXIDIZED_COPPER_ACTIVATOR_RAIL = registerBlock("waxed_oxidized_copper_activator_rail", new PoweredRailBlock(AbstractBlock.Settings.copy(Blocks.ACTIVATOR_RAIL).sounds(BlockSoundGroup.COPPER)));
+
+    // Waxed Copper Detector Rails
+
+    public static final Block WAXED_COPPER_DETECTOR_RAIL = registerBlock("waxed_copper_detector_rail", new DetectorRailBlock(AbstractBlock.Settings.copy(Blocks.DETECTOR_RAIL).sounds(BlockSoundGroup.COPPER)));
+    public static final Block WAXED_EXPOSED_COPPER_DETECTOR_RAIL = registerBlock("waxed_exposed_copper_detector_rail", new DetectorRailBlock(AbstractBlock.Settings.copy(Blocks.DETECTOR_RAIL).sounds(BlockSoundGroup.COPPER)));
+    public static final Block WAXED_WEATHERED_COPPER_DETECTOR_RAIL = registerBlock("waxed_weathered_copper_detector_rail", new DetectorRailBlock(AbstractBlock.Settings.copy(Blocks.DETECTOR_RAIL).sounds(BlockSoundGroup.COPPER)));
+    public static final Block WAXED_OXIDIZED_COPPER_DETECTOR_RAIL = registerBlock("waxed_oxidized_copper_detector_rail", new DetectorRailBlock(AbstractBlock.Settings.copy(Blocks.DETECTOR_RAIL).sounds(BlockSoundGroup.COPPER)));
+
+    
 
     // Registry
     private static Block registerBlock(String name, Block block) {
@@ -691,6 +750,46 @@ public class ModBlocks {
         entries.addAfter(NETHER_BRICK_PRESSURE_PLATE, RED_NETHER_BRICK_PRESSURE_PLATE);
         entries.addAfter(RED_NETHER_BRICK_PRESSURE_PLATE, END_STONE_BRICK_PRESSURE_PLATE);
         entries.addAfter(END_STONE_BRICK_PRESSURE_PLATE, QUARTZ_PRESSURE_PLATE);
+
+        entries.addAfter(Blocks.ACTIVATOR_RAIL, COPPER_RAIL);
+        entries.addAfter(COPPER_RAIL, COPPER_POWERED_RAIL);
+        entries.addAfter(COPPER_POWERED_RAIL, COPPER_DETECTOR_RAIL);
+        entries.addAfter(COPPER_DETECTOR_RAIL, COPPER_ACTIVATOR_RAIL);
+
+        entries.addAfter(COPPER_ACTIVATOR_RAIL, EXPOSED_COPPER_RAIL);
+        entries.addAfter(EXPOSED_COPPER_RAIL, EXPOSED_COPPER_POWERED_RAIL);
+        entries.addAfter(EXPOSED_COPPER_POWERED_RAIL, EXPOSED_COPPER_DETECTOR_RAIL);
+        entries.addAfter(EXPOSED_COPPER_DETECTOR_RAIL, EXPOSED_COPPER_ACTIVATOR_RAIL);
+
+        entries.addAfter(EXPOSED_COPPER_ACTIVATOR_RAIL, WEATHERED_COPPER_RAIL);
+        entries.addAfter(WEATHERED_COPPER_RAIL, WEATHERED_COPPER_POWERED_RAIL);
+        entries.addAfter(WEATHERED_COPPER_POWERED_RAIL, WEATHERED_COPPER_DETECTOR_RAIL);
+        entries.addAfter(WEATHERED_COPPER_DETECTOR_RAIL, WEATHERED_COPPER_ACTIVATOR_RAIL);
+
+        entries.addAfter(WEATHERED_COPPER_ACTIVATOR_RAIL, OXIDIZED_COPPER_RAIL);
+        entries.addAfter(OXIDIZED_COPPER_RAIL, OXIDIZED_COPPER_POWERED_RAIL);
+        entries.addAfter(OXIDIZED_COPPER_POWERED_RAIL, OXIDIZED_COPPER_DETECTOR_RAIL);
+        entries.addAfter(OXIDIZED_COPPER_DETECTOR_RAIL, OXIDIZED_COPPER_ACTIVATOR_RAIL);
+
+        entries.addAfter(OXIDIZED_COPPER_ACTIVATOR_RAIL, WAXED_COPPER_RAIL);
+        entries.addAfter(WAXED_COPPER_RAIL, WAXED_COPPER_POWERED_RAIL);
+        entries.addAfter(WAXED_COPPER_POWERED_RAIL, WAXED_COPPER_DETECTOR_RAIL);
+        entries.addAfter(WAXED_COPPER_DETECTOR_RAIL, WAXED_COPPER_ACTIVATOR_RAIL);
+
+        entries.addAfter(WAXED_COPPER_ACTIVATOR_RAIL, WAXED_EXPOSED_COPPER_RAIL);
+        entries.addAfter(WAXED_EXPOSED_COPPER_RAIL, WAXED_EXPOSED_COPPER_POWERED_RAIL);
+        entries.addAfter(WAXED_EXPOSED_COPPER_POWERED_RAIL, WAXED_EXPOSED_COPPER_DETECTOR_RAIL);
+        entries.addAfter(WAXED_EXPOSED_COPPER_DETECTOR_RAIL, WAXED_EXPOSED_COPPER_ACTIVATOR_RAIL);
+
+        entries.addAfter(WAXED_EXPOSED_COPPER_ACTIVATOR_RAIL, WAXED_WEATHERED_COPPER_RAIL);
+        entries.addAfter(WAXED_WEATHERED_COPPER_RAIL, WAXED_WEATHERED_COPPER_POWERED_RAIL);
+        entries.addAfter(WAXED_WEATHERED_COPPER_POWERED_RAIL, WAXED_WEATHERED_COPPER_DETECTOR_RAIL);
+        entries.addAfter(WAXED_WEATHERED_COPPER_DETECTOR_RAIL, WAXED_WEATHERED_COPPER_ACTIVATOR_RAIL);
+
+        entries.addAfter(WAXED_WEATHERED_COPPER_ACTIVATOR_RAIL, WAXED_OXIDIZED_COPPER_RAIL);
+        entries.addAfter(WAXED_OXIDIZED_COPPER_RAIL, WAXED_OXIDIZED_COPPER_POWERED_RAIL);
+        entries.addAfter(WAXED_OXIDIZED_COPPER_POWERED_RAIL, WAXED_OXIDIZED_COPPER_DETECTOR_RAIL);
+        entries.addAfter(WAXED_OXIDIZED_COPPER_DETECTOR_RAIL, WAXED_OXIDIZED_COPPER_ACTIVATOR_RAIL);
     }
     
     public static void registerModBlocks() {

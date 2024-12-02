@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_rail_raised_ne",
+  "textures": {
+    "rail": "vanilla-plus-plus:block/exposed_copper_powered_rail"
+  }
+}

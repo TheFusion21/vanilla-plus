@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "vanilla-plus-plus",
 	"version": "${version}",
-	"name": "vanilla-plus-plus",
+	"name": "Vanilla++",
 	"description": "Vanilla++ is a mod that aims to add various blocks and items to the game, while still keeping the vanilla feel.",
 	"authors": [
 		"TheFusion21"
@@ -38,5 +38,12 @@
 		"java": ">=21",
 		"fabric-api": ">=0.107.0"
 	},
+    "custom": {
+        "modmenu": {
+            "links": {
+                "modmenu.modrinth": "https://modrinth.com/mod/van++"
+            }
+        }
+    },
     "accessWidener": "vanilla-plus-plus.accesswidener"
 }
