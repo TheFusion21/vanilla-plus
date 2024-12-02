@@ -10,6 +10,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.enums.RailShape;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.BlockStateSupplier;
 import net.minecraft.data.client.BlockStateVariant;
@@ -37,6 +38,7 @@ public class ModModelProvider extends FabricModelProvider {
         generateHorizontalGlassPanes(blockStateModelGenerator);
         generateBlockStateShelfModels(blockStateModelGenerator);
         generateBlockStatePressurePlateModels(blockStateModelGenerator);
+        generateBlockStateRailModels(blockStateModelGenerator);
     }
 
     private void generateBlockStateSlabModels(BlockStateModelGenerator blockStateModelGenerator) {
@@ -250,6 +252,143 @@ public class ModModelProvider extends FabricModelProvider {
         generateBlockStatePressurePlateModel(blockStateModelGenerator, Blocks.RED_NETHER_BRICKS, ModBlocks.RED_NETHER_BRICK_PRESSURE_PLATE);
         generateBlockStatePressurePlateModel(blockStateModelGenerator, Blocks.END_STONE_BRICKS, ModBlocks.END_STONE_BRICK_PRESSURE_PLATE);
         generateBlockStatePressurePlateQuartzModel(blockStateModelGenerator, Blocks.QUARTZ_BLOCK, ModBlocks.QUARTZ_PRESSURE_PLATE);
+    }
+
+    private void generateBlockStateRailModels(BlockStateModelGenerator blockStateModelGenerator) {
+        // Rails
+        
+        registerTurnableRail(blockStateModelGenerator, ModBlocks.COPPER_RAIL, ModBlocks.WAXED_COPPER_RAIL);
+        registerTurnableRail(blockStateModelGenerator, ModBlocks.EXPOSED_COPPER_RAIL, ModBlocks.WAXED_EXPOSED_COPPER_RAIL);
+        registerTurnableRail(blockStateModelGenerator, ModBlocks.WEATHERED_COPPER_RAIL, ModBlocks.WAXED_WEATHERED_COPPER_RAIL);
+        registerTurnableRail(blockStateModelGenerator, ModBlocks.OXIDIZED_COPPER_RAIL, ModBlocks.WAXED_OXIDIZED_COPPER_RAIL);
+
+        registerStraightRail(blockStateModelGenerator, ModBlocks.COPPER_POWERED_RAIL, ModBlocks.WAXED_COPPER_POWERED_RAIL);
+        registerStraightRail(blockStateModelGenerator, ModBlocks.EXPOSED_COPPER_POWERED_RAIL, ModBlocks.WAXED_EXPOSED_COPPER_POWERED_RAIL);
+        registerStraightRail(blockStateModelGenerator, ModBlocks.WEATHERED_COPPER_POWERED_RAIL, ModBlocks.WAXED_WEATHERED_COPPER_POWERED_RAIL);
+        registerStraightRail(blockStateModelGenerator, ModBlocks.OXIDIZED_COPPER_POWERED_RAIL, ModBlocks.WAXED_OXIDIZED_COPPER_POWERED_RAIL);
+
+        registerStraightRail(blockStateModelGenerator, ModBlocks.COPPER_DETECTOR_RAIL, ModBlocks.WAXED_COPPER_DETECTOR_RAIL);
+        registerStraightRail(blockStateModelGenerator, ModBlocks.EXPOSED_COPPER_DETECTOR_RAIL, ModBlocks.WAXED_EXPOSED_COPPER_DETECTOR_RAIL);
+        registerStraightRail(blockStateModelGenerator, ModBlocks.WEATHERED_COPPER_DETECTOR_RAIL, ModBlocks.WAXED_WEATHERED_COPPER_DETECTOR_RAIL);
+        registerStraightRail(blockStateModelGenerator, ModBlocks.OXIDIZED_COPPER_DETECTOR_RAIL, ModBlocks.WAXED_OXIDIZED_COPPER_DETECTOR_RAIL);
+
+        registerStraightRail(blockStateModelGenerator, ModBlocks.COPPER_ACTIVATOR_RAIL, ModBlocks.WAXED_COPPER_ACTIVATOR_RAIL);
+        registerStraightRail(blockStateModelGenerator, ModBlocks.EXPOSED_COPPER_ACTIVATOR_RAIL, ModBlocks.WAXED_EXPOSED_COPPER_ACTIVATOR_RAIL);
+        registerStraightRail(blockStateModelGenerator, ModBlocks.WEATHERED_COPPER_ACTIVATOR_RAIL, ModBlocks.WAXED_WEATHERED_COPPER_ACTIVATOR_RAIL);
+        registerStraightRail(blockStateModelGenerator, ModBlocks.OXIDIZED_COPPER_ACTIVATOR_RAIL, ModBlocks.WAXED_OXIDIZED_COPPER_ACTIVATOR_RAIL);
+        
+        /*blockStateModelGenerator.registerTurnableRail(ModBlocks.COPPER_RAIL);
+        blockStateModelGenerator.registerTurnableRail(ModBlocks.EXPOSED_COPPER_RAIL);
+        blockStateModelGenerator.registerTurnableRail(ModBlocks.WEATHERED_COPPER_RAIL);
+        blockStateModelGenerator.registerTurnableRail(ModBlocks.OXIDIZED_COPPER_RAIL);
+
+        registerStraightRail(blockStateModelGenerator, ModBlocks.WAXED_COPPER_RAIL, ModBlocks.COPPER_RAIL);
+        registerStraightRail(blockStateModelGenerator, ModBlocks.WAXED_EXPOSED_COPPER_RAIL, ModBlocks.EXPOSED_COPPER_RAIL);
+        registerStraightRail(blockStateModelGenerator, ModBlocks.WAXED_WEATHERED_COPPER_RAIL, ModBlocks.WEATHERED_COPPER_RAIL);
+        registerStraightRail(blockStateModelGenerator, ModBlocks.WAXED_OXIDIZED_COPPER_RAIL, ModBlocks.OXIDIZED_COPPER_RAIL);
+
+        // Powered Rails
+        blockStateModelGenerator.registerStraightRail(ModBlocks.COPPER_POWERED_RAIL);
+        blockStateModelGenerator.registerStraightRail(ModBlocks.EXPOSED_COPPER_POWERED_RAIL);
+        blockStateModelGenerator.registerStraightRail(ModBlocks.WEATHERED_COPPER_POWERED_RAIL);
+        blockStateModelGenerator.registerStraightRail(ModBlocks.OXIDIZED_COPPER_POWERED_RAIL);
+
+        registerStraightRail(blockStateModelGenerator, ModBlocks.WAXED_COPPER_POWERED_RAIL, ModBlocks.COPPER_POWERED_RAIL);
+        registerStraightRail(blockStateModelGenerator, ModBlocks.WAXED_EXPOSED_COPPER_POWERED_RAIL, ModBlocks.EXPOSED_COPPER_POWERED_RAIL);
+        registerStraightRail(blockStateModelGenerator, ModBlocks.WAXED_WEATHERED_COPPER_POWERED_RAIL, ModBlocks.WEATHERED_COPPER_POWERED_RAIL);
+        registerStraightRail(blockStateModelGenerator, ModBlocks.WAXED_OXIDIZED_COPPER_POWERED_RAIL, ModBlocks.OXIDIZED_COPPER_POWERED_RAIL);
+
+        // Detector Rails
+        blockStateModelGenerator.registerStraightRail(ModBlocks.COPPER_DETECTOR_RAIL);
+        blockStateModelGenerator.registerStraightRail(ModBlocks.EXPOSED_COPPER_DETECTOR_RAIL);
+        blockStateModelGenerator.registerStraightRail(ModBlocks.WEATHERED_COPPER_DETECTOR_RAIL);
+        blockStateModelGenerator.registerStraightRail(ModBlocks.OXIDIZED_COPPER_DETECTOR_RAIL);
+
+        registerStraightRail(blockStateModelGenerator, ModBlocks.WAXED_COPPER_DETECTOR_RAIL, ModBlocks.COPPER_DETECTOR_RAIL);
+        registerStraightRail(blockStateModelGenerator, ModBlocks.WAXED_EXPOSED_COPPER_DETECTOR_RAIL, ModBlocks.EXPOSED_COPPER_DETECTOR_RAIL);
+        registerStraightRail(blockStateModelGenerator, ModBlocks.WAXED_WEATHERED_COPPER_DETECTOR_RAIL, ModBlocks.WEATHERED_COPPER_DETECTOR_RAIL);
+        registerStraightRail(blockStateModelGenerator, ModBlocks.WAXED_OXIDIZED_COPPER_DETECTOR_RAIL, ModBlocks.OXIDIZED_COPPER_DETECTOR_RAIL);
+
+        // Activator Rails
+        blockStateModelGenerator.registerStraightRail(ModBlocks.COPPER_ACTIVATOR_RAIL);
+        blockStateModelGenerator.registerStraightRail(ModBlocks.EXPOSED_COPPER_ACTIVATOR_RAIL);
+        blockStateModelGenerator.registerStraightRail(ModBlocks.WEATHERED_COPPER_ACTIVATOR_RAIL);
+        blockStateModelGenerator.registerStraightRail(ModBlocks.OXIDIZED_COPPER_ACTIVATOR_RAIL);
+
+        registerStraightRail(blockStateModelGenerator, ModBlocks.WAXED_COPPER_ACTIVATOR_RAIL, ModBlocks.COPPER_ACTIVATOR_RAIL);
+        registerStraightRail(blockStateModelGenerator, ModBlocks.WAXED_EXPOSED_COPPER_ACTIVATOR_RAIL, ModBlocks.EXPOSED_COPPER_ACTIVATOR_RAIL);
+        registerStraightRail(blockStateModelGenerator, ModBlocks.WAXED_WEATHERED_COPPER_ACTIVATOR_RAIL, ModBlocks.WEATHERED_COPPER_ACTIVATOR_RAIL);
+        registerStraightRail(blockStateModelGenerator, ModBlocks.WAXED_OXIDIZED_COPPER_ACTIVATOR_RAIL, ModBlocks.OXIDIZED_COPPER_ACTIVATOR_RAIL);
+
+        */
+    }
+
+    private final void registerTurnableRail(BlockStateModelGenerator blockStateModelGenerator, Block rail, Block waxedRail) {
+        TextureMap textureMap = TextureMap.rail(rail);
+		TextureMap textureMap2 = TextureMap.rail(TextureMap.getSubId(rail, "_corner"));
+		Identifier identifier = Models.RAIL_FLAT.upload(rail, textureMap, blockStateModelGenerator.modelCollector);
+		Identifier identifier2 = Models.RAIL_CURVED.upload(rail, textureMap2, blockStateModelGenerator.modelCollector);
+		Identifier identifier3 = Models.TEMPLATE_RAIL_RAISED_NE.upload(rail, textureMap, blockStateModelGenerator.modelCollector);
+		Identifier identifier4 = Models.TEMPLATE_RAIL_RAISED_SW.upload(rail, textureMap, blockStateModelGenerator.modelCollector);
+		
+		BlockStateVariantMap blockStateVariantMap = BlockStateVariantMap.create(Properties.RAIL_SHAPE)
+        .register(RailShape.NORTH_SOUTH, BlockStateVariant.create().put(VariantSettings.MODEL, identifier))
+        .register(RailShape.EAST_WEST, BlockStateVariant.create().put(VariantSettings.MODEL, identifier).put(VariantSettings.Y, VariantSettings.Rotation.R90))
+        .register(
+            RailShape.ASCENDING_EAST, BlockStateVariant.create().put(VariantSettings.MODEL, identifier3).put(VariantSettings.Y, VariantSettings.Rotation.R90)
+            )
+            .register(
+                RailShape.ASCENDING_WEST, BlockStateVariant.create().put(VariantSettings.MODEL, identifier4).put(VariantSettings.Y, VariantSettings.Rotation.R90)
+                )
+                .register(RailShape.ASCENDING_NORTH, BlockStateVariant.create().put(VariantSettings.MODEL, identifier3))
+                .register(RailShape.ASCENDING_SOUTH, BlockStateVariant.create().put(VariantSettings.MODEL, identifier4))
+                .register(RailShape.SOUTH_EAST, BlockStateVariant.create().put(VariantSettings.MODEL, identifier2))
+                .register(RailShape.SOUTH_WEST, BlockStateVariant.create().put(VariantSettings.MODEL, identifier2).put(VariantSettings.Y, VariantSettings.Rotation.R90))
+                .register(RailShape.NORTH_WEST, BlockStateVariant.create().put(VariantSettings.MODEL, identifier2).put(VariantSettings.Y, VariantSettings.Rotation.R180))
+                .register(RailShape.NORTH_EAST, BlockStateVariant.create().put(VariantSettings.MODEL, identifier2).put(VariantSettings.Y, VariantSettings.Rotation.R270));
+                
+        // non-waxed
+		Models.GENERATED.upload(ModelIds.getItemModelId(rail.asItem()), TextureMap.layer0(rail), blockStateModelGenerator.modelCollector);
+        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(rail).coordinate(blockStateVariantMap));
+
+        // waxed
+        Models.GENERATED.upload(ModelIds.getItemModelId(waxedRail.asItem()), TextureMap.layer0(rail), blockStateModelGenerator.modelCollector);
+        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(waxedRail).coordinate(blockStateVariantMap));
+    }
+
+    private final void registerStraightRail(BlockStateModelGenerator blockStateModelGenerator, Block rail, Block waxedRail) {
+        Identifier identifier = blockStateModelGenerator.createSubModel(rail, "", Models.RAIL_FLAT, TextureMap::rail);
+		Identifier identifier2 = blockStateModelGenerator.createSubModel(rail, "", Models.TEMPLATE_RAIL_RAISED_NE, TextureMap::rail);
+		Identifier identifier3 = blockStateModelGenerator.createSubModel(rail, "", Models.TEMPLATE_RAIL_RAISED_SW, TextureMap::rail);
+		Identifier identifier4 = blockStateModelGenerator.createSubModel(rail, "_on", Models.RAIL_FLAT, TextureMap::rail);
+		Identifier identifier5 = blockStateModelGenerator.createSubModel(rail, "_on", Models.TEMPLATE_RAIL_RAISED_NE, TextureMap::rail);
+		Identifier identifier6 = blockStateModelGenerator.createSubModel(rail, "_on", Models.TEMPLATE_RAIL_RAISED_SW, TextureMap::rail);
+		BlockStateVariantMap blockStateVariantMap = BlockStateVariantMap.create(Properties.POWERED, Properties.STRAIGHT_RAIL_SHAPE).register((on, shape) -> {
+			switch (shape) {
+				case NORTH_SOUTH:
+					return BlockStateVariant.create().put(VariantSettings.MODEL, on ? identifier4 : identifier);
+				case EAST_WEST:
+					return BlockStateVariant.create().put(VariantSettings.MODEL, on ? identifier4 : identifier).put(VariantSettings.Y, VariantSettings.Rotation.R90);
+				case ASCENDING_EAST:
+					return BlockStateVariant.create().put(VariantSettings.MODEL, on ? identifier5 : identifier2).put(VariantSettings.Y, VariantSettings.Rotation.R90);
+				case ASCENDING_WEST:
+					return BlockStateVariant.create().put(VariantSettings.MODEL, on ? identifier6 : identifier3).put(VariantSettings.Y, VariantSettings.Rotation.R90);
+				case ASCENDING_NORTH:
+					return BlockStateVariant.create().put(VariantSettings.MODEL, on ? identifier5 : identifier2);
+				case ASCENDING_SOUTH:
+					return BlockStateVariant.create().put(VariantSettings.MODEL, on ? identifier6 : identifier3);
+				default:
+					throw new UnsupportedOperationException("Fix you generator!");
+			}
+		});
+        // non-waxed
+		Models.GENERATED.upload(ModelIds.getItemModelId(rail.asItem()), TextureMap.layer0(rail), blockStateModelGenerator.modelCollector);
+		blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(rail).coordinate(blockStateVariantMap));
+
+        // waxed
+        Models.GENERATED.upload(ModelIds.getItemModelId(waxedRail.asItem()), TextureMap.layer0(rail), blockStateModelGenerator.modelCollector);
+		blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(waxedRail).coordinate(blockStateVariantMap));
+
     }
 
     private void generateShelfModel(BlockStateModelGenerator blockStateModelGenerator, Block block, Block plank) {

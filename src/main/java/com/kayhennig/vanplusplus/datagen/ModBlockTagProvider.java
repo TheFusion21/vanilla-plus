@@ -96,7 +96,48 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
             .add(ModBlocks.NETHER_BRICK_PRESSURE_PLATE)
             .add(ModBlocks.RED_NETHER_BRICK_PRESSURE_PLATE)
             .add(ModBlocks.END_STONE_BRICK_PRESSURE_PLATE)
-            .add(ModBlocks.QUARTZ_PRESSURE_PLATE);
+            .add(ModBlocks.QUARTZ_PRESSURE_PLATE)
+            
+            .add(ModBlocks.COPPER_RAIL)
+            .add(ModBlocks.EXPOSED_COPPER_RAIL)
+            .add(ModBlocks.WEATHERED_COPPER_RAIL)
+            .add(ModBlocks.OXIDIZED_COPPER_RAIL)
+
+            .add(ModBlocks.COPPER_POWERED_RAIL)
+            .add(ModBlocks.EXPOSED_COPPER_POWERED_RAIL)
+            .add(ModBlocks.WEATHERED_COPPER_POWERED_RAIL)
+            .add(ModBlocks.OXIDIZED_COPPER_POWERED_RAIL)
+
+            .add(ModBlocks.COPPER_ACTIVATOR_RAIL)
+            .add(ModBlocks.EXPOSED_COPPER_ACTIVATOR_RAIL)
+            .add(ModBlocks.WEATHERED_COPPER_ACTIVATOR_RAIL)
+            .add(ModBlocks.OXIDIZED_COPPER_ACTIVATOR_RAIL)
+
+            .add(ModBlocks.COPPER_DETECTOR_RAIL)
+            .add(ModBlocks.EXPOSED_COPPER_DETECTOR_RAIL)
+            .add(ModBlocks.WEATHERED_COPPER_DETECTOR_RAIL)
+            .add(ModBlocks.OXIDIZED_COPPER_DETECTOR_RAIL)
+
+            .add(ModBlocks.WAXED_COPPER_RAIL)
+            .add(ModBlocks.WAXED_EXPOSED_COPPER_RAIL)
+            .add(ModBlocks.WAXED_WEATHERED_COPPER_RAIL)
+            .add(ModBlocks.WAXED_OXIDIZED_COPPER_RAIL)
+
+            .add(ModBlocks.WAXED_COPPER_POWERED_RAIL)
+            .add(ModBlocks.WAXED_EXPOSED_COPPER_POWERED_RAIL)
+            .add(ModBlocks.WAXED_WEATHERED_COPPER_POWERED_RAIL)
+            .add(ModBlocks.WAXED_OXIDIZED_COPPER_POWERED_RAIL)
+
+            .add(ModBlocks.WAXED_COPPER_ACTIVATOR_RAIL)
+            .add(ModBlocks.WAXED_EXPOSED_COPPER_ACTIVATOR_RAIL)
+            .add(ModBlocks.WAXED_WEATHERED_COPPER_ACTIVATOR_RAIL)
+            .add(ModBlocks.WAXED_OXIDIZED_COPPER_ACTIVATOR_RAIL)
+
+            .add(ModBlocks.WAXED_COPPER_DETECTOR_RAIL)
+            .add(ModBlocks.WAXED_EXPOSED_COPPER_DETECTOR_RAIL)
+            .add(ModBlocks.WAXED_WEATHERED_COPPER_DETECTOR_RAIL)
+            .add(ModBlocks.WAXED_OXIDIZED_COPPER_DETECTOR_RAIL);
+
 
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
             .add(ModBlocks.OAK_LOG_SLAB)
@@ -470,6 +511,88 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
             .add(ModBlocks.RED_NETHER_BRICK_PRESSURE_PLATE)
             .add(ModBlocks.END_STONE_BRICK_PRESSURE_PLATE)
             .add(ModBlocks.QUARTZ_PRESSURE_PLATE);
+
+        getOrCreateTagBuilder(BlockTags.PREVENT_MOB_SPAWNING_INSIDE)
+            .add(ModBlocks.COPPER_RAIL)
+            .add(ModBlocks.EXPOSED_COPPER_RAIL)
+            .add(ModBlocks.WEATHERED_COPPER_RAIL)
+            .add(ModBlocks.OXIDIZED_COPPER_RAIL)
+
+            .add(ModBlocks.COPPER_POWERED_RAIL)
+            .add(ModBlocks.EXPOSED_COPPER_POWERED_RAIL)
+            .add(ModBlocks.WEATHERED_COPPER_POWERED_RAIL)
+            .add(ModBlocks.OXIDIZED_COPPER_POWERED_RAIL)
+
+            .add(ModBlocks.COPPER_ACTIVATOR_RAIL)
+            .add(ModBlocks.EXPOSED_COPPER_ACTIVATOR_RAIL)
+            .add(ModBlocks.WEATHERED_COPPER_ACTIVATOR_RAIL)
+            .add(ModBlocks.OXIDIZED_COPPER_ACTIVATOR_RAIL)
+
+            .add(ModBlocks.COPPER_DETECTOR_RAIL)
+            .add(ModBlocks.EXPOSED_COPPER_DETECTOR_RAIL)
+            .add(ModBlocks.WEATHERED_COPPER_DETECTOR_RAIL)
+            .add(ModBlocks.OXIDIZED_COPPER_DETECTOR_RAIL)
+
+            .add(ModBlocks.WAXED_COPPER_RAIL)
+            .add(ModBlocks.WAXED_EXPOSED_COPPER_RAIL)
+            .add(ModBlocks.WAXED_WEATHERED_COPPER_RAIL)
+            .add(ModBlocks.WAXED_OXIDIZED_COPPER_RAIL)
+
+            .add(ModBlocks.WAXED_COPPER_POWERED_RAIL)
+            .add(ModBlocks.WAXED_EXPOSED_COPPER_POWERED_RAIL)
+            .add(ModBlocks.WAXED_WEATHERED_COPPER_POWERED_RAIL)
+            .add(ModBlocks.WAXED_OXIDIZED_COPPER_POWERED_RAIL)
+
+            .add(ModBlocks.WAXED_COPPER_ACTIVATOR_RAIL)
+            .add(ModBlocks.WAXED_EXPOSED_COPPER_ACTIVATOR_RAIL)
+            .add(ModBlocks.WAXED_WEATHERED_COPPER_ACTIVATOR_RAIL)
+            .add(ModBlocks.WAXED_OXIDIZED_COPPER_ACTIVATOR_RAIL)
+
+            .add(ModBlocks.WAXED_COPPER_DETECTOR_RAIL)
+            .add(ModBlocks.WAXED_EXPOSED_COPPER_DETECTOR_RAIL)
+            .add(ModBlocks.WAXED_WEATHERED_COPPER_DETECTOR_RAIL)
+            .add(ModBlocks.WAXED_OXIDIZED_COPPER_DETECTOR_RAIL);
+
+        getOrCreateTagBuilder(BlockTags.RAILS)
+            .add(ModBlocks.COPPER_RAIL)
+            .add(ModBlocks.EXPOSED_COPPER_RAIL)
+            .add(ModBlocks.WEATHERED_COPPER_RAIL)
+            .add(ModBlocks.OXIDIZED_COPPER_RAIL)
+
+            .add(ModBlocks.COPPER_POWERED_RAIL)
+            .add(ModBlocks.EXPOSED_COPPER_POWERED_RAIL)
+            .add(ModBlocks.WEATHERED_COPPER_POWERED_RAIL)
+            .add(ModBlocks.OXIDIZED_COPPER_POWERED_RAIL)
+
+            .add(ModBlocks.COPPER_ACTIVATOR_RAIL)
+            .add(ModBlocks.EXPOSED_COPPER_ACTIVATOR_RAIL)
+            .add(ModBlocks.WEATHERED_COPPER_ACTIVATOR_RAIL)
+            .add(ModBlocks.OXIDIZED_COPPER_ACTIVATOR_RAIL)
+
+            .add(ModBlocks.COPPER_DETECTOR_RAIL)
+            .add(ModBlocks.EXPOSED_COPPER_DETECTOR_RAIL)
+            .add(ModBlocks.WEATHERED_COPPER_DETECTOR_RAIL)
+            .add(ModBlocks.OXIDIZED_COPPER_DETECTOR_RAIL)
+
+            .add(ModBlocks.WAXED_COPPER_RAIL)
+            .add(ModBlocks.WAXED_EXPOSED_COPPER_RAIL)
+            .add(ModBlocks.WAXED_WEATHERED_COPPER_RAIL)
+            .add(ModBlocks.WAXED_OXIDIZED_COPPER_RAIL)
+
+            .add(ModBlocks.WAXED_COPPER_POWERED_RAIL)
+            .add(ModBlocks.WAXED_EXPOSED_COPPER_POWERED_RAIL)
+            .add(ModBlocks.WAXED_WEATHERED_COPPER_POWERED_RAIL)
+            .add(ModBlocks.WAXED_OXIDIZED_COPPER_POWERED_RAIL)
+
+            .add(ModBlocks.WAXED_COPPER_ACTIVATOR_RAIL)
+            .add(ModBlocks.WAXED_EXPOSED_COPPER_ACTIVATOR_RAIL)
+            .add(ModBlocks.WAXED_WEATHERED_COPPER_ACTIVATOR_RAIL)
+            .add(ModBlocks.WAXED_OXIDIZED_COPPER_ACTIVATOR_RAIL)
+
+            .add(ModBlocks.WAXED_COPPER_DETECTOR_RAIL)
+            .add(ModBlocks.WAXED_EXPOSED_COPPER_DETECTOR_RAIL)
+            .add(ModBlocks.WAXED_WEATHERED_COPPER_DETECTOR_RAIL)
+            .add(ModBlocks.WAXED_OXIDIZED_COPPER_DETECTOR_RAIL);
     }
 
 }

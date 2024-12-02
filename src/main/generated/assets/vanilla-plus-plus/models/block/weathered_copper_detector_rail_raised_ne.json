@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_rail_raised_ne",
+  "textures": {
+    "rail": "vanilla-plus-plus:block/weathered_copper_detector_rail"
+  }
+}

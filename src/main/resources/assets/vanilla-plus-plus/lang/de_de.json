@@ -188,6 +188,46 @@
     "block.vanilla-plus-plus.end_stone_brick_pressure_plate": "Endsteinziegeldruckplatte",
     "block.vanilla-plus-plus.quartz_pressure_plate": "Quarzdruckplatte",
 
+    "block.vanilla-plus-plus.copper_rail": "Kupferschiene",
+    "block.vanilla-plus-plus.copper_powered_rail": "Kupferantriebsschiene",
+    "block.vanilla-plus-plus.copper_activator_rail": "Kupferaktivierungsschiene",
+    "block.vanilla-plus-plus.copper_detector_rail": "Kupfersensorschiene",
+
+    "block.vanilla-plus-plus.exposed_copper_rail": "Angelaufene Kupferschiene",
+    "block.vanilla-plus-plus.exposed_copper_powered_rail": "Angelaufener Kupferantriebsschiene",
+    "block.vanilla-plus-plus.exposed_copper_activator_rail": "Angelaufene Kupferaktivierungsschiene",
+    "block.vanilla-plus-plus.exposed_copper_detector_rail": "Angelaufene Kupfersensorschiene",
+
+    "block.vanilla-plus-plus.weathered_copper_rail": "Verwitterte Kupferschiene",
+    "block.vanilla-plus-plus.weathered_copper_powered_rail": "Verwitterter Kupferantriebsschiene",
+    "block.vanilla-plus-plus.weathered_copper_activator_rail": "Verwitterte Kupferaktivierungsschiene",
+    "block.vanilla-plus-plus.weathered_copper_detector_rail": "Verwitterte Kupfersensorschiene",
+
+    "block.vanilla-plus-plus.oxidized_copper_rail": "Oxidierte Kupferschiene",
+    "block.vanilla-plus-plus.oxidized_copper_powered_rail": "Oxidierter Kupferantriebsschiene",
+    "block.vanilla-plus-plus.oxidized_copper_activator_rail": "Oxidierte Kupferaktivierungsschiene",
+    "block.vanilla-plus-plus.oxidized_copper_detector_rail": "Oxidierte Kupfersensorschiene",
+
+    "block.vanilla-plus-plus.waxed_copper_rail": "Gewachste Kupferschiene",
+    "block.vanilla-plus-plus.waxed_copper_powered_rail": "Gewachster Kupferantriebsschiene",
+    "block.vanilla-plus-plus.waxed_copper_activator_rail": "Gewachste Kupferaktivierungsschiene",
+    "block.vanilla-plus-plus.waxed_copper_detector_rail": "Gewachste Kupfersensorschiene",
+
+    "block.vanilla-plus-plus.waxed_exposed_copper_rail": "Gewachste angelaufene Kupferschiene",
+    "block.vanilla-plus-plus.waxed_exposed_copper_powered_rail": "Gewachste angelaufene Kupferantriebsschiene",
+    "block.vanilla-plus-plus.waxed_exposed_copper_activator_rail": "Gewachste angelaufene Kupferaktivierungsschiene",
+    "block.vanilla-plus-plus.waxed_exposed_copper_detector_rail": "Gewachste angelaufene Kupfersensorschiene",
+
+    "block.vanilla-plus-plus.waxed_weathered_copper_rail": "Gewachste verwitterte Kupferschiene",
+    "block.vanilla-plus-plus.waxed_weathered_copper_powered_rail": "Gewachster verwitterter Kupferantriebsschiene",
+    "block.vanilla-plus-plus.waxed_weathered_copper_activator_rail": "Gewachste verwitterte Kupferaktivierungsschiene",
+    "block.vanilla-plus-plus.waxed_weathered_copper_detector_rail": "Gewachste verwitterte Kupfersensorschiene",
+
+    "block.vanilla-plus-plus.waxed_oxidized_copper_rail": "Gewachste oxidierte Kupferschiene",
+    "block.vanilla-plus-plus.waxed_oxidized_copper_powered_rail": "Gewachster oxidierter Kupferantriebsschiene",
+    "block.vanilla-plus-plus.waxed_oxidized_copper_activator_rail": "Gewachste oxidierte Kupferaktivierungsschiene",
+    "block.vanilla-plus-plus.waxed_oxidized_copper_detector_rail": "Gewachste oxidierte Kupfersensorschiene",
+
     "item.vanilla-plus-plus.dynamite": "Dynamit",
     "item.vanilla-plus-plus.fuse_time": "Zündzeit: %1$s",
     "item.vanilla-plus-plus.wooden_dagger": "Holzdolch",
